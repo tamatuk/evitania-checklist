@@ -173,9 +173,8 @@ function rich(t){ if(t===null||t===undefined) return ''; t=String(t); let out=''
   while((m=termRe.exec(t))){ out+=esc(t.slice(last,m.index))+'<span class="term">'+icon(TERMS[m[1]])+esc(m[1])+'</span>'; last=m.index+m[1].length }
   return out+esc(t.slice(last)) }
 const ROLES=['Pusher','Material farmer','Rare-drop farmer','Leveller'];
-const DEF_CHARS=[{cls:'Mage',role:'Material farmer',level:63},{cls:'Rogue',role:'Material farmer',level:53},{cls:'Warrior',role:'Pusher',level:66},{cls:'Rogue',role:'Material farmer',level:58}];
-function cleanChars(a){if(!Array.isArray(a))return DEF_CHARS.map(c=>({...c}));return a.filter(c=>c&&D.trees[c.cls]).slice(0,8).map(c=>({cls:c.cls,role:ROLES.includes(c.role)?c.role:'Material farmer',level:Math.max(1,Math.min(200,parseInt(c.level)||1)),pts:null}))}
-let state={stage:D.defaultStage,tiers:{},daily:[],chars:cleanChars(null)};
+function cleanChars(a){if(!Array.isArray(a))return[];return a.filter(c=>c&&D.trees[c.cls]).slice(0,8).map(c=>({cls:c.cls,role:ROLES.includes(c.role)?c.role:'Material farmer',level:Math.max(1,Math.min(200,parseInt(c.level)||1)),pts:null}))}
+let state={stage:D.defaultStage,tiers:{},daily:[],chars:[]};
 let syncMsg='';
 try{const s=JSON.parse(localStorage.getItem('evi-state'));if(s&&s.tiers&&D.stages.includes(s.stage))state={stage:s.stage,tiers:s.tiers&&Number.isInteger(s.tiers.Gear)&&s.tiers['Pusher gear']===undefined?{...s.tiers,'Pusher gear':s.tiers.Gear}:s.tiers,daily:cleanDaily(s.daily),chars:cleanChars(s.chars)}}catch(e){}
 function cleanDaily(a){const ok=new Set(D.daily.map(r=>r[1]));return Array.isArray(a)?[...new Set(a.filter(x=>ok.has(x)))]:[]}
