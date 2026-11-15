@@ -25,27 +25,19 @@ jobs:
       MARKER: <!-- pr-preview -->
 
     steps:
-      - name: Show preview link in job summary
+      - name: Build preview link and show it in job summary
+        id: preview
         run: |
           preview_link="[Open the page as this PR proposes it](${PREVIEW_URL}) (commit \`${HEAD_SHA:0:7}\`)"
-          echo "PREVIEW_LINK=${preview_link}" >> "$GITHUB_ENV"
+          echo "link=${preview_link}" >> "$GITHUB_OUTPUT"
           echo "$preview_link" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Comment preview link
         if: github.event.pull_request.head.repo.full_name == github.repository
-        env:
-          GH_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ github.event.number }}
-        run: |
-          body="${MARKER}
-          ${PREVIEW_LINK}"
-
-          comment_ids=$(gh api --paginate "repos/${GITHUB_REPOSITORY}/issues/${PR_NUMBER}/comments" \
-            --jq '.[] | select(.user.login == "github-actions[bot]" and (.body | startswith(env.MARKER))) | .id')
-          comment_id="${comment_ids%%$'\n'*}"
-
-          if [ -n "$comment_id" ]; then
-            gh api --method PATCH "repos/${GITHUB_REPOSITORY}/issues/comments/${comment_id}" -f body="$body" --silent
-          else
-            gh api --method POST "repos/${GITHUB_REPOSITORY}/issues/${PR_NUMBER}/comments" -f body="$body" --silent
-          fi
+        uses: ovsds/create-or-update-unique-comment-action@2bb0d0b0a9efb193591288d8ac2e201cdda5c26b # v1.1.1
+        with:
+          issue-number: ${{ github.event.number }}
+          unique-body-includes: ${{ env.MARKER }}
+          body: |
+            ${{ env.MARKER }}
+            ${{ steps.preview.outputs.link }}
