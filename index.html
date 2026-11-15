@@ -207,6 +207,9 @@ const VIEWS=[['checklist','Checklist'],['roster','Roster'],['daily','Daily'],['b
 let later=new Set();
 let open=new Set();try{open=new Set(JSON.parse(localStorage.getItem('evi-open'))||[])}catch(e){}
 function saveOpen(){try{localStorage.setItem('evi-open',JSON.stringify([...open]))}catch(e){}}
+const SORTS=[['behind','Behind first'],['az','A–Z'],['stage','Stage']];
+let sortBy='behind';try{const v=localStorage.getItem('evi-sort');if(SORTS.some(o=>o[0]===v))sortBy=v}catch(e){}
+function saveSort(){try{localStorage.setItem('evi-sort',sortBy)}catch(e){}}
 function route(){const h=(location.hash||'').replace('#','');const s=D.systems.find(s=>slug(s.name)===h);if(s){open.add(s.name);return 'checklist'}return VIEWS.some(v=>v[0]===h)?h:'checklist'}
 function pill(s){return '<span class="pill diff p-'+s.k+'" title="'+esc(s.l)+'" aria-label="'+esc(s.l)+'">'+esc(s.t)+'</span>'}
 function srcLinks(str){return String(str).split('; ').map(n=>{const s=D.sources.find(x=>x.name===n);return s?'<a href="'+esc(s.link)+'" title="'+esc(s.where+', as of '+s.asof)+'">'+esc(n)+'</a>':esc(n)}).join('; ')}
@@ -214,12 +217,16 @@ function srcLinks(str){return String(str).split('; ').map(n=>{const s=D.sources.
 function vChecklist(){
   const c={good:0,bad:0,warn:0,idle:0}; for(const s of D.systems)c[status(s.name).k]++;
   let h='<div class="vhead"><h2>Progress by system</h2><p class="lead">Set the highest tier you have reached in each system. The coloured number is how many stages that puts you ahead of or behind your stage, and each stage expects what you need before its next boss.</p></div>'
-    +'<div class="tbar"><span class="sum"><span class="pill p-good">'+c.good+' on track</span><span class="pill p-bad">'+c.bad+' behind</span><span class="pill p-warn">'+c.warn+' to set</span></span><span class="thint">Furthest behind first. Click a name to open its tiers and rules.</span><button type="button" class="reset" data-act="openall">'+(open.size===D.systems.length?'Hide all':'Show all')+'</button></div><div class="list">';
+    +'<div class="tbar"><span class="sum"><span class="pill p-good">'+c.good+' on track</span><span class="pill p-bad">'+c.bad+' behind</span><span class="pill p-warn">'+c.warn+' to set</span></span><div class="seg" role="group" aria-label="Sort">'+SORTS.map(o=>'<button type="button" class="sg'+(o[0]===sortBy?' on':'')+'" id="sort-'+o[0]+'" data-act="sort" data-v="'+o[0]+'" aria-pressed="'+(o[0]===sortBy)+'">'+o[1]+'</button>').join('')+'</div><span class="thint">Click a name to open its tiers and rules.</span><button type="button" class="reset" data-act="openall">'+(open.size===D.systems.length?'Hide all':'Show all')+'</button></div><div class="list">';
   const rank=s=>[expected(s.name)===0&&tierOf(s.name)===null?1:0,stageDiff(s.name)];
-  const order=D.systems.map((s,i)=>[s,i,rank(s)]).sort((a,b)=>a[2][0]-b[2][0]||a[2][1]-b[2][1]||a[1]-b[1]).map(x=>x[0]);
+  const byName=(a,b)=>a.name.localeCompare(b.name,'en');
+  const unlock=s=>{const i=D.expect[s.name].findIndex(v=>v>0);return i<0?NST:i};
+  const order=sortBy==='az'?D.systems.slice().sort(byName)
+    :sortBy==='stage'?D.systems.slice().sort((a,b)=>unlock(a)-unlock(b)||byName(a,b))
+    :D.systems.map((s,i)=>[s,i,rank(s)]).sort((a,b)=>a[2][0]-b[2][0]||a[2][1]-b[2][1]||a[1]-b[1]).map(x=>x[0]);
   let split=false;
   for(const s of order){const t=tierOf(s.name),e=expected(s.name),st=status(s.name),nx=s.tiers[(t===null?0:t)];
-    if(e===0&&t===null&&!split){split=true;h+='<div class="divider">Not needed at '+esc(state.stage)+'</div>'}
+    if(sortBy==='behind'&&e===0&&t===null&&!split){split=true;h+='<div class="divider">Not needed at '+esc(state.stage)+'</div>'}
     const op=open.has(s.name);
     h+='<div class="item"><div class="row"><div class="sysn"><span class="slot s-'+st.k+'">'+icon(s.icon,'xl')+'</span><div><button type="button" class="name" id="tg-'+slug(s.name)+'" data-act="toggle" data-sys="'+esc(s.name)+'" aria-expanded="'+op+'"><span class="chev" aria-hidden="true">'+(op?'&#9662;':'&#9656;')+'</span>'+esc(s.name)+'</button><div class="exp">Expected tier '+e+' of '+s.tiers.length+'</div></div></div>'
       +'<div class="step" role="group" aria-label="'+esc(s.name)+' tier"><button id="dec-'+slug(s.name)+'" data-act="dec" data-sys="'+esc(s.name)+'" aria-label="Lower tier">&minus;</button><output>'+(t===null?'&ndash;':t)+'</output><button id="inc-'+slug(s.name)+'" data-act="inc" data-sys="'+esc(s.name)+'" aria-label="Raise tier">+</button></div>'
@@ -380,6 +387,7 @@ document.getElementById('main').addEventListener('click',ev=>{const b=ev.target.
   if(b.dataset.act==='cauto'){const c=state.chars[+b.dataset.ci]; if(!c)return; c.pts=null; commit(); return}
   if(b.dataset.act==='later'){const s=b.dataset.sys; later.has(s)?later.delete(s):later.add(s); render(); const a=document.getElementById(id); if(a) a.focus(); return}
   if(b.dataset.act==='toggle'){const s=b.dataset.sys; open.has(s)?open.delete(s):open.add(s); saveOpen(); render(); const a=document.getElementById(id); if(a) a.focus(); return}
+  if(b.dataset.act==='sort'){sortBy=b.dataset.v; saveSort(); render(); const a=document.getElementById(id); if(a) a.focus(); return}
   if(b.dataset.act==='openall'){open=open.size===D.systems.length?new Set():new Set(D.systems.map(s=>s.name)); saveOpen(); render(); return}
   const n=b.dataset.sys,t=tierOf(n);
   if(b.dataset.act==='inc') setTier(n,t===null?1:t+1);
