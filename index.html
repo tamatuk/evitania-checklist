@@ -225,9 +225,9 @@ function vChecklist(){
   const order=sortBy==='az'?D.systems.slice().sort(byName)
     :sortBy==='stage'?D.systems.slice().sort((a,b)=>unlock(a)-unlock(b)||byName(a,b))
     :D.systems.map((s,i)=>[s,i,rank(s)]).sort((a,b)=>a[2][0]-b[2][0]||a[2][1]-b[2][1]||a[1]-b[1]).map(x=>x[0]);
-  let split=sortBy!=='behind';
+  let split=false;
   for(const s of order){const t=tierOf(s.name),e=expected(s.name),st=status(s.name),nx=s.tiers[(t===null?0:t)];
-    if(e===0&&t===null&&!split){split=true;h+='<div class="divider">Not needed at '+esc(state.stage)+'</div>'}
+    if(sortBy==='behind'&&e===0&&t===null&&!split){split=true;h+='<div class="divider">Not needed at '+esc(state.stage)+'</div>'}
     const op=open.has(s.name);
     h+='<div class="item"><div class="row"><div class="sysn"><span class="slot s-'+st.k+'">'+icon(s.icon,'xl')+'</span><div><button type="button" class="name" id="tg-'+slug(s.name)+'" data-act="toggle" data-sys="'+esc(s.name)+'" aria-expanded="'+op+'"><span class="chev" aria-hidden="true">'+(op?'&#9662;':'&#9656;')+'</span>'+esc(s.name)+'</button><div class="exp">Expected tier '+e+' of '+s.tiers.length+'</div></div></div>'
       +'<div class="step" role="group" aria-label="'+esc(s.name)+' tier"><button id="dec-'+slug(s.name)+'" data-act="dec" data-sys="'+esc(s.name)+'" aria-label="Lower tier">&minus;</button><output>'+(t===null?'&ndash;':t)+'</output><button id="inc-'+slug(s.name)+'" data-act="inc" data-sys="'+esc(s.name)+'" aria-label="Raise tier">+</button></div>'
