@@ -5,6 +5,8 @@
 A progression checklist for **Evitania Online – Idle RPG**: what to have in each
 system before each boss, a daily task list, and talent builds for your characters.
 
+Open it: <https://tamatuk.github.io/evitania-checklist/>
+
 It is a single self-contained page, `index.html`. No server, no accounts, no
 tracking. Your values are kept in your browser and in the page address.
 
