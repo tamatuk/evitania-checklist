@@ -174,6 +174,7 @@ function rich(t){ if(t===null||t===undefined) return ''; t=String(t); let out=''
   return out+esc(t.slice(last)) }
 const ROLES=['Pusher','Material farmer','Rare-drop farmer','Leveller'];
 function cleanChars(a){if(!Array.isArray(a))return[];return a.filter(c=>c&&D.trees[c.cls]).slice(0,8).map(c=>({cls:c.cls,role:ROLES.includes(c.role)?c.role:'Material farmer',level:Math.max(1,Math.min(200,parseInt(c.level)||1)),pts:null}))}
+// planned: stage starts null, and build.py drops defaultStage
 let state={stage:D.defaultStage,tiers:{},daily:[],chars:[]};
 let syncMsg='';
 try{const s=JSON.parse(localStorage.getItem('evi-state'));if(s&&s.tiers&&D.stages.includes(s.stage))state={stage:s.stage,tiers:s.tiers&&Number.isInteger(s.tiers.Gear)&&s.tiers['Pusher gear']===undefined?{...s.tiers,'Pusher gear':s.tiers.Gear}:s.tiers,daily:cleanDaily(s.daily),chars:cleanChars(s.chars)}}catch(e){}
@@ -182,7 +183,26 @@ function saveLocal(){try{localStorage.setItem('evi-state',JSON.stringify(state))
 function cleanTiers(){const o={};for(const s of D.systems){const v=state.tiers[s.name];if(Number.isInteger(v))o[s.name]=v}return o}
 function commit(){saveLocal();render();syncUrl()}
 function paintSync(){const el=document.getElementById('sync');if(el)el.textContent=syncMsg}
+// planned: returns -1 while no stage is picked instead of clamping to the first stage
 const stageIdx=()=>Math.max(0,D.stages.indexOf(state.stage));
+const STUB=()=>{throw new Error('not implemented')};
+// true once the user has picked a stage; without one, expected(), status(), the not-needed split,
+// the ladders' hidden tiers, the Daily filter and the pips and Stages column skip the stage
+const hasStage=()=>STUB();
+// saved-state guard: a picked stage or null loads, an absent or unknown stage drops the saved state as today
+const savedStageOk=v=>STUB();
+// the stage name for the header, the confirm prompt, the Daily lead and the not-needed texts: 'no stage' while none is picked
+const stageLabel=()=>STUB();
+// share code stage digit: base-36 stage index, 'z' while none is picked
+const stageDigit=()=>STUB();
+// share code digit back to a stage: 'z' gives null, a digit past the stages throws
+const stageFromDigit=ch=>STUB();
+// backup "stage" field on export: the stage slug, null while none is picked
+const stageToBackup=()=>STUB();
+// backup "stage" field on import: null clears the stage, an absent or unknown slug keeps the current one
+const stageFromBackup=v=>STUB();
+// the Checklist's "pick your stage" prompt shown while none is picked
+const pickStagePrompt=()=>STUB();
 const expected=n=>D.expect[n][stageIdx()];
 const tierOf=n=>Number.isInteger(state.tiers[n])?state.tiers[n]:null;
 const NST=D.stages.length;

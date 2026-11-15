@@ -70,12 +70,14 @@ just repeat it in `src/template.html` so the next build keeps it.
 
 - `stage`, the `tiers` keys, and the class and role in `chars` are slugs:
   the name in lower case with every run of other characters turned into `-`.
+- `stage` is `null` when no stage is picked. Importing `null` clears the stage;
+  a backup without `stage`, or with an unknown one, keeps the current stage.
 - `tiers` holds the highest tier reached per system; systems not set are left out.
 - `daily` lists the ticked task ids. `chars` rows are `[class, role, level]`.
 
 ### Share code
 
-`1` + stage (one base-36 digit) + one base-36 digit per system (`z` = not set)
+`1` + stage (one base-36 digit, `z` = no stage picked) + one base-36 digit per system (`z` = not set)
 \+ `-` + the daily ticks as a base-36 bit mask + `-` + four characters per
 character (class index, role index, level as two base-36 digits).
 
