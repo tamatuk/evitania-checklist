@@ -1,0 +1,49 @@
+name: PR Preview
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.number }}
+  cancel-in-progress: false
+
+jobs:
+  pr-preview:
+    runs-on: ubuntu-latest
+
+    permissions:
+      pull-requests: write
+
+    env:
+      HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+      HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+
+    steps:
+      - name: Show preview link in job summary
+        run: |
+          preview_url="https://raw.githack.com/${HEAD_REPO}/${HEAD_SHA}/index.html"
+          echo "[Open the page as this PR proposes it](${preview_url}) (commit \`${HEAD_SHA:0:7}\`)" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Comment preview link
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.number }}
+        run: |
+          preview_url="https://raw.githack.com/${HEAD_REPO}/${HEAD_SHA}/index.html"
+          body="<!-- pr-preview -->
+          [Open the page as this PR proposes it](${preview_url}) (commit \`${HEAD_SHA:0:7}\`)"
+
+          comment_ids=$(gh api --paginate "repos/${GITHUB_REPOSITORY}/issues/${PR_NUMBER}/comments" \
+            --jq '.[] | select(.user.login == "github-actions[bot]" and (.body | startswith("<!-- pr-preview -->"))) | .id')
+          comment_id="${comment_ids%%$'\n'*}"
+
+          if [ -n "$comment_id" ]; then
+            gh api --method PATCH "repos/${GITHUB_REPOSITORY}/issues/comments/${comment_id}" -f body="$body" --silent
+          else
+            gh api --method POST "repos/${GITHUB_REPOSITORY}/issues/${PR_NUMBER}/comments" -f body="$body" --silent
+          fi

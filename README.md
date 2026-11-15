@@ -99,6 +99,12 @@ python3 src/build.py
 
 That rewrites `index.html` in the repository root. Commit and push it.
 
+To see the page as a pull request proposes it, open the link in the PR's
+**PR Preview** comment; each push updates the comment to the latest commit.
+The link opens the committed `index.html` on raw.githack, so values saved there
+stay apart from the live site's. On a pull request from a fork, the link is in
+the job summary of the PR's **PR Preview** check instead.
+
 Things to know when editing `src/data.py`:
 
 - **Stages** are numbered 1–10. `EXPECT[system]` gives the expected tier at each
