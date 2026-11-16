@@ -7,9 +7,9 @@
       "source": ["Wiki", "MTEnh"]
     },
     {
-      "req": "Act 1 accessories worn: Boss Amulet from Bringer of Death, Tower Ring from clearing 6 tower floors, Belt of Love from killing Yrsainir, and an Iron Belt crafted from 20 Steel Bars, 2 Death's Flowers and 2 Dragon Horns.",
+      "req": "Act 1 accessories worn: Boss Amulet from Bringer of Death chests (about 1 in 6), Tower Ring from clearing 6 tower floors and Ring of STR from the Kill Bringer of Death quest in the two ring slots, and one belt: Belt of Love from killing Yrsainir or an Iron Belt crafted from 20 Steel Bars, 2 Death's Flowers and 2 Dragon Horns.",
       "basis": "Game data",
-      "source": ["Wiki"]
+      "source": ["Wiki", "SteamNews"]
     },
     {
       "req": "Steel weapon at X or higher and iron armor at VII or higher.",
@@ -81,7 +81,12 @@
           "Jotunn chests, about 1 in 20",
           "+7% crit chance, +5% movement speed, +70 magic defence"
         ],
-        ["Ring of STR", "Ring", "Killing Bringer of Death", "Not in the wiki data"],
+        [
+          "Ring of STR",
+          "Ring",
+          "Kill Bringer of Death quest",
+          "+2 STR, +10 physical defence, +30 attack per step (none at base)"
+        ],
         [
           "Tower Ring",
           "Ring",
@@ -98,7 +103,7 @@
         [
           "Harvest Belt",
           "Belt",
-          "Harvest event shop (to December 2)",
+          "Harvest event shop in 2025 (the event runs to December 2; check this year's shop)",
           "-20% monster respawn time, +3% offline gains, +10% all XP"
         ],
         [
@@ -222,15 +227,15 @@
         ],
         [
           "Stones by act",
-          "Enhance Stone 1 drops from Act 1 bosses, Enhance Stone 2 from Act 2 bosses, and Enhance Stone 3 only from Zhai Halud's Gate. Hard and Nightmare bosses drop Grassy Enhance Stone 1 in Act 1 and Icy Enhance Stone 1 in Act 2.",
+          "Enhance Stone 1 drops from Act 1 bosses, Enhance Stone 2 from Act 2 bosses, and Enhance Stone 3 only from Zhai Halud's Gate. Hard and Nightmare bosses drop Grassy Enhance Stone 1 in Act 1 and Icy Enhance Stone 1 in Act 2. Infinite Enhance Stone II is crafted at the Infinite smith (recipe: 100 Sunstone Bars, 1,000 Grassy Stone II and 1 Enhance Stone 2).",
           "Game data",
           ["Wiki"]
         ],
         [
           "Steel armor",
-          "The steel armor set is a small step over iron (43 defence a piece against 36, and +10% combat XP each). The guides skip it and go from enhanced iron straight to thorium; craft it only if you want the XP.",
+          "The steel armor set gives 43 defence a piece against iron's 36, +10% combat XP each, and set bonuses since the May 14 update; the set bonus value is not in the wiki data (unverified until checked in game). The guides skip it and go from enhanced iron straight to thorium; craft it if you want the XP or the set bonus.",
           "Estimate",
-          ["Wiki", "MTAct2"]
+          ["Wiki", "MTAct2", "SteamNews"]
         ],
         [
           "Thorium order",
@@ -246,9 +251,9 @@
         ],
         [
           "Event belts",
-          "Event belts are the main source of shorter monster respawn, which raises the offline kill cap. If you have none, the Harvest Belt is in the event shop until December 2.",
+          "Event belts are the main source of shorter monster respawn, which raises the offline kill cap. If you have none: the Harvest Belt was in the 2025 Harvest event shop, and the Harvest event runs until December 2; whether this year's shop has it is unverified, so check this year's shop.",
           "Game data",
-          ["Wiki", "Patch"]
+          ["Wiki", "Patch", "SteamNews"]
         ],
         [
           "Enhance stones",
