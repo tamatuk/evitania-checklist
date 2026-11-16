@@ -750,7 +750,7 @@ system("Trinkets", [
         ("Harvest trinkets", "Harvest dungeons (to December 2) drop Bountiful Tusk, Generous Cornucopia, Plentiful Bihorn and Abundant Overgrowth.", GD, src("Patch")),
     ]),
     ("Trinket by role", ["Role", "Main stat", "Sub-stats", "When to wear it", "Basis", "Source"], [
-        ("Pusher", "ATK; HP instead for a boss that kills you", "Crit chance and crit damage", "Bosses, the tower and dungeons. Presets do not switch trinkets, so swap it on by hand before the fight.", "Player report", src("SteamTrinkets", "SteamTrinketsEnh")),
+        ("Pusher", "ATK; HP instead for a boss that kills you", "Crit chance and crit damage", "Bosses, the tower and dungeons. Presets do not switch trinkets, so swap it on by hand before the fight.", "Player report", src("SteamTrinkets", "SteamTrinketsEnh", "Patch")),
         ("Material farmer", "All EXP", "Offline Gains", "While it farms, parked or online", "Player report", src("SteamTrinkets")),
         ("Rare-drop farmer", "All EXP", "Drop Quantity, then Offline Gains", "While it opens boss chests and farms cards. Drop Quantity is only a sub-stat and counts only for boss chests and cards.", G, src("SteamDQ", "SteamTrinkets")),
         ("Leveller", "All EXP", "Offline Gains", "All the time", "Player report", src("SteamTrinkets")),
@@ -759,10 +759,10 @@ system("Trinkets", [
         ("Gold", "Filler on a farmer until an All EXP trinket drops", "", "No source recommends Gold for any role, but it beats an empty slot", MR, ""),
     ]),
     ("Trinket pieces", ["Piece (Halloween / Harvest)", "Max level", "Sub-stats", "All EXP %", "Gold %", "ATK", "HP", "Mining or woodcutting power (Halloween / Harvest)"], [
-        ("Black Candle / Bountiful Tusk", 6, 1, "16-20.8", "12-16.8", "12-16.8", "40-64", "40-56 / 20-28"),
-        ("Candlestick / Generous Cornucopia", 9, 2, "24-34.8", "18-28.8", "18-28.8", "60-114", "60-96 / 30-48"),
-        ("Candelabra / Plentiful Bihorn", 12, 3, "32-51.2", "24-43.2", "24-43.2", "80-176", "80-144 / 40-72"),
-        ("Luminor / Abundant Overgrowth", 15, 4, "40-70", "30-60", "30-60", "100-250", "100-200 / 50-100"),
+        ("Black Candle / Bountiful Tusk", 6, 1, "16 to 20.8", "12 to 16.8", "12 to 16.8", "40 to 64", "40 to 56 / 20 to 28"),
+        ("Candlestick / Generous Cornucopia", 9, 2, "24 to 34.8", "18 to 28.8", "18 to 28.8", "60 to 114", "60 to 96 / 30 to 48"),
+        ("Candelabra / Plentiful Bihorn", 12, 3, "32 to 51.2", "24 to 43.2", "24 to 43.2", "80 to 176", "80 to 144 / 40 to 72"),
+        ("Luminor / Abundant Overgrowth", 15, 4, "40 to 70", "30 to 60", "30 to 60", "100 to 250", "100 to 200 / 50 to 100"),
     ]),
 ])
 
