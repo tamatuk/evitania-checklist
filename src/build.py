@@ -11,7 +11,7 @@ def fail(msg):
     raise NotImplementedError
 
 def load(name):
-    """The parsed JSON of data/<name>."""
+    """The parsed JSON of data/<name>; a missing file or invalid JSON fails naming it."""
     raise NotImplementedError
 
 def cite(keys, where):
@@ -19,8 +19,8 @@ def cite(keys, where):
     raise NotImplementedError
 
 def load_systems(order):
-    """data/systems/*.json in `order` (expect's keys), each matched by its "name"; a file with no expect key, or an
-    expect key with no file, fails."""
+    """(file name, system) pairs of data/systems/*.json in `order` (expect's keys), each matched by its "name"; a file
+    with no expect key, an expect key with no file, or a table row with more or fewer cells than its cols fails."""
     raise NotImplementedError
 
 def check_expect(expect, stages):
@@ -35,11 +35,11 @@ DAILY = load("daily.json")
 ROSTER = load("roster.json")
 
 systems = []
-for s_ in SYS:
+for f_, s_ in SYS:
     systems.append({"name": s_["name"],
-        "tiers": [{"req": t["req"], "basis": t["basis"], "source": cite(t["source"], s_["name"])} for t in s_["tiers"]],
+        "tiers": [{"req": t["req"], "basis": t["basis"], "source": cite(t["source"], f_)} for t in s_["tiers"]],
         "tables": [{"title": t["title"], "cols": t["cols"],
-                    "rows": [[cite(x, s_["name"]) if c == "Source" else x for c, x in zip(t["cols"], row)] for row in t["rows"]]}
+                    "rows": [[cite(x, f_) if c == "Source" else x for c, x in zip(t["cols"], row)] for row in t["rows"]]}
                    for t in s_["tables"]]})
 
 about = [
@@ -58,11 +58,11 @@ assert len(DAILY_IDS) == len(DAILY) == len(set(DAILY_IDS))
 # append-only: positions are part of the share-link format
 SHARE_SYS = ["Hunter", "Bonfire", "Ash", "Sacrifice", "Pusher gear", "Gatherer gear", "Gathering", "Gems", "Pets", "Cards", "Runes", "Engineer", "Curio", "Hourglass", "Characters", "Trinkets"]
 SHARE_DAILY = ["quest", "login", "boss-keys", "vendor-1", "vendor-2", "vendor-3", "tower", "mail-codes", "cost-cruncher", "bonfire-fuel", "slyme-egg", "fate-spiral", "curio-coins", "event-dungeons", "guild-donations"]
-assert set(SHARE_SYS) == {x["name"] for x in SYS} and set(SHARE_DAILY) == set(DAILY_IDS)
+assert set(SHARE_SYS) == {s_["name"] for _, s_ in SYS} and set(SHARE_DAILY) == set(DAILY_IDS)
 data = {"roster": [[r["topic"], r["rule"], r["basis"], cite(r["source"], "roster.json")] for r in ROSTER],
         "systems": systems, "stages": ST["stages"], "reached": ST["reached"], "expect": ST["expect"],
         "daily": [[r["when"], r["task"], r["why"], cite(r["source"], "daily.json"), i] for r, i in zip(DAILY, DAILY_IDS)],
-        "shareSys": SHARE_SYS, "shareDaily": SHARE_DAILY, "about": about, "sources": list(SRC.values())}
+        "shareSys": SHARE_SYS, "shareDaily": SHARE_DAILY, "about": about, "sources": [{k: s_[k] for k in ("name", "where", "link", "asof")} for s_ in SRC.values()]}
 
 
 import os, base64, re
