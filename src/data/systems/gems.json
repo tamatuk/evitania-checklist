@@ -124,7 +124,7 @@
           9,
           "Curio inventory slots (Act 3), 6 ranks to 22 slots",
           2550,
-          "300, 350, 400, 450, 500, 550; assumes a 10-slot base, unverified until checked in game"
+          "300, 350, 400, 450, 500, 550; the total assumes a 10-slot base and is unverified until checked in game"
         ],
         [10, "Hourglass Generator Speed (Act 3)", 1700, "200, 350, 500, 650"],
         [11, "Awakening Amplifier (Act 3)", 500, "500"],
