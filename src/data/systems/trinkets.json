@@ -53,7 +53,7 @@
         ],
         [
           "Sub-stats",
-          "There are 12: Offline Gains %, Drop Quantity, crit chance, crit damage, MEN, CON, STR, DEX, INT, HP %, mining power % and woodcutting power %. Only some roll active (white): 0-1 / 1-2 / 2-3 / 3-4 on a Black Candle / Candlestick / Candelabra / Luminor and their Harvest sizes; the rest are greyed. A sub-stat starts at its base, on a Luminor +1% Offline Gains or +2 Drop Quantity, and every third trinket level one random sub-stat, possibly a greyed one, gains a step; reaching 6% Offline Gains or 12 Drop Quantity needs all five of a Luminor's steps on it. Which ones to want depends on the role: see Trinket by role.",
+          "There are 12: Offline Gains %, Drop Quantity, crit chance, crit damage, MEN, CON, STR, DEX, INT, HP %, mining power % and woodcutting power %. Only some roll active (white): 0-1 / 1-2 / 2-3 / 3-4 on a Black Candle / Candlestick / Candelabra / Luminor and their Harvest sizes; the rest are greyed. A sub-stat starts at its base, on a Luminor +1% Offline Gains or +2 Drop Quantity, and every third trinket level one random sub-stat, possibly a greyed one, gains a step; reaching a Luminor's maximum (Luminor maxima) needs all five of its steps on one sub-stat. Which ones to want depends on the role: see Trinket by role.",
           "Game data",
           ["Wiki", "LuminorStats", "TrinketSub"]
         ],
