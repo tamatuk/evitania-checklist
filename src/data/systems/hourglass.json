@@ -32,7 +32,7 @@
       "source": ["DBHG", "Patch"]
     },
     {
-      "req": "Upgrade tier 11 reached (needs the Golden Claw generator). Golden Claw is the 15th original generator and the level 7 ones start at the 16th, so this may come before the level 7 tier; unverified until checked in game.",
+      "req": "Upgrade tier 11 reached (needs the Golden Claw generator).",
       "basis": "Game data",
       "source": ["PiwuHG", "Patch"]
     },
@@ -69,6 +69,12 @@
           "Sandstone Sample, Glass Sample, Water Sample, Clay Block, Bit of Knowledge, Liquid Glass, Limestone Mass, Pristine Glass, Cromlech Bricks, Condensed Vortex, Sol Essence, Locked Orery, Golden Bit (spelling to check in game), Golden Scales, Golden Claw. Restoration of Eternity adds 15 from level 7: Golden Horn, Golden Fang, Final Grain, Red Star Teseract (spelling to check in game), Golden Scarab, Ruby Eyeris (spelling to check in game), Prismatic Beacon, Unstable Element, Warped Geomentry (spelling to check in game), Unleashed Formula, Attraction Anchor, Arcane Carapace, Trypa Sphere (spelling to check in game), Bothsides Amulet (spelling to check in game), Follpwer Insignia (spelling to check in game). The Unstable Element's first purchase costs about E143 sand and out-produces the Prismatic Beacon only around level 50 to 100; the 50% Prismatic Beacon talent is needed to reach it.",
           "Game data",
           ["PiwuHG", "DBHG", "HGTal"]
+        ],
+        [
+          "Golden Claw tier",
+          "Golden Claw is the 15th original generator and the level 7 ones start at the 16th, so upgrade tier 11 may come before the level 7 tier; unverified until checked in game.",
+          "Estimate",
+          ["PiwuHG", "Patch"]
         ],
         [
           "Upgrades",
