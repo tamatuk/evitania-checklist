@@ -1,0 +1,122 @@
+{
+  "name": "Sacrifice",
+  "tiers": [
+    {
+      "req": "Mammoth's soul sacrificed in the Sacrifice tab: the first five lines are open.",
+      "basis": "Guide",
+      "source": ["MTAct2", "DBBonfire"]
+    },
+    {
+      "req": "Attack Wish and Cutting Edge Technology at 10 or more, with Ironwood felled in 1 or 2 hits.",
+      "basis": "Guide",
+      "source": ["DBBonfire", "MTAct2"]
+    },
+    {
+      "req": "Attack Wish at 15 or more.",
+      "basis": "Guide",
+      "source": ["MTAct2"]
+    },
+    {
+      "req": "Jotunn's Eye sacrificed (five more lines open), and Wish for Hardness high enough to reach about 1,300 physical defence with thorium gear, the Act 2 guide's target for Maevath.",
+      "basis": "Guide",
+      "source": ["MTAct2"]
+    },
+    {
+      "req": "Maevath's Horn sacrificed: the last five lines are open.",
+      "basis": "Guide",
+      "source": ["DBBonfire"]
+    },
+    {
+      "req": "Attack Wish at 20, then Wish for Hardness at 20.",
+      "basis": "Guide",
+      "source": ["DBBonfire"]
+    },
+    {
+      "req": "Attack Wish, Wish for Luck, Pray for Luck and Wish for Speed all at 20, the base cap (Wish for Speed ends there).",
+      "basis": "Guide",
+      "source": ["HyZerg", "Wiki"]
+    },
+    {
+      "req": "Attack Wish, Wish for Luck and Pray for Luck at 30 or more. Needs the cap raised past 20 by Engineer More Sacrifices (Runic Blueprint and Sun Scroll) or the Act 2 Hard card.",
+      "basis": "Estimate",
+      "source": ["JTEng", "Wiki"]
+    },
+    {
+      "req": "Attack Wish, Wish for Luck and Pray for Luck at 42 of 42, reached by about the time the Hunter damage trainings are at 36.",
+      "basis": "Guide",
+      "source": ["HyZerg"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Sacrifice rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        ["Order", "For damage, one of each upgrade at a time is the mathematically best order.", "Guide", ["HyZerg"]],
+        [
+          "First targets",
+          "Early on, push Attack (helmets) and woodcutting (icy needles) toward 10 before going further.",
+          "Guide",
+          ["DBBonfire"]
+        ],
+        [
+          "Why helmets",
+          "Attack Wish is a true multiplier. Multipliers apply after all flat and percent bonuses and stack on each other, so they are the strongest kind.",
+          "Guide",
+          ["MTAct2", "DevFAQ"]
+        ],
+        [
+          "Boss items",
+          "Each Act 2 boss drops its Soul and its sacrifice item on every kill. Mammoth's soul opens the first five lines, Jotunn's Eye five more and Maevath's Horn the last five.",
+          "Game data",
+          ["ZZTabs", "DBBonfire"]
+        ],
+        [
+          "Caps",
+          "Base cap is 20 and the top is 42: Engineer More Sacrifices adds 5 in Runic Blueprint and 5 in Sun Scroll, and the Act 2 Hard card adds 4 at 0 stars up to 12 at 4 stars. Wish for Speed always stops at 20.",
+          "Game data",
+          ["Wiki", "DBBonfire", "HyZerg"]
+        ],
+        [
+          "Costs",
+          "Level L costs 500 x 1.3^(L-1) of the material plus 250 + 50 x (L-1) ash. Wish for Gold is cheaper in material: 50 x 1.11^(L-1). Engineer Humble Sacrifices adds a 5% chance per level to refund half.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Boss souls",
+          "Sacrifice each boss soul in the Sacrifice tab, not as fuel, to open its five lines. Extra boss sacrifices raise heat and Bonfire tier.",
+          "Game data",
+          ["ZZ", "DBBonfire"]
+        ],
+        [
+          "Farming spots",
+          "Helmets (Rogue or Mage) for Attack Wish; Snowmen for carrots (defence) and the Snowman attack card.",
+          "Guide",
+          ["MTFarm"]
+        ]
+      ]
+    },
+    {
+      "title": "Sacrifice lines",
+      "cols": ["Unlocked by", "Line and effect per level", "Group", "Material"],
+      "rows": [
+        ["Mammoth", "Attack Wish: attack multiplier, x0.05", "Damage", "Helmet Helmet"],
+        ["Mammoth", "Cutting Edge Technology: woodcutting power, x0.1", "Gathering", "Icy Needles"],
+        ["Mammoth", "Wish for Luck: crit chance, +1%", "Damage", "Iceghost Doll"],
+        ["Mammoth", "Wish for Fuel: woodcutting multiloot, +1", "Gathering", "Ironwood Log"],
+        ["Mammoth", "Food Donation: HP, x0.03", "Low", "Distinguished Glasses"],
+        ["Jotunn", "Wish for Hardness: physical defence, x0.05", "Defence", "Carrot"],
+        ["Jotunn", "Wish for Speed: attack speed, +0.5% (cap 20, so 10%)", "Damage", "Troll Idol"],
+        ["Jotunn", "Mining Edge Technology: mining power, x0.1", "Gathering", "Nut"],
+        ["Jotunn", "Wish for Stones: mining multiloot, +1", "Gathering", "Thorium Ore"],
+        ["Jotunn", "Wish for Knowledge: MP, x0.03", "Low", "Pocketwatch"],
+        ["Maevath", "Pray for Luck: crit damage, +3%", "Damage", "Slightly Damaged Glass"],
+        ["Maevath", "Wish for Riches: Drop Quantity, +1", "Utility", "Spearhead"],
+        ["Maevath", "Wish for Wizdom: combat XP, +1%", "Utility", "Matryoska Doll"],
+        ["Maevath", "Wish for Gold: gold multiplier, +1%", "Utility", "Crystallized Yellow Substance"],
+        ["Maevath", "Wish for Bars: smeltery speed, +10%", "Utility", "Monocle"]
+      ]
+    }
+  ]
+}

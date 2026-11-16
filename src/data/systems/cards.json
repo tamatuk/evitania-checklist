@@ -1,0 +1,141 @@
+{
+  "name": "Cards",
+  "tiers": [
+    {
+      "req": "Crab Miner card obtained (permanent Hunter discount).",
+      "basis": "Guide",
+      "source": ["DBTips"]
+    },
+    {
+      "req": "Act 1 damage and farming cards started: Animated Armor, Fire Elemental, Slime Cube, Wolf.",
+      "basis": "Estimate",
+      "source": ["MTFarm", "Dawnk"]
+    },
+    {
+      "req": "Act 1 boss cards at 1 star from daily keys: 8 cards each for Bringer of Death and Yrsainir, 12 for The Crab.",
+      "basis": "Estimate",
+      "source": ["DBTips", "Wiki"]
+    },
+    {
+      "req": "Stump and Pebble cards for woodcutting and mining power, and the Watch card for physical defence before Jotunn (x1.03 per star).",
+      "basis": "Estimate",
+      "source": ["MTFarm", "MTAct2", "Dawnk", "Wiki"]
+    },
+    {
+      "req": "Snowman card obtained (attack multiplier that stacks with the helmet sacrifice).",
+      "basis": "Guide",
+      "source": ["MTAct2"]
+    },
+    {
+      "req": "Crab Miner and Helmet cards at 3 stars: both cut Hunter costs, and Helmet gives half as much again per star.",
+      "basis": "Estimate",
+      "source": ["Sakori", "Wiki"]
+    },
+    {
+      "req": "Act 1 Hard card at 3 stars (raises the Hunter cap).",
+      "basis": "Game data",
+      "source": ["ZZ", "DBTips"]
+    },
+    {
+      "req": "Bandiff and Beetleman cards obtained for the Hourglass.",
+      "basis": "Guide",
+      "source": ["PiwuHG"]
+    },
+    {
+      "req": "Engineer 4 Star Cards bought and the key cards (Hard cards, Snowman, Cactus Mommy, Crab Miner, Helmet) pushed toward 4 stars.",
+      "basis": "Estimate",
+      "source": ["Wiki"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Card rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        ["Alts", "Use alts to farm cards in lower zones, and prioritise high-star cards.", "Guide", ["DBTips"]],
+        [
+          "Drop Quantity",
+          "Each point of Drop Quantity adds 1% to rare-loot chances: the rate is multiplied by 1 + DQ/100.",
+          "Game data",
+          ["DevFAQ"]
+        ],
+        [
+          "Card drop chance",
+          "Since a mid-2026 patch there is a separate Rune/Card Drop Chance stat; drops no longer depend on Drop Quantity alone.",
+          "Game data",
+          ["Boushoku"]
+        ],
+        [
+          "Stars",
+          "Cards needed for 0 to 4 stars: 1, 8, 24, 60, 360 in Act 1; 1, 12, 48, 100, 600 in Act 2 and for Hard cards; 1, 18, 72, 150, 900 in Act 3. The fourth star needs the Engineer Sun Scroll upgrade 4 Star Cards.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Nightmare cards",
+          "The Act 1 and Act 2 Nightmare cards give nothing yet (confirmed in the 0.323.0 notes).",
+          "Game data",
+          ["Patch", "Wiki"]
+        ],
+        [
+          "Boss chests",
+          "Killing a boss 30 times gives an achievement that lets you loot 5 chests at once.",
+          "Game data",
+          ["ZZTabs"]
+        ],
+        [
+          "Luck",
+          "One player's rule of thumb in chat: prioritise sacrifice and Hunter work, since cards are more luck.",
+          "Estimate",
+          ["Chat"]
+        ],
+        [
+          "Base chance",
+          "A monster card drops on 0.01% of kills in Act 1, 0.004% in Act 2 and 0.002% in Act 3. A boss chest gives the boss card half the time.",
+          "Game data",
+          ["DBCards"]
+        ],
+        [
+          "Crimson drops",
+          "Crimson geode and crimson sap drop at 1 in 200,000 from mining and woodcutting.",
+          "Game data",
+          ["AllPets"]
+        ]
+      ]
+    },
+    {
+      "title": "Cards worth knowing",
+      "cols": ["Card", "Bonus", "Group", "Where it matters"],
+      "rows": [
+        ["Crab Miner", "Hunter cost reduction, 50 per star level", "Discount", "All of Hunter"],
+        ["Bringer of Death", "Combat XP +6% per star level", "Levelling", "Act 1 boss, daily keys"],
+        ["The Crab", "Mining offline gains +2% per star level", "Gathering", "Act 1 boss, daily keys"],
+        ["Yrsainir", "Combat offline gains +2% per star level", "Farming", "Act 1 boss, daily keys"],
+        ["Helmet", "Hunter cost reduction, 75 per star level", "Discount", "All of Hunter, from Act 2"],
+        ["Animated Armor", "Attack %", "Damage", "Act 1 onward"],
+        ["Wolf", "Crit damage", "Damage", "Act 1 onward"],
+        ["Fire Elemental", "Drop Quantity", "Farming", "Act 1 onward"],
+        ["Slime Cube", "Offline battle gains", "Offline", "Act 1 onward"],
+        ["Stump", "Woodcutting power", "Gathering", "Ironwood in Act 2"],
+        ["Pebble", "Mining power %", "Gathering", "Thorium in Act 2"],
+        ["Kobold", "Physical defence (flat)", "Defence", "Act 1 onward"],
+        ["Mammoth", "Crit chance", "Damage", "Act 2"],
+        ["Snowman", "Attack multiplier, x0.03 per star level", "Damage", "Act 2 final boss onward"],
+        ["Cactus Mommy", "Attack multiplier, x0.05 per star level", "Damage", "Act 3"],
+        ["Draugr", "Drop Quantity +3", "Farming", "Act 2"],
+        ["Jotunn", "Drop Quantity +5", "Farming", "Act 2 boss"],
+        ["Sun Boy", "Drop Quantity +4", "Farming", "Act 3"],
+        ["Dung Beetle", "Physical defence multiplier, x0.06", "Defence", "Act 3"],
+        ["Djinn", "Rune drop chance +4%", "Farming", "Act 3"],
+        ["Horus", "Card drop chance +4%", "Farming", "Act 3"],
+        ["Plant, Iceboar, Kangaroo", "Smeltery speed +15%, +35%, +50%", "Utility", "One per act"],
+        ["Act 2 Hard card", "Raises the sacrifice cap (+4 to +12)", "Unlock", "Hard Act 2"],
+        ["Watch", "Physical defence multiplier", "Defence", "Act 2"],
+        ["Troll", "HP multiplier", "Low", "Act 2"],
+        ["Act 1 Hard card", "Raises the Hunter cap (+4 to +12)", "Unlock", "Needed at 3 stars for Act 2 Hard"],
+        ["Bandiff", "Sand generation x2 (0 stars) to x6 (4 stars)", "Hourglass", "Act 3"],
+        ["Beetleman", "Timeline engine x1.2 (0 stars) to x2.0 (4 stars)", "Hourglass", "Act 3"]
+      ]
+    }
+  ]
+}

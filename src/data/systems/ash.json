@@ -1,0 +1,92 @@
+{
+  "name": "Ash",
+  "tiers": [
+    {
+      "req": "Attack Increase #1 bought (the first node, +30% all ATK).",
+      "basis": "Game data",
+      "source": ["DBBonfire"]
+    },
+    {
+      "req": "First More Ash node at 3/3.",
+      "basis": "Guide",
+      "source": ["DBBonfire"]
+    },
+    {
+      "req": "Attack Increase #2 and Ash Discount bought.",
+      "basis": "Estimate",
+      "source": ["DBBonfire"]
+    },
+    {
+      "req": "Hunter Cost Reduction at 5/5.",
+      "basis": "Estimate",
+      "source": ["DBBonfire", "Sakori"]
+    },
+    {
+      "req": "All four Attack Increase nodes and all three More Ash nodes done.",
+      "basis": "Estimate",
+      "source": ["DBBonfire", "Dawnk"]
+    },
+    {
+      "req": "Rune Overload, Auto Runes and the Smeltery Speed nodes done.",
+      "basis": "Guide",
+      "source": ["DBBonfire"]
+    },
+    {
+      "req": "Ash tree complete. From here all ash goes to sacrifices.",
+      "basis": "Guide",
+      "source": ["DBBonfire", "PiwuGems"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Ash rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        ["Start", "Early on, follow the line that improves ash gained (More Ash).", "Guide", ["DBBonfire"]],
+        [
+          "Later",
+          "Later in Act 2, invest in Smeltery speed, fuel, burn reduction and Auto Runes.",
+          "Guide",
+          ["DBBonfire"]
+        ],
+        [
+          "Split",
+          "Ash also pays for sacrifices, so split it between this tree and the top sacrifice lines.",
+          "Estimate",
+          ["DBBonfire"]
+        ],
+        ["Gems", "Do not spend gems on ash generation; the tree gets maxed in time.", "Guide", ["PiwuGems"]]
+      ]
+    },
+    {
+      "title": "Ash tree nodes",
+      "cols": ["Tree level", "Upgrade", "Ranks", "Effect per rank"],
+      "rows": [
+        [1, "Attack Increase", 1, "+30% all ATK"],
+        [2, "Fuel Efficiency", 3, "-6.67% fuel consumption"],
+        [2, "Attack Increase", 1, "+30% all ATK"],
+        [2, "Smeltery Speed", 1, "+60% smeltery speed"],
+        [3, "Maximum Fuel", 1, "+10,000 fuel stored"],
+        [3, "Crit Damage", 3, "+10% crit damage"],
+        [3, "More Ash", 3, "+10% odds of ash"],
+        [3, "Ash Discount", 1, "-10% cost of all ash upgrades"],
+        [3, "Fiery Defence", 4, "+5 physical defence"],
+        [3, "Smeltery Speed", 1, "+60% smeltery speed"],
+        [3, "Hunter Cost Reduction", 5, "50% Hunter cost reduction"],
+        [3, "Movespeed", 2, "+5% movement speed"],
+        [4, "Crit Chance", 4, "+1% crit chance"],
+        [4, "Defence Increase", 5, "+5% physical defence"],
+        [4, "Fuel Efficiency", 3, "-10% fuel consumption"],
+        [4, "Attack Increase", 1, "+30% all ATK"],
+        [4, "Maximum Fuel", 6, "+10,000 fuel stored"],
+        [4, "Rune Overload", 1, "Runes stack in the rune inventory"],
+        [4, "Attack Increase", 1, "+30% all ATK"],
+        [4, "More Ash", 3, "+10% odds of ash"],
+        [4, "More Ash", 3, "+10% odds of ash"],
+        [4, "Smeltery Speed", 3, "+30% smeltery speed"],
+        [5, "Auto Runes", 1, "Dropped runes go straight to the rune inventory"],
+        [5, "Smeltery Speed", 4, "+30% smeltery speed"]
+      ]
+    }
+  ]
+}

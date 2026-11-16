@@ -1,0 +1,125 @@
+{
+  "name": "Bonfire",
+  "tiers": [
+    {
+      "req": "Bonfire unlocked and burning Chadcoal (1,100 fuel each) at a 25-50% burn rate, never going out.",
+      "basis": "Guide",
+      "source": ["MTAct2", "DBBonfire"]
+    },
+    {
+      "req": "Heat 300: Basic heat. Removes Chilled from Act 2 zones 1-4.",
+      "basis": "Game data",
+      "source": ["ZZ"]
+    },
+    {
+      "req": "Heat 900: Woodcutting Efficiency (+100% woodcutting power).",
+      "basis": "Game data",
+      "source": ["ZZ"]
+    },
+    {
+      "req": "Heat 1,100: Advanced heat. Removes Chilled from zones 5-8.",
+      "basis": "Game data",
+      "source": ["ZZ"]
+    },
+    {
+      "req": "Heat 1,300: Mining Efficiency (+100% mining power).",
+      "basis": "Game data",
+      "source": ["Wiki"]
+    },
+    {
+      "req": "Heat 2,100: Expert heat. Removes Chilled from zones 9-12.",
+      "basis": "Game data",
+      "source": ["ZZ"]
+    },
+    {
+      "req": "Heat 3,100: Fiery Weapon (x1.5 ATK multiplier in heated zones).",
+      "basis": "Game data",
+      "source": ["Wiki"]
+    },
+    {
+      "req": "All three Act 2 boss souls sacrificed. Each raises the Bonfire two levels for good, so it stays at its top tier with little or no fuel.",
+      "basis": "Guide",
+      "source": ["DBBonfire"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Bonfire rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        [
+          "Fuel",
+          "Do not burn raw logs. An Ironwood Log is 100 fuel, Chadcoal 1,100, a Palm Tree Log 500 and a Palm Face 26,000. Regular Act 1 coal is not a fuel.",
+          "Game data",
+          ["DBBonfire"]
+        ],
+        [
+          "Multicraft",
+          "With Smeltery Multicraft maxed, 10 Ironwood gives 3 Chadcoal: 3,300 fuel instead of 1,000 as logs.",
+          "Guide",
+          ["MTAct2"]
+        ],
+        [
+          "Burn rate",
+          "Higher burn gives more heat but a worse fuel-to-ash ratio. Right after unlock, 100% gives the most bonus if you can refuel often; otherwise keep a long fuel timer.",
+          "Guide",
+          ["DBBonfire"]
+        ],
+        [
+          "Capacity",
+          "Base fuel capacity is 150,000; each Maximum Fuel rank in the ash tree adds 10,000.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Heat bonuses",
+          "A bonus applies only while its heat is reached. It stays applied offline if the heat was active when you logged off.",
+          "Game data",
+          ["ZZ"]
+        ],
+        [
+          "Hourglasses",
+          "Hourglasses do not speed up passive ash. Ash per kill does work offline.",
+          "Game data",
+          ["FAQ"]
+        ],
+        [
+          "Sacrifices and heat",
+          "Sacrifice bonuses work on every map. Heat bonuses work only in Act 2.",
+          "Game data",
+          ["HeatG"]
+        ],
+        [
+          "Maximum heat",
+          "Maximum heat rises only with the one-time boss soul sacrifices. A higher flame makes ash faster but burns more fuel.",
+          "Game data",
+          ["HeatG"]
+        ],
+        ["Nice Heat", "The Nice Heat achievement needs the burn slider at exactly 69%.", "Guide", ["HeatG"]],
+        [
+          "Fire Essence",
+          "Fire Elemental zone: a Warrior standing in the middle of the top floor cleaves both platforms.",
+          "Guide",
+          ["HeatG"]
+        ]
+      ]
+    },
+    {
+      "title": "Heat bonuses",
+      "cols": ["Heat", "Bonus", "Kind", "Effect"],
+      "rows": [
+        [100, "Ash Creation", "Ash", "The Bonfire has a chance to produce ash every second"],
+        [300, "Basic heat", "Zones", "Removes Chilled from Act 2 zones 1-4"],
+        [700, "Overheat", "Survival", "+1 base HP regen in heated zones"],
+        [900, "Woodcutting Efficiency", "Gathering", "+100% woodcutting power"],
+        [1100, "Advanced heat", "Zones", "Removes Chilled from zones 5-8"],
+        [1300, "Mining Efficiency", "Gathering", "+100% mining power"],
+        [1700, "Hot Stuff", "Ash", "3% chance of 1 ash per kill"],
+        [1800, "Monster Bait", "Farming", "Monster respawn time -20% in heated zones"],
+        [2100, "Expert heat", "Zones", "Removes Chilled from zones 9-12"],
+        [2500, "Owl Wizdom", "XP", "+50% XP multiplier in heated zones"],
+        [3100, "Fiery Weapon", "Damage", "x1.5 ATK multiplier in heated zones"]
+      ]
+    }
+  ]
+}

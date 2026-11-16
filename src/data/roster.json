@@ -1,0 +1,104 @@
+[
+  {
+    "topic": "Pick order",
+    "rule": "The numbers start from Piwu's talent guides for each class (August 2026, before Nightmare): class skills first, then attack, crit and attack speed. The role then moves a few nodes earlier or later.",
+    "basis": "Guide",
+    "source": ["PiwuWar", "PiwuRogue", "PiwuMage"]
+  },
+  {
+    "topic": "Pusher",
+    "rule": "Your main. The guide order as written: damage first, Magicfind and most Bonus XP late. Around level 70 the guide starts adding Drop Quantity and EXP.",
+    "basis": "Guide",
+    "source": ["PiwuWar"]
+  },
+  {
+    "topic": "Material farmer",
+    "rule": "An alt parked for Hunter and sacrifice materials. Drop Quantity does not raise the common drop every monster gives, so this role wants kills per hour only: the guide order with Magicfind and Bonus XP pushed to the very end. This is the Min-Maxer of the Three Musketeers method, and MountTai calls Magicfind a trap for anyone not opening boss chests.",
+    "basis": "Guide",
+    "source": ["Dawnk3", "MTRogue", "SteamDQ"]
+  },
+  {
+    "topic": "Rare-drop farmer",
+    "rule": "The character that opens boss chests and farms cards, where Drop Quantity does count (each point is +1% to the drop chance, and keys limit how many chests you open). Takes Magicfind as soon as the node before it is taken. This is the Drop Farmer of the Three Musketeers method.",
+    "basis": "Guide",
+    "source": ["Dawnk3", "MTRogue", "SteamDQ"]
+  },
+  {
+    "topic": "Leveller",
+    "rule": "A character you want levelled fast to open new zones early: the Trailblazer. Takes Bonus XP as soon as it is reachable. Rogue has no Bonus XP nodes, so it plays as a Pusher.",
+    "basis": "Guide",
+    "source": ["Dawnk3", "PiwuRogue"]
+  },
+  {
+    "topic": "Role orders",
+    "rule": "No guide publishes a numbered order for the three farmer roles. The trees apply the rules above to Piwu's order.",
+    "basis": "Estimate",
+    "source": []
+  },
+  {
+    "topic": "Rogue priorities",
+    "rule": "MountTai's level 80 Rogue: unlock every skill node first, rush Arrow Barrage, then crit chance, attack speed, crit damage. He skips attack speed talents because bows already give a lot (a thorium bow adds 40%).",
+    "basis": "Guide",
+    "source": ["MTRogue"]
+  },
+  {
+    "topic": "Offline income",
+    "rule": "Raise offline gains %, then damage until you reach the kill cap, then raise the cap with mob spawn time reduction, then damage again.",
+    "basis": "Guide",
+    "source": ["OfflineG"]
+  },
+  {
+    "topic": "Trinkets",
+    "rule": "Each role wants a different trinket main stat: ATK for the Pusher, All EXP for the farmers and the Leveller, mining or woodcutting power for a Gatherer. Which one and when to wear it is in the Trinket by role table on the Trinkets system.",
+    "basis": "Player report",
+    "source": ["SteamTrinkets", "SteamTrinketsEnh"]
+  },
+  {
+    "topic": "Gatherer",
+    "rule": "A woodcutting or mining alt uses the gathering trees, not the class tree, so no class build is drawn for it. Its class talents can follow any role; the gathering advice is on the Gathering system.",
+    "basis": "Guide",
+    "source": ["JTGather", "Jivchik", "Dawnk3"]
+  },
+  {
+    "topic": "Online or offline",
+    "rule": "Offline income ignores class skills and penalises the Warrior for move speed, so Rogue and Mage make the better parked farmers. Online play wants movement speed and the skills; the Mage's Improved Lightning Orb makes every hit a crit for 20 seconds.",
+    "basis": "Guide",
+    "source": ["PiwuMage", "Jivchik", "DBClass"]
+  },
+  {
+    "topic": "Bosses, tower and dungeons",
+    "rule": "Fought online, so skills count. Crit chance and crit damage matter most; EvitaniaOnlineDB also suggests Health and Defence on a Warrior for bosses. No guide gives a separate boss order, so use Pusher.",
+    "basis": "Guide",
+    "source": ["Jivchik", "DBClass"]
+  },
+  {
+    "topic": "Class fit",
+    "rule": "Warrior: main pusher. Rogue: farmer and woodcutter, best on one- or two-platform maps. Mage: late carry, best on maps with three or more platforms, with the most Magicfind and Bonus XP in its tree.",
+    "basis": "Guide",
+    "source": ["DBClass", "GFTal", "PiwuRogue", "PiwuMage"]
+  },
+  {
+    "topic": "Talent points",
+    "rule": "Class talent points are taken as the character's level minus 10.",
+    "basis": "Player report",
+    "source": []
+  },
+  {
+    "topic": "Respec",
+    "rule": "A Class Reset Brew costs 30 gems, so changing a character's role is cheap.",
+    "basis": "Guide",
+    "source": ["GFTal", "SteamDQ"]
+  },
+  {
+    "topic": "Warrior",
+    "rule": "Piwu advises against the late Max HP node and the Attack % node behind it; put those points into Crit Damage.",
+    "basis": "Guide",
+    "source": ["PiwuWar"]
+  },
+  {
+    "topic": "Nightmare",
+    "rule": "In Nightmare, move points out of Magicfind and Bonus XP into attack speed, crit chance and crit damage, whatever the role.",
+    "basis": "Guide",
+    "source": ["PiwuWar", "PiwuRogue", "PiwuMage"]
+  }
+]

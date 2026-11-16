@@ -1,0 +1,259 @@
+{
+  "name": "Characters",
+  "tiers": [
+    {
+      "req": "First character is a Warrior with its class skills (green nodes) unlocked first.",
+      "basis": "Guide",
+      "source": ["DBTips", "PiwuWar", "FAQ"]
+    },
+    {
+      "req": "Second character made. The main pushes; the alt farms lower zones for cards, materials, gold and Hunter levels.",
+      "basis": "Guide",
+      "source": ["DBTips"]
+    },
+    {
+      "req": "Third slot used (opens after Yrsainir). The roster has at least one Warrior and one Rogue.",
+      "basis": "Guide",
+      "source": ["DBTips", "FAQ"]
+    },
+    {
+      "req": "Fourth slot used (opens at the Watches zone in Act 2).",
+      "basis": "Guide",
+      "source": ["MTAct2"]
+    },
+    {
+      "req": "Fifth slot used (opens on killing Maevath, since 0.321.0).",
+      "basis": "Game data",
+      "source": ["Patch"]
+    },
+    {
+      "req": "Rune and curio presets set up for mobs, bosses, mining and woodcutting on every character (unlocks at combat level 70).",
+      "basis": "Guide",
+      "source": ["Presets", "Patch", "Jivchik"]
+    },
+    {
+      "req": "Nightmare respec done: EXP and Drop Quantity talents swapped for attack speed, crit rate and crit damage.",
+      "basis": "Guide",
+      "source": ["PiwuWar"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Character rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        [
+          "Warrior talents",
+          "Improved Cleave, then Last Stand, then the middle path for Blade Strike and Dragon Soul, then the second Improved Cleave.",
+          "Guide",
+          ["PiwuWar"]
+        ],
+        [
+          "Crit first",
+          "Take crit rate and crit damage over Magic Find and EXP until about level 70; more kills an hour beats those nodes.",
+          "Guide",
+          ["PiwuWar"]
+        ],
+        [
+          "Skip",
+          "Skip the Warrior's +5 HP / +1% damage node at the end; HP is of little use. Take crit damage.",
+          "Guide",
+          ["PiwuWar"]
+        ],
+        [
+          "Boss readiness check",
+          "Kills per hour is a result of the other systems, not a task. The Act 2 guide uses it as a check before each boss, measured on your main in the zone that holds the boss portal: about 500 in the Yeti zone before Ice Mammoth, about 1,000 in the Troll zone before Jotunn, and above 1,000 again in the Draugr zone (in thorium, about 1,300 physical defence) before Maevath. Under the mark, raise Hunter trainings and sacrifices first.",
+          "Guide",
+          ["MTAct2"]
+        ],
+        [
+          "Jotunn fight",
+          "Troll map, the red portal. Adds first: after the first hand falls he summons monsters that explode, for over 3,000 damage in Steam reports and potentially an instant kill in EvitaniaOnlineDB's boss guide, so kill each one before anything else. Then the eye beam: when the eyes glow, sprint from under the hand to the far side of the map, starting near the screen edge, and take at most one tick (EvitaniaOnlineDB); if you are caught, Steam players say you should survive 4 to 5 beams. Then the hand waits: stand under a hand to bait a punch, step out as it lands and hit the hand (the Discord guide). Hand drops are random, so the fight is long and mostly waiting, about 10 minutes with 12 beams and over 20 slaps, and a Mage's lightning can hit the body instead of the hand (Steam). Once both hands are gone his HP drains by itself. Go behind the hand for the side slap and leave the middle for the ice breath (the Discord guide).",
+          "Guide",
+          ["DBBoss", "SteamJotunBeam", "SteamJotunRNG", "SteamJotunnDev", "JotunnG", "MTAct2", "FAQ"]
+        ],
+        [
+          "Mammoth Ring",
+          "Disputed. One player in the Discord guide reports the Mammoth Ring (+100 magic defence) cut Jotunn's eye beam from over 600 a hit to about 100, but a Steam player thinks the beam scales with physical defence, and EvitaniaOnlineDB lists the ring's magic defence as +10. The ring's attack speed and crit damage hold either way.",
+          "Player report",
+          ["JotunnG", "SteamJotunBeam", "DBGear"]
+        ],
+        [
+          "Shared progress",
+          "Hunter, sacrifices, cards, Curio and the stash are account-wide; levels and talents are per character.",
+          "Game data",
+          ["DBTips"]
+        ],
+        [
+          "Lone Wolf",
+          "Unlocked by killing the Act 1 last boss. Since 0.321.0 it gives +50 Drop Quantity and +50% EXP and gold for giving up the other slots. Alts are still stronger, so it is optional.",
+          "Guide",
+          ["FAQ", "Patch"]
+        ],
+        [
+          "Class by stage",
+          "No class is best all game. Warrior is easiest early and online but is the only class with a move-speed penalty in the offline formula; Rogue is the best offline farmer until Hunter and sacrifices are high; Mage is best online and offline once you farm at the kill cap.",
+          "Guide",
+          ["Jivchik"]
+        ],
+        [
+          "Attributes",
+          "STR, DEX and INT each give +10% attack to their class. CON gives +5% HP and +1% HP regen; MEN gives +5% MP, +1% MP regen and +5% magic defence.",
+          "Game data",
+          ["Jivchik"]
+        ],
+        [
+          "Stat maths",
+          "Final stat = sum of flat x sum of percent x product of multipliers, so true multipliers (x1.5) are worth the most late.",
+          "Game data",
+          ["Jivchik", "DevFAQ"]
+        ],
+        [
+          "Level unlocks",
+          "Tower at level 25, events at 30, Engineer at 40, the Halloween quest chain at 50, presets at 70 and Act 2 Hard at combat level 80.",
+          "Game data",
+          ["ZZTabs", "Patch"]
+        ],
+        [
+          "Defence check",
+          "A monster's hit falls to chip damage of 0 once your Defence is at or above its Attack. Compare with the monster tables below.",
+          "Guide",
+          ["DBBoss"]
+        ],
+        [
+          "Bringer of Death fight",
+          "Step back 3-4 steps from the frontal leap. In the poison gas, leave the marked zone and kill the flower shooters in the corners.",
+          "Guide",
+          ["DBBoss"]
+        ],
+        [
+          "The Crab fight",
+          "Back away from the chomp, then return. Keep walking to break the root. Below 30% HP its armour and shield counterattacks are gone.",
+          "Guide",
+          ["DBBoss"]
+        ],
+        [
+          "Yrsainir fight",
+          "Wait until he lands, then stand inside him under the chin: hits drop from 200-400 to about 99 and the sweep and breath miss. When he flies, go to the stairs and climb once the flames are out. Iron gear is enough.",
+          "Guide",
+          ["BossG", "DBBoss"]
+        ],
+        [
+          "Ice Mammoth fight",
+          "Stay on the hitbox for the flame stamp. Run back or sideways when it rears up. Break one ground crystal to stun the stampede, and use an active ice crystal to interrupt the howl. The frontal stomp and an unstunned stampede can kill outright.",
+          "Guide",
+          ["DBBoss"]
+        ],
+        [
+          "Maevath fight",
+          "Stand close to dodge the claws and breath cone; when he inhales, run to the far left or right. When he flies, kill the Draugrs quickly so the stairs appear, or he stays airborne and the lower floor fills with flames. In stage 2 use the green safe zone and kill adds fast. Keep potions for the last phase.",
+          "Guide",
+          ["BossG", "DBBoss"]
+        ],
+        [
+          "Zhai Halud's Gate fight",
+          "Step out of the tentacle slam and return. When the worm comes swirling from the right, run to the left corner. It spawns mini worms underground: kill them all, go back up on the left side, and repeat.",
+          "Guide",
+          ["BossG", "DBBoss"]
+        ],
+        [
+          "Hard mode",
+          "The Obelisk's Hard difficulty multiplies base material drops by 16. Act 1 Hard has no listed requirement.",
+          "Game data",
+          ["DBObelisk"]
+        ]
+      ]
+    },
+    {
+      "title": "Classes",
+      "cols": ["Class", "Notes", "Role", "Best maps"],
+      "rows": [
+        [
+          "Warrior",
+          "The usual first character and the easiest talent tree. Class resources unlock in the order Warrior, Archer, Mage.",
+          "First character, main pusher",
+          "Flat single-platform maps"
+        ],
+        [
+          "Rogue",
+          "Good late game. No bonus EXP nodes, so slower to level, but more Drop Quantity than a Warrior.",
+          "Farmer, woodcutter",
+          "Tight maps with 1-2 platforms"
+        ],
+        [
+          "Mage",
+          "Area attacks; unlock class skills first, including the 100% crit skill.",
+          "Later character",
+          "Maps with 3 or more spawn platforms, such as Crabs"
+        ]
+      ]
+    },
+    {
+      "title": "Bosses",
+      "cols": ["Boss", "Where", "HP", "Attack"],
+      "rows": [
+        ["Bringer of Death", "Act 1, Plant zone", "3K", "26"],
+        ["The Crab", "Act 1, Crab zone", "80K", "175"],
+        [
+          "Yrsainir",
+          "Act 1 final boss, Fire Elemental zone",
+          "400K in the spreadsheet, 800K on EvitaniaOnlineDB",
+          "350"
+        ],
+        ["Ice Mammoth", "Act 2, Yeti zone", "840K in the spreadsheet, 2.4M on EvitaniaOnlineDB", "700"],
+        ["Jotunn", "Act 2, Troll zone", "4.8M", "900"],
+        ["Maevath", "Act 2 final boss, Draugr zone", "50M", "1,900"],
+        ["Zhai Halud's Gate", "Act 3", "400M", "5,000"],
+        ["Choissiadyr", "Act 3, second boss", "3.15B", "5,000"],
+        ["Hard Act 1 bosses", "Monsters there have 3M HP and 1.4K attack", "100M", "2,000"],
+        ["Hard Act 2 bosses", "Monsters there have 25M HP and 3K attack", "1.25B", "4,500"],
+        [
+          "Nightmare",
+          "Monsters only so far",
+          "300M in Act 1; Act 2 is 450M on the wiki, 2.5B on EvitaniaOnlineDB",
+          "4,100 and 5,100"
+        ]
+      ]
+    },
+    {
+      "title": "Monsters by zone",
+      "cols": ["Zone", "Monster", "HP", "Attack"],
+      "rows": [
+        ["Act 1, 1", "Boar", "3", 0],
+        ["Act 1, 2", "Wasp", "6", 1],
+        ["Act 1, 3", "Pebble", "21", 1],
+        ["Act 1, 4", "Stump", "40", 10],
+        ["Act 1, 5", "Plant", "80", 13],
+        ["Act 1, 6", "Wolf", "480", 25],
+        ["Act 1, 7", "Gnoll", "1,000", 35],
+        ["Act 1, 8", "Animated Armor", "2,000", 100],
+        ["Act 1, 9", "Crab", "4,000", 140],
+        ["Act 1, 10", "Bat", "7,000", 85],
+        ["Act 1, 11", "Kobold", "9,000", 95],
+        ["Act 1, 12", "Weird Book", "12,000", 95],
+        ["Act 1, 13", "Slime Cube", "15,000", 105],
+        ["Act 1, 14", "Fire Elemental", "20,000", 115],
+        ["Act 2, 1", "Iceboar", "40,000", 200],
+        ["Act 2, 2", "Helmet", "80,000", 200],
+        ["Act 2, 3", "Ghost", "140,000", 200],
+        ["Act 2, 4", "Yeti", "240,000", 262],
+        ["Act 2, 5", "Ratatoskr", "320,000", 277],
+        ["Act 2, 6", "Watch", "382,000", 327],
+        ["Act 2, 7", "Snowman", "456,000", 365],
+        ["Act 2, 8", "Troll", "567,000", 438],
+        ["Act 2, 9", "Penguin", "624,000", 600],
+        ["Act 2, 10", "Glass", "686,000", 800],
+        ["Act 2, 11", "Matryoshka", "755,000", "1,000"],
+        ["Act 2, 12", "Draugr", "831,000", "1,200"],
+        ["Act 3, 1", "Sun Boy", "1.5M", "1,500"],
+        ["Act 3, 2", "Dung Beetle", "2.5M", "1,700"],
+        ["Act 3, 3", "Cactus Mommy", "4.5M", "1,900"],
+        ["Act 3, 4", "Kangaroo", "6.5M", "2,200"],
+        ["Act 3, 5", "Fez", "11.5M", "2,500"],
+        ["Act 3, 6", "Winged Serpent", "15.8M", "2,700"],
+        ["Act 3, 7", "Bandiff", "22.3M", "2,900"],
+        ["Act 3, 8", "Beetleman", "31.5M", ""]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "name": "Hourglass",
+  "tiers": [
+    {
+      "req": "Hourglass started in Act 3 and every generator before Liquid Glass at level 50.",
+      "basis": "Guide",
+      "source": ["ImeniaHG"]
+    },
+    {
+      "req": "Liquid Glass, Limestone Mass, Pristine Glass, Cromlech Bricks and Condensed Vortex at level 100, in that order.",
+      "basis": "Guide",
+      "source": ["ImeniaHG"]
+    },
+    {
+      "req": "Hourglass level 2 (100b sand): upgrades open, tier-one upgrades complete.",
+      "basis": "Guide",
+      "source": ["PiwuHG", "ImeniaHG"]
+    },
+    {
+      "req": "Hourglass level 3 (100Qa sand): Timeline open. Reset at once and spend the first 10 infinity on three upgrades.",
+      "basis": "Guide",
+      "source": ["ImeniaHG", "PiwuHG"]
+    },
+    {
+      "req": "Hourglass level 5: Rifts open, which outpace engine gains.",
+      "basis": "Game data",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Hourglass level 7: Echo, Dragons, Rebirth and Secret Knowledge open, and with them Restoration of Eternity (three more tabs, 15 new generators, new rifts and gem-shop items; added in 0.320.0).",
+      "basis": "Game data",
+      "source": ["DBHG", "Patch"]
+    },
+    {
+      "req": "Upgrade tier 11 reached (needs the Golden Claw generator).",
+      "basis": "Game data",
+      "source": ["PiwuHG", "Patch"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Hourglass rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        [
+          "Generators",
+          "Each newer generator makes the older ones obsolete; put sand into the latest. Generator speed doubles at levels 25, 50, 100, 200, 300 and so on.",
+          "Guide",
+          ["PiwuHG"]
+        ],
+        [
+          "Generator order",
+          "Sandstone Sample, Glass Sample, Water Sample, Clay Block, Bit of Knowledge, Liquid Glass, Limestone Mass, Pristine Glass, Cromlech Bricks, Condensed Vortex, Sol Essence, Locked Orery, Golden Bit, Golden Scales, Golden Claw.",
+          "Game data",
+          ["PiwuHG"]
+        ],
+        [
+          "Upgrades",
+          "Buy and max every upgrade in a tier before the next. A timeline reset also resets upgrades. Timeline engine gains matter most.",
+          "Guide",
+          ["PiwuHG"]
+        ],
+        [
+          "Gems",
+          "Generator Speed first; until Hourglass level 3 it is the only gem upgrade that does anything. Then Timeline Engine, Awakening Amplifier, Rift Worker.",
+          "Guide",
+          ["ImeniaHG", "PiwuHG"]
+        ],
+        [
+          "Cards",
+          "The Bandiff card multiplies sand generation and the Beetleman card the timeline engine.",
+          "Game data",
+          ["PiwuHG"]
+        ],
+        [
+          "Act 3 hourglasses",
+          "Time-skip hourglass items cannot be used in Act 3 until its final boss exists and is beaten.",
+          "Game data",
+          ["FAQ"]
+        ],
+        [
+          "Level costs",
+          "EvitaniaOnlineDB lists sand for levels 2 to 8 as 1e9, 1e15, 1e24, 1e36, 1e51, 1e74 and 1e120. Piwu's guide gives 100b and 100Qa for levels 2 and 3, so check the in-game figure.",
+          "Game data",
+          ["DBHG", "PiwuHG"]
+        ],
+        [
+          "Pace",
+          "Level 4 is the last cheap step: level 5 costs twelve orders of magnitude more. Go past 4 only with spare sand.",
+          "Guide",
+          ["DBHG"]
+        ],
+        [
+          "Time-skip items",
+          "A time-skip hourglass advances only the active character: combat, mining, woodcutting and ash per kill. It does not advance other characters, the Smeltery, Bonfire ash from fuel, the pet egg or curio coins. Boss chests hold one 1 time in 10.",
+          "Game data",
+          ["DBHG"]
+        ],
+        [
+          "Talents",
+          "From levels 12 and 16 the Hourglass talents also cost Act 3 wood and ore: about 280k wood and 550k ore to reach level 70 (a 700% bonus). Buy diamond upgrades top to bottom, left to right.",
+          "Guide",
+          ["HGTal"]
+        ],
+        [
+          "Level 7",
+          "Rebirth rolls one Timeline Output or Sand item every 2 hours; 3 merge into 1 of the next tier (5 into 2 with the upgrade), in 9 slots that grow to 25. Secret Knowledge has up to 6 pages of up to 6 slots, and only the active page counts.",
+          "Game data",
+          ["DBHG"]
+        ]
+      ]
+    }
+  ]
+}

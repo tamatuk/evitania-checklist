@@ -1,25 +1,73 @@
-"""Builds ../index.html from data.py, template.html and the icons folder.
+"""Builds ../index.html from the data folder, template.html and the icons folder.
 
 Run: python3 src/build.py   (needs Pillow)
 """
 import sys, json, io, os
 HERE = os.path.dirname(os.path.abspath(__file__))
-code = open(os.path.join(HERE, "data.py"), encoding="utf-8").read()
-ns = {}
-exec(code, ns)
-SYS, SRC, USED = ns["SYS"], ns["SRC"], ns["USED"]
+DATA = os.path.join(HERE, "data")
 
-def fix(s):
-    if isinstance(s, str):
-        s = s.replace("Power, your class attribute (Strength, Dexterity or Intelligence), More Damage, Dice and Damage Abuse",
-                      "Power Training, your class attribute (Strength, Dexterity or Intelligence Training), More Damage, Dice and Damage Abuse")
-    return s
+def fail(msg):
+    """Stop the build, naming the file and the broken reference or count."""
+    sys.exit("build failed: " + msg)
+
+def load(name):
+    """The parsed JSON of data/<name>; a missing file or invalid JSON fails naming it."""
+    try:
+        with open(os.path.join(DATA, name), encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError) as e:
+        fail("data/%s: %s" % (name, e))
+
+def cite(keys, where):
+    """The source names of sources.json keys, joined with "; "; an unknown key fails naming `where`."""
+    if not isinstance(keys, list):
+        fail("%s: source %r is not a list of sources.json keys" % (where, keys))
+    for k in keys:
+        if k not in SRC:
+            fail("%s: source key %r is not in sources.json" % (where, k))
+    return "; ".join(SRC[k]["name"] for k in keys)
+
+def load_systems(order):
+    """(file name, system) pairs of data/systems/*.json in `order` (expect's keys), each matched by its "name"; a file
+    with no expect key, an expect key with no file, or a table row with more or fewer cells than its cols fails."""
+    by = {}
+    for fn in sorted(os.listdir(os.path.join(DATA, "systems"))):
+        if not fn.endswith(".json"): continue
+        f_ = "systems/" + fn
+        s_ = load(f_)
+        if s_["name"] in by: fail("%s: system %r is also in %s" % (f_, s_["name"], by[s_["name"]][0]))
+        if s_["name"] not in order: fail("%s: system %r has no expect key in stages.json" % (f_, s_["name"]))
+        for t in s_["tables"]:
+            for j, row in enumerate(t["rows"]):
+                if len(row) != len(t["cols"]):
+                    fail("%s: table %r row %d has %d cells for %d cols"
+                         % (f_, t["title"], j + 1, len(row), len(t["cols"])))
+        by[s_["name"]] = (f_, s_)
+    for n_ in order:
+        if n_ not in by: fail("stages.json: expect key %r has no file in data/systems" % n_)
+    return [by[n_] for n_ in order]
+
+def check_expect(expect, stages):
+    """Each expect row has one number per stage; fails naming the system."""
+    for n_, row in expect.items():
+        if len(row) != len(stages) or not all(isinstance(x, int) for x in row):
+            fail("stages.json: expect %r needs %d numbers, one per stage, has %r" % (n_, len(stages), row))
+
+SRC = load("sources.json")
+ST = load("stages.json")
+check_expect(ST["expect"], ST["stages"])
+SYS = load_systems(list(ST["expect"]))
+DAILY = load("daily.json")
+ROSTER = load("roster.json")
 
 systems = []
-for name, tiers, tables in SYS:
-    systems.append({"name": name,
-        "tiers": [{"req": fix(r), "basis": b, "source": s} for r, b, s in tiers],
-        "tables": [{"title": t, "cols": c, "rows": [[fix(x) for x in row] for row in rows]} for t, c, rows in tables]})
+for f_, s_ in SYS:
+    systems.append({"name": s_["name"],
+        "tiers": [{"req": t["req"], "basis": t["basis"], "source": cite(t["source"], f_)} for t in s_["tiers"]],
+        "tables": [{"title": t["title"], "cols": t["cols"],
+                    "rows": [[cite(x, f_) if c == "Source" else x for c, x in zip(t["cols"], row)]
+                             for row in t["rows"]]}
+                   for t in s_["tables"]]})
 
 about = [
  ["What it is", "A rule checklist for Evitania Online, filled in by hand. Your stage sets which tier of each system is expected, and each system lists its tiers."],
@@ -33,14 +81,15 @@ about = [
  ["Not covered", "Guild research, the Tower, fishing (event mini-game so far) and the Hourglass Restoration of Eternity tabs have no tiers here: the guides for them are thin or not written yet. Trinkets have a first draft."],
 ]
 DAILY_IDS = ["quest", "login", "boss-keys", "vendor-1", "vendor-2", "vendor-3", "tower", "mail-codes", "cost-cruncher", "bonfire-fuel", "slyme-egg", "fate-spiral", "curio-coins", "event-dungeons", "guild-donations"]
-assert len(DAILY_IDS) == len(ns["DAILY"]) == len(set(DAILY_IDS))
+assert len(DAILY_IDS) == len(DAILY) == len(set(DAILY_IDS))
 # append-only: positions are part of the share-link format
 SHARE_SYS = ["Hunter", "Bonfire", "Ash", "Sacrifice", "Pusher gear", "Gatherer gear", "Gathering", "Gems", "Pets", "Cards", "Runes", "Engineer", "Curio", "Hourglass", "Characters", "Trinkets"]
 SHARE_DAILY = ["quest", "login", "boss-keys", "vendor-1", "vendor-2", "vendor-3", "tower", "mail-codes", "cost-cruncher", "bonfire-fuel", "slyme-egg", "fate-spiral", "curio-coins", "event-dungeons", "guild-donations"]
-assert set(SHARE_SYS) == {x[0] for x in SYS} and set(SHARE_DAILY) == set(DAILY_IDS)
-data = {"roster": ns["ROSTER"], "systems": systems, "stages": ns["STAGES"], "reached": ns["REACHED"], "expect": ns["EXPECT"],
-        "daily": [list(r) + [i] for r, i in zip(ns["DAILY"], DAILY_IDS)], "shareSys": SHARE_SYS, "shareDaily": SHARE_DAILY, "about": about,
-        "sources": [{"name": SRC[k][0], "where": SRC[k][1], "link": SRC[k][2], "asof": SRC[k][3]} for k in SRC if k in USED]}
+assert set(SHARE_SYS) == {s_["name"] for _, s_ in SYS} and set(SHARE_DAILY) == set(DAILY_IDS)
+data = {"roster": [[r["topic"], r["rule"], r["basis"], cite(r["source"], "roster.json")] for r in ROSTER],
+        "systems": systems, "stages": ST["stages"], "reached": ST["reached"], "expect": ST["expect"],
+        "daily": [[r["when"], r["task"], r["why"], cite(r["source"], "daily.json"), i] for r, i in zip(DAILY, DAILY_IDS)],
+        "shareSys": SHARE_SYS, "shareDaily": SHARE_DAILY, "about": about, "sources": [{k: s_[k] for k in ("name", "where", "link", "asof")} for s_ in SRC.values()]}
 
 
 import os, base64, re

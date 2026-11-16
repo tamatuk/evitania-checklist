@@ -1,0 +1,197 @@
+{
+  "name": "Trinkets",
+  "tiers": [
+    {
+      "req": "An event dungeon cleared at a tier your attack allows, and a first trinket equipped.",
+      "basis": "Estimate",
+      "source": ["Patch"]
+    },
+    {
+      "req": "A trinket on each character you play with the main stat its role wants (Trinket by role): ATK on the pusher, All EXP on farmers and the leveller, mining or woodcutting power on a gatherer.",
+      "basis": "Guide",
+      "source": ["SteamTrinkets", "SteamTrinketsEnh"]
+    },
+    {
+      "req": "Main trinket levelled with Upgrade Flasks to its maximum.",
+      "basis": "Estimate",
+      "source": ["Trinkets", "Patch"]
+    },
+    {
+      "req": "A max-level Legendary trinket reforged with the two stats you want guaranteed.",
+      "basis": "Estimate",
+      "source": ["Patch"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Trinket rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        [
+          "What they are",
+          "Added in 0.321.0: an item for the one trinket slot, with a main stat and up to four sub-stats. Trinkets drop only while an event runs, from every tier of its dungeons, with a bonus for running solo. The event shop, monthly and login rewards have none, so they can be missed between events.",
+          "Game data",
+          ["Patch", "Wiki"]
+        ],
+        [
+          "Dungeon gates",
+          "Dungeon tiers are gated by attack; the top tier needs 10M since 0.323.1, and zone-bound bonuses such as the Bonfire's heated-zone attack no longer count.",
+          "Game data",
+          ["Patch"]
+        ],
+        [
+          "Main stats",
+          "HP, ATK, Gold %, All EXP %, mining power or woodcutting power. Each event has four pieces of rising size, and the main stat's size follows the piece and its level (Trinket pieces). All EXP also covers mining and woodcutting XP. The main stat cannot be rerolled.",
+          "Game data",
+          ["Wiki", "Trinkets"]
+        ],
+        [
+          "Same trinket, different values",
+          "Two trinkets with the same stat but different values are different pieces or levels. Bountiful Tusk, Generous Cornucopia and Plentiful Bihorn start at 20, 30 and 40 mining power and gain with level, so a level 5 Cornucopia shows 40. Keep the largest piece for each stat and feed the rest into it.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Sub-stats",
+          "There are 12: Offline Gains %, Drop Quantity, crit chance, crit damage, MEN, CON, STR, DEX, INT, HP %, mining power % and woodcutting power %. A Luminor rolls Offline Gains at 1% to 6% and Drop Quantity at 2 to 12. A sub-stat upgrades on every third trinket level. Which ones to want depends on the role: see Trinket by role.",
+          "Game data",
+          ["Wiki", "Trinkets"]
+        ],
+        [
+          "Swapping",
+          "There is one trinket slot, and presets switch runes and curios but not trinkets. Put the ATK or HP trinket on by hand for bosses, the tower and dungeons, and the farming one back on before you park the character.",
+          "Game data",
+          ["Patch"]
+        ],
+        [
+          "Levelling",
+          "An Upgrade Flask is 10 XP; other trinkets can be fed in too. Flasks are spent first. Disassembling returns the material minus 20%.",
+          "Game data",
+          ["Trinkets", "Patch"]
+        ],
+        [
+          "Reforge",
+          "Since 0.323.0 any trinket can be reforged with Reforge Feathers, and a max-level Legendary can lock up to two stats for guaranteed upgrades; you may keep the old layout.",
+          "Game data",
+          ["Patch"]
+        ],
+        [
+          "Harvest trinkets",
+          "Harvest dungeons (to December 2) drop Bountiful Tusk, Generous Cornucopia, Plentiful Bihorn and Abundant Overgrowth.",
+          "Game data",
+          ["Patch"]
+        ]
+      ]
+    },
+    {
+      "title": "Trinket by role",
+      "cols": ["Role", "Main stat", "Sub-stats", "When to wear it", "Basis", "Source"],
+      "rows": [
+        [
+          "Pusher",
+          "ATK; HP instead for a boss that kills you",
+          "Crit chance and crit damage",
+          "Bosses, the tower and dungeons. Presets do not switch trinkets, so swap it on by hand before the fight.",
+          "Player report",
+          ["SteamTrinkets", "SteamTrinketsEnh", "Patch"]
+        ],
+        [
+          "Material farmer",
+          "All EXP",
+          "Offline Gains",
+          "While it farms, parked or online",
+          "Player report",
+          ["SteamTrinkets"]
+        ],
+        [
+          "Rare-drop farmer",
+          "All EXP",
+          "Drop Quantity, then Offline Gains",
+          "While it opens boss chests and farms cards. Drop Quantity is only a sub-stat and counts only for boss chests and cards.",
+          "Guide",
+          ["SteamDQ", "SteamTrinkets"]
+        ],
+        ["Leveller", "All EXP", "Offline Gains", "All the time", "Player report", ["SteamTrinkets"]],
+        [
+          "Gatherer",
+          "Mining or woodcutting power, matching its skill; else All EXP, which also covers gathering XP",
+          "Offline Gains, mining or woodcutting power %",
+          "While it gathers",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Any character parked offline",
+          "Its farming stat: All EXP, or a gatherer's power",
+          "Offline Gains first",
+          "While parked. A pusher swaps its ATK trinket for the farming one before it logs off.",
+          "Player report",
+          ["SteamTrinkets", "SteamTrinketsEnh"]
+        ],
+        [
+          "Gold",
+          "Filler on a farmer until an All EXP trinket drops",
+          "",
+          "No source recommends Gold for any role, but it beats an empty slot",
+          "Estimate",
+          []
+        ]
+      ]
+    },
+    {
+      "title": "Trinket pieces",
+      "cols": [
+        "Piece (Halloween / Harvest)",
+        "Max level",
+        "Sub-stats",
+        "All EXP %",
+        "Gold %",
+        "ATK",
+        "HP",
+        "Mining or woodcutting power (Halloween / Harvest)"
+      ],
+      "rows": [
+        [
+          "Black Candle / Bountiful Tusk",
+          6,
+          1,
+          "16 to 20.8",
+          "12 to 16.8",
+          "12 to 16.8",
+          "40 to 64",
+          "40 to 56 / 20 to 28"
+        ],
+        [
+          "Candlestick / Generous Cornucopia",
+          9,
+          2,
+          "24 to 34.8",
+          "18 to 28.8",
+          "18 to 28.8",
+          "60 to 114",
+          "60 to 96 / 30 to 48"
+        ],
+        [
+          "Candelabra / Plentiful Bihorn",
+          12,
+          3,
+          "32 to 51.2",
+          "24 to 43.2",
+          "24 to 43.2",
+          "80 to 176",
+          "80 to 144 / 40 to 72"
+        ],
+        [
+          "Luminor / Abundant Overgrowth",
+          15,
+          4,
+          "40 to 70",
+          "30 to 60",
+          "30 to 60",
+          "100 to 250",
+          "100 to 200 / 50 to 100"
+        ]
+      ]
+    }
+  ]
+}
