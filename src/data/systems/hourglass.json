@@ -115,19 +115,19 @@
         ],
         [
           "Talents",
-          "From levels 12 and 16 the Hourglass talents also cost Act 3 wood and ore: about 280k wood and 550k ore to reach level 70 (a 700% bonus). Buy diamond upgrades top to bottom, left to right. Take talents 12 and 16 only once you hold the wood and ore (2026-07-20). The last Generator Speed talent can be skipped (2026-08-08). The second sand rift is weak next to timeline gains (2026-10-30). From level 7 focus on Echoes until the Golden dragon (2026-11-02). The level 7 unlock is the small bar under the hourglass (2026-11-16). The talent order after level 7 is posted only as screenshots in the talents thread (Source).",
+          "From levels 12 and 16 the Hourglass talents also cost Act 3 wood and ore: about 280k wood and 550k ore to reach level 70 (a 700% bonus). Buy diamond upgrades top to bottom, left to right. Take talents 12 and 16 only once you hold the wood and ore (2026-07-20). The last Generator Speed talent can be skipped (2026-08-08). The second sand rift is weak next to timeline gains (2026-10-30). From level 7 focus on Echoes until the Golden dragon (2026-11-02). The level 7 unlock is the small bar under the hourglass (2026-11-16). The talent order after level 7 is posted only as screenshots, in the talents thread this row cites.",
           "Guide",
           ["HGTal"]
         ],
         [
           "Level 7",
-          "Rebirth is the 9th Hourglass slot (the white dragon). It rolls one Timeline Output or Sand item every 2 hours per EvitaniaOnlineDB, or one token an hour per the FAQ, with tokens building up offline; both unverified until checked in game. 3 items merge into 1 of the next tier (5 into 2 with the upgrade). A sand tile gives about +1.02% sand and a timeline engine output tile about +1.01%. Its 5x5 grid starts with 3x3 open; the rest unlocks with cells in the Eternity tree. Secret Knowledge has up to 6 pages of up to 6 slots, and only the active page counts.",
+          "Rebirth is the 9th Hourglass slot, which the FAQ calls the white dragon though it is no dragon of the Dragons row. It rolls one Timeline Output or Sand item every 2 hours per EvitaniaOnlineDB, or one token an hour per the FAQ, with tokens building up offline; both unverified until checked in game. 3 items merge into 1 of the next tier (5 into 2 with the upgrade). A sand tile gives about +1.02% sand and a timeline engine output tile about +1.01%. Its 5x5 grid starts with 3x3 open; the rest unlocks with cells in the Eternity tree. Secret Knowledge has up to 6 pages of up to 6 slots, and only the active page counts.",
           "Game data",
           ["DBHG", "FAQ"]
         ],
         [
           "Dragons",
-          "Five dragons: Red (sand income), Blue (timeline engine), Green (upgrade time), Gold (1.2e10 Echoes; strengthens the other three) and Black (5.1e19 Echoes). Every 25 dragon levels is a x2 milestone. Train a Red or Blue milestone as soon as it takes no longer than the next Green one, else train Green; rough pacing is Red at about Green / 2 + 25, and Blue 25 at Green 250, 50 at 550 and 75 at about 850. The Golden dragon is a big speed-up, and the planner's Solo level mode suits active play. Dragon Milestones is a gem-shop item; since 0.323.2 the Black Dragon gets no milestones.",
+          "Five dragons: Red (sand income), Blue (timeline engine), Green (upgrade time), Golden (1.2e10 Echoes; strengthens the other three) and Black (5.1e19 Echoes). Every 25 dragon levels is a x2 milestone. Train a Red or Blue milestone as soon as it takes no longer than the next Green one, else train Green; rough pacing is Red at about Green / 2 + 25, and Blue 25 at Green 250, 50 at 550 and 75 at about 850. The Golden dragon is a big speed-up, and the planner's Solo level mode suits active play. Dragon Milestones is a gem-shop item; since 0.323.2 the Black Dragon gets no milestones.",
           "Guide",
           ["Dragons", "DBHG", "FAQ", "Patch"]
         ],
