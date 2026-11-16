@@ -17,7 +17,7 @@
       "source": ["DBTips", "Wiki"]
     },
     {
-      "req": "Stump and Pebble cards for woodcutting and mining power, and the Watch card for physical defence before Jotunn (x1.03 per star).",
+      "req": "Stump, Pebble and Watch cards obtained.",
       "basis": "Estimate",
       "source": ["MTFarm", "MTAct2", "Dawnk", "Wiki"]
     },
@@ -42,7 +42,7 @@
       "source": ["PiwuHG"]
     },
     {
-      "req": "Engineer 4 Star Cards bought and the key cards (Hard cards, Snowman, Cactus Mommy, Crab Miner, Helmet) pushed toward 4 stars.",
+      "req": "Act 1 Hard, Act 2 Hard and Snowman cards at 4 stars.",
       "basis": "Estimate",
       "source": ["Wiki"]
     }
@@ -53,6 +53,12 @@
       "cols": ["Topic", "Rule", "Basis", "Source"],
       "rows": [
         ["Alts", "Use alts to farm cards in lower zones, and prioritise high-star cards.", "Guide", ["DBTips"]],
+        [
+          "Gathering and defence cards",
+          "The Stump and Pebble cards add woodcutting and mining power; the Watch card adds physical defence (x1.03 per star) before Jotunn.",
+          "Estimate",
+          ["MTFarm", "MTAct2", "Dawnk", "Wiki"]
+        ],
         [
           "Drop Quantity",
           "Each point of Drop Quantity adds 1% to rare-loot chances: the rate is multiplied by 1 + DQ/100.",
@@ -69,6 +75,12 @@
           "Stars",
           "Cards needed for 0 to 4 stars: 1, 8, 24, 60, 360 in Act 1; 1, 12, 48, 100, 600 in Act 2 and for Hard cards; 1, 18, 72, 150, 900 in Act 3. The fourth star needs the Engineer Sun Scroll upgrade 4 Star Cards.",
           "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Other 4-star cards",
+          "Besides the Hard and Snowman cards, Cactus Mommy, Crab Miner and Helmet are worth taking to 4 stars.",
+          "Estimate",
           ["Wiki"]
         ],
         [

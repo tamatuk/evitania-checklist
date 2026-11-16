@@ -12,17 +12,17 @@
       "source": ["PiwuGems"]
     },
     {
-      "req": "Daily Fate Spiral bought on reaching Act 3 (900 gems, saved in advance).",
+      "req": "Daily Fate Spiral bought (900 gems).",
       "basis": "Guide",
       "source": ["PiwuGems"]
     },
     {
-      "req": "Engineer Slot Upgrades bought as each resource unlocks (1,250 gems).",
+      "req": "All four Engineer Slot Upgrades bought (1,250 gems).",
       "basis": "Guide",
       "source": ["PiwuGems"]
     },
     {
-      "req": "Remaining rune sockets bought as you build runewords (4,500 gems).",
+      "req": "All 9 rune sockets bought (4,500 gems for the last six).",
       "basis": "Guide",
       "source": ["PiwuGems"]
     },
@@ -42,12 +42,12 @@
       "source": ["PiwuGems"]
     },
     {
-      "req": "Curio inventory at 21-22 slots.",
+      "req": "Curio inventory at 21 slots or more.",
       "basis": "Guide",
       "source": ["PiwuGems"]
     },
     {
-      "req": "Hourglass Generator Speed at level 2 or more.",
+      "req": "Hourglass Generator Speed at level 2 or more (550 gems).",
       "basis": "Guide",
       "source": ["PiwuGems"]
     },
@@ -57,7 +57,7 @@
       "source": ["PiwuGems"]
     },
     {
-      "req": "Timeline Engine Speed at level 2.",
+      "req": "Timeline Engine Speed at level 2 or more (650 gems).",
       "basis": "Guide",
       "source": ["PiwuGems"]
     },
@@ -84,12 +84,14 @@
           "Guide",
           ["PiwuGems"]
         ],
+        ["Socket timing", "Buy the remaining rune sockets as you build runewords.", "Guide", ["PiwuGems"]],
         [
           "Fate Spiral",
           "Keep 900 gems saved before entering Act 3. A chest costs 80 gems, so the upgrade pays for itself in about 12 days.",
           "Guide",
           ["PiwuGems"]
         ],
+        ["Slot timing", "Buy each Engineer Slot Upgrade as its resource unlocks.", "Guide", ["PiwuGems"]],
         ["Skip", "The rest of the Upgrades tab can be skipped. Do not buy ash generation.", "Guide", ["PiwuGems"]],
         ["Income", "The daily quest gives 60 gems and many achievements pay 30.", "Game data", ["DBTips"]],
         [

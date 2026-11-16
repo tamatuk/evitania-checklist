@@ -2,7 +2,7 @@
   "name": "Runes",
   "tiers": [
     {
-      "req": "Rune system unlocked through the quest line and the free quest runeword slotted (top-left slots).",
+      "req": "Rune system unlocked and the GOR + MU + HAS runeword from the Go to Act 2 Town quest slotted (top-left slots).",
       "basis": "Guide",
       "source": ["MTAct2", "FAQ"]
     },
@@ -12,27 +12,27 @@
       "source": ["PiwuGems", "MTAct2", "Wiki"]
     },
     {
-      "req": "TYR + SUR + VEX + LUM: +50% EXP, +300 attack, +5% offline gains.",
+      "req": "TYR + SUR + VEX + LUM runeword active: +50% EXP, +300 attack, +5% offline gains.",
       "basis": "Estimate",
       "source": ["Miothan"]
     },
     {
-      "req": "DOT + WIR + YUR + SKO: +100 mining and woodcutting power, +40 multiloot. Needs Act 1 Hard for YUR.",
+      "req": "DOT + WIR + YUR + SKO runeword active: +100 mining and woodcutting power, +40 multiloot. Needs Act 1 Hard for YUR.",
       "basis": "Estimate",
       "source": ["Miothan"]
     },
     {
-      "req": "APEX + SIRC + WER: +10% crit chance, +60% crit damage, +5 Drop Quantity. Needs Act 1 Hard for WER.",
+      "req": "APEX + SIRC + WER runeword active: +10% crit chance, +60% crit damage, +5 Drop Quantity. Needs Act 1 Hard for WER.",
       "basis": "Estimate",
       "source": ["Miothan"]
     },
     {
-      "req": "FAL + FAL + TES + WAR: +50% gold, +400 HP, +10 Drop Quantity. Needs Act 3 for TES and WAR.",
+      "req": "FAL + FAL + TES + WAR runeword active: +50% gold, +400 HP, +10 Drop Quantity. Needs Act 3 for TES and WAR.",
       "basis": "Estimate",
       "source": ["Miothan"]
     },
     {
-      "req": "WAR + YUR + GRO + MIN + TYR + FAL: x1.5 attack, +10% offline gains, +20 Drop Quantity.",
+      "req": "WAR + YUR + GRO + MIN + TYR + FAL runeword active: x1.5 attack, +10% offline gains, +20 Drop Quantity.",
       "basis": "Estimate",
       "source": ["Miothan"]
     }

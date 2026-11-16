@@ -2,17 +2,17 @@
   "name": "Characters",
   "tiers": [
     {
-      "req": "First character is a Warrior with its class skills (green nodes) unlocked first.",
+      "req": "A Warrior with all class-skill nodes (green) taken.",
       "basis": "Guide",
       "source": ["DBTips", "PiwuWar", "FAQ"]
     },
     {
-      "req": "Second character made. The main pushes; the alt farms lower zones for cards, materials, gold and Hunter levels.",
+      "req": "Second character made.",
       "basis": "Guide",
       "source": ["DBTips"]
     },
     {
-      "req": "Third slot used (opens after Yrsainir). The roster has at least one Warrior and one Rogue.",
+      "req": "Third slot used (opens after Yrsainir).",
       "basis": "Guide",
       "source": ["DBTips", "FAQ"]
     },
@@ -48,6 +48,19 @@
           "Guide",
           ["PiwuWar"]
         ],
+        [
+          "First character",
+          "Make the first character a Warrior and take its class skills (green nodes) first.",
+          "Guide",
+          ["DBTips", "PiwuWar", "FAQ"]
+        ],
+        [
+          "Main and alts",
+          "The main pushes; the alt farms lower zones for cards, materials, gold and Hunter levels.",
+          "Guide",
+          ["DBTips"]
+        ],
+        ["Roster mix", "Have at least one Warrior and one Rogue in the roster.", "Guide", ["DBTips", "FAQ"]],
         [
           "Crit first",
           "Take crit rate and crit damage over Magic Find and EXP until about level 70; more kills an hour beats those nodes.",

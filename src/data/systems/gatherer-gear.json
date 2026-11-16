@@ -22,7 +22,7 @@
       "source": ["Wiki", "MTAct2", "JTGather"]
     },
     {
-      "req": "Thorium tools enhanced to at least the level your steel or iron tools had, so nothing was lost by switching.",
+      "req": "Thorium axe and pickaxe enhanced until their durability reaches 0 (X is the soft target).",
       "basis": "Estimate",
       "source": ["Wiki"]
     },
@@ -32,7 +32,7 @@
       "source": ["JTGather", "Wiki"]
     },
     {
-      "req": "Sunstone tools enhanced toward XV, the cap.",
+      "req": "Sunstone axe and pickaxe at XV, the cap.",
       "basis": "Estimate",
       "source": ["Wiki"]
     }

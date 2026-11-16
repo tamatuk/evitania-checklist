@@ -7,22 +7,22 @@
       "source": ["ImeniaHG"]
     },
     {
-      "req": "Liquid Glass, Limestone Mass, Pristine Glass, Cromlech Bricks and Condensed Vortex at level 100, in that order.",
+      "req": "Liquid Glass, Limestone Mass, Pristine Glass, Cromlech Bricks and Condensed Vortex at level 100.",
       "basis": "Guide",
       "source": ["ImeniaHG"]
     },
     {
-      "req": "Hourglass level 2 (100b sand): upgrades open, tier-one upgrades complete.",
+      "req": "Hourglass level 2: every upgrade in the first upgrade row maxed.",
       "basis": "Guide",
       "source": ["PiwuHG", "ImeniaHG"]
     },
     {
-      "req": "Hourglass level 3 (100Qa sand): Timeline open. Reset at once and spend the first 10 infinity on three upgrades.",
+      "req": "Hourglass level 3 (Timeline open) and the first timeline reset done.",
       "basis": "Guide",
       "source": ["ImeniaHG", "PiwuHG"]
     },
     {
-      "req": "Hourglass level 5: Rifts open, which outpace engine gains.",
+      "req": "Hourglass level 5: Rifts open.",
       "basis": "Game data",
       "source": ["PiwuGems"]
     },
@@ -60,6 +60,13 @@
           "Guide",
           ["PiwuHG"]
         ],
+        [
+          "First reset",
+          "Reset as soon as the Timeline opens and spend the first 10 infinity on three upgrades.",
+          "Guide",
+          ["ImeniaHG", "PiwuHG"]
+        ],
+        ["Rifts", "Once open, Rifts outpace engine gains.", "Guide", ["PiwuGems"]],
         [
           "Gems",
           "Generator Speed first; until Hourglass level 3 it is the only gem upgrade that does anything. Then Timeline Engine, Awakening Amplifier, Rift Worker.",
