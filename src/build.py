@@ -8,24 +8,49 @@ DATA = os.path.join(HERE, "data")
 
 def fail(msg):
     """Stop the build, naming the file and the broken reference or count."""
-    raise NotImplementedError
+    sys.exit("build failed: " + msg)
 
 def load(name):
     """The parsed JSON of data/<name>; a missing file or invalid JSON fails naming it."""
-    raise NotImplementedError
+    try:
+        with open(os.path.join(DATA, name), encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError) as e:
+        fail("data/%s: %s" % (name, e))
 
 def cite(keys, where):
     """The source names of sources.json keys, joined with "; "; an unknown key fails naming `where`."""
-    raise NotImplementedError
+    if not isinstance(keys, list):
+        fail("%s: source %r is not a list of sources.json keys" % (where, keys))
+    for k in keys:
+        if k not in SRC:
+            fail("%s: source key %r is not in sources.json" % (where, k))
+    return "; ".join(SRC[k]["name"] for k in keys)
 
 def load_systems(order):
     """(file name, system) pairs of data/systems/*.json in `order` (expect's keys), each matched by its "name"; a file
     with no expect key, an expect key with no file, or a table row with more or fewer cells than its cols fails."""
-    raise NotImplementedError
+    by = {}
+    for fn in sorted(os.listdir(os.path.join(DATA, "systems"))):
+        if not fn.endswith(".json"): continue
+        f_ = "systems/" + fn
+        s_ = load(f_)
+        if s_["name"] in by: fail("%s: system %r is also in %s" % (f_, s_["name"], by[s_["name"]][0]))
+        if s_["name"] not in order: fail("%s: system %r has no expect key in stages.json" % (f_, s_["name"]))
+        for t in s_["tables"]:
+            for j, row in enumerate(t["rows"]):
+                if len(row) != len(t["cols"]):
+                    fail("%s: table %r row %d has %d cells for %d cols" % (f_, t["title"], j + 1, len(row), len(t["cols"])))
+        by[s_["name"]] = (f_, s_)
+    for n_ in order:
+        if n_ not in by: fail("stages.json: expect key %r has no file in data/systems" % n_)
+    return [by[n_] for n_ in order]
 
 def check_expect(expect, stages):
     """Each expect row has one number per stage; fails naming the system."""
-    raise NotImplementedError
+    for n_, row in expect.items():
+        if len(row) != len(stages) or not all(isinstance(x, int) for x in row):
+            fail("stages.json: expect %r needs %d numbers, one per stage, has %r" % (n_, len(stages), row))
 
 SRC = load("sources.json")
 ST = load("stages.json")

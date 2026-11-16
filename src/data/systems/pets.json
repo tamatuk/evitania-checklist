@@ -1,0 +1,138 @@
+{
+  "name": "Pets",
+  "tiers": [
+    {
+      "req": "Bat pet claimed on every character (quest: Collect Bat Dust).",
+      "basis": "Guide",
+      "source": ["DBPets"]
+    },
+    {
+      "req": "Main pet at level 50, which makes its loot pickup instant. It levels only by picking up loot while equipped, so keep it on your fastest farmer; the one shortcut is a Canned Knowledge potion (monthly login days 5 and 6).",
+      "basis": "Game data",
+      "source": ["Treyex", "JTPets", "DBPets"]
+    },
+    {
+      "req": "Main pet at Tier 3 (500 food points in total), fed with Slymes.",
+      "basis": "Estimate",
+      "source": ["JTPets"]
+    },
+    {
+      "req": "Main pet at Tier 5 (2,400 food points in total): stat rerolls unlock.",
+      "basis": "Estimate",
+      "source": ["JTPets"]
+    },
+    {
+      "req": "Main pet at Tier 6, the current maximum (4,250 food points in total).",
+      "basis": "Estimate",
+      "source": ["JTPets"]
+    },
+    {
+      "req": "A Tier 5-6 pet with the right two stats for each activity you run.",
+      "basis": "Guide",
+      "source": ["PiwuPets"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Pet rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        [
+          "Tier up",
+          "A pet must be level 50 to tier up, and its level resets to 1 afterwards. Needs 150, 350, 700, 1,200 then 1,850 food points per step.",
+          "Game data",
+          ["JTPets"]
+        ],
+        [
+          "Food",
+          "A sacrificed pet gives 51-100 points at Tier 0, 101-150 at Tier 1, 151-200 at Tier 2, 251-300 at Tier 3, 401-450 at Tier 4, 601-650 at Tier 5 and 851-900 at Tier 6.",
+          "Game data",
+          ["JTPets"]
+        ],
+        [
+          "Slymes",
+          "Slymes (Act 2 town egg) are food only and cannot be tiered up. Rare Slymes give no extra without the Engineer feeding upgrades.",
+          "Game data",
+          ["JTPets", "FAQ"]
+        ],
+        [
+          "Rerolls",
+          "At Tier 5-6 one of the two secondary stats can be rerolled for 50 gems a roll; the result is random.",
+          "Game data",
+          ["JTPets"]
+        ],
+        [
+          "How pets level",
+          "A pet gets 1 XP for each item it picks up, however large the stack. Pickup has a cooldown that shrinks as it levels (4 seconds at first, none from level 40), so early levels cannot be rushed. The guide's figures are about 6 hours from 1 to 40 and at least 8 more to 50, from before a later rebalance. Chopping wood at full speed is a steady item supply.",
+          "Guide",
+          ["PetLvl"]
+        ],
+        [
+          "Feeding",
+          "A food pet levelled to 50 before it is fed gives 50 more points; Slymes also get the Engineer feeding bonus.",
+          "Game data",
+          ["Jivchik"]
+        ],
+        [
+          "Canned Knowledge",
+          "Sets a pet to level 50 at once; it must pick up one item for the level to count.",
+          "Game data",
+          ["JTPets"]
+        ],
+        [
+          "Slyme egg",
+          "The Act 2 town egg hatches a Slyme every 16 hours. A Slyme has two stats; other pets have four.",
+          "Game data",
+          ["DBPetG"]
+        ],
+        [
+          "Reroll pool",
+          "The rerolled secondary stat comes from: All EXP, Offline Gains, Mob Spawn Time, Woodcutting Power, Crit Damage.",
+          "Game data",
+          ["DBPetG"]
+        ],
+        [
+          "Removing a pet",
+          "Pets cannot be deleted; feed an unwanted one into a level 50 pet. Mony cannot be fed.",
+          "Game data",
+          ["DBPetG"]
+        ],
+        ["Transform", "150 gems changes a pet's look only.", "Game data", ["DBPetG"]]
+      ]
+    },
+    {
+      "title": "Pet stats by activity",
+      "cols": ["Mode", "Activity", "Stat 1", "Stat 2"],
+      "rows": [
+        ["Online", "Hunting, casual", "Mob spawn", "Drop Quantity or EXP"],
+        ["Online", "Low zone for materials, cards or runes", "Mob spawn", "Drop Quantity"],
+        ["Online", "Hunting during a mob-spawn event", "EXP", "Drop Quantity"],
+        ["Online", "Gold farming", "Mob spawn", "Gold multiplier"],
+        ["Offline", "Hunting", "Mob spawn", "Offline gains"],
+        ["Online", "Gathering, cannot one-shot", "Mining or woodcutting power", "EXP"],
+        ["Online", "Gathering, one-shot", "EXP", "Drop Quantity"],
+        ["Offline", "Gathering, cannot one-shot", "Mining or woodcutting power", "Offline gains"],
+        ["Offline", "Gathering, one-shot", "Offline gains", "Drop Quantity or EXP"],
+        ["Tower", "Over 100% crit", "Attack speed", "Crit damage"],
+        ["Tower", "Under 100% crit", "Crit rate", "Crit damage or attack speed"],
+        ["Dungeons", "Event dungeons and raids", "Crit chance", "Crit damage"],
+        ["Bosses", "Map bosses with keys", "Drop Quantity", "Anything"]
+      ]
+    },
+    {
+      "title": "Free pets",
+      "cols": ["Pet", "How to get it", "Odds", "Stats"],
+      "rows": [
+        ["Basic Bat", "Quest: Collect Bat Dust (Act 1)", "Sure", "Attack, defence, HP, accuracy"],
+        ["Pebble", "Mining", "Drop", "EXP bonus, mining power"],
+        ["Leaf Spirit", "Woodcutting", "Drop", "EXP bonus, woodcutting power"],
+        ["Golden Piggy", "Achievement", "Sure", "Gold multiplier, offline gains"],
+        ["Weird Book Pet", "Red Dragon boss", "1 in 100", "Accuracy, Magic Find"],
+        ["Ghosty Pet", "Maevath boss", "1 in 100", "Attack speed, crit damage"],
+        ["Beeb", "Any Act 1 monster", "1 in 5,000,000", ""],
+        ["Snowflake", "Act 2 monsters", "Drop", ""],
+        ["Steam pet", "Reach level 30 on a Steam Early Access account", "Sure", ""]
+      ]
+    }
+  ]
+}

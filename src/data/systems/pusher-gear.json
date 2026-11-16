@@ -1,0 +1,312 @@
+{
+  "name": "Pusher gear",
+  "tiers": [
+    {
+      "req": "Iron armor set and your class's iron weapon crafted at the Act 1 smith.",
+      "basis": "Game data",
+      "source": ["Wiki", "MTEnh"]
+    },
+    {
+      "req": "Act 1 accessories worn: Boss Amulet from Bringer of Death, Tower Ring from clearing 6 tower floors, Belt of Love from killing Yrsainir, and an Iron Belt crafted from 20 Steel Bars, 2 Death's Flowers and 2 Dragon Horns.",
+      "basis": "Game data",
+      "source": ["Wiki"]
+    },
+    {
+      "req": "Steel weapon crafted (300 Steel Bars, 10 Dragon Horns, 1 Norse Essence), with the iron armor enhanced to VII and the steel weapon to about X (also a 30-gem achievement).",
+      "basis": "Guide",
+      "source": ["MTEnh", "DBTips", "Wiki"]
+    },
+    {
+      "req": "Mammoth Ring obtained and equipped. It drops from Ice Mammoth chests (about 1 in 10), so keep spending keys there until it drops.",
+      "basis": "Player report",
+      "source": ["JotunnG", "ZZTabs"]
+    },
+    {
+      "req": "Thorium weapon in use: crafted and enhanced to within 2 steps of your steel weapon (about VIII against a steel X), which is where it overtakes it.",
+      "basis": "Game data",
+      "source": ["Wiki", "MTAct2"]
+    },
+    {
+      "req": "Thorium armor in use: all four pieces crafted and enhanced to III or more, which is where they overtake iron at VII.",
+      "basis": "Game data",
+      "source": ["Wiki", "MTAct2"]
+    },
+    {
+      "req": "Thorium set enhanced further, weapon first and then armor, to about 1,300 physical defence, the Act 2 guide's target for Maevath.",
+      "basis": "Guide",
+      "source": ["MTAct2"]
+    },
+    {
+      "req": "Nordic Amulet obtained and equipped. It drops from Jotunn chests (about 1 in 20).",
+      "basis": "Game data",
+      "source": ["Wiki", "ZZTabs"]
+    },
+    {
+      "req": "Sunstone weapon in use: crafted and enhanced to within 2 to 4 steps of your thorium weapon.",
+      "basis": "Game data",
+      "source": ["Wiki", "Jivchik"]
+    },
+    {
+      "req": "Sunstone armor in use: crafted and enhanced to within 7 steps of your thorium armor.",
+      "basis": "Game data",
+      "source": ["Wiki", "Jivchik"]
+    },
+    {
+      "req": "Infinite 1 armor crafted from Act 1 Hard materials (Grassy Stone 1) and worn with the Sunstone weapon.",
+      "basis": "Guide",
+      "source": ["Jivchik", "Wiki"]
+    },
+    {
+      "req": "Anomalous Ring obtained from Choissiadyr, the second Act 3 boss.",
+      "basis": "Game data",
+      "source": ["Wiki"]
+    },
+    {
+      "req": "Infinite 2 set crafted. Each piece consumes the matching Sunstone and Infinite 1 pieces plus Nightmare materials, and needs the Engineer Sun Scroll recipes.",
+      "basis": "Game data",
+      "source": ["Wiki", "Jivchik"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Rings, amulets and belts",
+      "cols": ["Item", "Slot", "From", "Fixed bonuses"],
+      "rows": [
+        ["Iron Belt", "Belt", "Crafted at the Act 1 smith", "Shorter monster respawn, +1 HP regen, +10 Drop Quantity"],
+        ["Belt of Love", "Belt", "Killing Yrsainir", "+10% crit damage, +10 woodcutting power, +10 Drop Quantity"],
+        ["Boss Amulet", "Amulet", "Bringer of Death chests", "+30% crit damage, +10 physical defence, +10 MEN"],
+        [
+          "Nordic Amulet",
+          "Amulet",
+          "Jotunn chests, about 1 in 20",
+          "+7% crit chance, +5% movement speed, +70 magic defence"
+        ],
+        ["Ring of STR", "Ring", "Killing Bringer of Death", "Not in the wiki data"],
+        [
+          "Tower Ring",
+          "Ring",
+          "Clearing 6 tower floors",
+          "+2% crit chance, +20% crit damage, +10 physical and magic defence"
+        ],
+        [
+          "Mammoth Ring",
+          "Ring",
+          "Ice Mammoth chests, about 1 in 10",
+          "+10% attack speed, +30% crit damage, +100 magic defence"
+        ],
+        ["Anomalous Ring", "Ring", "Choissiadyr (Act 3)", "+3% offline gains, +10% combat XP, +2% crit chance"],
+        [
+          "Harvest Belt",
+          "Belt",
+          "Harvest event shop (to December 2)",
+          "-20% monster respawn time, +3% offline gains, +10% all XP"
+        ],
+        [
+          "Other event belts",
+          "Belt",
+          "Past event shops",
+          "About -20% monster respawn time, plus Drop Quantity, XP, gold or offline gains"
+        ],
+        [
+          "Rabbit's Foot, Valentine Amulet",
+          "Amulet",
+          "Event shops",
+          "+6% offline gains, Drop Quantity, and crit chance or XP"
+        ],
+        [
+          "Carrot, Steam, Mimic and Ashen Rings",
+          "Ring",
+          "Event shops and premium packs",
+          "+50 attack, +3% offline gains, plus Drop Quantity, XP, crit or attack speed"
+        ]
+      ]
+    },
+    {
+      "title": "Weapons and armor",
+      "cols": ["Set", "Armor defence per piece", "Weapon attack (sword or longsword / bow / staff)", "Extra"],
+      "rows": [
+        ["Copper", "12 to 17", "30 / 25 / 30", "Act 1 smith"],
+        ["Bronze", "25", "No bronze weapons", "Act 1 smith"],
+        ["Iron", "36", "70 or 60 / 62 / 70", "Act 1 smith"],
+        ["Steel", "43", "79 (longsword) / 86 / 97", "Act 1 smith; every piece gives +10% combat XP"],
+        ["Thorium", "60", "154 or 118 / 126 / 154", "Act 2 smith"],
+        ["Sunstone", "100", "221 (longsword) / 225 / 275", "Act 3 smith"],
+        ["Infinite 1", "70 to 100", "161 / 171 / 210", "Hard tab; +5 to +15 Drop Quantity a piece"],
+        ["Infinite 2", "120", "330 / 340 / 410", "Hard tab; +10 to +30 Drop Quantity a piece"]
+      ]
+    },
+    {
+      "title": "What each set costs",
+      "cols": ["Item", "Materials", "Boss or special items", "Needs"],
+      "rows": [
+        [
+          "Iron armor (4 pieces)",
+          "84 Iron Bars; 50 each of Candle, Weird Page, D20 Dice and Fire Essence",
+          "None",
+          "Late Act 1"
+        ],
+        ["Iron weapon", "45 Iron Bars (30 plus 30 Pyrewood Logs for bow or staff)", "2 Yellow Feathers", "Late Act 1"],
+        ["Steel weapon", "300 Steel Bars", "10 Dragon Horns, 1 Norse Essence", "Yrsainir dead, first steps in Act 2"],
+        [
+          "Steel armor (4 pieces)",
+          "600 Steel Bars, 70 Furry Fur",
+          "14 Death's Flowers",
+          "Act 2 zones 1 to 4 for the fur"
+        ],
+        ["Iron Belt", "20 Steel Bars", "2 Death's Flowers, 2 Dragon Horns", "Yrsainir dead"],
+        [
+          "Thorium weapon",
+          "140 Crystallized Yellow Substance, 98 Thorium Bars",
+          "2 Perfect Norse Essence (60 Norse Essence); 7 Artisan's Frames, 7 Furstrings or 3 Cryolite",
+          "Thorium vein (after zone 5). The staff's Cryolite Ore drops in zones 9 to 12"
+        ],
+        [
+          "Thorium armor (4 pieces)",
+          "102 Crystallized Yellow Substance, 264 Thorium Bars, 170 Perfect Fur (5,100 Furry Fur)",
+          "8 Norse Essence",
+          "Thorium vein"
+        ],
+        [
+          "Sunstone armor (4 pieces)",
+          "2,670 Sunstone Bars; 40,000 Fez Fez, 35,000 Serpent Feather, 45,000 Bandiff Star",
+          "19 Perfect Silk Fabric",
+          "Act 3"
+        ],
+        [
+          "Sunstone weapon",
+          "290 to 860 Sunstone Bars, 70,000 Beetleman Sting, 100,000 to 600,000 Palm Tree Logs",
+          "3 Perfect Aether Crystal",
+          "Act 3"
+        ],
+        [
+          "Infinite 1 armor (4 pieces)",
+          "115,200 Steel Bars, 144,000 Grassy Stone 1, 60 Crystallized Blue Substance",
+          "1,000 each of Death's Flower, The Crab's Pickaxe and Dragon Horn, plus a Grassy Core (another 1,000 of each)",
+          "Act 1 Hard"
+        ],
+        [
+          "Infinite 1 weapon",
+          "15,000 Thorium Bars, 300,000 Icy Stone 1, 450,000 of an Act 3 drop",
+          "2 Grassy Cores",
+          "Act 2 Hard"
+        ],
+        [
+          "Infinite 2 piece",
+          "The matching Sunstone and Infinite 1 pieces; 10,000 to 30,000 Grassy Stone 2 (armor) or 120,000 Icy Stone 2 (weapon)",
+          "Crimson or Azure Geode and Sap; 1,000 Act 2 boss drops or Icy Cores",
+          "Nightmare, and the Sun Scroll recipes"
+        ]
+      ]
+    },
+    {
+      "title": "Gear rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        [
+          "When a new tier pays off",
+          "Enhancing adds the same flat amount per step on every tier, so a fresh item of the next tier is weaker than a well-enhanced old one. Keep wearing the old item until the new one is enhanced past the break-even: a thorium sword equals a steel longsword about 3 steps higher, thorium armor equals iron about 5 steps higher, and sunstone armor equals thorium 8 steps higher. That is why the tiers say in use, not crafted.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "By class",
+          "Weapons are per class: sword or longsword for the Warrior, bow for the Rogue, staff for the Mage. Armor is shared by all classes.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Enhancement steps",
+          "Weapons and armor enhance up to XV. Each step adds 27.5 attack to a weapon and 5 defence to an armor piece.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Stones by act",
+          "Enhance Stone 1 drops from Act 1 bosses, Enhance Stone 2 from Act 2 bosses, and Enhance Stone 3 only from Zhai Halud's Gate. Hard and Nightmare bosses drop Grassy Enhance Stone 1 in Act 1 and Icy Enhance Stone 1 in Act 2.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Steel armor",
+          "The steel armor set is a small step over iron (43 defence a piece against 36, and +10% combat XP each). The guides skip it and go from enhanced iron straight to thorium; craft it only if you want the XP.",
+          "Estimate",
+          ["Wiki", "MTAct2"]
+        ],
+        [
+          "Thorium order",
+          "The thorium axe needs 10 Mammoth Bitusks and the thorium pickaxe 10 Jotunn Eyes, so tools come as each boss dies. For combat gear, enhance the weapon before the armor.",
+          "Game data",
+          ["Wiki", "MTAct2"]
+        ],
+        [
+          "Accessories",
+          "The boss rings, amulets and belts also gain attack as they are upgraded: 30 per step for up to 5 steps in the wiki data. Their other bonuses are fixed.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Event belts",
+          "Event belts are the main source of shorter monster respawn, which raises the offline kill cap. If you have none, the Harvest Belt is in the event shop until December 2.",
+          "Game data",
+          ["Wiki", "Patch"]
+        ],
+        [
+          "Enhance stones",
+          "They come from boss drops, each act's vendor, quests and login bonuses. Buy out the vendors daily.",
+          "Guide",
+          ["MTEnh", "MTAct2"]
+        ],
+        [
+          "Durability",
+          "Weapons and armor can be enhanced down to 0 durability without breaking; 0 only blocks further attempts until repaired.",
+          "Game data",
+          ["MTEnh"]
+        ],
+        [
+          "Accessories",
+          "Amulets, rings and belts need a duplicate, and a failed attempt destroys both. Max is V. Always enhance the spare, never your only copy.",
+          "Guide",
+          ["MTEnh", "DBTips"]
+        ],
+        [
+          "Failstacking",
+          "Fail on purpose on a junk item to build bonus chance, then switch to the real item; the failure counter is shared by all items. The usual junk item is the Essence Sword, taken to where its success chance is 10% and repaired with copies of itself.",
+          "Guide",
+          ["MTEnh", "Jivchik"]
+        ],
+        ["Event gear", "Event equipment uses Enhance Stone 1 and goes up to XV.", "Game data", ["MTEnh"]],
+        [
+          "Hand-me-downs",
+          "Pass old sets to alts. Do not spend scarce materials enhancing alt gear early.",
+          "Guide",
+          ["DBTips"]
+        ],
+        [
+          "Warrior weapons",
+          "Swords hit harder and suit bosses; longswords have the area damage for farming.",
+          "Guide",
+          ["PiwuWeapons"]
+        ],
+        [
+          "Ladder",
+          "Copper, bronze, iron, steel (Act 1), thorium (Act 2), sunstone (Act 3), then Infinite 1 and Infinite 2 on the Hard tab. Steel has a full armor set and a belt as well as weapons. There is no Infinite 3 in the game data.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Sunstone or Infinite 1",
+          "Sunstone has more damage and armor; Infinite 1 carries Drop Quantity. Start with Infinite 1 armor plus a Sunstone weapon. You need both sets in the end to craft Infinite 2.",
+          "Guide",
+          ["Jivchik"]
+        ],
+        [
+          "Infinite 2",
+          "Unlocked by the Sun Scroll upgrades Infinite II Armor (400) and Infinite II Weapons (600). A #guides thread warns that crafting it affects the enhancements on the pieces used; read it before crafting.",
+          "Estimate",
+          ["Wiki", "BlueMoon"]
+        ],
+        ["Trinkets", "Since 0.321.0 there is a trinket slot as well; see the Trinkets page.", "Game data", ["Patch"]]
+      ]
+    }
+  ]
+}

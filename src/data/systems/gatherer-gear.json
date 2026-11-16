@@ -1,0 +1,135 @@
+{
+  "name": "Gatherer gear",
+  "tiers": [
+    {
+      "req": "Iron axe and pickaxe crafted: the minimum for Ironwood and Thorium.",
+      "basis": "Game data",
+      "source": ["JTGather", "Wiki"]
+    },
+    {
+      "req": "Steel axe and pickaxe crafted, the best tools from the Act 1 smith: 60 Steel Bars, 4 The Crab's Pickaxes and 10 Crystallized Yellow Substance each.",
+      "basis": "Game data",
+      "source": ["Wiki"]
+    },
+    {
+      "req": "Thorium axe crafted: 10 Mammoth Bitusks, 40 Crystallized Yellow Substance, 30 Thorium Bars and 5 Norse Essence.",
+      "basis": "Game data",
+      "source": ["Wiki", "MTAct2"]
+    },
+    {
+      "req": "Thorium pickaxe crafted: 10 Jotunn Eyes, 40 Crystallized Yellow Substance, 30 Thorium Bars and 5 Norse Essence. It is the minimum for Sunstone ore.",
+      "basis": "Game data",
+      "source": ["Wiki", "MTAct2", "JTGather"]
+    },
+    {
+      "req": "Thorium tools enhanced to at least the level your steel or iron tools had, so nothing was lost by switching.",
+      "basis": "Estimate",
+      "source": ["Wiki"]
+    },
+    {
+      "req": "Sunstone axe and pickaxe in use: crafted and enhanced to within 3 steps of your thorium tools.",
+      "basis": "Game data",
+      "source": ["JTGather", "Wiki"]
+    },
+    {
+      "req": "Sunstone tools enhanced toward XV, the cap.",
+      "basis": "Estimate",
+      "source": ["Wiki"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Tools",
+      "cols": ["Tool", "Base power (axe / pickaxe)", "Recipe (axe; pickaxe)", "Extra"],
+      "rows": [
+        ["Copper", "3 / 3", "3 Copper Bars, 1 Ash Log each", "Act 1 smith"],
+        ["Bronze", "8 / 10", "20 Bronze Bars, 15 Goak Logs; 3 Bronze Bars, 15 Goak Logs", "Act 1 smith"],
+        [
+          "Iron",
+          "63 / 60",
+          "20 Iron Bars, 50 Pyrewood Logs; 3 Iron Bars, 15 Pyrewood Logs",
+          "Act 1 smith. Enhances up to XV"
+        ],
+        [
+          "Steel",
+          "76 / 70",
+          "60 Steel Bars, 4 The Crab's Pickaxes, 10 Crystallized Yellow Substance each",
+          "Act 1 smith, but the yellow comes from the Act 2 vendor. +15% woodcutting or mining XP"
+        ],
+        [
+          "Thorium",
+          "90 / 80",
+          "40 Crystallized Yellow Substance, 30 Thorium Bars, 5 Norse Essence, plus 10 Mammoth Bitusks (axe) or 10 Jotunn Eyes (pickaxe)",
+          "Act 2 smith. +5 CON (axe), +5 attack (pickaxe)"
+        ],
+        [
+          "Sunstone",
+          "182 / 177",
+          "600 Sunstone Bars, 15,000 Palm Tree Logs, 30,000 Cactus; 200 Sunstone Bars, 15,000 Palm Tree Logs, 40,000 Kangaroo Boomerangs; 1 Perfect Aether Crystal each",
+          "Act 3 smith. +30% power, +10 CON"
+        ],
+        ["Second Anniversary", "63 / 60", "Event shop", "+20% gathering speed, +20 multiloot"]
+      ]
+    },
+    {
+      "title": "Gatherer gear rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        [
+          "Crafting as a milestone",
+          "For tools, crafting alone can be the goal, because a tool tier unlocks resources: iron for Ironwood and Thorium, thorium for Sunstone ore and Palm wood. Steel and sunstone tools unlock nothing, so they count only once they out-gather what you had.",
+          "Game data",
+          ["JTGather", "Wiki"]
+        ],
+        [
+          "Enhancing tools",
+          "Tools from iron upward enhance like weapons, up to XV, and each step adds 27.5 power. The enhancement targets in the tiers are estimates; late on, most power comes from runes and curios, not the tool.",
+          "Game data",
+          ["Wiki", "Dawnk3"]
+        ],
+        [
+          "Steel or straight to thorium",
+          "Steel tools add only 13 woodcutting and 10 mining power over iron, plus 15% XP. They cost 8 The Crab's Pickaxes and 20 Crystallized Yellow Substance for the pair, so they are worth it mainly for the XP while thorium is still out of reach.",
+          "Estimate",
+          ["Wiki"]
+        ],
+        [
+          "Hand down",
+          "Refine one axe and one pickaxe on the main gatherer and hand them down when you craft better ones.",
+          "Guide",
+          ["DBTips"]
+        ],
+        [
+          "Every character",
+          "Give every character an axe: Act 2 ash needs a great deal of wood.",
+          "Guide",
+          ["GFGather"]
+        ],
+        [
+          "Belt",
+          "Belt of Love (from killing Yrsainir) adds 10 woodcutting power; event belts suit a parked gatherer for their offline gains.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Trinket",
+          "A trinket with a mining or woodcutting power main stat belongs on the gatherer. Its value follows the piece and its level, and a Harvest piece gives half the power of the matching Halloween one; see the Trinkets system.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Pet",
+          "For gathering, the pet stats to want are Offline gains with Drop Quantity, EXP or profession power.",
+          "Guide",
+          ["Jivchik"]
+        ],
+        [
+          "Power targets",
+          "What the tools need to reach at each stage is on the Gathering system.",
+          "Guide",
+          ["JTGather"]
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "name": "Gems",
+  "tiers": [
+    {
+      "req": "Smeltery Multicraft maxed (1,250 gems).",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Six Premium Runes and the first three rune sockets bought: the PRE runeword is active (3,600 gems).",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Daily Fate Spiral bought on reaching Act 3 (900 gems, saved in advance).",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Engineer Slot Upgrades bought as each resource unlocks (1,250 gems).",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Remaining rune sockets bought as you build runewords (4,500 gems).",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Hunter Cost Cruncher maxed (2,000 gems).",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Smeltery Speed maxed (950 gems).",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Smeltery Capacity maxed (750 gems).",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Curio inventory at 21-22 slots.",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Hourglass Generator Speed at level 2 or more.",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Awakening Amplifier bought (500 gems).",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Timeline Engine Speed at level 2.",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    },
+    {
+      "req": "Extra Rift Worker bought (700 gems), after the Golden Rift timeline upgrade.",
+      "basis": "Guide",
+      "source": ["PiwuGems"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Gem rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        [
+          "Order",
+          "Tiers follow the Gem Guide's buy order, except that Daily Fate Spiral (its #2) sits third here because it cannot be bought before Act 3.",
+          "Guide",
+          ["PiwuGems"]
+        ],
+        [
+          "Rune order",
+          "Buy three Premium Runes, then alternate: 4th rune and 1st socket, 5th rune and 2nd socket, 6th rune and 3rd socket.",
+          "Guide",
+          ["PiwuGems"]
+        ],
+        [
+          "Fate Spiral",
+          "Keep 900 gems saved before entering Act 3. A chest costs 80 gems, so the upgrade pays for itself in about 12 days.",
+          "Guide",
+          ["PiwuGems"]
+        ],
+        ["Skip", "The rest of the Upgrades tab can be skipped. Do not buy ash generation.", "Guide", ["PiwuGems"]],
+        ["Income", "The daily quest gives 60 gems and many achievements pay 30.", "Game data", ["DBTips"]],
+        [
+          "Other sinks",
+          "A pet stat reroll costs 50 gems (Tier 5-6 pets only). A Class Reset Brew (talent reset) costs 30; prefer account boosts.",
+          "Guide",
+          ["JTPets", "GFGather"]
+        ]
+      ]
+    },
+    {
+      "title": "Upgrade costs",
+      "cols": ["Tier", "Upgrade", "Total gems", "Cost of each level"],
+      "rows": [
+        [1, "Smeltery Multicraft", 1250, "150, 250, 350, 500"],
+        [2, "Premium Runes x6", 2850, "150, 250, 350, 500, 700, 900"],
+        [2, "First three rune sockets", 750, "150, 250, 350"],
+        [3, "Daily Fate Spiral (Act 3)", 900, "900"],
+        [4, "Engineer Slot Upgrade", 1250, "150, 250, 350, 500"],
+        [5, "Remaining rune sockets", 4500, "450, 550, 650, 800, 950, 1100"],
+        [6, "Hunter Cost Cruncher", 2000, "300, 350, 400, 450, 500"],
+        [7, "Smeltery Speed", 950, "150, 200, 250, 350"],
+        [8, "Smeltery Capacity", 750, "300, 450"],
+        [9, "Curio inventory slots (Act 3)", 6900, "300 to 850 in steps of 50"],
+        [10, "Hourglass Generator Speed (Act 3)", 1700, "200, 350, 500, 650"],
+        [11, "Awakening Amplifier (Act 3)", 500, "500"],
+        [12, "Timeline Engine Speed (Act 3)", 1900, "250, 400, 550, 700"],
+        [13, "Extra Rift Worker (Act 3)", 700, "700"]
+      ]
+    }
+  ]
+}

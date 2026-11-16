@@ -87,12 +87,16 @@ reordering or removing entries breaks links people already have.
 
 ## Change the content and rebuild
 
-| File                | What it holds                                                                                                      |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `src/data.py`       | All content: sources, systems with their tiers and rule tables, expected tier per stage, daily tasks, roster rules |
-| `src/template.html` | Page layout, styles and script                                                                                     |
-| `src/build.py`      | Builds the icon sheet and talent trees, and writes `index.html`                                                    |
-| `src/icons/`        | Icon images the build packs into the page                                                                          |
+| File                          | What it holds                                                                    |
+| ----------------------------- | -------------------------------------------------------------------------------- |
+| `src/data/systems/<sys>.json` | One system each: its name, tiers and rule tables                                 |
+| `src/data/stages.json`        | The stages, what reaching each means, and the expected tier per system and stage |
+| `src/data/daily.json`         | Daily tasks                                                                      |
+| `src/data/roster.json`        | Roster rules for the Characters tab                                              |
+| `src/data/sources.json`       | Every source, by the key the other files cite it with                            |
+| `src/template.html`           | Page layout, styles and script                                                   |
+| `src/build.py`                | Reads `src/data/`, builds the icon sheet and talent trees, writes `index.html`   |
+| `src/icons/`                  | Icon images the build packs into the page                                        |
 
 ```sh
 pip install Pillow
@@ -107,18 +111,26 @@ The link opens the committed `index.html` on raw.githack, so values saved there
 stay apart from the live site's. On a pull request from a fork, the link is in
 the job summary of the PR's **PR Preview** check instead.
 
-Things to know when editing `src/data.py`:
+Things to know when editing `src/data/`:
 
-- **Stages** are numbered 1–10. `EXPECT[system]` gives the expected tier at each
-  stage; a stage expects what you need _before its next boss_.
-- **A new system** needs a row in `EXPECT`, an icon in `SYSICON` and an entry
-  appended to `SHARE_SYS` (both in `src/build.py`).
+- **Stages** are numbered 1–10. `expect` in `stages.json` gives each system's
+  expected tier at each stage, one number per stage; a stage expects what you
+  need _before its next boss_. Its key order is the order of systems on the page.
+- **A new system** needs a file in `src/data/systems/`, a row in `expect`, an
+  icon in `SYSICON` and an entry appended to `SHARE_SYS` (both in `src/build.py`).
 - **A new daily task** needs an id added to `DAILY_IDS` in the same position
   as the task, and the same id appended to `SHARE_DAILY`.
 - **Icons in text** appear when a tier or rule uses the exact in-game name,
   with the same capitals (for example `Enhance Stone 1`, `Thorium Ore`).
 - Every tier and rule carries a basis (`Guide`, `Game data`, `Estimate`,
-  `Player report`) and its sources; sources are declared once in `SRC`.
+  `Player report`) and its sources: a list of `sources.json` keys, which may be
+  empty. A table's `Source` column holds the same kind of list.
+- **The build checks the data** and stops naming the file and what is wrong: a
+  source key missing from `sources.json`, an `expect` row without one number per
+  stage, a system file with no `expect` row or the reverse, or a table row with
+  more or fewer cells than its columns.
+- `mise run lint` checks that the JSON files are formatted; `mise run lint-fix`
+  formats them.
 
 ## Credits
 

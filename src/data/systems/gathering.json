@@ -1,0 +1,111 @@
+{
+  "name": "Gathering",
+  "tiers": [
+    {
+      "req": "Iron axe and pickaxe: the minimum for Ironwood and Thorium.",
+      "basis": "Game data",
+      "source": ["JTGather"]
+    },
+    {
+      "req": "Woodcutting power 450 and mining power 500 (Act 1 goals).",
+      "basis": "Guide",
+      "source": ["JTGather"]
+    },
+    {
+      "req": "Woodcutting power 3,500 and mining power 4,000 (Act 2 goals), with thorium tools.",
+      "basis": "Guide",
+      "source": ["JTGather"]
+    },
+    {
+      "req": "Woodcutting power 18,000 and mining power 20,000 (Act 3 goals), with talents respecced to the bottom then middle row.",
+      "basis": "Guide",
+      "source": ["JTGather"]
+    },
+    {
+      "req": "Woodcutting power 70,000 and mining power 80,000 (Hard Mode goals), with sunstone tools.",
+      "basis": "Guide",
+      "source": ["JTGather"]
+    },
+    {
+      "req": "Nightmare Act 2 nodes one-shot: 350,000 woodcutting and 400,000 mining, or about 240,000 and 275,000 with the crit row maxed.",
+      "basis": "Guide",
+      "source": ["Jivchik", "Wiki"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Gathering rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        [
+          "One-shot",
+          "Always aim to fell every tree and vein in one hit; power comes first until you can.",
+          "Guide",
+          ["JTGather"]
+        ],
+        [
+          "Act 1 talents",
+          "First 7 levels into power, then the first EXP node on the bottom row, then top-row power.",
+          "Guide",
+          ["JTGather"]
+        ],
+        ["Act 2 talents", "Top row completely. Runes and sacrifices add power on top.", "Guide", ["JTGather"]],
+        [
+          "Act 3 talents",
+          "Get woodcutting and mining curios, then respec: max the bottom row, then the middle row. Levelled curios replace the lost power.",
+          "Guide",
+          ["JTGather"]
+        ],
+        [
+          "Crit row",
+          "The middle row maxed gives 36% gathering crit chance and +76% to +92% crit damage. Offline income counts crits as extra power, which is why the late-game advice is bottom row fully, then middle row fully.",
+          "Guide",
+          ["Jivchik"]
+        ],
+        [
+          "Levels",
+          "Gathering levels matter for the flat power in the top row; farm XP or use hourglasses if they lag far behind combat.",
+          "Guide",
+          ["JTGather"]
+        ],
+        ["Alts", "Give every character an axe: Act 2 ash needs a great deal of wood.", "Guide", ["GFGather"]]
+      ]
+    },
+    {
+      "title": "Power goals",
+      "cols": ["Stage", "Best tool tier", "Woodcutting", "Mining"],
+      "rows": [
+        ["Act 1", "Iron, then Steel", 450, 500],
+        ["Act 2", "Thorium", 3500, 4000],
+        ["Act 3", "Sunstone", 18000, 20000],
+        ["Hard Mode", "Sunstone", 70000, 80000],
+        ["Nightmare Act 2", "Sunstone", 350000, 400000]
+      ]
+    },
+    {
+      "title": "Minimum tool tier",
+      "cols": ["Tool needed", "Resource"],
+      "rows": [
+        ["None", "Copper ore, Ash wood"],
+        ["Copper", "Tin ore, Goak wood"],
+        ["Bronze", "Iron ore, Pyrewood"],
+        ["Iron", "Thorium ore, Ironwood"],
+        ["Thorium", "Sunstone ore, Palm wood"]
+      ]
+    },
+    {
+      "title": "Smeltery base times",
+      "cols": ["Bar", "Seconds each", "Batch on the page", "Note"],
+      "rows": [
+        ["Charcoal", 13, 1, ""],
+        ["Bronze Bar", 52, 1, ""],
+        ["Iron Bar", 63, 343, "6 hours for the batch"],
+        ["Steel Bar", 157, 226, "9.9 hours"],
+        ["Chadcoal", 52, 1, "Same row as Bronze on the page; check in game"],
+        ["Thorium Bar", 1278, 200, "71 hours"],
+        ["Palm Face", 78, 1, ""],
+        ["Sunstone Bar", 1881, 1, ""]
+      ]
+    }
+  ]
+}

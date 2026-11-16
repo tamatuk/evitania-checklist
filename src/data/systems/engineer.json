@@ -1,0 +1,241 @@
+{
+  "name": "Engineer",
+  "tiers": [
+    {
+      "req": "Engineer unlocked (a character at level 40) and Idea production sped up: its Gold Upgrade at 5 or more, plus the first item, wood and ore upgrades.",
+      "basis": "Guide",
+      "source": ["GFEng", "JTEng", "Wiki"]
+    },
+    {
+      "req": "Blueprint unlocked (1,000 Idea), with Idea still showing a positive rate.",
+      "basis": "Guide",
+      "source": ["JTEng", "Wiki"]
+    },
+    {
+      "req": "Hunter Tax Returns (Idea) at 5: a 25% chance to get half the materials back on each Hunter level (37,200 Idea in total).",
+      "basis": "Game data",
+      "source": ["Wiki", "JTEng"]
+    },
+    {
+      "req": "Hunter Tax Returns (Blueprint) at 5, making the chance 50% (6,200 Blueprint), with Daily Activity Enhancer I bought and Runic Blueprint unlocked (600 Blueprint).",
+      "basis": "Game data",
+      "source": ["Wiki", "GFEng"]
+    },
+    {
+      "req": "More Materials (Blueprint) at 10, Achievement Hunter at 10, Faster Portals bought and Smelting Patterns at 20.",
+      "basis": "Guide",
+      "source": ["GFEng", "Wiki"]
+    },
+    {
+      "req": "Runic Blueprint running: Humble Sacrifices at 5, Vendor Stock (Runic) at 3 and Bonfire Prototyping at 20.",
+      "basis": "Guide",
+      "source": ["GFEng", "Wiki"]
+    },
+    {
+      "req": "More Hunting (Blueprint) at 5 and More Materials (Runic Blueprint) at 10.",
+      "basis": "Estimate",
+      "source": ["Wiki", "JTEng"]
+    },
+    {
+      "req": "More Hunting and More Sacrifices (Runic Blueprint) at 5 each, and Sun Scroll unlocked (6,000 Runic Blueprint).",
+      "basis": "Estimate",
+      "source": ["Wiki", "JTEng"]
+    },
+    {
+      "req": "Sun Scroll: Double Crit, 4 Star Cards, More Materials at 10, and Infinite II Armor and Infinite II Weapons bought.",
+      "basis": "Estimate",
+      "source": ["Wiki"]
+    },
+    {
+      "req": "Sun Scroll: More Hunting and More Sacrifices at 5 each, which completes +15 Hunter cap and +10 sacrifice cap from the Engineer.",
+      "basis": "Estimate",
+      "source": ["Wiki"]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Engineer rules",
+      "cols": ["Topic", "Rule", "Basis", "Source"],
+      "rows": [
+        [
+          "Idea first",
+          "Every other resource consumes Idea. Keep it your most-crafted resource or you hit constant bottlenecks.",
+          "Guide",
+          ["JTEng"]
+        ],
+        [
+          "Base rates",
+          "With no upgrades Idea makes 720 an hour, while Blueprint and Runic Blueprint together use 1,067. Sun Scroll uses 25.5 Blueprint and 18.2 Runic Blueprint an hour against 20 and 6.7 made. So nothing above Idea runs nonstop until the slots below it are sped up.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Ratio to aim for",
+          "For Sun Scroll to run nonstop, the slots below must be faster than it by about these factors: Runic Blueprint 2.7 times, Blueprint 2.2 times, Idea 3.6 times. The wiki's efficiency calculator works this out for your own numbers.",
+          "Game data",
+          ["Wiki", "EngCalc"]
+        ],
+        [
+          "Speeding a slot",
+          "Each slot has four speed upgrades. Gold Upgrade gives +20% a level and doubles in price each level (from 1,000 gold for Idea, 30,000 for Blueprint, 100,000 for Runic Blueprint, 300,000 for Sun Scroll). The item, wood and ore upgrades give +5% a level and rotate through materials of that slot's act.",
+          "Game data",
+          ["Wiki", "JTEng"]
+        ],
+        [
+          "Slot materials",
+          "Idea and Blueprint use Act 1 materials (Blueprint wants Pyrewood Log and Iron Ore), Runic Blueprint uses Act 2 monster drops, Ironwood Log and Thorium Ore, and Sun Scroll uses Act 3 drops, Palm Tree Log and Sunstone Ore.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Gem slots",
+          "Each Engineer Slot Upgrade doubles one resource's generation: Idea, then Blueprint, Runic Blueprint, Sun Scroll (150, 250, 350, 500 gems).",
+          "Guide",
+          ["PiwuGems", "Wiki"]
+        ],
+        [
+          "Bottlenecks",
+          "A red, negative rate means a resource is consumed faster than it is made. Pause the consumer: select it and press the pause button beside the main image.",
+          "Guide",
+          ["JTEng"]
+        ],
+        [
+          "Hunter Tax Returns",
+          "Each level adds a 5% chance that a Hunter level refunds half its materials. Ten levels (Idea and Blueprint) make it a 50% chance, about a quarter off Hunter costs on average. Humble Sacrifices does the same for sacrifices, up to 25%.",
+          "Game data",
+          ["JTEng", "Wiki"]
+        ],
+        [
+          "More Materials",
+          "Adds combat multiloot, which raises the ordinary drop every monster gives, including Hunter and sacrifice materials. It is in three tiers (10 levels each), so it is the Engineer's main help for material farming.",
+          "Game data",
+          ["JTEng", "Jivchik", "Wiki"]
+        ],
+        [
+          "Vendor Stock",
+          "The Idea and Blueprint versions raise the Act 1 vendor's daily stock; the Runic Blueprint one raises the Act 2 vendor's (more Crystallized Yellow Substance a day); the Sun Scroll one raises Act 3's.",
+          "Game data",
+          ["JTEng", "Wiki"]
+        ],
+        [
+          "Keys",
+          "Each Daily Activity Enhancer adds 1 key for finishing the daily quests, and each keyring level raises the key cap by 1 (5 levels in each of three tiers).",
+          "Game data",
+          ["JTEng", "Wiki"]
+        ],
+        [
+          "Remote upgrades",
+          "Remote Engineering (6,000 Blueprint) lets slot upgrades take materials from the stash; Remote Crafting, Remote Hunting and Remote Sacrificing do the same for those systems.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Open-ended upgrades",
+          "Smelting Patterns (+6% smeltery speed a level) and Combat Experience (+1%) cost 276 Blueprint for 20 levels, 748 for 30 and 4,472 for 50. Bonfire Prototyping (+1% ash chance) and Pet Training (+2% pet XP) cost 215 Runic Blueprint for 20, 558 for 30 and 2,871 for 50. All go to 200.",
+          "Game data",
+          ["Wiki"]
+        ],
+        [
+          "Double Crit",
+          "Crit chance above 100% becomes a chance of a double crit (130% is a 30% chance). There are no triple crits, so nothing past 200% helps.",
+          "Game data",
+          ["Jivchik", "JTEng"]
+        ],
+        ["Balance", "Unlock everything, but do not neglect Hunter and sacrifices meanwhile.", "Guide", ["PiwuGems"]]
+      ]
+    },
+    {
+      "title": "Production chain",
+      "cols": ["Resource", "Time per unit", "Consumes", "Base per hour"],
+      "rows": [
+        ["Idea", "5 seconds", "Nothing", "720"],
+        ["Blueprint", "3 minutes", "30 Idea", "20"],
+        ["Runic Blueprint", "9 minutes", "70 Idea + 1 Blueprint", "6.7"],
+        ["Sun Scroll", "33 minutes", "14 Blueprint + 10 Runic Blueprint", "1.8"]
+      ]
+    },
+    {
+      "title": "Engineer upgrades",
+      "cols": ["Resource", "Upgrade", "Levels and total cost", "Effect"],
+      "rows": [
+        [
+          "Idea",
+          "Hunter Tax Returns",
+          "5 levels, 37,200",
+          "+5% chance a level to refund half a Hunter level's materials"
+        ],
+        ["Idea", "Vendor Stock", "3 levels, 11,200", "+1 Act 1 vendor stock a level"],
+        [
+          "Idea",
+          "Mining Industries, Johnny Treeman",
+          "To 200; 20 levels cost 5,739",
+          "+1% mining or woodcutting XP a level"
+        ],
+        ["Idea", "Blueprint", "1,000", "Unlocks Blueprint production"],
+        ["Blueprint", "Hunter Tax Returns", "5 levels, 6,200", "+5% refund chance a level"],
+        ["Blueprint", "More Materials", "10 levels, 10,382", "+1 combat multiloot a level"],
+        ["Blueprint", "Achievement Hunter", "10 levels, 10,382", "Achievements grant Drop Quantity"],
+        ["Blueprint", "More Hunting", "5 levels, 10,550", "+1 Hunter cap a level"],
+        ["Blueprint", "Faster Portals", "1,800", "+1 portal kill"],
+        ["Blueprint", "Daily Activity Enhancer I", "200", "+1 key from daily quests"],
+        ["Blueprint", "Basic Keyring", "5 levels, 2,638", "+1 key cap a level"],
+        ["Blueprint", "Vendor Stock", "3 levels, 2,800", "+1 Act 1 vendor stock a level"],
+        [
+          "Blueprint",
+          "Smelting Patterns, Combat Experience",
+          "To 200; 20 levels cost 276",
+          "+6% smeltery speed or +1% combat XP a level"
+        ],
+        ["Blueprint", "Remote Engineering", "6,000", "Slot upgrades can use the stash"],
+        ["Blueprint", "Runic Blueprint", "600", "Unlocks Runic Blueprint production"],
+        [
+          "Runic Blueprint",
+          "Humble Sacrifices",
+          "5 levels, 6,200",
+          "+5% chance a level to refund half a sacrifice's materials"
+        ],
+        ["Runic Blueprint", "More Materials", "10 levels, 10,382", "+1 combat multiloot a level"],
+        ["Runic Blueprint", "More Hunting", "5 levels, 13,188", "+1 Hunter cap a level"],
+        ["Runic Blueprint", "More Sacrifices", "5 levels, 13,188", "+1 sacrifice cap a level"],
+        ["Runic Blueprint", "Vendor Stock", "3 levels, 2,800", "+1 Act 2 vendor stock a level"],
+        [
+          "Runic Blueprint",
+          "Slime Feeding (four kinds)",
+          "400 each",
+          "+30%, +50%, +70%, +100% food points from each Slyme rarity"
+        ],
+        ["Runic Blueprint", "Faster Hatching", "4 levels, 6,000", "-0.5 egg cooldown a level"],
+        ["Runic Blueprint", "Rune Stacking", "3 levels, 17,000", "Rune stack size 100, 400, 900"],
+        [
+          "Runic Blueprint",
+          "Daily Activity Enhancer II, Advanced Keyring",
+          "200 and 2,638",
+          "+1 daily key; +1 key cap a level"
+        ],
+        [
+          "Runic Blueprint",
+          "Bonfire Prototyping, Pet Training",
+          "To 200; 20 levels cost 215",
+          "+1% ash chance or +2% pet XP a level"
+        ],
+        ["Runic Blueprint", "Remote Crafting", "5,000", "Crafting can use the stash"],
+        ["Runic Blueprint", "Sun Scroll", "6,000", "Unlocks Sun Scroll production"],
+        ["Sun Scroll", "Double Crit", "120", "Crit chance above 100% can double crit"],
+        ["Sun Scroll", "4 Star Cards", "400", "Cards can reach 4 stars"],
+        ["Sun Scroll", "Infinite II Armor, Infinite II Weapons", "400 and 600", "Unlock the Infinite 2 recipes"],
+        ["Sun Scroll", "More Materials", "10 levels, 3,115", "+1 combat multiloot a level"],
+        ["Sun Scroll", "More Hunting", "5 levels, 3,956", "+1 Hunter cap a level"],
+        ["Sun Scroll", "More Sacrifices", "5 levels, 3,956", "+1 sacrifice cap a level"],
+        ["Sun Scroll", "Remote Hunting, Remote Sacrificing", "600 each", "Hunter and sacrifices can use the stash"],
+        ["Sun Scroll", "Faster Hatching", "4 levels, 1,800", "-0.5 egg cooldown a level"],
+        [
+          "Sun Scroll",
+          "Daily Activity Enhancer III, Master Keyring, Vendor Stock",
+          "60, 792 and 840",
+          "+1 daily key; +1 key cap a level; Act 3 vendor stock"
+        ],
+        ["Sun Scroll", "Gold Research", "To 200; 20 levels cost 210", "+1% gold a level"]
+      ]
+    }
+  ]
+}
