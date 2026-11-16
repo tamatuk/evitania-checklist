@@ -71,7 +71,7 @@
         ],
         [
           "Ratio to aim for",
-          "For Sun Scroll to run nonstop, the slots below must be faster than it by about these factors: Runic Blueprint 2.7 times, Blueprint 2.2 times, Idea 3.6 times. The wiki's efficiency calculator works this out for your own numbers.",
+          "Sun Scroll runs nonstop once Runic Blueprint makes 2.7×, Blueprint 2.2× and Idea 3.6× their base rate. The wiki's efficiency calculator works this out for your own numbers.",
           "Game data",
           ["Wiki", "EngCalc"]
         ],
@@ -148,10 +148,10 @@
       "title": "Production chain",
       "cols": ["Resource", "Time per unit", "Consumes", "Base per hour"],
       "rows": [
-        ["Idea", "5 seconds", "Nothing", "720"],
-        ["Blueprint", "3 minutes", "30 Idea", "20"],
-        ["Runic Blueprint", "9 minutes", "70 Idea + 1 Blueprint", "6.7"],
-        ["Sun Scroll", "33 minutes", "14 Blueprint + 10 Runic Blueprint", "1.8"]
+        ["Idea", "5 seconds", "Nothing", 720],
+        ["Blueprint", "3 minutes", "30 Idea", 20],
+        ["Runic Blueprint", "9 minutes", "70 Idea + 1 Blueprint", 6.7],
+        ["Sun Scroll", "33 minutes", "14 Blueprint + 10 Runic Blueprint", 1.8]
       ]
     },
     {
@@ -204,7 +204,7 @@
           "400 each",
           "+30%, +50%, +70%, +100% food points from each Slyme rarity"
         ],
-        ["Runic Blueprint", "Faster Hatching", "4 levels, 6,000", "-0.5 egg cooldown a level"],
+        ["Runic Blueprint", "Faster Hatching", "4 levels, 6,000", "-0.5 hours egg cooldown a level"],
         ["Runic Blueprint", "Rune Stacking", "3 levels, 17,000", "Rune stack size 100, 400, 900"],
         [
           "Runic Blueprint",
@@ -227,7 +227,7 @@
         ["Sun Scroll", "More Hunting", "5 levels, 3,956", "+1 Hunter cap a level"],
         ["Sun Scroll", "More Sacrifices", "5 levels, 3,956", "+1 sacrifice cap a level"],
         ["Sun Scroll", "Remote Hunting, Remote Sacrificing", "600 each", "Hunter and sacrifices can use the stash"],
-        ["Sun Scroll", "Faster Hatching", "4 levels, 1,800", "-0.5 egg cooldown a level"],
+        ["Sun Scroll", "Faster Hatching", "4 levels, 1,800", "-0.5 hours egg cooldown a level"],
         [
           "Sun Scroll",
           "Daily Activity Enhancer III, Master Keyring, Vendor Stock",

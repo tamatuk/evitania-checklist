@@ -71,7 +71,7 @@
         ],
         [
           "Cap",
-          "The wiki data caps every training at 57 and Speed Training (attack) at 30. Engineer More Hunting adds 5 in each of Blueprint, Runic Blueprint and Sun Scroll (15), and the Act 1 Hard card adds 4 at 0 stars up to 12 at 4 stars, which leaves a base cap of 30. The base figure is worked out from those numbers, not stated by a guide.",
+          "Every training: 30 (base) + up to 15 from Engineer More Hunting (5 each in Blueprint, Runic Blueprint and Sun Scroll) + 4 to 12 from the Act 1 Hard card (0 to 4 stars) = 57 max. Speed Training (attack) stays at 30.",
           "Game data",
           ["Wiki", "PiwuGems"]
         ],

@@ -23,7 +23,7 @@
     },
     {
       "req": "Hourglass level 5: Rifts open.",
-      "basis": "Game data",
+      "basis": "Guide",
       "source": ["PiwuGems"]
     },
     {
@@ -42,6 +42,12 @@
       "title": "Hourglass rules",
       "cols": ["Topic", "Rule", "Basis", "Source"],
       "rows": [
+        [
+          "Currencies",
+          "Sand is made by the generators and pays for generator levels, upgrades and Hourglass levels. Infinity is earned by a timeline reset, once the Timeline opens at Hourglass level 3, and pays for timeline upgrades.",
+          "Guide",
+          ["PiwuHG", "ImeniaHG"]
+        ],
         [
           "Generators",
           "Each newer generator makes the older ones obsolete; put sand into the latest. Generator speed doubles at levels 25, 50, 100, 200, 300 and so on.",
@@ -81,7 +87,7 @@
         ],
         [
           "Act 3 hourglasses",
-          "Time-skip hourglass items cannot be used in Act 3 until its final boss exists and is beaten.",
+          "Time-skip hourglass items cannot be used in Act 3 until you have beaten its final boss (not yet in the game).",
           "Game data",
           ["FAQ"]
         ],
@@ -99,7 +105,7 @@
         ],
         [
           "Time-skip items",
-          "A time-skip hourglass advances only the active character: combat, mining, woodcutting and ash per kill. It does not advance other characters, the Smeltery, Bonfire ash from fuel, the pet egg or curio coins. Boss chests hold one 1 time in 10.",
+          "A time-skip hourglass advances only the active character: combat, mining, woodcutting and ash per kill. It does not advance other characters, the Smeltery, Bonfire ash from fuel, the pet egg or curio coins. Boss chests contain one 10% of the time.",
           "Game data",
           ["DBHG"]
         ],
