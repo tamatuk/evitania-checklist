@@ -252,7 +252,7 @@ function ladderHTML(s){const key=slug(s.name),t=tierOf(s.name),e=expected(s.name
   return h+'</ol>'}
 
 
-const DAILY_FROM={'Any':0,'Guild':0,'Act 1+':1,'Level 50+':2,'Act 2+':2,'Act 3':6};
+const DAILY_FROM={'Any':0,'Level 25+':1,'Level 50+':2,'Act 2+':2,'Cost Cruncher bought':2,'Level 60+, in a guild':3,'Act 3+':6,'Fate Spiral bought':6,'Hourglass level 5+':8};
 const dailyStage=r=>DAILY_FROM[r[0]]??0;
 const KNAME={skill:'Class skill',atk:'Attack',atkp:'Attack %',aspd:'Attack Speed',crit:'Crit Chance',critd:'Crit Damage',def:'Defence',mf:'Magicfind (Drop Quantity)',xp:'Bonus XP',move:'Movespeed',hp:'Max HP',mana:'Maximum Mana',mregen:'Mana Regen'};
 const KEFF={atk:'+1 attack',atkp:'+1% attack',aspd:'+1% attack speed',crit:'+2% crit chance',critd:'+2% crit damage',def:'physical defence',mf:'+1 Drop Quantity',xp:'+5% combat XP',move:'+10% movement speed',hp:'+5 HP',mana:'+5 MP',mregen:'+1 MP regen'};
@@ -336,7 +336,7 @@ function bkCheck(txt){try{bkPending=parseBackup(txt);bkMsg=''}catch(e){bkPending
 function vDaily(){const si=stageIdx(),done=new Set(state.daily);
   const rows=D.daily.map((r,i)=>[r,i]).filter(x=>si<0||dailyStage(x[0])<=si),later=si<0?[]:D.daily.filter(r=>dailyStage(r)>si);
   const n=rows.filter(x=>done.has(x[0][1])).length;
-  let h='<div class="vhead"><h2>Today&rsquo;s tasks</h2><p class="lead">'+(si<0?'Every daily task, since no stage is picked':'Daily tasks for your stage, '+esc(stageLabel()))+'. Ticks stay until you press Reset.</p></div>'
+  let h='<div class="vhead"><h2>Today&rsquo;s tasks</h2><p class="lead">'+(si<0?'Every daily task, since no stage is picked':'Daily tasks for stage '+(si+1)+' \u00b7 '+esc(stageLabel()))+'. Ticks stay until you press Reset.</p></div>'
     +'<div class="tbar"><span class="tinfo">'+n+' of '+rows.length+' done</span><span class="prog" role="img" aria-label="'+n+' of '+rows.length+' done"><span style="width:'+(rows.length?Math.round(100*n/rows.length):0)+'%"></span></span><button type="button" class="reset" id="dreset" data-act="dreset"'+(state.daily.length?'':' disabled')+'>Reset</button></div>';
   h+='<div class="sect"><div class="tbl"><table class="daily"><thead><tr><th><span class="vh">Done</span></th><th>Task</th><th>Why</th><th>From</th><th>Source</th></tr></thead><tbody>';
   rows.forEach(([r,i])=>{const on=done.has(r[1]);
