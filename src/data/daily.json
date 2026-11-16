@@ -1,89 +1,104 @@
 [
   {
+    "id": "quest",
     "when": "Any",
     "task": "Complete the daily quest",
     "why": "60 gems a day",
     "source": ["DBTips"]
   },
   {
+    "id": "login",
     "when": "Any",
     "task": "Claim the daily login tracks",
     "why": "Missed days stack and can be claimed later",
     "source": ["DBTips"]
   },
   {
+    "id": "boss-keys",
     "when": "Any",
     "task": "Spend boss keys (3 a day, 30 cap)",
     "why": "Boss cards, pets and Enhance stones",
     "source": ["Treyex", "DBTips"]
   },
   {
+    "id": "vendor-1",
     "when": "Any",
     "task": "Act 1 vendor: buy the 3 Enhance Stone 1 and the Animal Bone",
     "why": "Stones for gear up to steel. Each bone crafts a Bone Dagger, a cheap item to fail on when building enhance chance",
     "source": ["MTEnh", "Wiki", "Jivchik"]
   },
   {
+    "id": "vendor-2",
     "when": "Act 2+",
     "task": "Act 2 vendor: buy all the Crystallized Yellow Substance and the Enhance Stone 2",
     "why": "The vendor is its only source. Thorium weapons take 140 each, the armor set 102, thorium tools 40 each, steel tools 10 each, and Wish for Gold uses it later",
     "source": ["Wiki", "MTAct2"]
   },
   {
+    "id": "vendor-3",
     "when": "Act 3",
     "task": "Act 3 vendor: buy all the Crystallized Blue Substance and the Enhance Stone 3",
     "why": "The vendor is its only source. Infinite 1 armor takes 60, and Perfect Silk Fabric and Perfect Aether Crystal use 3 and 6 a craft",
     "source": ["Wiki"]
   },
   {
+    "id": "tower",
     "when": "Any",
     "task": "Run the Tower attempts",
     "why": "Gold, gems and keys",
     "source": ["Treyex"]
   },
   {
+    "id": "mail-codes",
     "when": "Any",
     "task": "Check mail and new codes",
     "why": "Free gems",
     "source": ["FAQ"]
   },
   {
+    "id": "cost-cruncher",
     "when": "Act 1+",
     "task": "Spend the stacked Cost Cruncher discount on one expensive Hunter upgrade",
     "why": "The stack resets on any Hunter upgrade",
     "source": ["PiwuGems", "DBTips"]
   },
   {
+    "id": "bonfire-fuel",
     "when": "Act 2+",
     "task": "Refuel the Bonfire with Chadcoal",
     "why": "No fire means no ash",
     "source": ["MTAct2", "DBBonfire"]
   },
   {
+    "id": "slyme-egg",
     "when": "Act 2+",
     "task": "Act 2 town: collect the Slyme from the egg",
     "why": "The egg hatches one every 16 hours; Slymes are pet food",
     "source": ["DBPetG", "JTPets"]
   },
   {
+    "id": "fate-spiral",
     "when": "Act 3",
     "task": "Open the daily Fate Spiral",
     "why": "One curio a day",
     "source": ["PiwuGems"]
   },
   {
+    "id": "curio-coins",
     "when": "Act 3",
     "task": "Collect curio coins before they cap",
     "why": "Coins stop accruing at the cap",
     "source": ["JTCurio"]
   },
   {
+    "id": "event-dungeons",
     "when": "Level 50+",
     "task": "Run the event dungeons while an event is on",
     "why": "Trinkets and event rewards; tiers are gated by attack",
     "source": ["Patch"]
   },
   {
+    "id": "guild-donations",
     "when": "Guild",
     "task": "Log in and make the two daily donations (500k and 10m gold)",
     "why": "Activity, seals and guild funds",
