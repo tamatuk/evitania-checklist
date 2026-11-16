@@ -1,23 +1,27 @@
 [
   {
     "topic": "What it is",
-    "text": "A rule checklist for Evitania Online, filled in by hand. Your stage sets which tier of each system is expected, and each system lists its tiers."
+    "text": "A progression checklist for Evitania Online – Idle RPG. Pick your stage and set your tier in each system by hand; the page shows what is expected next."
   },
   {
     "topic": "How to use",
-    "text": "Pick your stage at the top. Set your tier for each system with the plus and minus buttons, or open a system and click the highest tier you have reached."
+    "text": "Pick your stage at the top. Set your tier for each system with the plus and minus buttons, or open a system and click the highest tier you have reached. The Daily tab lists today's tasks for your stage. The Talents tab draws talent trees by class, role and level. Backup saves everything as a file or link."
   },
   {
     "topic": "Basis: Guide",
-    "text": "The requirement is a target or recommendation stated in the source."
+    "text": "The tier or rule is a target or recommendation stated in the source."
   },
   {
     "topic": "Basis: Game data",
-    "text": "The requirement is a game threshold, cost or unlock reported by the source."
+    "text": "The tier or rule is a game threshold, cost or unlock reported by the source. Game data also covers values calculated directly from game numbers."
   },
   {
     "topic": "Basis: Estimate",
     "text": "Ordered or set from several sources; no single guide states it as a target. Treat it as a draft."
+  },
+  {
+    "topic": "Basis: Player report",
+    "text": "One or a few players' observations in a forum or Discord thread, not confirmed by a guide or the game data; treat it as a hint."
   },
   {
     "topic": "Stage expectations",
@@ -33,6 +37,6 @@
   },
   {
     "topic": "Not covered",
-    "text": "Guild research, the Tower, fishing (event mini-game so far) and the Hourglass Restoration of Eternity tabs have no tiers here: the guides for them are thin or not written yet. Trinkets have a first draft."
+    "text": "Guild research, the Tower, fishing and the Hourglass Restoration of Eternity tabs have no tiers here: the guides for them are thin or not written yet. Trinkets have four tiers (three are estimates) and a role table; event dungeons, Lone Wolf and co-op content have no tiers. Fishing is still an event mini-game."
   }
 ]

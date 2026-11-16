@@ -35,17 +35,12 @@ This is a fan project and is not affiliated with the game's developer.
    _Deploy from a branch_, pick `main` and `/ (root)`, and save.
 4. After a minute the page is at `https://<you>.github.io/evitania-checklist/`.
 
-## Turn on the Feedback link
+## The Feedback link
 
-The tab bar shows a **Feedback** link when an address is set.
-
-1. Open `src/template.html` and find `const FEEDBACK_URL='';`
-2. Put your address between the quotes, for example
-   `https://github.com/<you>/evitania-checklist/issues/new`
-3. Rebuild (below) and push.
-
-Without a rebuild you can make the same one-line edit directly in `index.html`;
-just repeat it in `src/template.html` so the next build keeps it.
+The tab bar shows a **Feedback** link when `FEEDBACK_URL` in `src/template.html`
+is set. It points to this repository's issues; change it for your fork, for
+example to `https://github.com/<you>/evitania-checklist/issues/new`, then
+rebuild (below) and push. An empty value hides the link.
 
 ## Where your values live
 
@@ -92,7 +87,7 @@ reordering or removing entries breaks links people already have.
 | `src/data/systems/<sys>.json` | One system each: its name, tiers and rule tables                                 |
 | `src/data/stages.json`        | The stages, what reaching each means, and the expected tier per system and stage |
 | `src/data/daily.json`         | Daily tasks                                                                      |
-| `src/data/roster.json`        | Roster rules for the Characters tab                                              |
+| `src/data/roster.json`        | Roster rules for the Talents tab                                                 |
 | `src/data/sources.json`       | Every source, by the key the other files cite it with                            |
 | `src/data/about.json`         | The About tab's rows                                                             |
 | `src/data/share.json`         | The order of systems and daily ids in share codes (append-only)                  |
