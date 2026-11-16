@@ -2,12 +2,12 @@
   "name": "Hunter",
   "tiers": [
     {
-      "req": "Hunter unlocked (Stumps, map 4) and every training at 5 or more.",
+      "req": "Hunter unlocked (Stumps, map 4) and every combat and Act 1 training at 5 or more.",
       "basis": "Estimate",
       "source": ["Sakori"]
     },
     {
-      "req": "Every training at 10 or more. Level 10 costs 202 materials.",
+      "req": "Every combat and Act 1 training at 10 or more. Level 10 costs 202 materials.",
       "basis": "Guide",
       "source": ["DBHunter", "Sakori"]
     },
@@ -17,7 +17,7 @@
       "source": ["MTAct2", "HyZerg"]
     },
     {
-      "req": "Every training at 15 or more.",
+      "req": "Every combat and Act 1 training at 15 or more.",
       "basis": "Guide",
       "source": ["DBHunter", "DBTips"]
     },
@@ -27,12 +27,12 @@
       "source": ["MTAct2"]
     },
     {
-      "req": "Every training at 20 or more.",
+      "req": "Every combat and Act 1 training at 20 or more.",
       "basis": "Estimate",
       "source": ["Sakori"]
     },
     {
-      "req": "Every training at 25 or more.",
+      "req": "Every combat and Act 1 training at 25 or more.",
       "basis": "Guide",
       "source": ["DBHunter", "DBTips"]
     },
@@ -104,6 +104,12 @@
           "Plants for Power, Fire Elementals for More Damage, Slime Cubes for Dice, Weird Books for Damage Abuse, Pebbles for Defence if you are dying. Boars (HP) are the lowest priority.",
           "Guide",
           ["MTFarm"]
+        ],
+        [
+          "Act 2 and Act 3 gathering trainings",
+          "Woodcutting Power, Mining Power, Woodcutting Experience and Mining Experience use Act 2 and Act 3 materials (Ironwood Log, Thorium Ore, Palm Tree Log, Beetleman Sting), so the \"every combat and Act 1 training\" tiers leave them out: level them as their materials open.",
+          "Game data",
+          ["Wiki"]
         ]
       ]
     },
