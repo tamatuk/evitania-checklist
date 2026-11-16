@@ -40,7 +40,8 @@ def load_systems(order):
         for t in s_["tables"]:
             for j, row in enumerate(t["rows"]):
                 if len(row) != len(t["cols"]):
-                    fail("%s: table %r row %d has %d cells for %d cols" % (f_, t["title"], j + 1, len(row), len(t["cols"])))
+                    fail("%s: table %r row %d has %d cells for %d cols"
+                         % (f_, t["title"], j + 1, len(row), len(t["cols"])))
         by[s_["name"]] = (f_, s_)
     for n_ in order:
         if n_ not in by: fail("stages.json: expect key %r has no file in data/systems" % n_)
@@ -64,7 +65,8 @@ for f_, s_ in SYS:
     systems.append({"name": s_["name"],
         "tiers": [{"req": t["req"], "basis": t["basis"], "source": cite(t["source"], f_)} for t in s_["tiers"]],
         "tables": [{"title": t["title"], "cols": t["cols"],
-                    "rows": [[cite(x, f_) if c == "Source" else x for c, x in zip(t["cols"], row)] for row in t["rows"]]}
+                    "rows": [[cite(x, f_) if c == "Source" else x for c, x in zip(t["cols"], row)]
+                             for row in t["rows"]]}
                    for t in s_["tables"]]})
 
 about = [
