@@ -198,13 +198,13 @@ function status(n){const t=tierOf(n),e=expected(n);
   if(!hasStage()) return {k:'none',t:'',l:'No stage picked'};
   if(t===null) return e===0?{k:'idle',t:'–',l:'Not needed yet'}:{k:'warn',t:'?',l:'Tier not set'};
   const d=Math.floor(stageDiff(n)+1e-9),w=x=>x+' stage'+(x===1?'':'s');
-  if(d>0) return {k:'good',t:'+'+d,l:'Your tier is what is expected '+w(d)+' ahead'}; if(d===0) return {k:'good',t:'0',l:'On track for your stage'};
+  if(d>0) return {k:'good',t:'+'+d,l:'Your tier is what is expected '+w(d)+' ahead of your stage'}; if(d===0) return {k:'good',t:'0',l:'On track for your stage'};
   return {k:'bad',t:'−'+(-d),l:w(-d)+' behind your stage'} }
 const sysBy=n=>D.systems.find(s=>s.name===n);
 function setTier(n,v){const max=sysBy(n).tiers.length; if(v===null||v<0) delete state.tiers[n]; else state.tiers[n]=Math.min(max,v); commit()}
 const slug=n=>n.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-');
 function migrate(o){if(o&&Number.isInteger(o.Gear)&&o['Pusher gear']===undefined)o['Pusher gear']=o.Gear;return o||{}}
-const VIEWS=[['checklist','Checklist'],['roster','Roster'],['daily','Daily'],['backup','Backup']];
+const VIEWS=[['checklist','Checklist'],['roster','Talents'],['daily','Daily'],['backup','Backup']];
 let later=new Set();
 let open=new Set();try{open=new Set(JSON.parse(localStorage.getItem('evi-open'))||[])}catch(e){}
 function saveOpen(){try{localStorage.setItem('evi-open',JSON.stringify([...open]))}catch(e){}}
@@ -218,7 +218,7 @@ function srcLinks(str){return String(str).split('; ').map(n=>{const s=D.sources.
 function vChecklist(){
   const c={good:0,bad:0,warn:0,idle:0,none:0}; for(const s of D.systems)c[status(s.name).k]++;
   let h='<div class="vhead"><h2>Progress by system</h2><p class="lead">Set the highest tier you have reached in each system. The coloured number is how many stages that puts you ahead of or behind your stage, and each stage expects what you need before its next boss.</p></div>'
-    +'<div class="tbar">'+(hasStage()?'<span class="sum"><span class="pill p-good">'+c.good+' on track</span><span class="pill p-bad">'+c.bad+' behind</span><span class="pill p-warn">'+c.warn+' to set</span></span>':pickStagePrompt())+'<div class="seg" role="group" aria-label="Sort">'+SORTS.map(o=>'<button type="button" class="sg'+(o[0]===sortBy?' on':'')+'" id="sort-'+o[0]+'" data-act="sort" data-v="'+o[0]+'" aria-pressed="'+(o[0]===sortBy)+'">'+o[1]+'</button>').join('')+'</div><span class="thint">Click a name to open its tiers and rules.</span><button type="button" class="reset" data-act="openall">'+(open.size===D.systems.length?'Hide all':'Show all')+'</button></div><div class="list">';
+    +'<div class="tbar">'+(hasStage()?'<span class="sum"><span class="pill p-good">'+c.good+' on track</span><span class="pill p-bad">'+c.bad+' behind</span><span class="pill p-warn">'+c.warn+' not set</span></span>':pickStagePrompt())+'<div class="seg" role="group" aria-label="Sort">'+SORTS.map(o=>'<button type="button" class="sg'+(o[0]===sortBy?' on':'')+'" id="sort-'+o[0]+'" data-act="sort" data-v="'+o[0]+'" aria-pressed="'+(o[0]===sortBy)+'">'+o[1]+'</button>').join('')+'</div><span class="thint">Click a name to open its tiers and rules.</span><button type="button" class="reset" data-act="openall">'+(open.size===D.systems.length?'Hide all':'Show all')+'</button></div><div class="list">';
   const rank=s=>hasStage()?[expected(s.name)===0&&tierOf(s.name)===null?1:0,stageDiff(s.name)]:[0,0];
   const byName=(a,b)=>a.name.localeCompare(b.name,'en');
   const unlock=s=>{const i=D.expect[s.name].findIndex(v=>v>0);return i<0?NST:i};
@@ -245,7 +245,7 @@ function tableHTML(t){
   return h+'</tbody></table></div></div>' }
 
 const sName=i=>i>NST?'Not expected at any stage yet':'Expected at stage '+i+', '+D.stages[i-1];
-const sLabel=i=>i>NST?'After '+NST:'Stage '+i;
+const sLabel=i=>i>NST?'Beyond stage '+NST:'Stage '+i;
 function ladderHTML(s){const key=slug(s.name),t=tierOf(s.name),e=expected(s.name),show=Math.max(e||0,t===null?0:t),all=true,hid=0;let h='<ol class="ladder">';
   s.tiers.forEach((x,i)=>{const k=i+1,done=t!==null&&k<=t,need=!done&&k<=e; if(k>show&&!all) return;
     h+='<li class="'+(done?'done':need?'need':k>show?'far':'')+'"><button class="rung" id="rung-'+key+'-'+k+'" data-act="rung" data-sys="'+esc(s.name)+'" data-k="'+k+'" aria-pressed="'+done+'"><span class="num">'+(done?'&#10003;':k)+'</span><span class="req">'+rich(x.req)
@@ -287,8 +287,8 @@ function treeHTML(c,ci){const T=D.trees[c.cls],P=charPlan(c),CW=66,RH=62,NS=46,P
     h+='<div class="tn '+st+(n.k==='skill'?' skill':'')+'" style="left:'+(PX+n.c*CW)+'px;top:'+(PY+n.y*RH)+'px" title="'+esc(tip)+'" aria-label="'+esc(tip)+'" role="img">'
       +icon(n.i,'xl')+'<span class="ord">'+P.seq[n.o]+'</span><span class="rk">'+g+'/'+n.m+'</span></div>'}
   return h+'</div></div>'}
-function vRoster(){let h='<div class="vhead"><h2>Characters</h2><p class="lead">Each character with the talents it should have by now. The small number on a node is its pick order; the figure at the bottom is expected ranks out of the maximum.</p></div>'
-    +'<div class="tbar"><span class="tinfo">'+state.chars.length+' character'+(state.chars.length===1?'':'s')+'</span><span class="legend"><span class="lg full"></span>Expected now<span class="lg part"></span>Partly<span class="lg none"></span>Later</span><button type="button" class="reset" data-act="cadd" id="cadd"'+(state.chars.length>=8?' disabled':'')+'>Add character</button></div>';
+function vRoster(){let h='<div class="vhead"><h2>Talent builds</h2><p class="lead">Each character with the talents it should have by now. The small number at the top of a node is its pick order; the fraction below it is the ranks expected now out of its maximum.</p></div>'
+    +'<div class="tbar"><span class="tinfo">'+state.chars.length+' character'+(state.chars.length===1?'':'s')+'</span><span class="legend"><span class="lg full"></span>Expected now<span class="lg part"></span>Partly expected<span class="lg none"></span>Later</span><button type="button" class="reset" data-act="cadd" id="cadd"'+(state.chars.length>=8?' disabled':'')+'>Add character</button></div>';
   state.chars.forEach((c,ci)=>{const P=charPlan(c),next=P.ord.filter(n=>P.got[n.o]<n.m).slice(0,5);
     const clsIcon=k=>D.trees[k].nodes.find(n=>n.o===1).i, auto=c.pts===null||c.pts===undefined, ptsV=auto?Math.max(0,c.level-10):c.pts;
     const seg=(k,opts,cur,lab)=>'<div class="cgrp"><span class="clab">'+lab+'</span><div class="seg" role="group" aria-label="'+lab+'">'+opts.map((o,oi)=>'<button type="button" class="sg'+(o[0]===cur?' on':'')+'" id="c-'+k+'-'+ci+'-'+oi+'" data-act="cset" data-ci="'+ci+'" data-k="'+k+'" data-v="'+esc(o[0])+'" aria-pressed="'+(o[0]===cur)+'" title="'+esc(o[0])+'">'+o[1]+'</button>').join('')+'</div></div>';
@@ -335,7 +335,7 @@ function readShare(){let h=null;try{h=new URLSearchParams(location.search).get('
 function vBackup(){const json=JSON.stringify(exportObj());
   let h='<div class="vhead"><h2>Backup</h2><p class="lead">Save your stage, tiers, daily ticks and characters as a JSON file, or load them back. Importing replaces everything you have set on this page.</p></div>';
   h+='<div class="sect"><h3>Export</h3><div class="bk"><div class="bkrow">'+'<button type="button" class="reset" data-act="bkdl" id="bkdl">Download JSON</button>'+'<button type="button" class="reset" data-act="bkcopy" id="bkcopy">Copy JSON</button></div><textarea id="bkout" readonly rows="4" aria-label="Your values as JSON">'+esc(json)+'</textarea><div class="bkrow"><button type="button" class="reset" data-act="bklink" id="bklink">Copy link</button><input type="text" id="bkurl" readonly aria-label="Link that carries your values" value="'+esc(shareUrl())+'"></div></div></div>';
-  h+='<div class="sect"><h3>Import</h3><div class="bk"><div class="bkrow"><label class="filebtn">Choose a JSON file<input type="file" id="bkfile" accept=".json,application/json"></label><span class="note">or paste the JSON below</span></div><textarea id="bkin" rows="6" placeholder="Paste exported JSON here" aria-label="JSON to import"></textarea><div class="bkrow"><button type="button" class="reset" data-act="bkread" id="bkread">Check import</button></div>';
+  h+='<div class="sect"><h3>Import</h3><div class="bk"><div class="bkrow"><label class="filebtn">Choose a JSON file<input type="file" id="bkfile" accept=".json,application/json"></label><span class="note">or paste the JSON below</span></div><textarea id="bkin" rows="6" placeholder="Paste exported JSON here" aria-label="JSON to import"></textarea><div class="bkrow"><button type="button" class="reset" data-act="bkread" id="bkread">Preview import</button></div>';
   if(bkPending){const p=bkPending;h+='<div class="bkconf"><p><b>Ready to replace your values'+(p.when?' with the backup from '+esc(p.when):'')+':</b> '+(p.stage===null?'':'stage ')+esc(stageLabel(p.stage))+', '+Object.keys(p.tiers).length+' tiers set, '+p.daily.length+' daily ticks, '+p.chars.length+' characters.</p><div class="bkrow"><button type="button" class="reset" data-act="bkapply" id="bkapply">Replace my values</button><button type="button" class="reset ghost" data-act="bkcancel" id="bkcancel">Cancel</button></div></div>'}
   h+='</div></div>';
   return h+'<div class="sync" id="bkmsg" role="status">'+esc(bkMsg)+'</div><div class="sync" id="sync">'+esc(syncMsg)+'</div>' }
