@@ -42,6 +42,12 @@
     "source": ["MTRogue"]
   },
   {
+    "topic": "Kill cap",
+    "rule": "Offline, a character can only count so many kills an hour (the kill cap). Faster monster respawn raises it; past it, more damage does nothing offline.",
+    "basis": "Guide",
+    "source": ["OfflineG"]
+  },
+  {
     "topic": "Offline income",
     "rule": "Raise offline gains %, then damage until you reach the kill cap, then raise the cap with mob spawn time reduction, then damage again.",
     "basis": "Guide",
@@ -79,7 +85,7 @@
   },
   {
     "topic": "Talent points",
-    "rule": "Class talent points are taken as the character's level minus 10.",
+    "rule": "A character has (level − 10) class talent points.",
     "basis": "Player report",
     "source": []
   },

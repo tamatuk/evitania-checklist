@@ -128,16 +128,16 @@
     },
     {
       "title": "Weapons and armor",
-      "cols": ["Set", "Armor defence per piece", "Weapon attack (sword or longsword / bow / staff)", "Extra"],
+      "cols": ["Set", "Armor defence per piece", "Weapon attack (sword / longsword / bow / staff)", "Extra"],
       "rows": [
-        ["Copper", "12 to 17", "30 / 25 / 30", "Act 1 smith"],
+        ["Copper", "12 to 17", "30 / – / 25 / 30", "Act 1 smith"],
         ["Bronze", "25", "No bronze weapons", "Act 1 smith"],
-        ["Iron", "36", "70 or 60 / 62 / 70", "Act 1 smith"],
-        ["Steel", "43", "79 (longsword) / 86 / 97", "Act 1 smith; every piece gives +10% combat XP"],
-        ["Thorium", "60", "154 or 118 / 126 / 154", "Act 2 smith"],
-        ["Sunstone", "100", "221 (longsword) / 225 / 275", "Act 3 smith"],
-        ["Infinite 1", "70 to 100", "161 / 171 / 210", "Hard tab; +5 to +15 Drop Quantity a piece"],
-        ["Infinite 2", "120", "330 / 340 / 410", "Hard tab; +10 to +30 Drop Quantity a piece"]
+        ["Iron", "36", "70 / 60 / 62 / 70", "Act 1 smith"],
+        ["Steel", "43", "– / 79 / 86 / 97", "Act 1 smith; every piece gives +10% combat XP"],
+        ["Thorium", "60", "154 / 118 / 126 / 154", "Act 2 smith"],
+        ["Sunstone", "100", "– / 221 / 225 / 275", "Act 3 smith"],
+        ["Infinite 1", "70 to 100", "– / 161 / 171 / 210", "Hard tab; +5 to +15 Drop Quantity a piece"],
+        ["Infinite 2", "120", "– / 330 / 340 / 410", "Hard tab; +10 to +30 Drop Quantity a piece"]
       ]
     },
     {
@@ -209,7 +209,7 @@
       "rows": [
         [
           "When a new tier pays off",
-          "Enhancing adds the same flat amount per step on every tier, so a fresh item of the next tier is weaker than a well-enhanced old one. Keep wearing the old item until the new one is enhanced past the break-even: a thorium sword equals a steel longsword about 3 steps higher, thorium armor equals iron about 5 steps higher, and sunstone armor equals thorium 8 steps higher. That is why the tiers say in use, not crafted.",
+          "Enhancing adds the same flat amount per step on every tier, so a fresh item of the next tier is weaker than a well-enhanced old one. The break-even points: a thorium sword equals a steel longsword about 3 steps higher, thorium armor equals iron about 5 steps higher, and sunstone armor equals thorium 8 steps higher. That is why the tiers say in use, not crafted.",
           "Game data",
           ["Wiki"]
         ],
@@ -251,9 +251,15 @@
         ],
         [
           "Event belts",
-          "Event belts are the main source of shorter monster respawn, which raises the offline kill cap. If you have none: the Harvest Belt was in the 2025 Harvest event shop, and the Harvest event runs until December 2; whether this year's shop has it is unverified, so check this year's shop.",
+          "Event belts are the main source of shorter monster respawn, which raises the kill cap.",
           "Game data",
-          ["Wiki", "Patch", "SteamNews"]
+          ["Wiki"]
+        ],
+        [
+          "Harvest event",
+          "The Harvest event runs until 2 December 2026. If you have no event belt, check its shop: the Harvest Belt was in the 2025 Harvest event shop, and whether this year's shop has it is unverified.",
+          "Estimate",
+          ["Patch", "SteamNews", "Wiki"]
         ],
         [
           "Enhance stones",
@@ -312,7 +318,7 @@
         ],
         [
           "Infinite 2",
-          "Unlocked by the Sun Scroll upgrades Infinite II Armor (400) and Infinite II Weapons (600). A #guides thread warns that crafting it affects the enhancements on the pieces used; read it before crafting.",
+          "Unlocked by the Sun Scroll upgrades Infinite II Armor (400 Sun Scroll) and Infinite II Weapons (600 Sun Scroll). A #guides thread warns that crafting it affects the enhancements on the pieces used; read it before crafting.",
           "Estimate",
           ["Wiki", "BlueMoon"]
         ],
@@ -321,6 +327,12 @@
           "A player gives the full Infinite 2 set as 80 Drop Quantity, against +10 to +30 a piece.",
           "Player report",
           ["TotalDQ"]
+        ],
+        [
+          "Crimson drops",
+          "Crimson Geode and Crimson Sap drop at 1 in 200,000 from mining and woodcutting.",
+          "Game data",
+          ["AllPets"]
         ],
         ["Trinkets", "Since 0.321.0 there is a trinket slot as well; see the Trinkets page.", "Game data", ["Patch"]]
       ]
