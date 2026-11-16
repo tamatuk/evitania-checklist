@@ -26,6 +26,7 @@ h3{font-family:var(--font-head);font-size:17px;font-weight:600;margin:0;color:va
 .pip.past{background:#8a5a14;border-color:#b8791a;color:#f6dfae}
 .pip.cur{background:var(--gold);border-color:var(--accent);color:var(--accent-ink);box-shadow:0 0 0 2px var(--accent-ink),0 0 0 4px var(--accent);position:relative;z-index:1}
 .sname{font-family:var(--font-head);font-size:16px;font-weight:600;letter-spacing:.02em;color:var(--ink);min-width:9ch}
+.sreach{color:var(--muted);font-size:13px;max-width:40ch}
 .stage label{color:var(--muted);font-family:var(--font-head);font-size:13px;text-transform:uppercase;letter-spacing:.08em}
 select{font:inherit;color:var(--ink);background:var(--sunk);border:2px solid var(--line);border-radius:var(--r);padding:5px 8px}
 .sum{display:flex;flex-wrap:wrap;gap:6px}
@@ -130,11 +131,6 @@ table{border-collapse:collapse;width:100%;font-size:13px}
 th,td{text-align:left;vertical-align:top;padding:7px 12px;border-top:1px solid var(--line)}
 thead th{border-top:0;background:var(--sunk);font-family:var(--font-head);font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:.07em;color:var(--accent);white-space:nowrap}
 td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-.matrix td,.matrix th{text-align:center;font-variant-numeric:tabular-nums;white-space:nowrap}
-.matrix td:first-child,.matrix th:first-child{text-align:left;position:sticky;left:0;background:var(--surface)}
-.matrix thead th:first-child{background:var(--sunk)}
-.matrix .cur{background:var(--accent-soft);color:var(--ink);font-weight:700}
-.matrix .when td{font-size:11px;color:var(--muted);white-space:normal;min-width:96px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
 .cell{display:flex;align-items:center;gap:9px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:8px 10px;min-width:0}
 .cell span:last-child{min-width:0;overflow-wrap:anywhere}
@@ -145,7 +141,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 
 <header class="bar"><div class="wrap">
   <h1>Evitania Checklist</h1>
-  <div class="stage" role="group" aria-label="My stage"><span class="slabel">Stage</span><div class="pips" id="pips"></div><span class="sname" id="sname"></span></div>
+  <div class="stage" role="group" aria-label="My stage"><span class="slabel">Stage</span><div class="pips" id="pips"></div><span class="sname" id="sname"></span><span class="sreach" id="sreach"></span></div>
 </div></header>
 <nav class="tabs" aria-label="Views"><div class="wrap" id="tabs"></div></nav>
 <main class="wrap" id="main"></main>
@@ -167,7 +163,7 @@ const ROLES=['Pusher','Material farmer','Rare-drop farmer','Leveller'];
 function cleanChars(a){if(!Array.isArray(a))return[];return a.filter(c=>c&&D.trees[c.cls]).slice(0,8).map(c=>({cls:c.cls,role:ROLES.includes(c.role)?c.role:'Material farmer',level:Math.max(1,Math.min(200,parseInt(c.level)||1)),pts:null}))}
 let state={stage:null,tiers:{},daily:[],chars:[]};
 let syncMsg='';
-try{const s=JSON.parse(localStorage.getItem('evi-state'));if(s&&s.tiers&&savedStageOk(s.stage))state={stage:s.stage,tiers:s.tiers&&Number.isInteger(s.tiers.Gear)&&s.tiers['Pusher gear']===undefined?{...s.tiers,'Pusher gear':s.tiers.Gear}:s.tiers,daily:cleanDaily(s.daily),chars:cleanChars(s.chars)}}catch(e){}
+try{const s=JSON.parse(localStorage.getItem('evi-state'));if(s&&s.tiers&&savedStageOk(s.stage))state={stage:unalias(s.stage),tiers:s.tiers&&Number.isInteger(s.tiers.Gear)&&s.tiers['Pusher gear']===undefined?{...s.tiers,'Pusher gear':s.tiers.Gear}:s.tiers,daily:cleanDaily(s.daily),chars:cleanChars(s.chars)}}catch(e){}
 function cleanDaily(a){const ok=new Set(D.daily.map(r=>r[1]));return Array.isArray(a)?[...new Set(a.filter(x=>ok.has(x)))]:[]}
 function saveLocal(){try{localStorage.setItem('evi-state',JSON.stringify(state))}catch(e){}}
 function cleanTiers(){const o={};for(const s of D.systems){const v=state.tiers[s.name];if(Number.isInteger(v))o[s.name]=v}return o}
@@ -175,13 +171,15 @@ function commit(){saveLocal();render();syncUrl()}
 function paintSync(){const el=document.getElementById('sync');if(el)el.textContent=syncMsg}
 const stageIdx=()=>D.stages.indexOf(state.stage);
 const hasStage=()=>stageIdx()>=0;
-function savedStageOk(v){return v===null||D.stages.includes(v)}
+// a renamed stage keeps its old name as an alias, so saved state and backups from before the rename still load
+function unalias(v){return Object.hasOwn(D.aliases,v)?D.aliases[v]:v}
+function savedStageOk(v){return v===null||D.stages.includes(unalias(v))}
 const stageLabel=(s=state.stage)=>D.stages.includes(s)?s:'no stage';
 const stageDigit=()=>hasStage()?stageIdx().toString(36):'z';
 const stageFromDigit=ch=>{if(ch==='z')return null;const si=parseInt(ch,36);if(!(si<D.stages.length))throw new Error('That share link is not valid.');return D.stages[si]};
 const stageToBackup=()=>hasStage()?slug(state.stage):null;
 // only an explicit null clears the stage, so a backup from before unset stages keeps the current one
-const stageFromBackup=v=>v===null?null:unslug(D.stages,v)||state.stage;
+const stageFromBackup=v=>v===null?null:unslug(D.stages,v)||D.aliases[unslug(Object.keys(D.aliases),v)]||state.stage;
 const pickStagePrompt=()=>'<span class="tinfo">Pick your stage at the top to see what each system expects.</span>';
 const expected=n=>hasStage()?D.expect[n][stageIdx()]:null;
 const tierOf=n=>Number.isInteger(state.tiers[n])?state.tiers[n]:null;
@@ -217,7 +215,7 @@ function srcLinks(str){return String(str).split('; ').map(n=>{const s=D.sources.
 
 function vChecklist(){
   const c={good:0,bad:0,warn:0,idle:0,none:0}; for(const s of D.systems)c[status(s.name).k]++;
-  let h='<div class="vhead"><h2>Progress by system</h2><p class="lead">Set the highest tier you have reached in each system. The coloured number is how many stages that puts you ahead of or behind your stage, and each stage expects what you need before its next boss.</p></div>'
+  let h='<div class="vhead"><h2>Progress by system</h2><p class="lead">Set the highest tier you have reached in each system. The coloured number is how many stages that puts you ahead of or behind your stage, and each stage expects what you need to reach the next stage.</p></div>'
     +'<div class="tbar">'+(hasStage()?'<span class="sum"><span class="pill p-good">'+c.good+' on track</span><span class="pill p-bad">'+c.bad+' behind</span><span class="pill p-warn">'+c.warn+' to set</span></span>':pickStagePrompt())+'<div class="seg" role="group" aria-label="Sort">'+SORTS.map(o=>'<button type="button" class="sg'+(o[0]===sortBy?' on':'')+'" id="sort-'+o[0]+'" data-act="sort" data-v="'+o[0]+'" aria-pressed="'+(o[0]===sortBy)+'">'+o[1]+'</button>').join('')+'</div><span class="thint">Click a name to open its tiers and rules.</span><button type="button" class="reset" data-act="openall">'+(open.size===D.systems.length?'Hide all':'Show all')+'</button></div><div class="list">';
   const rank=s=>hasStage()?[expected(s.name)===0&&tierOf(s.name)===null?1:0,stageDiff(s.name)]:[0,0];
   const byName=(a,b)=>a.name.localeCompare(b.name,'en');
@@ -253,12 +251,6 @@ function ladderHTML(s){const key=slug(s.name),t=tierOf(s.name),e=expected(s.name
   if(hid>0) h+='<li class="cover"><button type="button" class="rung more" id="more-'+key+'" data-act="later" data-sys="'+esc(s.name)+'" aria-expanded="'+all+'">'+(all?'Hide':'Show')+' '+hid+' tier'+(hid>1?'s':'')+' not expected at '+esc(stageLabel())+'</button></li>';
   return h+'</ol>'}
 
-
-function vStages(){const si=stageIdx();
-  let h='<p class="lead">The tier of each system to have at each stage. Tier definitions come from guides; these stage expectations are a synthesis, so treat them as a draft.</p><div class="tbl"><table class="matrix"><thead><tr><th>System</th>'+D.stages.map((s,i)=>'<th'+(i===si?' class="cur"':'')+'>'+(i+1)+' \u00b7 '+esc(s)+'</th>').join('')+'</tr></thead><tbody>'
-    +'<tr class="when"><td>Reached when</td>'+D.reached.map(r=>'<td>'+rich(r)+'</td>').join('')+'</tr>';
-  for(const s of D.systems){h+='<tr><td><a href="#'+slug(s.name)+'">'+esc(s.name)+'</a></td>'+D.expect[s.name].map((v,i)=>'<td'+(i===si?' class="cur"':'')+'>'+v+'</td>').join('')+'</tr>'}
-  return h+'</tbody></table></div>' }
 
 const DAILY_FROM={'Any':0,'Guild':0,'Act 1+':1,'Level 50+':2,'Act 2+':2,'Act 3':6};
 const dailyStage=r=>DAILY_FROM[r[0]]??0;
@@ -366,7 +358,7 @@ function vSources(){
   return h+'</tbody></table></div></div>' }
 
 function render(){const r=route();
-  const si=stageIdx(); document.getElementById('pips').innerHTML=D.stages.map((s,i)=>'<button type="button" class="pip'+(i<si?' past':i===si?' cur':'')+'" id="pip'+i+'" data-i="'+i+'" aria-pressed="'+(i===si)+'" aria-label="Stage '+(i+1)+', '+esc(s)+'" title="'+esc(s)+'">'+(i+1)+'</button>').join(''); document.getElementById('sname').textContent=stageLabel();
+  const si=stageIdx(); document.getElementById('pips').innerHTML=D.stages.map((s,i)=>'<button type="button" class="pip'+(i<si?' past':i===si?' cur':'')+'" id="pip'+i+'" data-i="'+i+'" aria-pressed="'+(i===si)+'" aria-label="Stage '+(i+1)+', '+esc(s)+': '+esc(D.reached[i])+'" title="'+esc(s)+': '+esc(D.reached[i])+'">'+(i+1)+'</button>').join(''); document.getElementById('sname').textContent=stageLabel(); document.getElementById('sreach').textContent=hasStage()?D.reached[si]:'';
 
   document.getElementById('tabs').innerHTML=VIEWS.map(v=>'<a href="#'+v[0]+'"'+((r===v[0]||(v[0]==='checklist'&&!VIEWS.some(x=>x[0]===r)))?' aria-current="page"':'')+'>'+v[1]+'</a>').join('')+(FEEDBACK_URL?'<a class="fb" href="'+esc(FEEDBACK_URL)+'" target="_blank" rel="noopener">Feedback</a>':'');
   const m=document.getElementById('main');

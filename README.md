@@ -72,6 +72,7 @@ just repeat it in `src/template.html` so the next build keeps it.
   the name in lower case with every run of other characters turned into `-`.
 - `stage` is `null` when no stage is picked. Importing `null` clears the stage;
   a backup without `stage`, or with an unknown one, keeps the current stage.
+  A renamed stage's old slug imports as the stage it was renamed to.
 - `tiers` holds the highest tier reached per system; systems not set are left out.
 - `daily` lists the ticked task ids. `chars` rows are `[class, role, level]`.
 
@@ -117,9 +118,15 @@ the job summary of the PR's **PR Preview** check instead.
 
 Things to know when editing `src/data/`:
 
-- **Stages** are numbered 1–10. `expect` in `stages.json` gives each system's
-  expected tier at each stage, one number per stage; a stage expects what you
-  need _before its next boss_. Its key order is the order of systems on the page.
+- **Stages** are numbered 1–10. `reached` in `stages.json` says what reaching
+  each stage means; the page shows it beside the stage name and on each stage
+  button. `expect` gives each system's expected tier at each stage, one number
+  per stage; a stage expects what you need _to reach the next stage_. Its key
+  order is the order of systems on the page.
+- **Renaming a stage** loses saved progress unless its old name is kept: add
+  `"<old name>": "<new name>"` to `aliases` in `stages.json`. The page saves the
+  stage by name and backups by slug; share links store the stage number and
+  need no alias.
 - **A new system** needs a file in `src/data/systems/`, a row in `expect`, an
   icon in `systemIcon` (`icons.json`) and its name appended to `systems` in
   `share.json`.
@@ -131,8 +138,9 @@ Things to know when editing `src/data/`:
   `Player report`) and its sources: a list of `sources.json` keys, which may be
   empty. A table's `Source` column holds the same kind of list.
 - **The build checks the data** and stops naming the file and what is wrong: a
-  source key missing from `sources.json`, an `expect` row without one number per
-  stage, a system file with no `expect` row or the reverse, a table row with
+  source key missing from `sources.json`, a `reached` text missing for a stage,
+  an alias that is still a stage name or names no stage, an `expect` row without
+  one number per stage, a system file with no `expect` row or the reverse, a table row with
   more or fewer cells than its columns, a daily task without a unique id, or
   share lists that do not match the systems and daily ids.
 - `mise run lint` checks that the JSON files are formatted; `mise run lint-fix`
