@@ -140,9 +140,9 @@ Things to know when editing `src/data/`:
 - **The build checks the data** and stops naming the file and what is wrong: a
   source key missing from `sources.json`, a `reached` text missing for a stage,
   an alias that is still a stage name or names no stage, an `expect` row without
-  one number per stage, a system file with no `expect` row or the reverse, a table row with
-  more or fewer cells than its columns, a daily task without a unique id, or
-  share lists that do not match the systems and daily ids.
+  one number per stage, a system file with no `expect` row or the reverse, a
+  table row with more or fewer cells than its columns, a daily task without a
+  unique id, or share lists that do not match the systems and daily ids.
 - `mise run lint` checks that the JSON files are formatted; `mise run lint-fix`
   formats them.
 

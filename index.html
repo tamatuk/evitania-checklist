@@ -188,7 +188,7 @@ const stageDigit=()=>hasStage()?stageIdx().toString(36):'z';
 const stageFromDigit=ch=>{if(ch==='z')return null;const si=parseInt(ch,36);if(!(si<D.stages.length))throw new Error('That share link is not valid.');return D.stages[si]};
 const stageToBackup=()=>hasStage()?slug(state.stage):null;
 // only an explicit null clears the stage, so a backup from before unset stages keeps the current one
-const stageFromBackup=v=>v===null?null:unslug(D.stages,v)||D.aliases[unslug(Object.keys(D.aliases),v)]||state.stage;
+const stageFromBackup=v=>v===null?null:unslug(D.stages,v)||unalias(unslug(Object.keys(D.aliases),v))||state.stage;
 const pickStagePrompt=()=>'<span class="tinfo">Pick your stage at the top to see what each system expects.</span>';
 const expected=n=>hasStage()?D.expect[n][stageIdx()]:null;
 const tierOf=n=>Number.isInteger(state.tiers[n])?state.tiers[n]:null;
