@@ -209,6 +209,12 @@
     "link": "https://evitania-online.com/",
     "asof": "data of 2026-10-11, read 2026-11-14"
   },
+  "SteamNews": {
+    "name": "Evitania Online news and update notes (Steam store)",
+    "where": "Steam news",
+    "link": "https://store.steampowered.com/news/app/4119420",
+    "asof": "read 2026-11-16"
+  },
   "Patch": {
     "name": "#patch-notes 0.319.4 to 0.323.1 (neype, developer)",
     "where": "Discord #patch-notes",
