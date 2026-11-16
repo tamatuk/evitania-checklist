@@ -78,7 +78,7 @@ def check_daily(daily):
         seen.add(r["id"])
 
 def check_share(share, systems, daily):
-    """share.json's lists hold exactly the systems' names and the daily ids; fails naming what is missing or extra."""
+    """share.json's lists hold exactly the systems' names and the daily ids; fails naming what is missing, extra or repeated."""
     for key, want in (("systems", systems), ("daily", daily)):
         have = share[key]
         missing = [x for x in want if x not in have]
@@ -132,7 +132,9 @@ idx = {n_: i for i, n_ in reversed(list(enumerate(names)))}
 for k, v in ICONS["alias"].items():
     if v in idx: T[k] = idx[v]
     else: print("alias target missing:", k, "->", v)
-for s_ in data["systems"]: s_["icon"] = idx[ICONS["systemIcon"][s_["name"]]]
+for s_ in data["systems"]:
+    if s_["name"] not in ICONS["systemIcon"]: fail("icons.json: systemIcon has no entry for %r" % s_["name"])
+    s_["icon"] = idx[ICONS["systemIcon"][s_["name"]]]
 
 # ---------------------------------------------------------------- talent trees (Piwu's guides, 2026-08-06)
 def load_trees(tf):
