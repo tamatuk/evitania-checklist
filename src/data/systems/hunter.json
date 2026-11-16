@@ -106,8 +106,8 @@
           ["MTFarm"]
         ],
         [
-          "Gathering trainings",
-          "Woodcutting Power, Mining Power, Woodcutting Experience and Mining Experience use Act 2 and Act 3 materials (Ironwood Log, Thorium Ore, Palm Tree Log, Beetleman Sting), so the \"every training\" tiers leave them out: level them as their materials open.",
+          "Act 2 and Act 3 gathering trainings",
+          "Woodcutting Power, Mining Power, Woodcutting Experience and Mining Experience use Act 2 and Act 3 materials (Ironwood Log, Thorium Ore, Palm Tree Log, Beetleman Sting), so the \"every combat and Act 1 training\" tiers leave them out: level them as their materials open.",
           "Game data",
           ["Wiki"]
         ]
