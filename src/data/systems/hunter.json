@@ -65,7 +65,7 @@
         ],
         [
           "Cost",
-          "Each level costs 1.7 times the one before: level 10 is 202 materials, 15 is 2,860, 20 is 40,600, 25 is 577,000 and 30 is 8.19 million. Two trainings differ: Hunter Cost Reduction costs 1,300 x 1.5^L gold (1.5 times a level) and Speed Training (movement) 900 x 1.55^L gold (1.55 times a level).",
+          "Each level costs 1.7 times the one before: level 10 is 202 materials, 15 is 2,860, 20 is 40,600, 25 is 577,000 and 30 is 8.19 million. Two trainings differ: Hunter Cost Reduction costs 1.5 times the last (1,300 x 1.5^L gold) and Speed Training (movement) 1.55 times (900 x 1.55^L gold).",
           "Game data",
           ["Sakori", "Wiki"]
         ],
