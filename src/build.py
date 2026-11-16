@@ -53,8 +53,18 @@ def check_expect(expect, stages):
         if len(row) != len(stages) or not all(isinstance(x, int) for x in row):
             fail("stages.json: expect %r needs %d numbers, one per stage, has %r" % (n_, len(stages), row))
 
+def check_stages(st):
+    """One reached text per stage, and each alias an old stage name, no longer a stage, mapping to a current one;
+    fails naming the alias or the counts."""
+    if len(st["reached"]) != len(st["stages"]):
+        fail("stages.json: %d reached texts for %d stages" % (len(st["reached"]), len(st["stages"])))
+    for old, new in st["aliases"].items():
+        if old in st["stages"]: fail("stages.json: alias %r is still a stage name" % old)
+        if new not in st["stages"]: fail("stages.json: alias %r maps to %r, which is not a stage" % (old, new))
+
 SRC = load("sources.json")
 ST = load("stages.json")
+check_stages(ST)
 check_expect(ST["expect"], ST["stages"])
 SYS = load_systems(list(ST["expect"]))
 DAILY = load("daily.json")
@@ -92,7 +102,7 @@ SHARE = load("share.json")
 check_daily(DAILY)
 check_share(SHARE, [s_["name"] for _, s_ in SYS], [r["id"] for r in DAILY])
 data = {"roster": [[r["topic"], r["rule"], r["basis"], cite(r["source"], "roster.json")] for r in ROSTER],
-        "systems": systems, "stages": ST["stages"], "reached": ST["reached"], "expect": ST["expect"],
+        "systems": systems, "stages": ST["stages"], "reached": ST["reached"], "aliases": ST["aliases"], "expect": ST["expect"],
         "daily": [[r["when"], r["task"], r["why"], cite(r["source"], "daily.json"), r["id"]] for r in DAILY],
         "shareSys": SHARE["systems"], "shareDaily": SHARE["daily"], "about": [[r["topic"], r["text"]] for r in ABOUT], "sources": [{k: s_[k] for k in ("name", "where", "link", "asof")} for s_ in SRC.values()]}
 
