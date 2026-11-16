@@ -7,9 +7,9 @@
       "source": ["MTAct2", "FAQ"]
     },
     {
-      "req": "PRE x6 runeword active: +20 Drop Quantity, +20% offline gains, +200 attack, +2 portal kills.",
+      "req": "PRE x6 runeword active: +20 Drop Quantity, +20% offline gains, +200 attack, +2 portal kills. The 6 Premium Runes cost 150 + 250 + 350 + 500 + 700 + 900 = 2,850 gems.",
       "basis": "Guide",
-      "source": ["PiwuGems", "MTAct2"]
+      "source": ["PiwuGems", "MTAct2", "Wiki"]
     },
     {
       "req": "TYR + SUR + VEX + LUM: +50% EXP, +300 attack, +5% offline gains.",
@@ -58,7 +58,7 @@
         ["Sockets", "Buy more sockets as you become able to make runewords.", "Guide", ["PiwuGems"]],
         [
           "Starter word",
-          "GOR + MU + HAS gives +200 HP, +1 portal kill and +10% all EXP. It is the cheapest runeword (all tier-1 runes) once GOR drops in Act 3.",
+          "GOR + MU + HAS gives +200 HP, +1 portal kill and +10% all EXP. It is the cheapest runeword (all tier-1 runes): the Go to Act 2 Town quest gives all three runes, and spare GOR drops in Act 3 zones 1 to 4.",
           "Game data",
           ["Wiki"]
         ],
@@ -83,9 +83,9 @@
         ],
         [
           "Moved drops",
-          "RYS and WOM are reported to drop from Act 3 Palm trees and Sunstone ore now.",
-          "Player report",
-          ["RuneG"]
+          "RYS also drops from Act 3 Palm trees, as well as Act 2 Ironwood trees, and WOM also from Act 3 Sunstone ore, as well as Act 2 Thorium ore.",
+          "Game data",
+          ["Wiki", "RuneG"]
         ]
       ]
     },
@@ -95,12 +95,22 @@
       "rows": [
         ["NIL, DOT, WIR, GRO", "Act 2: Iceboar to Yeti", "Woodcutting power", "10, 18, 24, 30"],
         ["FUS, YIT, SKO, MIN", "Act 2: Ratatoskr to Troll", "Mining power", "10, 18, 24, 30"],
-        ["MU, RO, FON, FAL", "Act 2: Penguin to Draugr", "Gold", "1%, 2%, 4%, 5%"],
-        ["HAS, OLU, SUR, TYR", "Act 2 bosses; Act 3: Fez to Horus", "All EXP", "1%, 2%, 4%, 5%"],
+        [
+          "MU, RO, FON, FAL",
+          "Act 2: Penguin to Draugr; also Act 1 Hard/Nightmare bosses and the Go to Act 2 Town quest",
+          "Gold",
+          "1%, 2%, 4%, 5%"
+        ],
+        [
+          "HAS, OLU, SUR, TYR",
+          "Act 2 bosses; Act 3 zones 5 to 8 (Fez to Beetleman); the Go to Act 2 Town quest",
+          "All EXP",
+          "1%, 2%, 4%, 5%"
+        ],
         ["RYS, LUM, ORT, VEX", "Act 2 Ironwood tree; Act 3 Palm tree", "Attack", "15, 27, 36, 45"],
         ["WOM, SIRC, APEX, BEB", "Act 2 Thorium ore; Act 3 Sunstone ore", "Crit damage", "5%, 9%, 12%, 15%"],
         ["KI, WER, ANG, YUR", "Act 1 Hard Mode monsters", "Physical defence", "4, 8, 16, 20"],
-        ["GOR, BOL, TES, WAR", "Act 3: Sun Boy to Kangaroo", "HP", "22, 44, 88, 110"],
+        ["GOR, BOL, TES, WAR", "Act 3: Sun Boy to Kangaroo; the Go to Act 2 Town quest", "HP", "22, 44, 88, 110"],
         ["PRE", "Gem shop", "Magic Find, offline, attack", "+2, +2%, +30 each"]
       ]
     }
