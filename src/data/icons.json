@@ -1,0 +1,174 @@
+{
+  "rename": {
+    "attack_speed_training": "Speed Training (attack)",
+    "movement_speed_training": "Speed Training (movement)",
+    "chance_to_get_1_ash_per_kill": "Hot Stuff",
+    "stoney_mcstoneface": "Stoney McStoneface",
+    "zhai_haluds_gate": "Zhai Halud's Gate",
+    "the_crabs_pickaxe": "The Crab's Pickaxe",
+    "maevaths_horn": "Maevath's Horn",
+    "deaths_flower": "Death's Flower",
+    "necromancers_hand": "Necromancer's Hand",
+    "servants_idol": "Servant's Idol",
+    "worms_horn": "Worm's Horn",
+    "act1_hard": "Act 1 Hard card",
+    "act2_hard": "Act 2 Hard card",
+    "act1_nightmare": "Act 1 Nightmare card",
+    "act2_nightmare": "Act 2 Nightmare card",
+    "crab": "Crab Miner",
+    "watches": "Watch",
+    "ciphered_billding": "Ciphered Billding",
+    "fifth_stab": "Fifth Slab",
+    "entombed_mask": "Entombed Mask"
+  },
+  "groups": [
+    {
+      "name": "Hunter trainings",
+      "dir": "bonuses/images/hunter_upgrades",
+      "mode": "all"
+    },
+    {
+      "name": "Sacrifices",
+      "dir": "bonuses/images/bonfire_sacrifice",
+      "mode": "all"
+    },
+    {
+      "name": "Ash tree",
+      "dir": "bonuses/images/bonfire_ash",
+      "mode": "all"
+    },
+    {
+      "name": "Heat bonuses",
+      "dir": "bonuses/images/bonfire_bonuses",
+      "mode": "all"
+    },
+    {
+      "name": "Engineer",
+      "dir": "items/images/engineer",
+      "mode": "all"
+    },
+    {
+      "name": "Engineer upgrades",
+      "dir": "bonuses/images/engineer_upgrades",
+      "mode": "multi"
+    },
+    {
+      "name": "Gem shop",
+      "dir": "bonuses/images/gem_shop",
+      "mode": "multi"
+    },
+    {
+      "name": "Monsters, bosses and nodes",
+      "dir": "cards/images",
+      "mode": "curated"
+    },
+    {
+      "name": "Runes",
+      "dir": "items/images/runes",
+      "mode": "rune"
+    },
+    {
+      "name": "Curios",
+      "dir": "items/images/curio",
+      "mode": "multi"
+    },
+    {
+      "name": "Smeltery and usables",
+      "dir": "items/images/smeltery",
+      "mode": "all"
+    },
+    {
+      "name": "Smeltery and usables",
+      "dir": "items/images/usables",
+      "mode": "multi"
+    },
+    {
+      "name": "Materials",
+      "dir": "items/images/materials",
+      "mode": "all"
+    },
+    {
+      "name": "Gear",
+      "dir": "items/images/gear",
+      "mode": "multi"
+    },
+    {
+      "name": "Pets",
+      "dir": "items/images/pets",
+      "mode": "multi"
+    },
+    {
+      "name": "Currencies",
+      "dir": "items/images",
+      "mode": "top"
+    },
+    {
+      "name": "Talents",
+      "dir": "bonuses/images/progression",
+      "mode": "raw"
+    }
+  ],
+  "stop": ["Gold", "Leaf", "Ash", "Glass", "Gem", "Ghost", "Coal", "Goak", "Cactus", "Cryolite", "Idea"],
+  "alias": {
+    "Damage Abuse": "Damage Abuse Training",
+    "More Damage": "More Damage Training",
+    "Dice": "Dice Training",
+    "Boars": "Boar",
+    "Pebbles": "Pebble",
+    "Stumps": "Stump",
+    "Plants": "Plant",
+    "Wolves": "Wolf",
+    "Crabs": "Crab Miner",
+    "crab miners": "Crab Miner",
+    "Weird Books": "Weird Book",
+    "Slime Cubes": "Slime Cube",
+    "Fire Elementals": "Fire Elemental",
+    "Watches": "Watch",
+    "Snowmen": "Snowman",
+    "Helmets": "Helmet",
+    "Mammoth": "Ice Mammoth",
+    "Jötunn": "Jotunn",
+    "Red Dragon": "Yrsainir",
+    "Wish for Wisdom": "Wish for Wizdom",
+    "Owl Wisdom": "Owl Wizdom",
+    "Fiery Weapons": "Fiery Weapon",
+    "Double Crits": "Double Crit",
+    "Slymes": "Slyme",
+    "Ironwood": "Ironwood Log",
+    "Thorium": "Thorium Ore",
+    "Mini Plant": "Mini Plants",
+    "Icy Needle": "Icy Needles",
+    "Humble Sacrifice": "Humble Sacrifices",
+    "Golden Piggy": "Golden Piggy",
+    "Leaf Spirit": "Leaf Spirit",
+    "Basic Bat": "Basic Bat",
+    "Slyme": "Slyme",
+    "Chadcoal": "Chadcoal",
+    "Palm Face": "Palm Face",
+    "Enhance stones": "Enhance Stone 1",
+    "Smelter Patterns": "Smelting Patterns",
+    "Jotunn's Eye": "Jotunn Eye",
+    "Fate Spiral": "Daily Fate Spiral",
+    "Premium Runes": "Premium Rune",
+    "Engineer Slot Upgrades": "Engineer Slot Upgrade",
+    "Cost Cruncher": "Hunter Cost Cruncher"
+  },
+  "systemIcon": {
+    "Hunter": "Power Training",
+    "Bonfire": "Fiery Weapon",
+    "Ash": "Ash",
+    "Sacrifice": "Attack Wish",
+    "Pusher gear": "Thorium Sword",
+    "Gatherer gear": "Thorium Pickaxe",
+    "Gathering": "Ironwood Log",
+    "Gems": "Gem",
+    "Pets": "Basic Bat",
+    "Cards": "Act 1 Hard card",
+    "Runes": "PRE",
+    "Engineer": "Blueprint",
+    "Curio": "Curio Coin",
+    "Hourglass": "8 Hour Hourglass",
+    "Characters": "Straw Hat",
+    "Trinkets": "Anomalous Ring"
+  }
+}
