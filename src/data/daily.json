@@ -3,27 +3,27 @@
     "id": "quest",
     "when": "Any",
     "task": "Complete the daily quest",
-    "why": "60 gems a day",
-    "source": ["DBTips"]
+    "why": "60 gems and the day's boss keys (3, +1 for each Engineer Daily Activity Enhancer I-III)",
+    "source": ["DBTips", "Wiki"]
   },
   {
     "id": "login",
     "when": "Any",
     "task": "Claim the daily login tracks",
-    "why": "Missed days stack and can be claimed later",
-    "source": ["DBTips"]
+    "why": "Days you were online but did not claim stack (Monthly and 7-Day); they need a registered account",
+    "source": ["DBTips", "SteamNews"]
   },
   {
     "id": "boss-keys",
     "when": "Any",
-    "task": "Spend boss keys (3 a day, 30 cap)",
+    "task": "Spend boss keys (30 cap, +5 for each Engineer Keyring tier, up to 45)",
     "why": "Boss cards, pets and Enhance stones",
-    "source": ["Treyex", "DBTips"]
+    "source": ["Treyex", "DBTips", "Wiki"]
   },
   {
     "id": "vendor-1",
     "when": "Any",
-    "task": "Act 1 vendor: buy the 3 Enhance Stone 1 and the Animal Bone",
+    "task": "Act 1 vendor: buy all the Enhance Stone 1 (3 a day; Engineer Vendor Stock raises it) and the Animal Bone",
     "why": "Stones for gear up to steel. Each bone crafts a Bone Dagger, a cheap item to fail on when building enhance chance",
     "source": ["MTEnh", "Wiki", "Jivchik"]
   },
@@ -36,14 +36,14 @@
   },
   {
     "id": "vendor-3",
-    "when": "Act 3",
+    "when": "Act 3+",
     "task": "Act 3 vendor: buy all the Crystallized Blue Substance and the Enhance Stone 3",
     "why": "The vendor is its only source. Infinite 1 armor takes 60, and Perfect Silk Fabric and Perfect Aether Crystal use 3 and 6 a craft",
     "source": ["Wiki"]
   },
   {
     "id": "tower",
-    "when": "Any",
+    "when": "Level 25+",
     "task": "Run the Tower attempts",
     "why": "Gold, gems and keys",
     "source": ["Treyex"]
@@ -57,10 +57,10 @@
   },
   {
     "id": "cost-cruncher",
-    "when": "Act 1+",
-    "task": "Spend the stacked Cost Cruncher discount on one expensive Hunter upgrade",
-    "why": "The stack resets on any Hunter upgrade",
-    "source": ["PiwuGems", "DBTips"]
+    "when": "Cost Cruncher bought",
+    "task": "If you bought Cost Cruncher: before any other Hunter purchase, buy your most expensive planned Hunter level",
+    "why": "Needs at least one level of Hunter Cost Cruncher (300 gems). Any Hunter purchase uses up the whole stacked discount, so let the expensive one take it",
+    "source": ["PiwuGems", "DBTips", "SteamNews"]
   },
   {
     "id": "bonfire-fuel",
@@ -78,14 +78,14 @@
   },
   {
     "id": "fate-spiral",
-    "when": "Act 3",
+    "when": "Fate Spiral bought",
     "task": "Open the daily Fate Spiral",
     "why": "One curio a day",
     "source": ["PiwuGems"]
   },
   {
     "id": "curio-coins",
-    "when": "Act 3",
+    "when": "Act 3+",
     "task": "Collect curio coins before they cap",
     "why": "Coins stop accruing at the cap",
     "source": ["JTCurio"]
@@ -94,14 +94,21 @@
     "id": "event-dungeons",
     "when": "Level 50+",
     "task": "Run the event dungeons while an event is on",
-    "why": "Trinkets and event rewards; tiers are gated by attack",
-    "source": ["Patch"]
+    "why": "Trinkets and event rewards. Tiers are gated by attack (top tier 10M). Dungeon keys stack to 20, so a missed day is not lost",
+    "source": ["Patch", "SteamNews"]
   },
   {
     "id": "guild-donations",
-    "when": "Guild",
+    "when": "Level 60+, in a guild",
     "task": "Log in and make the two daily donations (500k and 10m gold)",
-    "why": "Activity, seals and guild funds",
-    "source": ["Guilds"]
+    "why": "Activity, seals and guild funds. The weekly guild kill task needs playing, not only a login",
+    "source": ["Guilds", "SteamNews"]
+  },
+  {
+    "id": "hourglass",
+    "when": "Hourglass level 5+",
+    "task": "Check the Hourglass rifts and start any that finished",
+    "why": "Rifts run 8, 10, 12 or 20 hours and open at Hourglass level 5",
+    "source": ["Wiki", "DBHG"]
   }
 ]
