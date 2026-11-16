@@ -165,36 +165,25 @@ function rich(t){ if(t===null||t===undefined) return ''; t=String(t); let out=''
   return out+esc(t.slice(last)) }
 const ROLES=['Pusher','Material farmer','Rare-drop farmer','Leveller'];
 function cleanChars(a){if(!Array.isArray(a))return[];return a.filter(c=>c&&D.trees[c.cls]).slice(0,8).map(c=>({cls:c.cls,role:ROLES.includes(c.role)?c.role:'Material farmer',level:Math.max(1,Math.min(200,parseInt(c.level)||1)),pts:null}))}
-// planned: stage starts null, and build.py drops defaultStage
-let state={stage:D.defaultStage,tiers:{},daily:[],chars:[]};
+let state={stage:null,tiers:{},daily:[],chars:[]};
 let syncMsg='';
-try{const s=JSON.parse(localStorage.getItem('evi-state'));if(s&&s.tiers&&D.stages.includes(s.stage))state={stage:s.stage,tiers:s.tiers&&Number.isInteger(s.tiers.Gear)&&s.tiers['Pusher gear']===undefined?{...s.tiers,'Pusher gear':s.tiers.Gear}:s.tiers,daily:cleanDaily(s.daily),chars:cleanChars(s.chars)}}catch(e){}
+try{const s=JSON.parse(localStorage.getItem('evi-state'));if(s&&s.tiers&&savedStageOk(s.stage))state={stage:s.stage,tiers:s.tiers&&Number.isInteger(s.tiers.Gear)&&s.tiers['Pusher gear']===undefined?{...s.tiers,'Pusher gear':s.tiers.Gear}:s.tiers,daily:cleanDaily(s.daily),chars:cleanChars(s.chars)}}catch(e){}
 function cleanDaily(a){const ok=new Set(D.daily.map(r=>r[1]));return Array.isArray(a)?[...new Set(a.filter(x=>ok.has(x)))]:[]}
 function saveLocal(){try{localStorage.setItem('evi-state',JSON.stringify(state))}catch(e){}}
 function cleanTiers(){const o={};for(const s of D.systems){const v=state.tiers[s.name];if(Number.isInteger(v))o[s.name]=v}return o}
 function commit(){saveLocal();render();syncUrl()}
 function paintSync(){const el=document.getElementById('sync');if(el)el.textContent=syncMsg}
-// planned: returns -1 while no stage is picked instead of clamping to the first stage
-const stageIdx=()=>Math.max(0,D.stages.indexOf(state.stage));
-const STUB=()=>{throw new Error('not implemented')};
-// true once the user has picked a stage; without one, expected(), status(), the not-needed split,
-// the ladders' hidden tiers, the Daily filter and the pips and Stages column skip the stage
-const hasStage=()=>STUB();
-// saved-state guard: a picked stage or null loads, an absent or unknown stage drops the saved state as today
-const savedStageOk=v=>STUB();
-// the stage name for the header, the confirm prompt, the Daily lead and the not-needed texts: 'no stage' while none is picked
-const stageLabel=()=>STUB();
-// share code stage digit: base-36 stage index, 'z' while none is picked
-const stageDigit=()=>STUB();
-// share code digit back to a stage: 'z' gives null, a digit past the stages throws
-const stageFromDigit=ch=>STUB();
-// backup "stage" field on export: the stage slug, null while none is picked
-const stageToBackup=()=>STUB();
-// backup "stage" field on import: null clears the stage, an absent or unknown slug keeps the current one
-const stageFromBackup=v=>STUB();
-// the Checklist's "pick your stage" prompt shown while none is picked
-const pickStagePrompt=()=>STUB();
-const expected=n=>D.expect[n][stageIdx()];
+const stageIdx=()=>D.stages.indexOf(state.stage);
+const hasStage=()=>stageIdx()>=0;
+function savedStageOk(v){return v===null||D.stages.includes(v)}
+const stageLabel=(s=state.stage)=>D.stages.includes(s)?s:'no stage';
+const stageDigit=()=>hasStage()?stageIdx().toString(36):'z';
+const stageFromDigit=ch=>{if(ch==='z')return null;const si=parseInt(ch,36);if(!(si<D.stages.length))throw new Error('That share link is not valid.');return D.stages[si]};
+const stageToBackup=()=>hasStage()?slug(state.stage):null;
+// only an explicit null clears the stage, so a backup from before unset stages keeps the current one
+const stageFromBackup=v=>v===null?null:unslug(D.stages,v)||state.stage;
+const pickStagePrompt=()=>'<span class="tinfo">Pick your stage at the top to see what each system expects.</span>';
+const expected=n=>hasStage()?D.expect[n][stageIdx()]:null;
 const tierOf=n=>Number.isInteger(state.tiers[n])?state.tiers[n]:null;
 const NST=D.stages.length;
 const tierStageInt=(n,k)=>{const i=D.expect[n].findIndex(v=>v>=k);return i<0?NST+1:i+1};
@@ -206,6 +195,7 @@ function stagePos(n,t){const tot=sysBy(n).tiers.length; if(t>=tot) return NST+1;
   return tierStageInt(n,t)===nx?tierStage(n,t):nx-1}
 const stageDiff=n=>stagePos(n,tierOf(n)===null?0:tierOf(n))-(stageIdx()+1);
 function status(n){const t=tierOf(n),e=expected(n);
+  if(!hasStage()) return {k:'none',t:'',l:'No stage picked'};
   if(t===null) return e===0?{k:'idle',t:'–',l:'Not needed yet'}:{k:'warn',t:'?',l:'Tier not set'};
   const d=Math.floor(stageDiff(n)+1e-9),w=x=>x+' stage'+(x===1?'':'s');
   if(d>0) return {k:'good',t:'+'+d,l:'Your tier is what is expected '+w(d)+' ahead'}; if(d===0) return {k:'good',t:'0',l:'On track for your stage'};
@@ -226,10 +216,10 @@ function pill(s){return '<span class="pill diff p-'+s.k+'" title="'+esc(s.l)+'" 
 function srcLinks(str){return String(str).split('; ').map(n=>{const s=D.sources.find(x=>x.name===n);return s?'<a href="'+esc(s.link)+'" title="'+esc(s.where+', as of '+s.asof)+'">'+esc(n)+'</a>':esc(n)}).join('; ')}
 
 function vChecklist(){
-  const c={good:0,bad:0,warn:0,idle:0}; for(const s of D.systems)c[status(s.name).k]++;
+  const c={good:0,bad:0,warn:0,idle:0,none:0}; for(const s of D.systems)c[status(s.name).k]++;
   let h='<div class="vhead"><h2>Progress by system</h2><p class="lead">Set the highest tier you have reached in each system. The coloured number is how many stages that puts you ahead of or behind your stage, and each stage expects what you need before its next boss.</p></div>'
-    +'<div class="tbar"><span class="sum"><span class="pill p-good">'+c.good+' on track</span><span class="pill p-bad">'+c.bad+' behind</span><span class="pill p-warn">'+c.warn+' to set</span></span><div class="seg" role="group" aria-label="Sort">'+SORTS.map(o=>'<button type="button" class="sg'+(o[0]===sortBy?' on':'')+'" id="sort-'+o[0]+'" data-act="sort" data-v="'+o[0]+'" aria-pressed="'+(o[0]===sortBy)+'">'+o[1]+'</button>').join('')+'</div><span class="thint">Click a name to open its tiers and rules.</span><button type="button" class="reset" data-act="openall">'+(open.size===D.systems.length?'Hide all':'Show all')+'</button></div><div class="list">';
-  const rank=s=>[expected(s.name)===0&&tierOf(s.name)===null?1:0,stageDiff(s.name)];
+    +'<div class="tbar">'+(hasStage()?'<span class="sum"><span class="pill p-good">'+c.good+' on track</span><span class="pill p-bad">'+c.bad+' behind</span><span class="pill p-warn">'+c.warn+' to set</span></span>':pickStagePrompt())+'<div class="seg" role="group" aria-label="Sort">'+SORTS.map(o=>'<button type="button" class="sg'+(o[0]===sortBy?' on':'')+'" id="sort-'+o[0]+'" data-act="sort" data-v="'+o[0]+'" aria-pressed="'+(o[0]===sortBy)+'">'+o[1]+'</button>').join('')+'</div><span class="thint">Click a name to open its tiers and rules.</span><button type="button" class="reset" data-act="openall">'+(open.size===D.systems.length?'Hide all':'Show all')+'</button></div><div class="list">';
+  const rank=s=>hasStage()?[expected(s.name)===0&&tierOf(s.name)===null?1:0,stageDiff(s.name)]:[0,0];
   const byName=(a,b)=>a.name.localeCompare(b.name,'en');
   const unlock=s=>{const i=D.expect[s.name].findIndex(v=>v>0);return i<0?NST:i};
   const order=sortBy==='az'?D.systems.slice().sort(byName)
@@ -237,11 +227,11 @@ function vChecklist(){
     :D.systems.map((s,i)=>[s,i,rank(s)]).sort((a,b)=>a[2][0]-b[2][0]||a[2][1]-b[2][1]||a[1]-b[1]).map(x=>x[0]);
   let split=false;
   for(const s of order){const t=tierOf(s.name),e=expected(s.name),st=status(s.name),nx=s.tiers[(t===null?0:t)];
-    if(sortBy==='behind'&&e===0&&t===null&&!split){split=true;h+='<div class="divider">Not needed at '+esc(state.stage)+'</div>'}
+    if(sortBy==='behind'&&e===0&&t===null&&!split){split=true;h+='<div class="divider">Not needed at '+esc(stageLabel())+'</div>'}
     const op=open.has(s.name);
-    h+='<div class="item"><div class="row"><div class="sysn"><span class="slot s-'+st.k+'">'+icon(s.icon,'xl')+'</span><div><button type="button" class="name" id="tg-'+slug(s.name)+'" data-act="toggle" data-sys="'+esc(s.name)+'" aria-expanded="'+op+'"><span class="chev" aria-hidden="true">'+(op?'&#9662;':'&#9656;')+'</span>'+esc(s.name)+'</button><div class="exp">Expected tier '+e+' of '+s.tiers.length+'</div></div></div>'
+    h+='<div class="item"><div class="row"><div class="sysn"><span class="slot s-'+st.k+'">'+icon(s.icon,'xl')+'</span><div><button type="button" class="name" id="tg-'+slug(s.name)+'" data-act="toggle" data-sys="'+esc(s.name)+'" aria-expanded="'+op+'"><span class="chev" aria-hidden="true">'+(op?'&#9662;':'&#9656;')+'</span>'+esc(s.name)+'</button><div class="exp">'+(hasStage()?'Expected tier '+e+' of '+s.tiers.length:s.tiers.length+' tiers')+'</div></div></div>'
       +'<div class="step" role="group" aria-label="'+esc(s.name)+' tier"><button id="dec-'+slug(s.name)+'" data-act="dec" data-sys="'+esc(s.name)+'" aria-label="Lower tier">&minus;</button><output>'+(t===null?'&ndash;':t)+'</output><button id="inc-'+slug(s.name)+'" data-act="inc" data-sys="'+esc(s.name)+'" aria-label="Raise tier">+</button></div>'
-      +'<div class="st">'+pill(st)+'</div>'
+      +'<div class="st">'+(hasStage()?pill(st):'')+'</div>'
       +'<div class="next">'+(nx?'<small>Next: tier '+((t===null?0:t)+1)+'</small>'+rich(nx.req):'<small>All tiers done</small>')+'</div></div>'
       +(op?'<div class="panel">'+ladderHTML(s)+s.tables.map(tableHTML).join('')+'</div>':'')+'</div>'}
   return h+'</div><details class="about"'+(aboutOpen?' open':'')+' id="about"><summary>About this checklist</summary>'+tableHTML({title:'',cols:['Topic','Note'],rows:D.about})+'</details><div class="sync" id="sync">'+esc(syncMsg)+'</div>' }
@@ -256,11 +246,11 @@ function tableHTML(t){
 
 const sName=i=>i>NST?'Not expected at any stage yet':'Expected at stage '+i+', '+D.stages[i-1];
 const sLabel=i=>i>NST?'After '+NST:'Stage '+i;
-function ladderHTML(s){const key=slug(s.name),t=tierOf(s.name),e=expected(s.name),show=Math.max(e,t===null?0:t),all=true,hid=0;let h='<ol class="ladder">';
+function ladderHTML(s){const key=slug(s.name),t=tierOf(s.name),e=expected(s.name),show=Math.max(e||0,t===null?0:t),all=true,hid=0;let h='<ol class="ladder">';
   s.tiers.forEach((x,i)=>{const k=i+1,done=t!==null&&k<=t,need=!done&&k<=e; if(k>show&&!all) return;
     h+='<li class="'+(done?'done':need?'need':k>show?'far':'')+'"><button class="rung" id="rung-'+key+'-'+k+'" data-act="rung" data-sys="'+esc(s.name)+'" data-k="'+k+'" aria-pressed="'+done+'"><span class="num">'+(done?'&#10003;':k)+'</span><span class="req">'+rich(x.req)
       +'</span></button><div class="rmeta"><span class="stg'+(need?' due':'')+'" title="'+esc(sName(tierStageInt(s.name,k)))+'">'+sLabel(tierStageInt(s.name,k))+'</span><span class="tag'+(x.basis==='Estimate'?' mine':'')+'">'+esc(x.basis)+'</span><span class="srcs">'+srcLinks(x.source)+'</span></div></li>'});
-  if(hid>0) h+='<li class="cover"><button type="button" class="rung more" id="more-'+key+'" data-act="later" data-sys="'+esc(s.name)+'" aria-expanded="'+all+'">'+(all?'Hide':'Show')+' '+hid+' tier'+(hid>1?'s':'')+' not expected at '+esc(state.stage)+'</button></li>';
+  if(hid>0) h+='<li class="cover"><button type="button" class="rung more" id="more-'+key+'" data-act="later" data-sys="'+esc(s.name)+'" aria-expanded="'+all+'">'+(all?'Hide':'Show')+' '+hid+' tier'+(hid>1?'s':'')+' not expected at '+esc(stageLabel())+'</button></li>';
   return h+'</ol>'}
 
 
@@ -314,7 +304,7 @@ function vRoster(){let h='<div class="vhead"><h2>Characters</h2><p class="lead">
   return h+'<div class="sync" id="sync">'+esc(syncMsg)+'</div>' }
 let bkMsg='',bkPending=null;
 function exportObj(){const t={},ct=cleanTiers();for(const k in ct)t[slug(k)]=ct[k];const did=new Map(D.daily.map(r=>[r[1],r[4]]));
-  return {v:1,stage:slug(state.stage),tiers:t,daily:cleanDaily(state.daily).map(x=>did.get(x)),chars:cleanChars(state.chars).map(c=>[slug(c.cls),slug(c.role),c.level])}}
+  return {v:1,stage:stageToBackup(),tiers:t,daily:cleanDaily(state.daily).map(x=>did.get(x)),chars:cleanChars(state.chars).map(c=>[slug(c.cls),slug(c.role),c.level])}}
 const unslug=(list,v)=>list.find(x=>slug(x)===v);
 function parseBackup(txt){let o;try{o=JSON.parse(txt)}catch(e){throw new Error('That is not valid JSON.')}
   if(!o||typeof o!=='object'||Array.isArray(o)||o.v!==1) throw new Error('The file does not hold a checklist backup.');
@@ -323,19 +313,19 @@ function parseBackup(txt){let o;try{o=JSON.parse(txt)}catch(e){throw new Error('
   const byId=new Map(D.daily.map(r=>[r[4],r[1]]));
   const daily=Array.isArray(o.daily)?o.daily.map(x=>byId.get(x)):[];
   const chars=Array.isArray(o.chars)?o.chars.filter(Array.isArray).map(c=>({cls:unslug(Object.keys(D.trees),c[0]),role:unslug(ROLES,c[1]),level:c[2]})):null;
-  return {stage:unslug(D.stages,o.stage)||state.stage,tiers,daily:cleanDaily(daily),chars:cleanChars(chars),when:''}}
+  return {stage:stageFromBackup(o.stage),tiers,daily:cleanDaily(daily),chars:cleanChars(chars),when:''}}
 const FEEDBACK_URL='https://github.com/tamatuk/evitania-checklist/issues/new';
 const SH_CLS=['Warrior','Rogue','Mage'];
 function shareCode(){const ct=cleanTiers(),done=new Set(cleanDaily(state.daily)),idOf=new Map(D.daily.map(r=>[r[4],r[1]]));
   let m=0;D.shareDaily.forEach((id,i)=>{if(done.has(idOf.get(id)))m+=2**i});
-  return '1'+stageIdx().toString(36)+D.shareSys.map(n=>Number.isInteger(ct[n])?ct[n].toString(36):'z').join('')+'-'+m.toString(36)+'-'
+  return '1'+stageDigit()+D.shareSys.map(n=>Number.isInteger(ct[n])?ct[n].toString(36):'z').join('')+'-'+m.toString(36)+'-'
     +cleanChars(state.chars).map(c=>SH_CLS.indexOf(c.cls)+''+ROLES.indexOf(c.role)+c.level.toString(36).padStart(2,'0')).join('')}
 function parseShare(h){const m=/^1([0-9a-z])([0-9a-z]*)-([0-9a-z]+)-([0-9a-z]*)$/.exec(h); if(!m) throw new Error('That share link is not valid.');
-  const si=parseInt(m[1],36); if(!(si<D.stages.length)) throw new Error('That share link is not valid.');
+  const stage=stageFromDigit(m[1]);
   const tiers={};D.shareSys.forEach((n,i)=>{const ch=m[2][i],s=sysBy(n); if(ch&&ch!=='z'&&s){tiers[n]=Math.min(parseInt(ch,36),s.tiers.length)}});
   const mask=parseInt(m[3],36),idOf=new Map(D.daily.map(r=>[r[4],r[1]])),daily=[];D.shareDaily.forEach((id,i)=>{if(Math.floor(mask/2**i)%2===1&&idOf.has(id))daily.push(idOf.get(id))});
   const chars=[];for(let i=0;i+4<=m[4].length;i+=4){chars.push({cls:SH_CLS[+m[4][i]],role:ROLES[+m[4][i+1]],level:parseInt(m[4].slice(i+2,i+4),36)})}
-  return {stage:D.stages[si],tiers,daily:cleanDaily(daily),chars:cleanChars(chars),when:''}}
+  return {stage,tiers,daily:cleanDaily(daily),chars:cleanChars(chars),when:''}}
 let shareSeen='';
 function syncUrl(){try{const q='?share='+shareCode(); if(location.search!==q) history.replaceState(null,'',location.pathname+q+location.hash)}catch(e){}}
 function shareUrl(){return location.href.split(/[?#]/)[0]+'?share='+shareCode()}
@@ -346,15 +336,15 @@ function vBackup(){const json=JSON.stringify(exportObj());
   let h='<div class="vhead"><h2>Backup</h2><p class="lead">Save your stage, tiers, daily ticks and characters as a JSON file, or load them back. Importing replaces everything you have set on this page.</p></div>';
   h+='<div class="sect"><h3>Export</h3><div class="bk"><div class="bkrow">'+'<button type="button" class="reset" data-act="bkdl" id="bkdl">Download JSON</button>'+'<button type="button" class="reset" data-act="bkcopy" id="bkcopy">Copy JSON</button></div><textarea id="bkout" readonly rows="4" aria-label="Your values as JSON">'+esc(json)+'</textarea><div class="bkrow"><button type="button" class="reset" data-act="bklink" id="bklink">Copy link</button><input type="text" id="bkurl" readonly aria-label="Link that carries your values" value="'+esc(shareUrl())+'"></div></div></div>';
   h+='<div class="sect"><h3>Import</h3><div class="bk"><div class="bkrow"><label class="filebtn">Choose a JSON file<input type="file" id="bkfile" accept=".json,application/json"></label><span class="note">or paste the JSON below</span></div><textarea id="bkin" rows="6" placeholder="Paste exported JSON here" aria-label="JSON to import"></textarea><div class="bkrow"><button type="button" class="reset" data-act="bkread" id="bkread">Check import</button></div>';
-  if(bkPending){const p=bkPending;h+='<div class="bkconf"><p><b>Ready to replace your values'+(p.when?' with the backup from '+esc(p.when):'')+':</b> stage '+esc(p.stage)+', '+Object.keys(p.tiers).length+' tiers set, '+p.daily.length+' daily ticks, '+p.chars.length+' characters.</p><div class="bkrow"><button type="button" class="reset" data-act="bkapply" id="bkapply">Replace my values</button><button type="button" class="reset ghost" data-act="bkcancel" id="bkcancel">Cancel</button></div></div>'}
+  if(bkPending){const p=bkPending;h+='<div class="bkconf"><p><b>Ready to replace your values'+(p.when?' with the backup from '+esc(p.when):'')+':</b> '+(p.stage===null?'':'stage ')+esc(stageLabel(p.stage))+', '+Object.keys(p.tiers).length+' tiers set, '+p.daily.length+' daily ticks, '+p.chars.length+' characters.</p><div class="bkrow"><button type="button" class="reset" data-act="bkapply" id="bkapply">Replace my values</button><button type="button" class="reset ghost" data-act="bkcancel" id="bkcancel">Cancel</button></div></div>'}
   h+='</div></div>';
   return h+'<div class="sync" id="bkmsg" role="status">'+esc(bkMsg)+'</div><div class="sync" id="sync">'+esc(syncMsg)+'</div>' }
 function bkSay(m){bkMsg=m;const e=document.getElementById('bkmsg');if(e)e.textContent=m}
 function bkCheck(txt){try{bkPending=parseBackup(txt);bkMsg=''}catch(e){bkPending=null;bkMsg=e.message} const keep=txt;render();const i=document.getElementById('bkin');if(i)i.value=keep}
 function vDaily(){const si=stageIdx(),done=new Set(state.daily);
-  const rows=D.daily.map((r,i)=>[r,i]).filter(x=>dailyStage(x[0])<=si),later=D.daily.filter(r=>dailyStage(r)>si);
+  const rows=D.daily.map((r,i)=>[r,i]).filter(x=>si<0||dailyStage(x[0])<=si),later=si<0?[]:D.daily.filter(r=>dailyStage(r)>si);
   const n=rows.filter(x=>done.has(x[0][1])).length;
-  let h='<div class="vhead"><h2>Today&rsquo;s tasks</h2><p class="lead">Daily tasks for your stage, '+esc(state.stage)+'. Ticks stay until you press Reset.</p></div>'
+  let h='<div class="vhead"><h2>Today&rsquo;s tasks</h2><p class="lead">'+(si<0?'Every daily task, since no stage is picked':'Daily tasks for your stage, '+esc(stageLabel()))+'. Ticks stay until you press Reset.</p></div>'
     +'<div class="tbar"><span class="tinfo">'+n+' of '+rows.length+' done</span><span class="prog" role="img" aria-label="'+n+' of '+rows.length+' done"><span style="width:'+(rows.length?Math.round(100*n/rows.length):0)+'%"></span></span><button type="button" class="reset" id="dreset" data-act="dreset"'+(state.daily.length?'':' disabled')+'>Reset</button></div>';
   h+='<div class="sect"><div class="tbl"><table class="daily"><thead><tr><th><span class="vh">Done</span></th><th>Task</th><th>Why</th><th>From</th><th>Source</th></tr></thead><tbody>';
   rows.forEach(([r,i])=>{const on=done.has(r[1]);
@@ -376,7 +366,7 @@ function vSources(){
   return h+'</tbody></table></div></div>' }
 
 function render(){const r=route();
-  const si=stageIdx(); document.getElementById('pips').innerHTML=D.stages.map((s,i)=>'<button type="button" class="pip'+(i<si?' past':i===si?' cur':'')+'" id="pip'+i+'" data-i="'+i+'" aria-pressed="'+(i===si)+'" aria-label="Stage '+(i+1)+', '+esc(s)+'" title="'+esc(s)+'">'+(i+1)+'</button>').join(''); document.getElementById('sname').textContent=state.stage;
+  const si=stageIdx(); document.getElementById('pips').innerHTML=D.stages.map((s,i)=>'<button type="button" class="pip'+(i<si?' past':i===si?' cur':'')+'" id="pip'+i+'" data-i="'+i+'" aria-pressed="'+(i===si)+'" aria-label="Stage '+(i+1)+', '+esc(s)+'" title="'+esc(s)+'">'+(i+1)+'</button>').join(''); document.getElementById('sname').textContent=stageLabel();
 
   document.getElementById('tabs').innerHTML=VIEWS.map(v=>'<a href="#'+v[0]+'"'+((r===v[0]||(v[0]==='checklist'&&!VIEWS.some(x=>x[0]===r)))?' aria-current="page"':'')+'>'+v[1]+'</a>').join('')+(FEEDBACK_URL?'<a class="fb" href="'+esc(FEEDBACK_URL)+'" target="_blank" rel="noopener">Feedback</a>':'');
   const m=document.getElementById('main');
