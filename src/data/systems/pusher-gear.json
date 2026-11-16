@@ -12,7 +12,7 @@
       "source": ["Wiki"]
     },
     {
-      "req": "Steel weapon crafted (300 Steel Bars, 10 Dragon Horns, 1 Norse Essence), with the iron armor enhanced to VII and the steel weapon to about X (also a 30-gem achievement).",
+      "req": "Steel weapon at X or higher and iron armor at VII or higher.",
       "basis": "Guide",
       "source": ["MTEnh", "DBTips", "Wiki"]
     },
@@ -255,6 +255,12 @@
           "They come from boss drops, each act's vendor, quests and login bonuses. Buy out the vendors daily.",
           "Guide",
           ["MTEnh", "MTAct2"]
+        ],
+        [
+          "Steel weapon achievement",
+          "Enhancing the steel weapon to X also earns a 30-gem achievement.",
+          "Guide",
+          ["MTEnh", "DBTips"]
         ],
         [
           "Durability",

@@ -12,7 +12,7 @@
       "source": ["PiwuGems"]
     },
     {
-      "req": "A few extra inventory slots bought (21 are needed to hold all 20 curios plus a spare).",
+      "req": "Curio inventory at 21 slots or more.",
       "basis": "Guide",
       "source": ["PiwuGems"]
     },
@@ -22,7 +22,7 @@
       "source": ["JTCurio", "ZZ"]
     },
     {
-      "req": "Active set matched to what you are doing: crit curios for pushing, defence for offline, woodcutting or mining for gathering.",
+      "req": "Curio presets saved for pushing, offline farming and gathering.",
       "basis": "Guide",
       "source": ["JTCurio"]
     },
@@ -48,6 +48,7 @@
           "Game data",
           ["JTCurio"]
         ],
+        ["Inventory", "21 inventory slots hold all 20 curios plus a spare.", "Guide", ["PiwuGems"]],
         [
           "Coins",
           "Active curios earn coins up to a cap, so collect often. Coins level curios; salvaging unwanted curios gives more.",
@@ -66,6 +67,12 @@
           "Curio and rune layouts can be saved as presets (six pages each) that switch with your activity. Unlocks at combat level 70.",
           "Game data",
           ["Patch"]
+        ],
+        [
+          "Active set",
+          "Match the active set to what you are doing: crit curios for pushing, defence for offline, woodcutting or mining for gathering.",
+          "Guide",
+          ["JTCurio"]
         ],
         ["Universal", "Curios are an Act 3 system, but their stats apply everywhere.", "Game data", ["JTCurio"]],
         [

@@ -7,7 +7,7 @@
       "source": ["DBPets"]
     },
     {
-      "req": "Main pet at level 50, which makes its loot pickup instant. It levels only by picking up loot while equipped, so keep it on your fastest farmer; the one shortcut is a Canned Knowledge potion (monthly login days 5 and 6).",
+      "req": "Main pet at level 50 (instant loot pickup).",
       "basis": "Game data",
       "source": ["Treyex", "JTPets", "DBPets"]
     },
@@ -27,7 +27,7 @@
       "source": ["JTPets"]
     },
     {
-      "req": "A Tier 5-6 pet with the right two stats for each activity you run.",
+      "req": "A Tier 5-6 pet for each activity you run, whose two rerollable stats match that activity.",
       "basis": "Guide",
       "source": ["PiwuPets"]
     }
@@ -66,6 +66,12 @@
           "A pet gets 1 XP for each item it picks up, however large the stack. Pickup has a cooldown that shrinks as it levels (4 seconds at first, none from level 40), so early levels cannot be rushed. The guide's figures are about 6 hours from 1 to 40 and at least 8 more to 50, from before a later rebalance. Chopping wood at full speed is a steady item supply.",
           "Guide",
           ["PetLvl"]
+        ],
+        [
+          "Main pet",
+          "A pet levels only by picking up loot while equipped, so keep the main pet on your fastest farmer. The one shortcut is a Canned Knowledge potion (monthly login days 5 and 6).",
+          "Game data",
+          ["Treyex", "JTPets", "DBPets"]
         ],
         [
           "Feeding",

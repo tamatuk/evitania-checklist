@@ -2,7 +2,7 @@
   "name": "Engineer",
   "tiers": [
     {
-      "req": "Engineer unlocked (a character at level 40) and Idea production sped up: its Gold Upgrade at 5 or more, plus the first item, wood and ore upgrades.",
+      "req": "Engineer unlocked (a character at level 40), Idea's Gold Upgrade at 5 or more, and the Idea item, wood and ore speed upgrades at 1 or more.",
       "basis": "Guide",
       "source": ["GFEng", "JTEng", "Wiki"]
     },
@@ -17,12 +17,12 @@
       "source": ["Wiki", "JTEng"]
     },
     {
-      "req": "Hunter Tax Returns (Blueprint) at 5, making the chance 50% (6,200 Blueprint), with Daily Activity Enhancer I bought and Runic Blueprint unlocked (600 Blueprint).",
+      "req": "Hunter Tax Returns (Blueprint) at 5 (6,200 Blueprint), Daily Activity Enhancer I bought, Runic Blueprint unlocked (600 Blueprint).",
       "basis": "Game data",
       "source": ["Wiki", "GFEng"]
     },
     {
-      "req": "More Materials (Blueprint) at 10, Achievement Hunter at 10, Faster Portals bought and Smelting Patterns at 20.",
+      "req": "More Materials (Blueprint) at 10, Achievement Hunter at 10, Faster Portals bought, Smelting Patterns at 20.",
       "basis": "Guide",
       "source": ["GFEng", "Wiki"]
     },

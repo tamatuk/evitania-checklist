@@ -17,7 +17,7 @@
       "source": ["JTGather"]
     },
     {
-      "req": "Woodcutting power 18,000 and mining power 20,000 (Act 3 goals), with talents respecced to the bottom then middle row.",
+      "req": "Woodcutting power 18,000 and mining power 20,000 (Act 3 goals).",
       "basis": "Guide",
       "source": ["JTGather"]
     },
@@ -27,7 +27,7 @@
       "source": ["JTGather"]
     },
     {
-      "req": "Nightmare Act 2 nodes one-shot: 350,000 woodcutting and 400,000 mining, or about 240,000 and 275,000 with the crit row maxed.",
+      "req": "Every Nightmare Act 2 tree and vein felled in one hit: 350,000 woodcutting and 400,000 mining, or about 240,000 and 275,000 with the crit row maxed.",
       "basis": "Guide",
       "source": ["Jivchik", "Wiki"]
     }

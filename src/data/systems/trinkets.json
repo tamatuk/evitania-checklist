@@ -2,17 +2,17 @@
   "name": "Trinkets",
   "tiers": [
     {
-      "req": "An event dungeon cleared at a tier your attack allows, and a first trinket equipped.",
+      "req": "First trinket equipped (trinkets drop from event dungeons).",
       "basis": "Estimate",
       "source": ["Patch"]
     },
     {
-      "req": "A trinket on each character you play with the main stat its role wants (Trinket by role): ATK on the pusher, All EXP on farmers and the leveller, mining or woodcutting power on a gatherer.",
+      "req": "A trinket on each character you play with the main stat its role wants (see the Trinket by role table below): ATK on the pusher, All EXP on farmers and the leveller, mining or woodcutting power on a gatherer.",
       "basis": "Guide",
       "source": ["SteamTrinkets", "SteamTrinketsEnh"]
     },
     {
-      "req": "Main trinket levelled with Upgrade Flasks to its maximum.",
+      "req": "The trinket on your Pusher at its max level.",
       "basis": "Estimate",
       "source": ["Trinkets", "Patch"]
     },
