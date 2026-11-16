@@ -70,7 +70,7 @@ for f_, s_ in SYS:
                    for t in s_["tables"]]})
 
 def check_daily(daily):
-    """Daily ids are unique; fails naming the repeated id."""
+    """Every daily row has a unique "id"; fails naming the repeated id, or the task of a row without one."""
     raise NotImplementedError
 
 def check_share(share, systems, daily):
