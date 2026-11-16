@@ -1,25 +1,46 @@
-"""Builds ../index.html from data.py, template.html and the icons folder.
+"""Builds ../index.html from the data folder, template.html and the icons folder.
 
 Run: python3 src/build.py   (needs Pillow)
 """
 import sys, json, io, os
 HERE = os.path.dirname(os.path.abspath(__file__))
-code = open(os.path.join(HERE, "data.py"), encoding="utf-8").read()
-ns = {}
-exec(code, ns)
-SYS, SRC, USED = ns["SYS"], ns["SRC"], ns["USED"]
+DATA = os.path.join(HERE, "data")
 
-def fix(s):
-    if isinstance(s, str):
-        s = s.replace("Power, your class attribute (Strength, Dexterity or Intelligence), More Damage, Dice and Damage Abuse",
-                      "Power Training, your class attribute (Strength, Dexterity or Intelligence Training), More Damage, Dice and Damage Abuse")
-    return s
+def fail(msg):
+    """Stop the build, naming the file and the broken reference or count."""
+    raise NotImplementedError
+
+def load(name):
+    """The parsed JSON of data/<name>."""
+    raise NotImplementedError
+
+def cite(keys, where):
+    """The source names of sources.json keys, joined with "; "; an unknown key fails naming `where`."""
+    raise NotImplementedError
+
+def load_systems(order):
+    """data/systems/*.json in `order` (expect's keys), each matched by its "name"; a file with no expect key, or an
+    expect key with no file, fails."""
+    raise NotImplementedError
+
+def check_expect(expect, stages):
+    """Each expect row has one number per stage; fails naming the system."""
+    raise NotImplementedError
+
+SRC = load("sources.json")
+ST = load("stages.json")
+check_expect(ST["expect"], ST["stages"])
+SYS = load_systems(list(ST["expect"]))
+DAILY = load("daily.json")
+ROSTER = load("roster.json")
 
 systems = []
-for name, tiers, tables in SYS:
-    systems.append({"name": name,
-        "tiers": [{"req": fix(r), "basis": b, "source": s} for r, b, s in tiers],
-        "tables": [{"title": t, "cols": c, "rows": [[fix(x) for x in row] for row in rows]} for t, c, rows in tables]})
+for s_ in SYS:
+    systems.append({"name": s_["name"],
+        "tiers": [{"req": t["req"], "basis": t["basis"], "source": cite(t["source"], s_["name"])} for t in s_["tiers"]],
+        "tables": [{"title": t["title"], "cols": t["cols"],
+                    "rows": [[cite(x, s_["name"]) if c == "Source" else x for c, x in zip(t["cols"], row)] for row in t["rows"]]}
+                   for t in s_["tables"]]})
 
 about = [
  ["What it is", "A rule checklist for Evitania Online, filled in by hand. Your stage sets which tier of each system is expected, and each system lists its tiers."],
@@ -33,14 +54,15 @@ about = [
  ["Not covered", "Guild research, the Tower, fishing (event mini-game so far) and the Hourglass Restoration of Eternity tabs have no tiers here: the guides for them are thin or not written yet. Trinkets have a first draft."],
 ]
 DAILY_IDS = ["quest", "login", "boss-keys", "vendor-1", "vendor-2", "vendor-3", "tower", "mail-codes", "cost-cruncher", "bonfire-fuel", "slyme-egg", "fate-spiral", "curio-coins", "event-dungeons", "guild-donations"]
-assert len(DAILY_IDS) == len(ns["DAILY"]) == len(set(DAILY_IDS))
+assert len(DAILY_IDS) == len(DAILY) == len(set(DAILY_IDS))
 # append-only: positions are part of the share-link format
 SHARE_SYS = ["Hunter", "Bonfire", "Ash", "Sacrifice", "Pusher gear", "Gatherer gear", "Gathering", "Gems", "Pets", "Cards", "Runes", "Engineer", "Curio", "Hourglass", "Characters", "Trinkets"]
 SHARE_DAILY = ["quest", "login", "boss-keys", "vendor-1", "vendor-2", "vendor-3", "tower", "mail-codes", "cost-cruncher", "bonfire-fuel", "slyme-egg", "fate-spiral", "curio-coins", "event-dungeons", "guild-donations"]
-assert set(SHARE_SYS) == {x[0] for x in SYS} and set(SHARE_DAILY) == set(DAILY_IDS)
-data = {"roster": ns["ROSTER"], "systems": systems, "stages": ns["STAGES"], "reached": ns["REACHED"], "expect": ns["EXPECT"],
-        "daily": [list(r) + [i] for r, i in zip(ns["DAILY"], DAILY_IDS)], "shareSys": SHARE_SYS, "shareDaily": SHARE_DAILY, "about": about,
-        "sources": [{"name": SRC[k][0], "where": SRC[k][1], "link": SRC[k][2], "asof": SRC[k][3]} for k in SRC if k in USED]}
+assert set(SHARE_SYS) == {x["name"] for x in SYS} and set(SHARE_DAILY) == set(DAILY_IDS)
+data = {"roster": [[r["topic"], r["rule"], r["basis"], cite(r["source"], "roster.json")] for r in ROSTER],
+        "systems": systems, "stages": ST["stages"], "reached": ST["reached"], "expect": ST["expect"],
+        "daily": [[r["when"], r["task"], r["why"], cite(r["source"], "daily.json"), i] for r, i in zip(DAILY, DAILY_IDS)],
+        "shareSys": SHARE_SYS, "shareDaily": SHARE_DAILY, "about": about, "sources": list(SRC.values())}
 
 
 import os, base64, re

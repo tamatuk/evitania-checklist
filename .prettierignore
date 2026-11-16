@@ -4,4 +4,5 @@
 
 # Built site, shipped as is
 /index.html
-/src/
+/src/*
+!/src/data/
