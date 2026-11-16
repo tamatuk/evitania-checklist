@@ -12,42 +12,42 @@
       "source": ["JTEng", "Wiki"]
     },
     {
-      "req": "Hunter Tax Returns (Idea) at 5: a 25% chance of a refund on each Hunter level (37,200 Idea in total).",
+      "req": "Hunter Tax Returns (Idea) at 5 (max): a 25% chance of a refund on each Hunter level (37,200 Idea in total).",
       "basis": "Game data",
       "source": ["Wiki", "JTEng"]
     },
     {
-      "req": "Hunter Tax Returns (Blueprint) at 5 (6,200 Blueprint), Runic Blueprint unlocked (600 Blueprint).",
+      "req": "Hunter Tax Returns (Blueprint) at 5 (max, 6,200 Blueprint), Runic Blueprint unlocked (600 Blueprint).",
       "basis": "Game data",
       "source": ["Wiki", "GFEng"]
     },
     {
-      "req": "More Materials (Blueprint) at 10, Achievement Hunter at 10 and Faster Portals bought.",
+      "req": "More Materials (Blueprint) at 10 (max), Achievement Hunter at 10 (max) and Faster Portals bought.",
       "basis": "Guide",
       "source": ["GFEng", "Wiki"]
     },
     {
-      "req": "Runic Blueprint running: Humble Sacrifices at 5, Vendor Stock (Runic) at 3 and Bonfire Prototyping at 20.",
+      "req": "Runic Blueprint running: Humble Sacrifices at 5 (max), Vendor Stock (Runic) at 3 (max) and Bonfire Prototyping at 20.",
       "basis": "Guide",
       "source": ["GFEng", "Wiki"]
     },
     {
-      "req": "More Hunting (Blueprint) at 5 and More Materials (Runic Blueprint) at 10.",
+      "req": "More Hunting (Blueprint) at 5 (max) and More Materials (Runic Blueprint) at 10 (max).",
       "basis": "Estimate",
       "source": ["Wiki", "JTEng"]
     },
     {
-      "req": "More Hunting and More Sacrifices (Runic Blueprint) at 5 each, and Sun Scroll unlocked (6,000 Runic Blueprint).",
+      "req": "More Hunting and More Sacrifices (Runic Blueprint) at 5 (max) each, and Sun Scroll unlocked (6,000 Runic Blueprint).",
       "basis": "Estimate",
       "source": ["Wiki", "JTEng"]
     },
     {
-      "req": "Sun Scroll: Double Crit, 4 Star Cards, More Materials at 10, and Infinite II Armor and Infinite II Weapons bought.",
+      "req": "Sun Scroll: Double Crit, 4 Star Cards, More Materials at 10 (max), and Infinite II Armor and Infinite II Weapons bought.",
       "basis": "Estimate",
       "source": ["Wiki"]
     },
     {
-      "req": "Sun Scroll: More Hunting and More Sacrifices at 5 each, which completes +15 Hunter cap and +10 sacrifice cap from the Engineer.",
+      "req": "Sun Scroll: More Hunting and More Sacrifices at 5 (max) each, which completes +15 Hunter cap and +10 sacrifice cap from the Engineer.",
       "basis": "Estimate",
       "source": ["Wiki"]
     }
@@ -77,7 +77,7 @@
         ],
         [
           "Speeding a slot",
-          "Each slot has four speed upgrades. Gold Upgrade gives +20% a level and doubles in price each level (from 1,000 gold for Idea, 30,000 for Blueprint, 100,000 for Runic Blueprint, 300,000 for Sun Scroll). Gold Upgrade caps at 22, 17, 15 and 13 levels for Idea, Blueprint, Runic Blueprint and Sun Scroll. The item, wood and ore upgrades give +5% a level and rotate through materials of that slot's act.",
+          "Each slot has four speed upgrades. Gold Upgrade gives +20% a level and doubles in price each level (from 1,000 gold for Idea, 30,000 for Blueprint, 100K for Runic Blueprint, 300K for Sun Scroll). Gold Upgrade caps at 22, 17, 15 and 13 levels for Idea, Blueprint, Runic Blueprint and Sun Scroll. The item, wood and ore upgrades give +5% a level and rotate through materials of that slot's act.",
           "Game data",
           ["Wiki", "JTEng"]
         ],

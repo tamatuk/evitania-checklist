@@ -27,7 +27,7 @@
       "source": ["JTPets"]
     },
     {
-      "req": "A Tier 5-6 pet for each activity you run, whose two rerollable stats match that activity.",
+      "req": "A Tier 5–6 pet for each activity you run, whose two rerollable stats match that activity.",
       "basis": "Guide",
       "source": ["PiwuPets"]
     }
@@ -45,7 +45,7 @@
         ],
         [
           "Food",
-          "A sacrificed pet gives 51-100 points as an ungraded (Slyme) pet, 101-150 at Tier 1, 151-200 at Tier 2, 251-300 at Tier 3, 401-450 at Tier 4, 601-650 at Tier 5 and 851-900 at Tier 6.",
+          "A sacrificed pet gives 51–100 points as an ungraded (Slyme) pet, 101–150 at Tier 1, 151–200 at Tier 2, 251–300 at Tier 3, 401–450 at Tier 4, 601–650 at Tier 5 and 851–900 at Tier 6.",
           "Game data",
           ["JTPets"]
         ],
@@ -57,13 +57,13 @@
         ],
         [
           "Rerolls",
-          "At Tier 5-6 one of the two secondary stats can be rerolled for gems; the price rises with pet tier (EvitaniaOnlineDB's calculator uses 200 gems at Tier V). Unverified until checked in game. The result is random.",
+          "At Tier 5–6 one of the two secondary stats can be rerolled for gems; the price rises with pet tier (EvitaniaOnlineDB's calculator uses 200 gems at Tier V). Unverified until checked in game. The result is random.",
           "Game data",
           ["JTPets", "DBPets"]
         ],
         [
           "How pets level",
-          "A pet gets 1 XP for each item it picks up, however large the stack. Pickup has a cooldown that shrinks as it levels (4 seconds at first, none from level 40), so early levels cannot be rushed. The guide's figures are about 6 hours from 1 to 40 and at least 8 more hours to 50, from before a later rebalance. Chopping wood at full speed is a steady item supply.",
+          "A pet gets 1 XP for each item it picks up, however large the stack. Pickup has a cooldown that shrinks as it levels (4 seconds at first, none from level 40), so early levels cannot be rushed. The guide's figures are about 6 hours for levels 1–40 and at least 8 more hours to 50, from before a later rebalance. Chopping wood at full speed is a steady item supply.",
           "Guide",
           ["PetLvl"]
         ],
@@ -141,7 +141,7 @@
         ],
         ["Weird Book Pet", "Red Dragon boss", "1 in 100", "Attack, defence, crit chance, Drop Quantity"],
         ["Ghosty Pet", "Maevath boss", "1 in 100", "Attack speed, crit damage"],
-        ["Beeb", "Any Act 1 monster", "1 in 5,000,000", ""],
+        ["Beeb", "Any Act 1 monster", "1 in 5M", ""],
         ["Snowflake", "Act 2 monsters", "Drop", ""],
         ["Snek", "Act 3 monsters", "Drop", "Crit chance, crit damage"],
         ["Monkeycopter", "Guild shop top reward, since the Guilds update", "Shop", "Mob spawn time, all EXP"],

@@ -42,7 +42,7 @@
       "source": ["Wiki", "ZZTabs"]
     },
     {
-      "req": "Sunstone weapon in use: crafted and enhanced to within 2 to 4 steps of your thorium weapon.",
+      "req": "Sunstone weapon in use: crafted and enhanced to within 2–4 steps of your thorium weapon.",
       "basis": "Game data",
       "source": ["Wiki", "Jivchik"]
     },
@@ -130,14 +130,14 @@
       "title": "Weapons and armor",
       "cols": ["Set", "Armor defence per piece", "Weapon attack (sword / longsword / bow / staff)", "Extra"],
       "rows": [
-        ["Copper", "12 to 17", "30 / – / 25 / 30", "Act 1 smith"],
+        ["Copper", "12–17", "30 / – / 25 / 30", "Act 1 smith"],
         ["Bronze", "25", "No bronze weapons", "Act 1 smith"],
         ["Iron", "36", "70 / 60 / 62 / 70", "Act 1 smith"],
         ["Steel", "43", "– / 79 / 86 / 97", "Act 1 smith; every piece gives +10% combat XP"],
         ["Thorium", "60", "154 / 118 / 126 / 154", "Act 2 smith"],
         ["Sunstone", "100", "– / 221 / 225 / 275", "Act 3 smith"],
-        ["Infinite 1", "70 to 100", "– / 161 / 171 / 210", "Hard tab; +5 to +15 Drop Quantity a piece"],
-        ["Infinite 2", "120", "– / 330 / 340 / 410", "Hard tab; +10 to +30 Drop Quantity a piece"]
+        ["Infinite 1", "70–100", "– / 161 / 171 / 210", "Hard tab; +5–15 Drop Quantity a piece"],
+        ["Infinite 2", "120", "– / 330 / 340 / 410", "Hard tab; +10–30 Drop Quantity a piece"]
       ]
     },
     {
@@ -152,18 +152,13 @@
         ],
         ["Iron weapon", "45 Iron Bars (30 plus 30 Pyrewood Logs for bow or staff)", "2 Yellow Feathers", "Late Act 1"],
         ["Steel weapon", "300 Steel Bars", "10 Dragon Horns, 1 Norse Essence", "Yrsainir dead, first steps in Act 2"],
-        [
-          "Steel armor (4 pieces)",
-          "600 Steel Bars, 70 Furry Fur",
-          "14 Death's Flowers",
-          "Act 2 zones 1 to 4 for the fur"
-        ],
+        ["Steel armor (4 pieces)", "600 Steel Bars, 70 Furry Fur", "14 Death's Flowers", "Act 2 zones 1–4 for the fur"],
         ["Iron Belt", "20 Steel Bars", "2 Death's Flowers, 2 Dragon Horns", "Yrsainir dead"],
         [
           "Thorium weapon",
           "140 Crystallized Yellow Substance, 98 Thorium Bars",
           "2 Perfect Norse Essence (60 Norse Essence, which drops 1 in 10,000 in Act 2); 7 Artisan's Frames, 7 Furstrings or 3 Cryolite",
-          "Thorium vein (after zone 5). The staff's Cryolite Ore drops in zones 9 to 12"
+          "Thorium vein (after zone 5). The staff's Cryolite Ore drops in zones 9–12"
         ],
         [
           "Thorium armor (4 pieces)",
@@ -179,25 +174,25 @@
         ],
         [
           "Sunstone weapon",
-          "290 to 860 Sunstone Bars, 70,000 Beetleman Sting, 100,000 to 600,000 Palm Tree Logs",
+          "290–860 Sunstone Bars, 70,000 Beetleman Sting, 100K–600K Palm Tree Logs",
           "3 Perfect Aether Crystal",
           "Act 3"
         ],
         [
           "Infinite 1 armor (4 pieces)",
-          "115,200 Steel Bars, 144,000 Grassy Stone 1, 60 Crystallized Blue Substance (Act 3 shop)",
+          "115.2K Steel Bars, 144K Grassy Stone 1, 60 Crystallized Blue Substance (Act 3 shop)",
           "1,000 each of Death's Flower, The Crab's Pickaxe and Dragon Horn, plus a Grassy Core (another 1,000 of each): about 2,000 kills of each Act 1 boss",
           "Act 1 Hard"
         ],
         [
           "Infinite 1 weapon",
-          "15,000 Thorium Bars, 300,000 Icy Stone 1, 450,000 of an Act 3 drop",
+          "15,000 Thorium Bars, 300K Icy Stone 1, 450K of an Act 3 drop",
           "2 Grassy Cores",
           "Act 2 Hard"
         ],
         [
           "Infinite 2 piece",
-          "The matching Sunstone and Infinite 1 pieces; 10,000 to 30,000 Grassy Stone 2 (armor) or 120,000 Icy Stone 2 (weapon)",
+          "The matching Sunstone and Infinite 1 pieces; 10,000–30,000 Grassy Stone 2 (armor) or 120K Icy Stone 2 (weapon)",
           "Crimson or Azure Geode and Sap; 1,000 Act 2 boss drops or Icy Cores",
           "Nightmare, and the Sun Scroll recipes"
         ]
@@ -330,7 +325,7 @@
         ],
         [
           "Crimson drops",
-          "Crimson Geode and Crimson Sap drop at 1 in 200,000 from mining and woodcutting.",
+          "Crimson Geode and Crimson Sap drop at 1 in 200K from mining and woodcutting.",
           "Game data",
           ["AllPets"]
         ],

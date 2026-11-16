@@ -47,7 +47,7 @@
       "source": ["HyZerg", "Wiki"]
     },
     {
-      "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at the cap of 57: all three More Hunting upgrades at 5 and the Act 1 Hard card at 4 stars.",
+      "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at 57 (max): all three More Hunting upgrades at 5 and the Act 1 Hard card at 4 stars.",
       "basis": "Game data",
       "source": ["Wiki", "PiwuGems"]
     }
@@ -65,13 +65,13 @@
         ],
         [
           "Cost",
-          "Each level costs 1.7 times the one before: level 10 is 202 materials, 15 is 2,860, 20 is 40,600, 25 is 577,000 and 30 is 8.19 million. Two trainings differ: Hunter Cost Reduction costs 1.5 times the last (1,300 x 1.5^L gold) and Speed Training (movement) 1.55 times (900 x 1.55^L gold).",
+          "Each level costs 1.7 times the one before: level 10 is 202 materials, 15 is 2,860, 20 is 40,600, 25 is 577K and 30 is 8.19M. Two trainings differ: Hunter Cost Reduction costs 1.5 times the last (1,300 x 1.5^L gold) and Speed Training (movement) 1.55 times (900 x 1.55^L gold).",
           "Game data",
           ["Sakori", "Wiki"]
         ],
         [
           "Cap",
-          "Every training: 30 (base) + up to 15 from Engineer More Hunting (5 each in Blueprint, Runic Blueprint and Sun Scroll) + 4 to 12 from the Act 1 Hard card (0 to 4 stars) = 57 max. Speed Training (attack) stays at 30.",
+          "Every training: 30 (base) + up to 15 from Engineer More Hunting (5 each in Blueprint, Runic Blueprint and Sun Scroll) + 4–12 from the Act 1 Hard card (0–4 stars) = 57 max. Speed Training (attack) stays at 30.",
           "Game data",
           ["Wiki", "PiwuGems"]
         ],
@@ -100,7 +100,7 @@
           ["DBTips", "Sakori"]
         ],
         [
-          "Hunter Cost Cruncher (gem shop, 5 levels, 300-500 gems)",
+          "Hunter Cost Cruncher (gem shop, 5 levels, 300–500 gems)",
           "Builds up a discount each day, up to 99%. The guides give 2% a day per level (10% a day at level 5), but the wiki data shows only \"10% → 99%\", so the daily rate is unverified until checked in game. The next Hunter upgrade consumes it, so spend it on one expensive upgrade such as Hunter Cost Reduction.",
           "Guide",
           ["Sakori", "PiwuGems", "Wiki"]

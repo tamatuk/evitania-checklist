@@ -47,7 +47,7 @@
       "source": ["Wiki"]
     },
     {
-      "req": "Attack Wish, Wish for Luck and Pray for Luck at 42, the full cap.",
+      "req": "Attack Wish, Wish for Luck and Pray for Luck at 42 (max).",
       "basis": "Game data",
       "source": ["Wiki", "HyZerg"]
     }
@@ -72,7 +72,7 @@
         ],
         [
           "Ironwood",
-          "Aim to fell Ironwood in 1 or 2 hits by the time Cutting Edge Technology is at 10.",
+          "Aim to fell Ironwood in 1–2 hits by the time Cutting Edge Technology is at 10.",
           "Guide",
           ["DBBonfire", "MTAct2"]
         ],

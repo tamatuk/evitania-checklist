@@ -138,6 +138,14 @@ Things to know when editing `src/data/`:
   one number per stage, a system file with no `expect` row or the reverse, a
   table row with more or fewer cells than its columns, a daily task without a
   unique id, or share lists that do not match the systems and daily ids.
+- **Numbers** are written one way. Below 100,000 in full with commas (1,900,
+  40,600); from 100,000 up with an uppercase K, M or B (500K, 115.2K, 8.19M).
+  The game's Qa and larger suffixes and 1eN exponents stay as the game writes
+  them (100Qa, 1e15). A number in a table cell is shown with commas; write one
+  of 100,000 or more as text (`"350K"`).
+- **Ranges** use an en dash with no spaces, the unit or sign written once:
+  25–50%, Tiers 1–3, +4–12, x1.2–1.8. A maxed count is "at N (max)", not "3/3"
+  or "42 of 42".
 - `mise run lint` checks that the JSON files are formatted; `mise run lint-fix`
   formats them.
 
