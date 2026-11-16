@@ -22,12 +22,12 @@
       "source": ["Wiki", "JotunnG", "ZZTabs"]
     },
     {
-      "req": "Thorium weapon in use: crafted and enhanced to within 2 steps of your steel weapon (about VIII against a steel X), which is where it overtakes it. Materials and drop rates: What each set costs.",
+      "req": "Thorium weapon in use: crafted and enhanced to within 2 steps of your steel weapon (about VIII against a steel X), which is where it overtakes it. For materials and drop rates, see What each set costs.",
       "basis": "Game data",
       "source": ["Wiki", "MTAct2"]
     },
     {
-      "req": "Thorium armor in use: all four pieces crafted and enhanced to III or more, which is where they overtake iron at VII. Materials and drop rates: What each set costs.",
+      "req": "Thorium armor in use: all four pieces crafted and enhanced to III or more, which is where they overtake iron at VII. For materials and drop rates, see What each set costs.",
       "basis": "Game data",
       "source": ["Wiki", "MTAct2"]
     },
@@ -52,7 +52,7 @@
       "source": ["Wiki", "Jivchik"]
     },
     {
-      "req": "Infinite 1 armor crafted from Act 1 Hard materials (Grassy Stone 1) and worn with the Sunstone weapon. Materials and boss kills: What each set costs.",
+      "req": "Infinite 1 armor crafted from Act 1 Hard materials (Grassy Stone 1) and worn with the Sunstone weapon. For materials and boss kills, see What each set costs.",
       "basis": "Guide",
       "source": ["Jivchik", "Wiki"]
     },
