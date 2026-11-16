@@ -66,6 +66,8 @@ SRC = {
     "DBPetG": ("Pet Guide (EvitaniaOnlineDB)", "Fan wiki", DB + "guide/pet-guide", "read 2026-11-15"),
     "DBSmelt": ("Smeltery (EvitaniaOnlineDB)", "Fan wiki", DB + "database/smeltery", "read 2026-11-15"),
     "TreyexPets": ("Pets Guide (Treyex Gaming)", "Web guide", "https://www.treyexgaming.com/evitania-online-pets-guide/", "2026-04-11"),
+    "SteamTrinkets": ("Best trinket upgrades (Steam discussion)", "Steam discussion", "https://steamcommunity.com/app/4119420/discussions/0/564798191049084546/", "read 2026-11-16"),
+    "SteamTrinketsEnh": ("Can someone explain Trinket Enhancing? (Steam discussion)", "Steam discussion", "https://steamcommunity.com/app/4119420/discussions/0/574930637987796482/", "read 2026-11-16"),
 }
 USED = set()
 
@@ -350,7 +352,7 @@ system("Gatherer gear", [
         ("Hand down", "Refine one axe and one pickaxe on the main gatherer and hand them down when you craft better ones.", G, src("DBTips")),
         ("Every character", "Give every character an axe: Act 2 ash needs a great deal of wood.", G, src("GFGather")),
         ("Belt", "Belt of Love (from killing Yrsainir) adds 10 woodcutting power; event belts suit a parked gatherer for their offline gains.", GD, src("Wiki")),
-        ("Trinket", "A trinket with a mining or woodcutting power main stat belongs on the gatherer; keep the copy with the highest value.", "Player report", src("Trinkets")),
+        ("Trinket", "A trinket with a mining or woodcutting power main stat belongs on the gatherer. Its value follows the piece and its level, and a Harvest piece gives half the power of the matching Halloween one; see the Trinkets system.", GD, src("Wiki")),
         ("Pet", "For gathering, the pet stats to want are Offline gains with Drop Quantity, EXP or profession power.", G, src("Jivchik")),
         ("Power targets", "What the tools need to reach at each stage is on the Gathering system.", G, src("JTGather")),
     ]),
@@ -732,19 +734,35 @@ USED.update(["PiwuRogue", "PiwuMage"])
 
 system("Trinkets", [
     ("An event dungeon cleared at a tier your attack allows, and a first trinket equipped.", MR, src("Patch")),
-    ("A trinket with a useful main stat on each character you play: All EXP first, then Gold, then ATK.", G, src("Trinkets")),
+    ("A trinket on each character you play with the main stat its role wants (Trinket by role): ATK on the pusher, All EXP on farmers and the leveller, mining or woodcutting power on a gatherer.", G, src("SteamTrinkets", "SteamTrinketsEnh")),
     ("Main trinket levelled with Upgrade Flasks to its maximum.", MR, src("Trinkets", "Patch")),
     ("A max-level Legendary trinket reforged with the two stats you want guaranteed.", MR, src("Patch")),
 ], [
     ("Trinket rules", ["Topic", "Rule", "Basis", "Source"], [
-        ("What they are", "Added in 0.321.0: an equippable item with one main stat and four additional stats. They drop from every event dungeon tier, with a bonus for running solo.", GD, src("Patch")),
+        ("What they are", "Added in 0.321.0: an item for the one trinket slot, with a main stat and up to four sub-stats. Trinkets drop only while an event runs, from every tier of its dungeons, with a bonus for running solo. The event shop, monthly and login rewards have none, so they can be missed between events.", GD, src("Patch", "Wiki")),
         ("Dungeon gates", "Dungeon tiers are gated by attack; the top tier needs 10M since 0.323.1, and zone-bound bonuses such as the Bonfire's heated-zone attack no longer count.", GD, src("Patch")),
-        ("Main stats", "HP 100 to 250, ATK 30 to 60, mining or woodcutting power 100 to 200, Gold 30% to 60%, All EXP 40% to 70%. The main stat cannot be rerolled.", GD, src("Trinkets")),
-        ("Same trinket, different values", "Copies of one trinket drop with different main-stat sizes, for example a Generous Cornucopia with 20, 30 or 40 mining power; the Halloween trinkets did the same. Keep the highest and feed the rest into it. What decides the size (rarity or dungeon difficulty) is not confirmed.", "Player report", src("Trinkets")),
-        ("Sub-stats", "A sub-stat upgrades on every third trinket level. Players rank them Offline Gains, then Drop Quantity, then MEN, then crit damage.", G, src("Trinkets")),
+        ("Main stats", "HP, ATK, Gold %, All EXP %, mining power or woodcutting power. Each event has four pieces of rising size, and the main stat's size follows the piece and its level (Trinket pieces). All EXP also covers mining and woodcutting XP. The main stat cannot be rerolled.", GD, src("Wiki", "Trinkets")),
+        ("Same trinket, different values", "Two trinkets with the same stat but different values are different pieces or levels. Bountiful Tusk, Generous Cornucopia and Plentiful Bihorn start at 20, 30 and 40 mining power and gain with level, so a level 5 Cornucopia shows 40. Keep the largest piece for each stat and feed the rest into it.", GD, src("Wiki")),
+        ("Sub-stats", "There are 12: Offline Gains %, Drop Quantity, crit chance, crit damage, MEN, CON, STR, DEX, INT, HP %, mining power % and woodcutting power %. A Luminor rolls Offline Gains at 1% to 6% and Drop Quantity at 2 to 12. A sub-stat upgrades on every third trinket level. Which ones to want depends on the role: see Trinket by role.", GD, src("Wiki", "Trinkets")),
+        ("Swapping", "There is one trinket slot, and presets switch runes and curios but not trinkets. Put the ATK or HP trinket on by hand for bosses, the tower and dungeons, and the farming one back on before you park the character.", GD, src("Patch")),
         ("Levelling", "An Upgrade Flask is 10 XP; other trinkets can be fed in too. Flasks are spent first. Disassembling returns the material minus 20%.", GD, src("Trinkets", "Patch")),
         ("Reforge", "Since 0.323.0 any trinket can be reforged with Reforge Feathers, and a max-level Legendary can lock up to two stats for guaranteed upgrades; you may keep the old layout.", GD, src("Patch")),
         ("Harvest trinkets", "Harvest dungeons (to December 2) drop Bountiful Tusk, Generous Cornucopia, Plentiful Bihorn and Abundant Overgrowth.", GD, src("Patch")),
+    ]),
+    ("Trinket by role", ["Role", "Main stat", "Sub-stats", "When to wear it", "Basis", "Source"], [
+        ("Pusher", "ATK; HP instead for a boss that kills you", "Crit chance and crit damage", "Bosses, the tower and dungeons. Presets do not switch trinkets, so swap it on by hand before the fight.", "Player report", src("SteamTrinkets", "SteamTrinketsEnh")),
+        ("Material farmer", "All EXP", "Offline Gains", "While it farms, parked or online", "Player report", src("SteamTrinkets")),
+        ("Rare-drop farmer", "All EXP", "Drop Quantity, then Offline Gains", "While it opens boss chests and farms cards. Drop Quantity is only a sub-stat and counts only for boss chests and cards.", G, src("SteamDQ", "SteamTrinkets")),
+        ("Leveller", "All EXP", "Offline Gains", "All the time", "Player report", src("SteamTrinkets")),
+        ("Gatherer", "Mining or woodcutting power, matching its skill; else All EXP, which also covers gathering XP", "Offline Gains, mining or woodcutting power %", "While it gathers", GD, src("Wiki")),
+        ("Any character parked offline", "Its farming stat: All EXP, or a gatherer's power", "Offline Gains first", "While parked. A pusher swaps its ATK trinket for the farming one before it logs off.", "Player report", src("SteamTrinkets", "SteamTrinketsEnh")),
+        ("Gold", "Filler on a farmer until an All EXP trinket drops", "", "No source recommends Gold for any role, but it beats an empty slot", MR, ""),
+    ]),
+    ("Trinket pieces", ["Piece (Halloween / Harvest)", "Max level", "Sub-stats", "All EXP %", "Gold %", "ATK", "HP", "Mining or woodcutting power (Halloween / Harvest)"], [
+        ("Black Candle / Bountiful Tusk", 6, 1, "16-20.8", "12-16.8", "12-16.8", "40-64", "40-56 / 20-28"),
+        ("Candlestick / Generous Cornucopia", 9, 2, "24-34.8", "18-28.8", "18-28.8", "60-114", "60-96 / 30-48"),
+        ("Candelabra / Plentiful Bihorn", 12, 3, "32-51.2", "24-43.2", "24-43.2", "80-176", "80-144 / 40-72"),
+        ("Luminor / Abundant Overgrowth", 15, 4, "40-70", "30-60", "30-60", "100-250", "100-200 / 50-100"),
     ]),
 ])
 
@@ -868,6 +886,7 @@ ROSTER = [
     ("Role orders", "No guide publishes a numbered order for the three farmer roles. The trees apply the rules above to Piwu's order.", MR, ""),
     ("Rogue priorities", "MountTai's level 80 Rogue: unlock every skill node first, rush Arrow Barrage, then crit chance, attack speed, crit damage. He skips attack speed talents because bows already give a lot (a thorium bow adds 40%).", G, src("MTRogue")),
     ("Offline income", "Raise offline gains %, then damage until you reach the kill cap, then raise the cap with mob spawn time reduction, then damage again.", G, src("OfflineG")),
+    ("Trinkets", "Each role wants a different trinket main stat: ATK for the Pusher, All EXP for the farmers and the Leveller, mining or woodcutting power for a Gatherer. Which one and when to wear it is in the Trinket by role table on the Trinkets system.", "Player report", src("SteamTrinkets", "SteamTrinketsEnh")),
     ("Gatherer", "A woodcutting or mining alt uses the gathering trees, not the class tree, so no class build is drawn for it. Its class talents can follow any role; the gathering advice is on the Gathering system.", G, src("JTGather", "Jivchik", "Dawnk3")),
     ("Online or offline", "Offline income ignores class skills and penalises the Warrior for move speed, so Rogue and Mage make the better parked farmers. Online play wants movement speed and the skills; the Mage's Improved Lightning Orb makes every hit a crit for 20 seconds.", G, src("PiwuMage", "Jivchik", "DBClass")),
     ("Bosses, tower and dungeons", "Fought online, so skills count. Crit chance and crit damage matter most; EvitaniaOnlineDB also suggests Health and Defence on a Warrior for bosses. No guide gives a separate boss order, so use Pusher.", G, src("Jivchik", "DBClass")),
@@ -894,7 +913,7 @@ EXPECT = {
     "Curio":      [0, 0, 0, 0, 0, 0, 2, 4, 6, 7],
     "Hourglass":  [0, 0, 0, 0, 0, 0, 1, 3, 5, 7],
     "Characters": [1, 2, 3, 4, 4, 5, 6, 6, 6, 7],
-    "Trinkets":   [0, 0, 0, 0, 1, 1, 2, 2, 3, 4],
+    "Trinkets":   [0, 0, 1, 1, 1, 1, 2, 2, 3, 4],
 }
 MINE = {"Hunter": 3, "Bonfire": 1, "Pusher gear": 2, "Gems": 1, "Pets": 1, "Cards": 1}
 MY_STAGE = "Mammoth dead"
