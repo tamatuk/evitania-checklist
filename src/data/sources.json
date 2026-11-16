@@ -406,5 +406,11 @@
     "where": "Steam discussion",
     "link": "https://steamcommunity.com/app/4119420/discussions/0/800094052013884327/",
     "asof": "read 2026-11-16"
+  },
+  "SteamNews": {
+    "name": "Evitania Online news and update notes (Steam announcements)",
+    "where": "Steam announcements",
+    "link": "https://steamcommunity.com/games/4119420/announcements",
+    "asof": "read 2026-11-16"
   }
 }
