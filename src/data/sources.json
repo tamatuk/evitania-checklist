@@ -51,13 +51,13 @@
     "name": "Hourglass of Eternity Progressive Guide (Piwu)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1527644449973207190",
-    "asof": "2026-07-19"
+    "asof": "2026-07-19, Part 2 2026-10-10"
   },
   "ImeniaHG": {
     "name": "Infinite Hourglass Guide, quick and dirty (Imenia)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1527050519380496557",
-    "asof": "2026-07-16"
+    "asof": "2026-07-16, posts to 2026-07-26 read 2026-11-16"
   },
   "PiwuWar": {
     "name": "Warrior Talent Guide (Piwu)",
@@ -111,7 +111,7 @@
     "name": "Frequently Asked Questions (Johnny Treeman)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1501263618346455101",
-    "asof": "2026-10-22"
+    "asof": "2026-10-22, reply 2026-11-08"
   },
   "DevFAQ": {
     "name": "#faq channel (neype, developer)",
@@ -216,10 +216,10 @@
     "asof": "read 2026-11-16"
   },
   "Patch": {
-    "name": "#patch-notes 0.319.4 to 0.323.1 (neype, developer)",
+    "name": "#patch-notes 0.319.4 to 0.323.2 (neype, developer)",
     "where": "Discord #patch-notes",
     "link": "https://discord.com/channels/1219291890940383334/1255565563284160556",
-    "asof": "2026-11-13"
+    "asof": "2026-11-16"
   },
   "Jivchik": {
     "name": "Гайды, Russian guide collection (Jivchik)",
@@ -336,10 +336,22 @@
     "asof": "read 2026-11-15"
   },
   "HGTal": {
-    "name": "Hourglass talents thread",
+    "name": "Hourglass Talents Guide (Rhalf - Getchmen)",
     "where": "Discord #guides",
-    "link": "https://discord.com/channels/1219291890940383334",
-    "asof": "read 2026-11-15"
+    "link": "https://discord.com/channels/1219291890940383334/1528787091226493059",
+    "asof": "2026-11-16"
+  },
+  "Dragons": {
+    "name": "Hourglass Dragons Planer (plsd0ntcry [AKATS] -Wulf-)",
+    "where": "Discord #guides",
+    "link": "https://discord.com/channels/1219291890940383334/1563997709222940883",
+    "asof": "2026-10-26 to 2026-11-03"
+  },
+  "HGCalc": {
+    "name": "Hourglass Calculators/Time Echo Costs (zoofy, data by Leanea)",
+    "where": "Discord #guides",
+    "link": "https://discord.com/channels/1219291890940383334/1565804884685492425",
+    "asof": "2026-11-05"
   },
   "AllPets": {
     "name": "All Pets thread",

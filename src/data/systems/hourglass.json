@@ -35,6 +35,16 @@
       "req": "Upgrade tier 11 reached (needs the Golden Claw generator).",
       "basis": "Game data",
       "source": ["PiwuHG", "Patch"]
+    },
+    {
+      "req": "Golden dragon bought (1.2e10 Echoes): it strengthens the Red, Blue and Green dragons. Optional: no stage expects it yet.",
+      "basis": "Game data",
+      "source": ["DBHG", "Dragons"]
+    },
+    {
+      "req": "Rebirth running: its items merged up and its 5x5 grid opened past the first 3x3 with Eternity tree cells. Optional: no stage expects it yet.",
+      "basis": "Game data",
+      "source": ["DBHG", "FAQ"]
     }
   ],
   "tables": [
@@ -50,13 +60,13 @@
         ],
         [
           "Generator order",
-          "Sandstone Sample, Glass Sample, Water Sample, Clay Block, Bit of Knowledge, Liquid Glass, Limestone Mass, Pristine Glass, Cromlech Bricks, Condensed Vortex, Sol Essence, Locked Orery, Golden Bit, Golden Scales, Golden Claw.",
+          "Sandstone Sample, Glass Sample, Water Sample, Clay Block, Bit of Knowledge, Liquid Glass, Limestone Mass, Pristine Glass, Cromlech Bricks, Condensed Vortex, Sol Essence, Locked Orery, Golden Bit (spelling to check in game), Golden Scales, Golden Claw. Restoration of Eternity adds 15 from level 7: Golden Horn, Golden Fang, Final Grain, Red Star Teseract (spelling to check in game), Golden Scarab, Ruby Eyeris (spelling to check in game), Prismatic Beacon, Unstable Element, Warped Geomentry (spelling to check in game), Unleashed Formula, Attraction Anchor, Arcane Carapace, Trypa Sphere (spelling to check in game), Bothsides Amulet (spelling to check in game), Follpwer Insignia (spelling to check in game). The Unstable Element's first purchase costs about E143 sand and out-produces the Prismatic Beacon only around level 50 to 100; the 50% Prismatic Beacon talent is needed to reach it.",
           "Game data",
-          ["PiwuHG"]
+          ["PiwuHG", "DBHG", "HGTal"]
         ],
         [
           "Upgrades",
-          "Buy and max every upgrade in a tier before the next. A timeline reset also resets upgrades. Timeline engine gains matter most.",
+          "Early on, max a tier's upgrades before moving on. After 0.320.0 you are mostly forced to buy the sand-generator side upgrades, and old upgrades costing e50 become affordable; Piwu holds the timeline reset to take upgrades 11 and 12 together. A timeline reset also resets upgrades. Timeline engine gains matter most.",
           "Guide",
           ["PiwuHG"]
         ],
@@ -99,21 +109,33 @@
         ],
         [
           "Time-skip items",
-          "A time-skip hourglass advances only the active character: combat, mining, woodcutting and ash per kill. It does not advance other characters, the Smeltery, Bonfire ash from fuel, the pet egg or curio coins. Boss chests hold one 1 time in 10.",
+          "A time-skip hourglass advances only the active character: combat, mining, woodcutting and ash per kill. It does not advance other characters, the Smeltery, Bonfire ash from fuel, the pet egg or curio coins. Boss chests hold one 1 time in 10. The 24-hour shop time-skip adds no Hourglass sand (player report).",
           "Game data",
-          ["DBHG"]
+          ["DBHG", "ImeniaHG"]
         ],
         [
           "Talents",
-          "From levels 12 and 16 the Hourglass talents also cost Act 3 wood and ore: about 280k wood and 550k ore to reach level 70 (a 700% bonus). Buy diamond upgrades top to bottom, left to right.",
+          "From levels 12 and 16 the Hourglass talents also cost Act 3 wood and ore: about 280k wood and 550k ore to reach level 70 (a 700% bonus). Buy diamond upgrades top to bottom, left to right. Take talents 12 and 16 only once you hold the wood and ore (2026-07-20). The last Generator Speed talent can be skipped (2026-08-08). The second sand rift is weak next to timeline gains (2026-10-30). From level 7 focus on Echoes until the Golden dragon (2026-11-02). The level 7 unlock is the small bar under the hourglass (2026-11-16). The talent order after level 7 is posted only as screenshots in the talents thread (Source).",
           "Guide",
           ["HGTal"]
         ],
         [
           "Level 7",
-          "Rebirth rolls one Timeline Output or Sand item every 2 hours; 3 merge into 1 of the next tier (5 into 2 with the upgrade), in 9 slots that grow to 25. Secret Knowledge has up to 6 pages of up to 6 slots, and only the active page counts.",
+          "Rebirth is the 9th Hourglass slot (the white dragon). It rolls one Timeline Output or Sand item every 2 hours per EvitaniaOnlineDB, or one token an hour per the FAQ, with tokens building up offline; both unverified until checked in game. 3 items merge into 1 of the next tier (5 into 2 with the upgrade). A sand tile gives about +1.02% sand and a timeline engine output tile about +1.01%. Its 5x5 grid starts with 3x3 open; the rest unlocks with cells in the Eternity tree. Secret Knowledge has up to 6 pages of up to 6 slots, and only the active page counts.",
           "Game data",
-          ["DBHG"]
+          ["DBHG", "FAQ"]
+        ],
+        [
+          "Dragons",
+          "Five dragons: Red (sand income), Blue (timeline engine), Green (upgrade time), Gold (1.2e10 Echoes; strengthens the other three) and Black (5.1e19 Echoes). Every 25 dragon levels is a x2 milestone. Train a Red or Blue milestone as soon as it takes no longer than the next Green one, else train Green; rough pacing is Red at about Green / 2 + 25, and Blue 25 at Green 250, 50 at 550 and 75 at about 850. The Golden dragon is a big speed-up, and the planner's Solo level mode suits active play. Dragon Milestones is a gem-shop item; since 0.323.2 the Black Dragon gets no milestones.",
+          "Guide",
+          ["Dragons", "DBHG", "FAQ", "Patch"]
+        ],
+        [
+          "Time Echo",
+          "A Time Echo level costs about 1e74 x 1.46^level sand (level 30 about 5.8e78), and the echo button works like MAX on generators. zoofy's calculator compares echoes against upgrades.",
+          "Guide",
+          ["HGCalc"]
         ]
       ]
     }
