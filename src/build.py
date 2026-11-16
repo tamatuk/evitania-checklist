@@ -62,7 +62,18 @@ def check_stages(st):
         if old in st["stages"]: fail("stages.json: alias %r is still a stage name" % old)
         if new not in st["stages"]: fail("stages.json: alias %r maps to %r, which is not a stage" % (old, new))
 
+def check_sources(sources):
+    """Fail naming the source key for a missing/invalid date (YYYY-MM-DD or YYYY-MM),
+    invalid optional read (YYYY-MM-DD), or a legacy asof field; dates must be real calendar dates."""
+    raise NotImplementedError("validate sources.json date/read fields")
+
+def source_freshness(sources):
+    """Text for {sources}: earliest to latest source date and latest optional read date.
+    Preserve month precision; use only source metadata, never the build clock."""
+    raise NotImplementedError("derive source date range and latest read")
+
 SRC = load("sources.json")
+check_sources(SRC)
 ST = load("stages.json")
 check_stages(ST)
 check_expect(ST["expect"], ST["stages"])
@@ -104,7 +115,7 @@ check_share(SHARE, [s_["name"] for _, s_ in SYS], [r["id"] for r in DAILY])
 data = {"roster": [[r["topic"], r["rule"], r["basis"], cite(r["source"], "roster.json")] for r in ROSTER],
         "systems": systems, "stages": ST["stages"], "reached": ST["reached"], "aliases": ST["aliases"], "expect": ST["expect"],
         "daily": [[r["when"], r["task"], r["why"], cite(r["source"], "daily.json"), r["id"]] for r in DAILY],
-        "shareSys": SHARE["systems"], "shareDaily": SHARE["daily"], "about": [[r["topic"], r["text"]] for r in ABOUT], "sources": [{k: s_[k] for k in ("name", "where", "link", "asof")} for s_ in SRC.values()]}
+        "shareSys": SHARE["systems"], "shareDaily": SHARE["daily"], "about": [[r["topic"], r["text"].replace("{sources}", source_freshness(SRC))] for r in ABOUT], "sources": [{k: s_[k] for k in ("name", "where", "link", "date", "read") if k in s_} for s_ in SRC.values()]}
 
 
 import os, base64, re

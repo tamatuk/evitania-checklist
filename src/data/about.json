@@ -37,7 +37,7 @@
   },
   {
     "topic": "Freshness",
-    "text": "Built 2026-11-15 from sources dated April to November 2026, around game version 0.323.1. Numbers marked Game data were re-checked on 2026-11-14 against the wiki data files and the developer patch notes. All sources are unofficial; check values in-game after patches."
+    "text": "{sources}, around game version 0.323.2 (kept by hand). The oldest (the Hunter guide by Sakori, 2025) is used only for cost formulas. All sources are unofficial; check values in-game after patches."
   },
   {
     "topic": "Not covered",

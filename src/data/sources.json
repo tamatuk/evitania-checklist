@@ -207,7 +207,8 @@
     "name": "Evitania Online wiki data files (evitania-online.com, github.com/badbotexe/evi)",
     "where": "Fan wiki",
     "link": "https://evitania-online.com/",
-    "asof": "data of 2026-10-11, read 2026-11-14"
+    "date": "2026-10-11",
+    "read": "2026-11-14"
   },
   "SteamNews": {
     "name": "Evitania Online news and update notes (Steam store)",
