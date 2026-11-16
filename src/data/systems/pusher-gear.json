@@ -22,7 +22,7 @@
       "source": ["Wiki", "JotunnG", "ZZTabs"]
     },
     {
-      "req": "Thorium weapon in use: crafted and enhanced to within 2 steps of your steel weapon (about VIII against a steel X), which is where it overtakes it.",
+      "req": "Thorium weapon in use: crafted and enhanced to within 1 step of your steel weapon (IX against a steel X), a common threshold that raises weapon attack for every class.",
       "basis": "Game data",
       "source": ["Wiki", "MTAct2"]
     },
@@ -97,7 +97,7 @@
           "Mammoth Ring",
           "Ring",
           "Ice Mammoth chests, about 1 in 10",
-          "+10% attack speed, +30% crit damage, +100 magic defence"
+          "+10% attack speed, +30% crit damage, +100 magic defence (wiki data; EvitaniaOnlineDB says +10 magic defence)"
         ],
         ["Anomalous Ring", "Ring", "Choissiadyr (Act 3)", "+3% offline gains, +10% combat XP, +2% crit chance"],
         [
@@ -209,7 +209,7 @@
       "rows": [
         [
           "When a new tier pays off",
-          "Enhancing adds the same flat amount per step on every tier, so a fresh item of the next tier is weaker than a well-enhanced old one. Keep wearing the old item until the new one is enhanced past the break-even: a thorium sword equals a steel longsword about 3 steps higher, thorium armor equals iron about 5 steps higher, and sunstone armor equals thorium 8 steps higher. That is why the tiers say in use, not crafted.",
+          "Enhancing adds the same flat amount per step on every tier, so a fresh item of the next tier is weaker than a well-enhanced old one. For thorium weapons, use within 1 step of steel as the common attack threshold: the base attack gains are 39 for longswords, 40 for bows and 57 for staves (75 for a thorium sword against a steel longsword), against 27.5 per enhancement step. Thorium armor equals iron about 5 steps higher, and sunstone armor equals thorium 8 steps higher. That is why the tiers say in use, not crafted.",
           "Game data",
           ["Wiki"]
         ],
@@ -221,7 +221,7 @@
         ],
         [
           "Enhancement steps",
-          "Weapons and armor enhance up to XV. Each step adds 27.5 attack to a weapon and 5 defence to an armor piece.",
+          "Weapons and armor enhance up to XV. Each step adds 27.5 attack to a weapon and 5 defence to an armor piece. 'Within N steps of X' means at least X's enhancement level minus N.",
           "Game data",
           ["Wiki"]
         ],
@@ -281,7 +281,7 @@
         ],
         [
           "Failstacking",
-          "Fail on purpose on a junk item to build bonus chance, then switch to the real item; the failure counter is shared by all items. The usual junk item is the Essence Sword, taken to where its success chance is 10% and repaired with copies of itself.",
+          "Fail on purpose on a junk item to build bonus chance, then switch to the real item; the failure counter is shared by all items. The usual junk item is the Essence Sword, taken to where its success chance is 10% and repaired with copies of itself. Bone Daggers (from the Act 1 vendor's Animal Bone) are the cheap alternative.",
           "Guide",
           ["MTEnh", "Jivchik"]
         ],

@@ -2,7 +2,7 @@
   "name": "Bonfire",
   "tiers": [
     {
-      "req": "Bonfire unlocked and burning Chadcoal (1,100 fuel each) at a 25-50% burn rate, never going out.",
+      "req": "Bonfire unlocked and lit, fuelled with Chadcoal.",
       "basis": "Guide",
       "source": ["MTAct2", "DBBonfire"]
     },
@@ -37,7 +37,7 @@
       "source": ["Wiki"]
     },
     {
-      "req": "All three Act 2 boss souls sacrificed. Each raises the Bonfire two levels for good, so it stays at its top tier with little or no fuel.",
+      "req": "The one-time Act 2 boss sacrifices completed: Mammoth Bitusk, Jötunn Eye and Maevath's Horn are the unlock items listed by EvitaniaOnlineDB. Which items the game asks for, and what Maevath gives the Bonfire, are unverified in game; see Sacrifice 'Boss items'.",
       "basis": "Guide",
       "source": ["DBBonfire"]
     }
@@ -61,7 +61,7 @@
         ],
         [
           "Burn rate",
-          "Higher burn gives more heat but a worse fuel-to-ash ratio. Right after unlock, 100% gives the most bonus if you can refuel often; otherwise keep a long fuel timer.",
+          "Higher burn gives more heat but a worse fuel-to-ash ratio. Use 25-50% if you refuel once or twice a day; 100% only if you refuel often. Keep enough fuel to last until your next visit.",
           "Guide",
           ["DBBonfire"]
         ],
@@ -91,7 +91,7 @@
         ],
         [
           "Maximum heat",
-          "Maximum heat rises only with the one-time boss soul sacrifices. A higher flame makes ash faster but burns more fuel.",
+          "Maximum heat rises with the one-time boss sacrifices; see Sacrifice 'Boss items' for the unverified item requirements. A higher flame makes ash faster but burns more fuel.",
           "Game data",
           ["HeatG"]
         ],

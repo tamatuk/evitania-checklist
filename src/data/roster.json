@@ -13,7 +13,7 @@
   },
   {
     "topic": "Material farmer",
-    "rule": "An alt parked for Hunter and sacrifice materials. Drop Quantity does not raise the common drop every monster gives, so this role wants kills per hour only: the guide order with Magicfind and Bonus XP pushed to the very end. This is the Min-Maxer of the Three Musketeers method, and MountTai calls Magicfind a trap for anyone not opening boss chests.",
+    "rule": "An alt parked for Hunter and sacrifice materials. Drop Quantity does not raise the common drop every monster gives, so this role wants kills per hour first: the guide order with Magicfind and Bonus XP pushed to the very end. This is the Min-Maxer of the Three Musketeers method, and MountTai calls Magicfind a trap for anyone not opening boss chests. Delaying Bonus XP in the talent tree saves points for damage; an All EXP trinket helps levelling without spending those points. The trinket recommendation is a separate choice, not a reason to take Bonus XP talents early.",
     "basis": "Guide",
     "source": ["Dawnk3", "MTRogue", "SteamDQ"]
   },
@@ -37,7 +37,7 @@
   },
   {
     "topic": "Rogue priorities",
-    "rule": "MountTai's level 80 Rogue: unlock every skill node first, rush Arrow Barrage, then crit chance, attack speed, crit damage. He skips attack speed talents because bows already give a lot (a thorium bow adds 40%).",
+    "rule": "MountTai's level 80 Rogue: unlock every skill node first, rush Arrow Barrage, then crit chance and crit damage. He skips attack speed talents because bows already give a lot (a thorium bow adds 40%).",
     "basis": "Guide",
     "source": ["MTRogue"]
   },
@@ -97,7 +97,7 @@
   },
   {
     "topic": "Nightmare",
-    "rule": "In Nightmare, move points out of Magicfind and Bonus XP into attack speed, crit chance and crit damage, whatever the role.",
+    "rule": "In Nightmare, move points out of Magicfind and Bonus XP into attack speed, crit chance and crit damage for every role except the Rare-drop farmer, which keeps Magicfind for boss chests and cards. The Roster trees do not change with stage; apply this respec manually.",
     "basis": "Guide",
     "source": ["PiwuWar", "PiwuRogue", "PiwuMage"]
   }
