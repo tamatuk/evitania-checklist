@@ -95,16 +95,16 @@
     },
     {
       "title": "Smeltery base times",
-      "cols": ["Bar", "Seconds each", "Batch on the page", "Note"],
+      "cols": ["Bar", "Base seconds each, before speed bonuses"],
       "rows": [
-        ["Charcoal", 13, 1, ""],
-        ["Bronze Bar", 52, 1, ""],
-        ["Iron Bar", 63, 343, "6 hours for the batch"],
-        ["Steel Bar", 157, 226, "9.9 hours"],
-        ["Chadcoal", 52, 1, "Same row as Bronze on the page; check in game"],
-        ["Thorium Bar", 1278, 200, "71 hours"],
-        ["Palm Face", 78, 1, ""],
-        ["Sunstone Bar", 1881, 1, ""]
+        ["Charcoal", 75],
+        ["Bronze Bar", 300],
+        ["Iron Bar", 360],
+        ["Steel Bar", 900],
+        ["Chadcoal", 300],
+        ["Thorium Bar", 7200],
+        ["Palm Face", 450],
+        ["Sunstone Bar", 10800]
       ]
     }
   ]

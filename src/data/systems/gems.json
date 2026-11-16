@@ -87,7 +87,7 @@
         ["Socket timing", "Buy the remaining rune sockets as you build runewords.", "Guide", ["PiwuGems"]],
         [
           "Fate Spiral",
-          "Keep 900 gems saved before entering Act 3. A chest costs 80 gems, so the upgrade pays for itself in about 12 days.",
+          "Keep 900 gems saved before entering Act 3. A chest costs 80 gems (unverified until checked in game), so the upgrade pays for itself in about 12 days.",
           "Guide",
           ["PiwuGems"]
         ],
@@ -96,10 +96,17 @@
         ["Income", "The daily quest gives 60 gems and many achievements pay 30.", "Game data", ["DBTips"]],
         [
           "Other sinks",
-          "A pet stat reroll costs 50 gems (Tier 5-6 pets only). A Class Reset Brew (talent reset) costs 30 gems: cheap, but account upgrades come first.",
+          "A pet stat reroll (Tier 5-6 pets only) costs gems; the price rises with pet tier (EvitaniaOnlineDB's calculator uses 200 gems at Tier V). Unverified until checked in game. A Class Reset Brew (talent reset) costs 30 gems: cheap, but account upgrades come first. A gathering Mining Reset Potion costs 100 gems.",
           "Guide",
-          ["JTPets", "GFGather"]
-        ]
+          ["JTPets", "DBPets", "GFTal", "GFGather"]
+        ],
+        [
+          "Dragon Milestones",
+          "Hourglass dragons past level 7 have Dragon Milestones, a new gem sink.",
+          "Game data",
+          ["SteamNews"]
+        ],
+        ["Boss keys", "Extra boss keys can be bought for gems, up to six a day.", "Game data", ["SteamNews"]]
       ]
     },
     {
@@ -115,7 +122,7 @@
           5,
           "Curio inventory slots to 22 (Act 3)",
           2550,
-          "300, 350, 400, 450, 500, 550 (6 of the 12 ranks, if the inventory starts at 10 slots)"
+          "300, 350, 400, 450, 500, 550 (6 of the 12 ranks); the total assumes a 10-slot base and is unverified until checked in game"
         ],
         [6, "Remaining rune sockets", 4500, "450, 550, 650, 800, 950, 1100"],
         [7, "Hunter Cost Cruncher", 2000, "300, 350, 400, 450, 500"],
