@@ -94,7 +94,7 @@
         ["Income", "The daily quest gives 60 gems and many achievements pay 30.", "Game data", ["DBTips"]],
         [
           "Other sinks",
-          "A pet stat reroll (Tier 5-6 pets only) costs gems; the price rises with pet tier (EvitaniaOnlineDB's calculator uses 200 gems at Tier V); unverified until checked in game. A Class Reset Brew (talent reset) costs 30 (GFTal) and a Mining Reset Potion 100 (GFGather); prefer account boosts.",
+          "A pet stat reroll (Tier 5-6 pets only) costs gems; the price rises with pet tier (EvitaniaOnlineDB's calculator uses 200 gems at Tier V). Unverified until checked in game. A Class Reset Brew (talent reset) costs 30 and a gathering Mining Reset Potion 100. Prefer account boosts.",
           "Guide",
           ["JTPets", "DBPets", "GFTal", "GFGather"]
         ],
@@ -122,9 +122,9 @@
         [8, "Smeltery Capacity", 750, "300, 450"],
         [
           9,
-          "Curio inventory slots (Act 3), 6 ranks from a 10-slot base to 22 slots",
+          "Curio inventory slots (Act 3), 6 ranks to 22 slots",
           2550,
-          "300 to 550 in steps of 50; the 10-slot base is unverified until checked in game"
+          "300, 350, 400, 450, 500, 550; assumes a 10-slot base, unverified until checked in game"
         ],
         [10, "Hourglass Generator Speed (Act 3)", 1700, "200, 350, 500, 650"],
         [11, "Awakening Amplifier (Act 3)", 500, "500"],
