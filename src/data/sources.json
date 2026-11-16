@@ -227,11 +227,23 @@
     "link": "https://discord.com/channels/1219291890940383334/1551162929209020517",
     "asof": "2026-11-02"
   },
-  "Trinkets": {
-    "name": "Luminor, Best Luminors and Trinkets threads",
+  "BestLuminor": {
+    "name": "The BEST Luminors You Can Get! (Soso)",
     "where": "Discord #guides",
-    "link": "https://discord.com/channels/1219291890940383334",
-    "asof": "2026-10 to 2026-11"
+    "link": "https://discord.com/channels/1219291890940383334/1562953981779517490",
+    "asof": "2026-10-23"
+  },
+  "LuminorStats": {
+    "name": "Luminor Base/Max stats (Stratasys)",
+    "where": "Discord #guides",
+    "link": "https://discord.com/channels/1219291890940383334/1562620833313198081",
+    "asof": "2026-10-22 to 2026-11-14"
+  },
+  "TrinketSub": {
+    "name": "Trinkets sub stats (AlexG)",
+    "where": "Discord #guides",
+    "link": "https://discord.com/channels/1219291890940383334/1566904359198134282",
+    "asof": "2026-11-03"
   },
   "ZZTabs": {
     "name": "Evitania Online: Idle RPG spreadsheet, Bosses, Gear and Fresh Acc tabs (Zerozapper)",
