@@ -14,7 +14,7 @@
     {
       "req": "Main trinket levelled with Upgrade Flasks to its maximum.",
       "basis": "Estimate",
-      "source": ["Trinkets", "Patch"]
+      "source": ["TrinketSub", "Patch"]
     },
     {
       "req": "A max-level Legendary trinket reforged with the two stats you want guaranteed.",
@@ -43,7 +43,7 @@
           "Main stats",
           "HP, ATK, Gold %, All EXP %, mining power or woodcutting power. Each event has four pieces of rising size, and the main stat's size follows the piece and its level (Trinket pieces). All EXP also covers mining and woodcutting XP. The main stat cannot be rerolled.",
           "Game data",
-          ["Wiki", "Trinkets"]
+          ["Wiki", "LuminorStats"]
         ],
         [
           "Same trinket, different values",
@@ -53,9 +53,15 @@
         ],
         [
           "Sub-stats",
-          "There are 12: Offline Gains %, Drop Quantity, crit chance, crit damage, MEN, CON, STR, DEX, INT, HP %, mining power % and woodcutting power %. A Luminor rolls Offline Gains at 1% to 6% and Drop Quantity at 2 to 12. A sub-stat upgrades on every third trinket level. Which ones to want depends on the role: see Trinket by role.",
+          "There are 12: Offline Gains %, Drop Quantity, crit chance, crit damage, MEN, CON, STR, DEX, INT, HP %, mining power % and woodcutting power %. Only some roll active (white): 0-1 / 1-2 / 2-3 / 3-4 on a Black Candle / Candlestick / Candelabra / Luminor and their Harvest sizes; the rest are greyed. A sub-stat starts at its base, on a Luminor +1% Offline Gains or +2 Drop Quantity, and every third trinket level one random sub-stat, possibly a greyed one, gains a step; reaching 6% Offline Gains or 12 Drop Quantity needs all five of a Luminor's steps on it. Which ones to want depends on the role: see Trinket by role.",
           "Game data",
-          ["Wiki", "Trinkets"]
+          ["Wiki", "LuminorStats", "TrinketSub"]
+        ],
+        [
+          "Luminor maxima",
+          "Community tables disagree: Drop Quantity 10-12 at max, crit damage 35% to 40%, STR, DEX or INT 20 to 25 (AlexG: 10, 40%, 25; Stratasys: 12, 35%, 20). Neither is game data.",
+          "Player report",
+          ["LuminorStats", "TrinketSub"]
         ],
         [
           "Swapping",
@@ -65,9 +71,9 @@
         ],
         [
           "Levelling",
-          "An Upgrade Flask is 10 XP; other trinkets can be fed in too. Flasks are spent first. Disassembling returns the material minus 20%.",
+          "An Upgrade Flask is 10 XP; other trinkets can be fed in too, a Black Candle / Candlestick / Candelabra / Luminor size giving 120 / 200 / 400 / 600 XP. Flasks are spent first. Disassembling gives 12 / 20 / 40 / 60 flasks for those sizes, and returns the material spent on levelling minus 20%.",
           "Game data",
-          ["Trinkets", "Patch"]
+          ["TrinketSub", "Patch"]
         ],
         [
           "Reforge",
@@ -89,36 +95,36 @@
       "rows": [
         [
           "Pusher",
-          "ATK; HP instead for a boss that kills you",
+          "ATK; HP instead for a boss that kills you, which matters little in solo event dungeons, where you revive",
           "Crit chance and crit damage",
           "Bosses, the tower and dungeons. Presets do not switch trinkets, so swap it on by hand before the fight.",
           "Player report",
-          ["SteamTrinkets", "SteamTrinketsEnh", "Patch"]
+          ["SteamTrinkets", "SteamTrinketsEnh", "LuminorStats", "Patch"]
         ],
         [
           "Material farmer",
           "All EXP",
-          "Offline Gains",
+          "Offline Gains, then Drop Quantity, crit chance, class stat (Soso, for a parked farmer)",
           "While it farms, parked or online",
           "Player report",
-          ["SteamTrinkets"]
+          ["SteamTrinkets", "BestLuminor"]
         ],
         [
           "Rare-drop farmer",
           "All EXP",
-          "Drop Quantity, then Offline Gains",
+          "Drop Quantity, then Offline Gains. Soso's order for an active farmer: a Rogue Drop Quantity > MEN > crit damage > crit chance > DEX; a Warrior the same with STR; a Mage the same without MEN",
           "While it opens boss chests and farms cards. Drop Quantity is only a sub-stat and counts only for boss chests and cards.",
           "Guide",
-          ["SteamDQ", "SteamTrinkets"]
+          ["SteamDQ", "SteamTrinkets", "BestLuminor"]
         ],
         ["Leveller", "All EXP", "Offline Gains", "All the time", "Player report", ["SteamTrinkets"]],
         [
           "Gatherer",
-          "Mining or woodcutting power, matching its skill; else All EXP, which also covers gathering XP",
-          "Offline Gains, mining or woodcutting power %",
+          "Mining or woodcutting power, matching its skill, until its power is capped, then All EXP (Soso); All EXP also covers gathering XP",
+          "Offline Gains, then Drop Quantity, mining or woodcutting power %, STR for mining or DEX for woodcutting (Soso)",
           "While it gathers",
-          "Game data",
-          ["Wiki"]
+          "Guide",
+          ["Wiki", "BestLuminor"]
         ],
         [
           "Any character parked offline",
@@ -130,11 +136,11 @@
         ],
         [
           "Gold",
-          "Filler on a farmer until an All EXP trinket drops",
-          "",
-          "No source recommends Gold for any role, but it beats an empty slot",
-          "Estimate",
-          []
+          "Soso's pick for a combat farmer, active or parked, once it is damage-capped: Gold > All EXP > ATK. Below the cap, and for one Luminor worn for all content (All EXP > Gold > ATK), farmers keep All EXP",
+          "As for its farmer role",
+          "While a damage-capped combat farmer farms; otherwise filler until an All EXP trinket drops",
+          "Guide",
+          ["BestLuminor"]
         ]
       ]
     },
@@ -143,7 +149,7 @@
       "cols": [
         "Piece (Halloween / Harvest)",
         "Max level",
-        "Sub-stats",
+        "Sub-stats (active when rolled)",
         "All EXP %",
         "Gold %",
         "ATK",
@@ -154,7 +160,7 @@
         [
           "Black Candle / Bountiful Tusk",
           6,
-          1,
+          "1, 0-1 active",
           "16 to 20.8",
           "12 to 16.8",
           "12 to 16.8",
@@ -164,7 +170,7 @@
         [
           "Candlestick / Generous Cornucopia",
           9,
-          2,
+          "2, 1-2 active",
           "24 to 34.8",
           "18 to 28.8",
           "18 to 28.8",
@@ -174,7 +180,7 @@
         [
           "Candelabra / Plentiful Bihorn",
           12,
-          3,
+          "3, 2-3 active",
           "32 to 51.2",
           "24 to 43.2",
           "24 to 43.2",
@@ -184,7 +190,7 @@
         [
           "Luminor / Abundant Overgrowth",
           15,
-          4,
+          "4, 3-4 active",
           "40 to 70",
           "30 to 60",
           "30 to 60",
