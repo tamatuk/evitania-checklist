@@ -68,6 +68,10 @@ SRC = {
     "TreyexPets": ("Pets Guide (Treyex Gaming)", "Web guide", "https://www.treyexgaming.com/evitania-online-pets-guide/", "2026-04-11"),
     "SteamTrinkets": ("Best trinket upgrades (Steam discussion)", "Steam discussion", "https://steamcommunity.com/app/4119420/discussions/0/564798191049084546/", "read 2026-11-16"),
     "SteamTrinketsEnh": ("Can someone explain Trinket Enhancing? (Steam discussion)", "Steam discussion", "https://steamcommunity.com/app/4119420/discussions/0/574930637987796482/", "read 2026-11-16"),
+    "SteamJotunBeam": ("jotun (Steam discussion)", "Steam discussion", "https://steamcommunity.com/app/4119420/discussions/0/564784556120778104/", "read 2026-11-16"),
+    "SteamJotunRNG": ("Boss fights - pure RNG (Jotun...) (Steam discussion)", "Steam discussion", "https://steamcommunity.com/app/4119420/discussions/0/809100396253524956/", "read 2026-11-16"),
+    "DBGear": ("Gear database (EvitaniaOnlineDB)", "Fan wiki", DB + "database/gear", "read 2026-11-16"),
+    "SteamJotunnDev": ("Jotunn (Steam discussion, with developer neype)", "Steam discussion", "https://steamcommunity.com/app/4119420/discussions/0/800094052013884327/", "read 2026-11-16"),
 }
 USED = set()
 
@@ -215,7 +219,7 @@ system("Sacrifice", [
     ("Mammoth's soul sacrificed in the Sacrifice tab: the first five lines are open.", G, src("MTAct2", "DBBonfire")),
     ("Attack Wish and Cutting Edge Technology at 10 or more, with Ironwood felled in 1 or 2 hits.", G, src("DBBonfire", "MTAct2")),
     ("Attack Wish at 15 or more.", G, src("MTAct2")),
-    ("Jotunn's Eye sacrificed (five more lines open), and Wish for Hardness high enough to reach about 1,300 physical defence with thorium gear.", G, src("MTAct2")),
+    ("Jotunn's Eye sacrificed (five more lines open), and Wish for Hardness high enough to reach about 1,300 physical defence with thorium gear, the Act 2 guide's target for Maevath.", G, src("MTAct2")),
     ("Maevath's Horn sacrificed: the last five lines are open.", G, src("DBBonfire")),
     ("Attack Wish at 20, then Wish for Hardness at 20.", G, src("DBBonfire")),
     ("Attack Wish, Wish for Luck, Pray for Luck and Wish for Speed all at 20, the base cap (Wish for Speed ends there).", G, src("HyZerg", "Wiki")),
@@ -258,7 +262,7 @@ system("Pusher gear", [
     ("Mammoth Ring obtained and equipped. It drops from Ice Mammoth chests (about 1 in 10), so keep spending keys there until it drops.", "Player report", src("JotunnG", "ZZTabs")),
     ("Thorium weapon in use: crafted and enhanced to within 2 steps of your steel weapon (about VIII against a steel X), which is where it overtakes it.", GD, src("Wiki", "MTAct2")),
     ("Thorium armor in use: all four pieces crafted and enhanced to III or more, which is where they overtake iron at VII.", GD, src("Wiki", "MTAct2")),
-    ("Thorium set enhanced further, weapon first and then armor, to about 1,300 physical defence.", G, src("MTAct2")),
+    ("Thorium set enhanced further, weapon first and then armor, to about 1,300 physical defence, the Act 2 guide's target for Maevath.", G, src("MTAct2")),
     ("Nordic Amulet obtained and equipped. It drops from Jotunn chests (about 1 in 20).", GD, src("Wiki", "ZZTabs")),
     ("Sunstone weapon in use: crafted and enhanced to within 2 to 4 steps of your thorium weapon.", GD, src("Wiki", "Jivchik")),
     ("Sunstone armor in use: crafted and enhanced to within 7 steps of your thorium armor.", GD, src("Wiki", "Jivchik")),
@@ -479,7 +483,7 @@ system("Cards", [
     ("Crab Miner card obtained (permanent Hunter discount).", G, src("DBTips")),
     ("Act 1 damage and farming cards started: Animated Armor, Fire Elemental, Slime Cube, Wolf.", MR, src("MTFarm", "Dawnk")),
     ("Act 1 boss cards at 1 star from daily keys: 8 cards each for Bringer of Death and Yrsainir, 12 for The Crab.", MR, src("DBTips", "Wiki")),
-    ("Stump and Pebble cards for woodcutting and mining power.", MR, src("MTFarm", "MTAct2", "Dawnk")),
+    ("Stump and Pebble cards for woodcutting and mining power, and the Watch card for physical defence before Jotunn (x1.03 per star).", MR, src("MTFarm", "MTAct2", "Dawnk", "Wiki")),
     ("Snowman card obtained (attack multiplier that stacks with the helmet sacrifice).", G, src("MTAct2")),
     ("Crab Miner and Helmet cards at 3 stars: both cut Hunter costs, and Helmet gives half as much again per star.", MR, src("Sakori", "Wiki")),
     ("Act 1 Hard card at 3 stars (raises the Hunter cap).", GD, src("ZZ", "DBTips")),
@@ -702,8 +706,8 @@ system("Characters", [
         ("Crit first", "Take crit rate and crit damage over Magic Find and EXP until about level 70; more kills an hour beats those nodes.", G, src("PiwuWar")),
         ("Skip", "Skip the Warrior's +5 HP / +1% damage node at the end; HP is of little use. Take crit damage.", G, src("PiwuWar")),
         ("Boss readiness check", "Kills per hour is a result of the other systems, not a task. The Act 2 guide uses it as a check before each boss, measured on your main in the zone that holds the boss portal: about 500 in the Yeti zone before Ice Mammoth, about 1,000 in the Troll zone before Jotunn, and above 1,000 again in the Draugr zone (in thorium, about 1,300 physical defence) before Maevath. Under the mark, raise Hunter trainings and sacrifices first.", G, src("MTAct2")),
-        ("Jotunn fight", "Troll map, the red portal. Stand under a hand to bait a punch, step out as it lands and hit the hand; destroy both hands. After the first hand he summons monsters: kill them before they explode. Once both hands are gone his HP drains by itself. Run to the far side of the map from under a hand to outrun the eye beam, go behind the hand for the side slap, and leave the middle for the ice breath.", G, src("JotunnG", "MTAct2", "FAQ")),
-        ("Mammoth Ring", "One player reports the Mammoth Ring cut Jotunn's eye beam from over 600 a hit to about 100.", "Player report", src("JotunnG")),
+        ("Jotunn fight", "Troll map, the red portal. Adds first: after the first hand falls he summons monsters that explode, for over 3,000 damage in Steam reports and potentially an instant kill in EvitaniaOnlineDB's boss guide, so kill each one before anything else. Then the eye beam: when the eyes glow, sprint from under the hand to the far side of the map, starting near the screen edge, and take at most one tick (EvitaniaOnlineDB); if you are caught, Steam players say you should survive 4 to 5 beams. Then the hand waits: stand under a hand to bait a punch, step out as it lands and hit the hand (the Discord guide). Hand drops are random, so the fight is long and mostly waiting, about 10 minutes with 12 beams and over 20 slaps, and a Mage's lightning can hit the body instead of the hand (Steam). Once both hands are gone his HP drains by itself. Go behind the hand for the side slap and leave the middle for the ice breath (the Discord guide).", G, src("DBBoss", "SteamJotunBeam", "SteamJotunRNG", "SteamJotunnDev", "JotunnG", "MTAct2", "FAQ")),
+        ("Mammoth Ring", "Disputed. One player in the Discord guide reports the Mammoth Ring (+100 magic defence) cut Jotunn's eye beam from over 600 a hit to about 100, but a Steam player thinks the beam scales with physical defence, and EvitaniaOnlineDB lists the ring's magic defence as +10. The ring's attack speed and crit damage hold either way.", "Player report", src("JotunnG", "SteamJotunBeam", "DBGear")),
         ("Shared progress", "Hunter, sacrifices, cards, Curio and the stash are account-wide; levels and talents are per character.", GD, src("DBTips")),
         ("Lone Wolf", "Unlocked by killing the Act 1 last boss. Since 0.321.0 it gives +50 Drop Quantity and +50% EXP and gold for giving up the other slots. Alts are still stronger, so it is optional.", G, src("FAQ", "Patch")),
         ("Class by stage", "No class is best all game. Warrior is easiest early and online but is the only class with a move-speed penalty in the offline formula; Rogue is the best offline farmer until Hunter and sacrifices are high; Mage is best online and offline once you farm at the kill cap.", G, src("Jivchik")),
@@ -898,7 +902,7 @@ ROSTER = [
 ]
 REACHED = ["New account", "Hunter unlocked at Stumps", "Yrsainir killed", "First Act 2 boss killed", "Second Act 2 boss killed", "Maevath killed", "Act 3 town reached", "Obelisk used, pushing Act 1 Hard", "Act 2 Hard unlocked (combat level 80, the three Hard Act 1 bosses dead, Act 1 Hard card at 3 stars)", "Nightmare difficulty open"]
 EXPECT = {
-    "Hunter":     [0, 1, 2, 3, 5, 6, 7, 7, 8, 9],
+    "Hunter":     [0, 1, 2, 4, 5, 6, 7, 7, 8, 9],
     "Bonfire":    [0, 0, 0, 4, 6, 8, 8, 8, 8, 8],
     "Ash":        [0, 0, 0, 1, 3, 5, 6, 7, 7, 7],
     "Sacrifice":  [0, 0, 0, 2, 4, 5, 6, 7, 8, 9],
@@ -907,7 +911,7 @@ EXPECT = {
     "Gathering":  [0, 0, 2, 2, 2, 3, 3, 4, 5, 5],
     "Gems":       [0, 0, 1, 1, 1, 2, 3, 5, 8, 13],
     "Pets":       [0, 1, 1, 1, 1, 2, 3, 4, 5, 6],
-    "Cards":      [0, 1, 3, 3, 5, 5, 6, 7, 7, 9],
+    "Cards":      [0, 1, 3, 4, 5, 5, 6, 7, 7, 9],
     "Runes":      [0, 0, 0, 1, 1, 2, 3, 5, 6, 7],
     "Engineer":   [0, 0, 1, 3, 4, 5, 7, 8, 9, 10],
     "Curio":      [0, 0, 0, 0, 0, 0, 2, 4, 6, 7],
