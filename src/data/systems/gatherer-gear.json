@@ -22,7 +22,7 @@
       "source": ["Wiki", "MTAct2", "JTGather"]
     },
     {
-      "req": "Thorium axe and pickaxe at V or higher.",
+      "req": "Thorium axe and pickaxe enhanced until their durability reaches 0 (X is the soft target).",
       "basis": "Estimate",
       "source": ["Wiki"]
     },
