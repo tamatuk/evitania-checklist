@@ -44,9 +44,9 @@
       "rows": [
         [
           "Chests",
-          "Each Fate Spiral lets you pick one of three curios. They come from the daily upgrade, 80 gems each, achievements and logins.",
+          "Each Fate Spiral lets you pick one of three curios. They come from the daily upgrade, chests at 80 gems each (unverified until checked in game), achievements, logins, the Hourglass shop (a Curio for Gold-rift gold, 100 rising x1.3 over 10 purchases, about 4,260 gold) and the paid Curio Pack (an extra daily roll).",
           "Game data",
-          ["JTCurio"]
+          ["JTCurio", "Wiki"]
         ],
         ["Inventory", "21 inventory slots hold all 20 curios plus a spare.", "Guide", ["PiwuGems"]],
         [
@@ -81,12 +81,17 @@
           "Game data",
           ["CurioG", "PiwuGems"]
         ],
-        ["Pity", "The 100th roll without a Legendary gives one.", "Game data", ["CurioG"]],
+        [
+          "Pity",
+          "Every roll adds a pity point, and a normal Legendary does not reset them. 100 pity points buy one guaranteed Legendary from the pity chest.",
+          "Game data",
+          ["CurioG", "Wiki"]
+        ],
         [
           "Coin Cap",
-          "Each rank adds 500 to the cap and costs 450, 500, 550, 600 then 650 gems. Leave it until the other gem upgrades are bought.",
+          "6 ranks, each adding 500 to the cap, cost 450, 550, 650, 750, 850 and 950 gems (4,200 in total). Leave it until the other gem upgrades are bought.",
           "Guide",
-          ["CurioG"]
+          ["CurioG", "Wiki"]
         ]
       ]
     },
@@ -94,11 +99,11 @@
       "title": "Curio rarities",
       "cols": ["Rarity", "Coins to max (level 50)", "Drop rate", "Coins per hour and max tier"],
       "rows": [
-        ["White", 49200, "45%", "3-6 an hour; tier 3"],
-        ["Green", 53440, "34%", "8-11 an hour; tier 3"],
-        ["Blue", 57680, "19%", "14-20 an hour; tier 6"],
-        ["Purple", 68420, "1.6%", "21-30 an hour; tier 9"],
-        ["Gold", 77400, "0.4%", "31-40 an hour; tier 9"]
+        ["White", 49200, "45%", "2-5 an hour; tier 3"],
+        ["Green", 53440, "34%", "7-10 an hour; tier 3"],
+        ["Blue", 57680, "19%", "13-19 an hour; tier 6"],
+        ["Purple", 68420, "1.6%", "20-29 an hour; tier 9"],
+        ["Gold", 77400, "0.4%", "30-39 an hour; tier 9"]
       ]
     },
     {

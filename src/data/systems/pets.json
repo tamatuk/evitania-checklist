@@ -39,13 +39,13 @@
       "rows": [
         [
           "Tier up",
-          "A pet must be level 50 to tier up, and its level resets to 1 afterwards. Needs 150, 350, 700, 1,200 then 1,850 food points per step.",
+          "Pets start at Tier 1. A pet must be level 50 to tier up, and its level resets to 1 afterwards. Needs 150, 350, 700, 1,200 then 1,850 food points per step.",
           "Game data",
           ["JTPets"]
         ],
         [
           "Food",
-          "A sacrificed pet gives 51-100 points at Tier 0, 101-150 at Tier 1, 151-200 at Tier 2, 251-300 at Tier 3, 401-450 at Tier 4, 601-650 at Tier 5 and 851-900 at Tier 6.",
+          "A sacrificed pet gives 51-100 points as an ungraded (Slyme) pet, 101-150 at Tier 1, 151-200 at Tier 2, 251-300 at Tier 3, 401-450 at Tier 4, 601-650 at Tier 5 and 851-900 at Tier 6.",
           "Game data",
           ["JTPets"]
         ],
@@ -57,9 +57,9 @@
         ],
         [
           "Rerolls",
-          "At Tier 5-6 one of the two secondary stats can be rerolled for 50 gems a roll; the result is random.",
+          "At Tier 5-6 one of the two secondary stats can be rerolled for gems; the price rises with pet tier (EvitaniaOnlineDB's calculator uses 200 gems at Tier V). Unverified until checked in game. The result is random.",
           "Game data",
-          ["JTPets"]
+          ["JTPets", "DBPets"]
         ],
         [
           "How pets level",
@@ -129,11 +129,16 @@
       "title": "Free pets",
       "cols": ["Pet", "How to get it", "Odds", "Stats"],
       "rows": [
-        ["Basic Bat", "Quest: Collect Bat Dust (Act 1)", "Sure", "Attack, defence, HP, accuracy"],
+        ["Basic Bat", "Quest: Collect Bat Dust (Act 1)", "Sure", "Attack, defence, HP, crit chance"],
         ["Pebble", "Mining", "Drop", "EXP bonus, mining power"],
         ["Leaf Spirit", "Woodcutting", "Drop", "EXP bonus, woodcutting power"],
-        ["Golden Piggy", "Achievement", "Sure", "Gold multiplier, offline gains"],
-        ["Weird Book Pet", "Red Dragon boss", "1 in 100", "Accuracy, Magic Find"],
+        [
+          "Golden Piggy",
+          "Achievement \"Update When?\", which since 0.316.2 targets Horus (Act 3)",
+          "Sure",
+          "Gold multiplier, offline gains"
+        ],
+        ["Weird Book Pet", "Red Dragon boss", "1 in 100", "Attack, defence, crit chance, Drop Quantity"],
         ["Ghosty Pet", "Maevath boss", "1 in 100", "Attack speed, crit damage"],
         ["Beeb", "Any Act 1 monster", "1 in 5,000,000", ""],
         ["Snowflake", "Act 2 monsters", "Drop", ""],
