@@ -71,11 +71,21 @@ for f_, s_ in SYS:
 
 def check_daily(daily):
     """Every daily row has a unique "id"; fails naming the repeated id, or the task of a row without one."""
-    raise NotImplementedError
+    seen = set()
+    for r in daily:
+        if not r.get("id"): fail("daily.json: task %r has no id" % r["task"])
+        if r["id"] in seen: fail("daily.json: id %r is used twice" % r["id"])
+        seen.add(r["id"])
 
 def check_share(share, systems, daily):
     """share.json's lists hold exactly the systems' names and the daily ids; fails naming what is missing or extra."""
-    raise NotImplementedError
+    for key, want in (("systems", systems), ("daily", daily)):
+        have = share[key]
+        missing = [x for x in want if x not in have]
+        extra = [x for x in have if x not in want]
+        twice = sorted({x for x in have if have.count(x) > 1})
+        if missing or extra or twice:
+            fail("share.json: %s missing %r, extra %r, repeated %r" % (key, missing, extra, twice))
 
 ABOUT = load("about.json")
 SHARE = load("share.json")
@@ -127,7 +137,11 @@ for s_ in data["systems"]: s_["icon"] = idx[ICONS["systemIcon"][s_["name"]]]
 # ---------------------------------------------------------------- talent trees (Piwu's guides, 2026-08-06)
 def load_trees(tf):
     """tf["trees"] with each node's "y" as a float, as the page prints it; node orders must run 1 to n."""
-    raise NotImplementedError
+    for cls, t in tf["trees"].items():
+        for n_ in t["nodes"]: n_["y"] = float(n_["y"])
+        if sorted(n_["o"] for n_ in t["nodes"]) != list(range(1, len(t["nodes"]) + 1)):
+            fail("trees.json: %s node orders do not run 1 to %d" % (cls, len(t["nodes"])))
+    return tf["trees"]
 TREES_FILE = load("trees.json")
 trees = load_trees(TREES_FILE)
 for cls, t in trees.items():
