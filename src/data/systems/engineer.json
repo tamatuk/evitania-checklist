@@ -205,7 +205,12 @@
           "+30%, +50%, +70%, +100% food points from each Slyme rarity"
         ],
         ["Runic Blueprint", "Faster Hatching", "4 levels, 6,000", "-0.5 hours egg cooldown a level"],
-        ["Runic Blueprint", "Rune Stacking", "3 levels, 17,000", "Rune stack size 100, 400, 900"],
+        [
+          "Runic Blueprint",
+          "Rune Stacking",
+          "3 levels, 17,000",
+          "Rune stack size 100, 400, 900 (unverified: may add to a base of 100, and the 0.315.2 notes say the stack goes \"up to 1000\"; check in game)"
+        ],
         [
           "Runic Blueprint",
           "Daily Activity Enhancer II, Advanced Keyring",

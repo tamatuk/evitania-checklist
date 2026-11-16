@@ -65,9 +65,9 @@
         ],
         [
           "Cost",
-          "Each level costs 1.7 times the one before: level 10 is 202 materials, 15 is 2,860, 20 is 40,600, 25 is 577,000 and 30 is 8.19 million.",
+          "Each level costs 1.7 times the one before: level 10 is 202 materials, 15 is 2,860, 20 is 40,600, 25 is 577,000 and 30 is 8.19 million. Two trainings differ: Hunter Cost Reduction costs 1,300 x 1.5^L gold (1.5 times a level) and Speed Training (movement) 900 x 1.55^L gold (1.55 times a level).",
           "Game data",
-          ["Sakori"]
+          ["Sakori", "Wiki"]
         ],
         [
           "Cap",
@@ -83,9 +83,15 @@
         ],
         [
           "Refunds",
-          "Engineer Hunter Tax Returns adds a 5% chance per level (10 levels across Idea and Blueprint) that a Hunter level refunds half its materials: about a quarter off on average at 50%.",
+          "Engineer Hunter Tax Returns adds 5% per level (\"Hunter Upgrade Refund 5%\" in the wiki data), 10 levels across Idea and Blueprint.",
           "Game data",
-          ["Wiki", "JTEng"]
+          ["Wiki"]
+        ],
+        [
+          "Refund size",
+          "The Engineer guide says a refund returns half the level's materials, about a quarter off on average at 50%. The wiki data does not give the size, so this is unverified until checked in game.",
+          "Guide",
+          ["JTEng"]
         ],
         [
           "Crab Miner card",
@@ -94,10 +100,10 @@
           ["DBTips", "Sakori"]
         ],
         [
-          "Cost Cruncher",
-          "Gains 2% discount a day per level (10% a day at level 5, up to 99%). The next Hunter upgrade consumes it, so spend it on one expensive upgrade such as Hunter Cost Reduction.",
+          "Hunter Cost Cruncher (gem shop, 5 levels, 300-500 gems)",
+          "Builds up a discount each day, up to 99%. The guides give 2% a day per level (10% a day at level 5), but the wiki data shows only \"10% → 99%\", so the daily rate is unverified until checked in game. The next Hunter upgrade consumes it, so spend it on one expensive upgrade such as Hunter Cost Reduction.",
           "Guide",
-          ["Sakori", "PiwuGems"]
+          ["Sakori", "PiwuGems", "Wiki"]
         ],
         [
           "Farming spots",
@@ -118,9 +124,9 @@
       "cols": ["Group", "Training and effect per level", "Material", "Farm"],
       "rows": [
         ["Damage", "Power Training: +10% ATK", "Mini Plants", "Plant"],
-        ["Damage", "Strength Training: +1 STR (x10% attack for Warriors)", "Wolf Fang", "Wolf"],
-        ["Damage", "Dexterity Training: +1 DEX (x10% attack for Rogues)", "Fruit", "Gnoll"],
-        ["Damage", "Intelligence Training: +1 INT (x10% attack for Mages)", "Ectoplasm", "Animated Armor"],
+        ["Damage", "Strength Training: +1 STR (+10% attack for Warriors, additive)", "Wolf Fang", "Wolf"],
+        ["Damage", "Dexterity Training: +1 DEX (+10% attack for Rogues, additive)", "Fruit", "Gnoll"],
+        ["Damage", "Intelligence Training: +1 INT (+10% attack for Mages, additive)", "Ectoplasm", "Animated Armor"],
         [
           "Damage",
           "More Damage Training: ATK multiplier, x0.01 per level (multiplies everything else)",
@@ -141,7 +147,7 @@
         ["Utility", "Knowledge Training: +1% combat XP", "Leaf", "Stump"],
         ["Utility", "Smeltery Speed Training: +5% smeltery speed", "Iron Bar", "Smeltery"],
         ["Low", "Endurance Training: +1 CON (+5% max HP, +1% HP regen)", "Boar Meat", "Boar"],
-        ["Low", "Meditation Training: +1 MEN (+5% max mana, +5 magic defence)", "Honeycomb", "Wasp"],
+        ["Low", "Meditation Training: +1 MEN (+5% max mana, +1% mana regen, +5% magic defence)", "Honeycomb", "Wasp"],
         ["Low", "Speed Training (movement): +0.33% move speed", "Gold", "Gold"]
       ]
     }

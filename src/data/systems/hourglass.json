@@ -32,7 +32,7 @@
       "source": ["DBHG", "Patch"]
     },
     {
-      "req": "Upgrade tier 11 reached (needs the Golden Claw generator).",
+      "req": "Upgrade tier 11 reached (needs the Golden Claw generator). Golden Claw is the 15th original generator and the level 7 ones start at the 16th, so this may come before the level 7 tier; unverified until checked in game.",
       "basis": "Game data",
       "source": ["PiwuHG", "Patch"]
     },
