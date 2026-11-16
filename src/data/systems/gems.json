@@ -22,6 +22,11 @@
       "source": ["PiwuGems"]
     },
     {
+      "req": "Curio inventory at 21-22 slots.",
+      "basis": "Estimate",
+      "source": ["PiwuGems"]
+    },
+    {
       "req": "All 9 rune sockets bought (4,500 gems for the last six).",
       "basis": "Guide",
       "source": ["PiwuGems"]
@@ -38,11 +43,6 @@
     },
     {
       "req": "Smeltery Capacity maxed (750 gems).",
-      "basis": "Guide",
-      "source": ["PiwuGems"]
-    },
-    {
-      "req": "Curio inventory at 21 slots or more.",
       "basis": "Guide",
       "source": ["PiwuGems"]
     },
@@ -74,7 +74,7 @@
       "rows": [
         [
           "Order",
-          "Tiers follow the Gem Guide's buy order, except that Daily Fate Spiral (its #2) sits third here because it cannot be bought before Act 3.",
+          "Tiers follow the Gem Guide's buy order, except that Daily Fate Spiral (its #2) sits third here because it cannot be bought before Act 3, and the curio slots (its #9) sit fifth so they are bought by the time Curio expects them.",
           "Guide",
           ["PiwuGems"]
         ],
@@ -111,11 +111,16 @@
         [2, "First three rune sockets", 750, "150, 250, 350"],
         [3, "Daily Fate Spiral (Act 3)", 900, "900"],
         [4, "Engineer Slot Upgrade", 1250, "150, 250, 350, 500"],
-        [5, "Remaining rune sockets", 4500, "450, 550, 650, 800, 950, 1100"],
-        [6, "Hunter Cost Cruncher", 2000, "300, 350, 400, 450, 500"],
-        [7, "Smeltery Speed", 950, "150, 200, 250, 350"],
-        [8, "Smeltery Capacity", 750, "300, 450"],
-        [9, "Curio inventory slots (Act 3)", 6900, "300 to 850 in steps of 50"],
+        [
+          5,
+          "Curio inventory slots to 22 (Act 3)",
+          2550,
+          "300, 350, 400, 450, 500, 550 (6 of the 12 ranks, if the inventory starts at 10 slots)"
+        ],
+        [6, "Remaining rune sockets", 4500, "450, 550, 650, 800, 950, 1100"],
+        [7, "Hunter Cost Cruncher", 2000, "300, 350, 400, 450, 500"],
+        [8, "Smeltery Speed", 950, "150, 200, 250, 350"],
+        [9, "Smeltery Capacity", 750, "300, 450"],
         [10, "Hourglass Generator Speed (Act 3)", 1700, "200, 350, 500, 650"],
         [11, "Awakening Amplifier (Act 3)", 500, "500"],
         [12, "Timeline Engine Speed (Act 3)", 1900, "250, 400, 550, 700"],
