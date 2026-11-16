@@ -2,8 +2,8 @@
   "name": "Gathering",
   "tiers": [
     {
-      "req": "Iron axe and pickaxe: the minimum for Ironwood and Thorium.",
-      "basis": "Game data",
+      "req": "Every Act 1 tree and vein felled in one hit.",
+      "basis": "Estimate",
       "source": ["JTGather"]
     },
     {
@@ -68,7 +68,7 @@
           "Guide",
           ["JTGather"]
         ],
-        ["Alts", "Give every character an axe: Act 2 ash needs a great deal of wood.", "Guide", ["GFGather"]]
+        ["Alts", "See Gatherer gear 'Every character'.", "Guide", ["GFGather"]]
       ]
     },
     {

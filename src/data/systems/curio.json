@@ -7,9 +7,9 @@
       "source": ["JTCurio", "DBTips"]
     },
     {
-      "req": "Daily Fate Spiral bought, for one free chest a day.",
-      "basis": "Guide",
-      "source": ["PiwuGems"]
+      "req": "All 5 active slots hold Blue or better curios.",
+      "basis": "Estimate",
+      "source": ["JTCurio"]
     },
     {
       "req": "Curio inventory at 21 slots or more.",
@@ -44,7 +44,7 @@
       "rows": [
         [
           "Chests",
-          "Each Fate Spiral lets you pick one of three curios. They come from the daily upgrade, chests at 80 gems each (unverified until checked in game), achievements, logins, the Hourglass shop (a Curio for Gold-rift gold, 100 rising x1.3 over 10 purchases, about 4,260 gold) and the paid Curio Pack (an extra daily roll).",
+          "Fate Spirals come from the daily upgrade, chests at 80 gems each (unverified until checked in game), achievements, logins, the Hourglass shop (a Curio for Gold-rift gold, 100 rising x1.3 over 10 purchases, about 4,260 gold) and the paid Curio Pack (an extra daily roll). For the choice each roll offers, see Curio 'Daily Fate Spiral'; for the upgrade purchase, see Gems tier 3.",
           "Game data",
           ["JTCurio", "Wiki"]
         ],
@@ -77,7 +77,7 @@
         ["Universal", "Curios are an Act 3 system, but their stats apply everywhere.", "Game data", ["JTCurio"]],
         [
           "Daily Fate Spiral",
-          "900 gems, one roll a day for good. Each roll shows three curios and you keep one.",
+          "Each roll shows three curios and you keep one. For the upgrade purchase and value, see Gems 'Fate Spiral'; for opening it each day, see the Daily tab's 'Open the daily Fate Spiral'.",
           "Game data",
           ["CurioG", "PiwuGems"]
         ],
