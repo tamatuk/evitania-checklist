@@ -28,6 +28,10 @@
     "text": "The expected tier at each stage is a synthesis of the guides, not a community standard."
   },
   {
+    "topic": "Event tiers",
+    "text": "Trinkets drop only from event dungeons, so a tier that needs one, such as Trinkets tier 1, can show behind between events."
+  },
+  {
     "topic": "No save import",
     "text": "Since game version 0.311.0 the save file is encrypted and the developers ask players not to share ways to decode it, so tiers are set by hand."
   },
