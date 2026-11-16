@@ -17,9 +17,9 @@
       "source": ["MTEnh", "DBTips", "Wiki"]
     },
     {
-      "req": "Mammoth Ring obtained and equipped. It drops from Ice Mammoth chests (about 1 in 10), so keep spending keys there until it drops.",
-      "basis": "Player report",
-      "source": ["JotunnG", "ZZTabs"]
+      "req": "Mammoth Ring equipped, or Ice Mammoth chests farmed with all daily keys. It drops from Ice Mammoth chests (about 1 in 10).",
+      "basis": "Game data",
+      "source": ["Wiki", "JotunnG", "ZZTabs"]
     },
     {
       "req": "Thorium weapon in use: crafted and enhanced to within 2 steps of your steel weapon (about VIII against a steel X), which is where it overtakes it.",
@@ -37,7 +37,7 @@
       "source": ["MTAct2"]
     },
     {
-      "req": "Nordic Amulet obtained and equipped. It drops from Jotunn chests (about 1 in 20).",
+      "req": "Nordic Amulet equipped, or Jotunn chests farmed with all daily keys. It drops from Jotunn chests (about 1 in 20).",
       "basis": "Game data",
       "source": ["Wiki", "ZZTabs"]
     },
