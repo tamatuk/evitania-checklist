@@ -27,7 +27,7 @@
       "source": ["JTGather"]
     },
     {
-      "req": "Every Nightmare Act 2 tree and vein felled in one hit: 350,000 woodcutting and 400,000 mining, or about 240,000 and 275,000 with the crit row maxed.",
+      "req": "Every Nightmare Act 2 tree and vein felled in one hit (350,000 woodcutting and 400,000 mining).",
       "basis": "Guide",
       "source": ["Jivchik", "Wiki"]
     }
@@ -58,7 +58,7 @@
         ],
         [
           "Crit row",
-          "The middle row maxed gives 36% gathering crit chance and +76% to +92% crit damage. Offline income counts crits as extra power, which is why the late-game advice is bottom row fully, then middle row fully.",
+          "The middle row maxed gives 36% gathering crit chance and +76% to +92% crit damage. Offline income counts crits as extra power, which is why the late-game advice is bottom row fully, then middle row fully. With it maxed, about 240,000 woodcutting and 275,000 mining fell every Nightmare Act 2 tree and vein in one hit.",
           "Guide",
           ["Jivchik"]
         ],

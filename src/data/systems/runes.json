@@ -2,7 +2,7 @@
   "name": "Runes",
   "tiers": [
     {
-      "req": "Rune system unlocked and the GOR + MU + HAS runeword slotted (free from the Go to Act 2 Town quest).",
+      "req": "Rune system unlocked and the GOR + MU + HAS runeword from the Go to Act 2 Town quest slotted (top-left slots).",
       "basis": "Guide",
       "source": ["MTAct2", "FAQ"]
     },
