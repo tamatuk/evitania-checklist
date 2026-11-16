@@ -6,23 +6,26 @@
     "Mammoth dead",
     "Jötunn dead",
     "Act 2 done",
-    "Act 3 early",
+    "Gate dead",
     "Hard Act 1",
     "Hard Act 2",
     "Nightmare"
   ],
   "reached": [
     "New account",
-    "Hunter unlocked at Stumps",
+    "Hunter unlocked at Stumps (zone 4); runs until Yrsainir",
     "Yrsainir killed",
     "First Act 2 boss killed",
     "Second Act 2 boss killed",
     "Maevath killed",
-    "Act 3 town reached",
-    "Obelisk used, pushing Act 1 Hard",
+    "Zhai Halud's Gate killed (first Act 3 boss); Sunstone zones open",
+    "Act 1 Hard opened at the Act 3 Obelisk",
     "Act 2 Hard unlocked (combat level 80, the three Hard Act 1 bosses dead, Act 1 Hard card at 3 stars)",
     "Nightmare difficulty open"
   ],
+  "aliases": {
+    "Act 3 early": "Gate dead"
+  },
   "expect": {
     "Hunter": [0, 1, 2, 4, 5, 6, 7, 7, 8, 9],
     "Bonfire": [0, 0, 0, 4, 6, 8, 8, 8, 8, 8],
