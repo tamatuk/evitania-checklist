@@ -63,16 +63,17 @@
         ],
         [
           "How pets level",
-          "A pet gets 1 XP for each item it picks up, however large the stack. Pickup has a cooldown that shrinks as it levels (4 seconds at first, none from level 40), so early levels cannot be rushed. The guide's figures are about 6 hours from 1 to 40 and at least 8 more to 50, from before a later rebalance. Chopping wood at full speed is a steady item supply.",
+          "A pet gets 1 XP for each item it picks up, however large the stack. Pickup has a cooldown that shrinks as it levels (4 seconds at first, none from level 40), so early levels cannot be rushed. The guide's figures are about 6 hours from 1 to 40 and at least 8 more hours to 50, from before a later rebalance. Chopping wood at full speed is a steady item supply.",
           "Guide",
           ["PetLvl"]
         ],
         [
-          "Main pet",
-          "A pet levels only by picking up loot while equipped, so keep the main pet on your fastest farmer. Canned Knowledge potions come on monthly login days 5 and 6.",
+          "Pet levelling",
+          "A pet levels only by picking up loot while equipped. Canned Knowledge potions come on monthly login days 5 and 6.",
           "Game data",
           ["Treyex", "JTPets", "DBPets"]
         ],
+        ["Main pet", "Keep the main pet on your fastest farmer.", "Guide", ["Treyex", "JTPets", "DBPets"]],
         [
           "Feeding",
           "A food pet levelled to 50 before it is fed gives 50 more points; Slymes also get the Engineer feeding bonus.",
@@ -119,8 +120,8 @@
         ["Online", "Gathering, one-shot", "EXP", "Drop Quantity"],
         ["Offline", "Gathering, cannot one-shot", "Mining or woodcutting power", "Offline gains"],
         ["Offline", "Gathering, one-shot", "Offline gains", "Drop Quantity or EXP"],
-        ["Tower", "Over 100% crit", "Attack speed", "Crit damage"],
-        ["Tower", "Under 100% crit", "Crit rate", "Crit damage or attack speed"],
+        ["Tower", "Crit chance 100% or more", "Attack speed", "Crit damage"],
+        ["Tower", "Crit chance under 100%", "Crit rate", "Crit damage or attack speed"],
         ["Dungeons", "Event dungeons and raids", "Crit chance", "Crit damage"],
         ["Bosses", "Map bosses with keys", "Drop Quantity", "Anything"]
       ]

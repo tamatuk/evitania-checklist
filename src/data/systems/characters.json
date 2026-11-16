@@ -75,15 +75,33 @@
         ],
         [
           "Boss readiness check",
-          "Kills per hour is a result of the other systems, not a task. The Act 2 guide uses it as a check before each boss, measured on your main in the zone that holds the boss portal: about 500 in the Yeti zone before Ice Mammoth, about 1,000 in the Troll zone before Jotunn, and above 1,000 again in the Draugr zone (in thorium, about 1,300 physical defence) before Maevath. Under the mark, raise Hunter trainings and sacrifices first.",
+          "Before each Act 2 boss, check kills per hour on your main in the boss's zone. Aim for: Yeti zone about 500 (Ice Mammoth), Troll zone about 1,000 (Jotunn), Draugr zone over 1,000 and about 1,300 physical defence (Maevath). If you are short, raise Hunter trainings and sacrifices first.",
           "Guide",
           ["MTAct2"]
         ],
         [
-          "Jotunn fight",
-          "Troll map, the red portal. Adds first: after the first hand falls he summons monsters that explode, for over 3,000 damage in Steam reports and potentially an instant kill in EvitaniaOnlineDB's boss guide, so kill each one before anything else. Then the eye beam: when the eyes glow, sprint from under the hand to the far side of the map, starting near the screen edge, and take at most one tick (EvitaniaOnlineDB); if you are caught, Steam players say you should survive 4 to 5 beams. Then the hand waits: stand under a hand to bait a punch, step out as it lands and hit the hand (the Discord guide). Hand drops are random, so the fight is long and mostly waiting, about 10 minutes with 12 beams and over 20 slaps, and a Mage's lightning can hit the body instead of the hand (Steam). Once both hands are gone his HP drains by itself. Go behind the hand for the side slap and leave the middle for the ice breath (the Discord guide).",
+          "Jotunn: adds",
+          "Troll map, the red portal. After the first hand falls he summons monsters that explode for over 3,000 damage, possibly an instant kill. Kill each one before anything else.",
           "Guide",
-          ["DBBoss", "SteamJotunBeam", "SteamJotunRNG", "SteamJotunnDev", "JotunnG", "MTAct2", "FAQ"]
+          ["DBBoss", "SteamJotunBeam", "MTAct2", "FAQ"]
+        ],
+        [
+          "Jotunn: eye beam",
+          "When the eyes glow, run from under the hand to the far side of the map, starting near the screen edge. You should take at most one tick; most characters survive 4–5 full beams.",
+          "Guide",
+          ["DBBoss", "SteamJotunBeam"]
+        ],
+        [
+          "Jotunn: hands",
+          "Stand under a hand to bait a punch, step out as it lands and hit the hand. Go behind the hand for the side slap and leave the middle for the ice breath. Once both hands are gone his HP drains by itself.",
+          "Guide",
+          ["JotunnG", "SteamJotunnDev"]
+        ],
+        [
+          "Jotunn: length",
+          "Hand drops are random, so the fight is long and mostly waiting: about 10 minutes, with 12 beams and over 20 slaps. A Mage's lightning can hit the body instead of the hand.",
+          "Guide",
+          ["SteamJotunRNG", "SteamJotunnDev"]
         ],
         [
           "Mammoth Ring",
@@ -99,10 +117,11 @@
         ],
         [
           "Lone Wolf",
-          "Unlocked by killing the Act 1 last boss. Since 0.321.0 it gives +50 Drop Quantity and +50% EXP and gold for giving up the other slots. Alts are still stronger, so it is optional.",
-          "Guide",
+          "Unlocked by killing the Act 1 last boss. Since 0.321.0 it gives +50 Drop Quantity and +50% EXP and gold for giving up the other slots.",
+          "Game data",
           ["FAQ", "Patch"]
         ],
+        ["Lone Wolf or alts", "Alts are still stronger, so Lone Wolf is optional.", "Guide", ["FAQ"]],
         [
           "Class by stage",
           "No class is best all game. Warrior is easiest early and online but is the only class with a move-speed penalty in the offline formula; Rogue is the best offline farmer until Hunter and sacrifices are high; Mage is best online and offline once you farm at the kill cap.",

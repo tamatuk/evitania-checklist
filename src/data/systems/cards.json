@@ -61,7 +61,7 @@
         ],
         [
           "Drop Quantity",
-          "Each point of Drop Quantity adds 1% to rare-loot chances: the rate is multiplied by 1 + DQ/100.",
+          "Each point of Drop Quantity adds 1% to rare-loot chances: the rate is multiplied by (1 + Drop Quantity / 100).",
           "Game data",
           ["DevFAQ"]
         ],
@@ -98,7 +98,7 @@
         [
           "Luck",
           "One player's rule of thumb in chat: prioritise sacrifice and Hunter work, since cards are more luck.",
-          "Estimate",
+          "Player report",
           ["Chat"]
         ],
         [
@@ -106,12 +106,6 @@
           "A monster card drops on 0.01% of kills in Act 1, 0.004% in Act 2 and 0.002% in Act 3. A boss chest gives the boss card half the time.",
           "Game data",
           ["DBCards"]
-        ],
-        [
-          "Crimson drops",
-          "Crimson geode and crimson sap drop at 1 in 200,000 from mining and woodcutting.",
-          "Game data",
-          ["AllPets"]
         ]
       ]
     },
