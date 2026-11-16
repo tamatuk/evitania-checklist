@@ -12,7 +12,7 @@
       "source": ["DBHunter", "Sakori"]
     },
     {
-      "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at 15 or more. Level them evenly, one of each at a time.",
+      "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at 15 or more.",
       "basis": "Guide",
       "source": ["MTAct2", "HyZerg"]
     },
@@ -37,7 +37,7 @@
       "source": ["DBHunter", "DBTips"]
     },
     {
-      "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at 30, the base cap, along with Speed Training (attack), which ends there. Needs stacked discounts: level 30 alone is 8.19 million materials before reductions.",
+      "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at 30, the base cap, along with Speed Training (attack), which ends there.",
       "basis": "Estimate",
       "source": ["Sakori", "Wiki"]
     },
