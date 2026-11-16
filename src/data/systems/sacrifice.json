@@ -42,9 +42,14 @@
       "source": ["JTEng", "Wiki"]
     },
     {
+      "req": "Attack Wish, Wish for Luck and Pray for Luck at 40 or more.",
+      "basis": "Game data",
+      "source": ["Wiki", "HyZerg"]
+    },
+    {
       "req": "Attack Wish, Wish for Luck and Pray for Luck at 42, the full cap.",
-      "basis": "Guide",
-      "source": ["HyZerg"]
+      "basis": "Game data",
+      "source": ["Wiki", "HyZerg"]
     }
   ],
   "tables": [
@@ -80,7 +85,7 @@
         ],
         [
           "Caps",
-          "Base cap is 20 and the top is 42: Engineer More Sacrifices adds 5 in Runic Blueprint and 5 in Sun Scroll, and the Act 2 Hard card adds 4 at 0 stars up to 12 at 4 stars. Wish for Speed always stops at 20.",
+          "Base cap is 20 and the top is 42: Engineer More Sacrifices adds 5 in Runic Blueprint and 5 in Sun Scroll, and the Act 2 Hard card adds 4 at 0 stars up to 12 at 4 stars. Both More Sacrifices upgrades maxed and the Act 2 Hard card at 3 stars give a cap of 40. Reaching 42 needs the card at 4 stars (600 cards at 1 in 50,000, about 30 million kills before bonuses) with the 4 Star Cards upgrade. Wish for Speed always stops at 20.",
           "Game data",
           ["Wiki", "DBBonfire", "HyZerg"]
         ],

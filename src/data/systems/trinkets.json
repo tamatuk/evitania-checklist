@@ -2,7 +2,7 @@
   "name": "Trinkets",
   "tiers": [
     {
-      "req": "First trinket equipped.",
+      "req": "First trinket equipped (trinkets drop only while an event runs; event dungeons open at character level 50).",
       "basis": "Estimate",
       "source": ["Patch"]
     },
