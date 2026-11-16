@@ -39,7 +39,7 @@ SHARE_SYS = ["Hunter", "Bonfire", "Ash", "Sacrifice", "Pusher gear", "Gatherer g
 SHARE_DAILY = ["quest", "login", "boss-keys", "vendor-1", "vendor-2", "vendor-3", "tower", "mail-codes", "cost-cruncher", "bonfire-fuel", "slyme-egg", "fate-spiral", "curio-coins", "event-dungeons", "guild-donations"]
 assert set(SHARE_SYS) == {x[0] for x in SYS} and set(SHARE_DAILY) == set(DAILY_IDS)
 data = {"roster": ns["ROSTER"], "systems": systems, "stages": ns["STAGES"], "reached": ns["REACHED"], "expect": ns["EXPECT"],
-        "daily": [list(r) + [i] for r, i in zip(ns["DAILY"], DAILY_IDS)], "shareSys": SHARE_SYS, "shareDaily": SHARE_DAILY, "defaultStage": "Mammoth dead", "about": about,
+        "daily": [list(r) + [i] for r, i in zip(ns["DAILY"], DAILY_IDS)], "shareSys": SHARE_SYS, "shareDaily": SHARE_DAILY, "about": about,
         "sources": [{"name": SRC[k][0], "where": SRC[k][1], "link": SRC[k][2], "asof": SRC[k][3]} for k in SRC if k in USED]}
 
 
