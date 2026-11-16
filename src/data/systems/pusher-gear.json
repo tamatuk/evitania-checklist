@@ -22,12 +22,12 @@
       "source": ["Wiki", "JotunnG", "ZZTabs"]
     },
     {
-      "req": "Thorium weapon in use: crafted and enhanced to within 2 steps of your steel weapon (about VIII against a steel X), which is where it overtakes it.",
+      "req": "Thorium weapon in use: crafted and enhanced to within 2 steps of your steel weapon (about VIII against a steel X), which is where it overtakes it. Materials and drop rates: What each set costs.",
       "basis": "Game data",
       "source": ["Wiki", "MTAct2"]
     },
     {
-      "req": "Thorium armor in use: all four pieces crafted and enhanced to III or more, which is where they overtake iron at VII.",
+      "req": "Thorium armor in use: all four pieces crafted and enhanced to III or more, which is where they overtake iron at VII. Materials and drop rates: What each set costs.",
       "basis": "Game data",
       "source": ["Wiki", "MTAct2"]
     },
@@ -52,7 +52,7 @@
       "source": ["Wiki", "Jivchik"]
     },
     {
-      "req": "Infinite 1 armor crafted from Act 1 Hard materials (Grassy Stone 1) and worn with the Sunstone weapon.",
+      "req": "Infinite 1 armor crafted from Act 1 Hard materials (Grassy Stone 1) and worn with the Sunstone weapon. Materials and boss kills: What each set costs.",
       "basis": "Guide",
       "source": ["Jivchik", "Wiki"]
     },
@@ -162,13 +162,13 @@
         [
           "Thorium weapon",
           "140 Crystallized Yellow Substance, 98 Thorium Bars",
-          "2 Perfect Norse Essence (60 Norse Essence); 7 Artisan's Frames, 7 Furstrings or 3 Cryolite",
+          "2 Perfect Norse Essence (60 Norse Essence, which drops 1 in 10,000 in Act 2); 7 Artisan's Frames, 7 Furstrings or 3 Cryolite",
           "Thorium vein (after zone 5). The staff's Cryolite Ore drops in zones 9 to 12"
         ],
         [
           "Thorium armor (4 pieces)",
-          "102 Crystallized Yellow Substance, 264 Thorium Bars, 170 Perfect Fur (5,100 Furry Fur)",
-          "8 Norse Essence",
+          "102 Crystallized Yellow Substance, 264 Thorium Bars, 170 Perfect Fur (5,100 Furry Fur, which drops 1 in 200: about 1M kills before Drop Quantity)",
+          "8 Norse Essence (1 in 10,000 in Act 2)",
           "Thorium vein"
         ],
         [
@@ -185,8 +185,8 @@
         ],
         [
           "Infinite 1 armor (4 pieces)",
-          "115,200 Steel Bars, 144,000 Grassy Stone 1, 60 Crystallized Blue Substance",
-          "1,000 each of Death's Flower, The Crab's Pickaxe and Dragon Horn, plus a Grassy Core (another 1,000 of each)",
+          "115,200 Steel Bars, 144,000 Grassy Stone 1, 60 Crystallized Blue Substance (Act 3 shop)",
+          "1,000 each of Death's Flower, The Crab's Pickaxe and Dragon Horn, plus a Grassy Core (another 1,000 of each): about 2,000 kills of each Act 1 boss",
           "Act 1 Hard"
         ],
         [
@@ -315,6 +315,12 @@
           "Unlocked by the Sun Scroll upgrades Infinite II Armor (400) and Infinite II Weapons (600). A #guides thread warns that crafting it affects the enhancements on the pieces used; read it before crafting.",
           "Estimate",
           ["Wiki", "BlueMoon"]
+        ],
+        [
+          "Infinite 2 Drop Quantity",
+          "A player gives the full Infinite 2 set as 80 Drop Quantity, against +10 to +30 a piece.",
+          "Player report",
+          ["TotalDQ"]
         ],
         ["Trinkets", "Since 0.321.0 there is a trinket slot as well; see the Trinkets page.", "Game data", ["Patch"]]
       ]

@@ -12,9 +12,9 @@
       "source": ["Treyex", "JTPets", "DBPets"]
     },
     {
-      "req": "Main pet at Tier 3 (500 food points in total), fed with Slymes.",
+      "req": "Main pet at Tier 3 (500 food points in total), fed with Slymes. Shortcut: monthly login day 7 gives a free Tier 3 pet.",
       "basis": "Estimate",
-      "source": ["JTPets"]
+      "source": ["JTPets", "DBPets"]
     },
     {
       "req": "Main pet at Tier 5 (2,400 food points in total): stat rerolls unlock.",
@@ -130,14 +130,22 @@
       "cols": ["Pet", "How to get it", "Odds", "Stats"],
       "rows": [
         ["Basic Bat", "Quest: Collect Bat Dust (Act 1)", "Sure", "Attack, defence, HP, accuracy"],
-        ["Pebble", "Mining", "Drop", "EXP bonus, mining power"],
-        ["Leaf Spirit", "Woodcutting", "Drop", "EXP bonus, woodcutting power"],
+        ["Pebble", "Mining", "1 in 10,000,000", "EXP bonus, mining power"],
+        ["Leaf Spirit", "Woodcutting", "1 in 10,000,000", "EXP bonus, woodcutting power"],
         ["Golden Piggy", "Achievement", "Sure", "Gold multiplier, offline gains"],
         ["Weird Book Pet", "Red Dragon boss", "1 in 100", "Accuracy, Magic Find"],
         ["Ghosty Pet", "Maevath boss", "1 in 100", "Attack speed, crit damage"],
         ["Beeb", "Any Act 1 monster", "1 in 5,000,000", ""],
         ["Snowflake", "Act 2 monsters", "Drop", ""],
-        ["Steam pet", "Reach level 30 on a Steam Early Access account", "Sure", ""]
+        ["Snek", "Act 3 monsters", "Drop", "Crit chance, crit damage"],
+        ["Monkeycopter", "Guild shop top reward, since the Guilds update", "Shop", "Mob spawn time, all EXP"],
+        ["Spiney", "Party-dungeon, Halloween and Harvest reward", "Reward", "Mob spawn time, Drop Quantity"],
+        [
+          "Mony",
+          "Steam Event 2026: reach level 30 on a Steam Early Access account",
+          "Sure",
+          "HP, all EXP; cannot be fed"
+        ]
       ]
     }
   ]

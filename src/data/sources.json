@@ -3,7 +3,7 @@
     "name": "Hunter and Sacrifice min/max optimizations (HyZerg)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1522871447511367820",
-    "asof": "2026-07-04"
+    "asof": "2026-07-04, follow-up 2026-09-09"
   },
   "Sakori": {
     "name": "The Hunter (Sakori)",
@@ -27,7 +27,7 @@
     "name": "Pet system (Johnny Treeman)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1398277796748591124",
-    "asof": "2026-05-28"
+    "asof": "2026-05-28, posts to 2026-08-12 read 2026-11-16"
   },
   "JTGather": {
     "name": "Woodcutting/Mining Guide (Johnny Treeman)",
@@ -346,6 +346,12 @@
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1563997709222940883",
     "asof": "2026-10-26 to 2026-11-03"
+  },
+  "TotalDQ": {
+    "name": "Total Obtainable Drop Quantity (reply by t3hj00)",
+    "where": "Discord #guides",
+    "link": "https://discord.com/channels/1219291890940383334/1494598244817305810",
+    "asof": "2026-10-14"
   },
   "HGCalc": {
     "name": "Hourglass Calculators/Time Echo Costs (zoofy, data by Leanea)",

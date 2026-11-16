@@ -57,7 +57,12 @@
       "title": "Sacrifice rules",
       "cols": ["Topic", "Rule", "Basis", "Source"],
       "rows": [
-        ["Order", "For damage, one of each upgrade at a time is the mathematically best order.", "Guide", ["HyZerg"]],
+        [
+          "Order",
+          "For damage, one of each upgrade at a time is the mathematically best order. On 2026-09-09 the author wrote that its math predates the Hourglass and 4-star cards: the Hourglass gives lots of crit and no ATK%, so crit lines (Dice, Damage Abuse, Wish for Luck, Pray for Luck) lose value against ATK% lines.",
+          "Guide",
+          ["HyZerg"]
+        ],
         ["Hardness after Attack", "Take Attack Wish to 20 before Wish for Hardness.", "Guide", ["DBBonfire"]],
         [
           "First targets",
