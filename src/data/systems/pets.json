@@ -22,7 +22,7 @@
       "source": ["JTPets"]
     },
     {
-      "req": "Main pet at Tier 6, the current maximum (4,250 food points in total).",
+      "req": "Main pet at Tier 6 (max) (4,250 food points in total).",
       "basis": "Estimate",
       "source": ["JTPets"]
     },
@@ -131,8 +131,8 @@
       "cols": ["Pet", "How to get it", "Odds", "Stats"],
       "rows": [
         ["Basic Bat", "Quest: Collect Bat Dust (Act 1)", "Sure", "Attack, defence, HP, crit chance"],
-        ["Pebble", "Mining", "1 in 10,000,000", "EXP bonus, mining power"],
-        ["Leaf Spirit", "Woodcutting", "1 in 10,000,000", "EXP bonus, woodcutting power"],
+        ["Pebble", "Mining", "1 in 10M", "EXP bonus, mining power"],
+        ["Leaf Spirit", "Woodcutting", "1 in 10M", "EXP bonus, woodcutting power"],
         [
           "Golden Piggy",
           "Achievement \"Update When?\", which since 0.316.2 targets Horus (Act 3)",
