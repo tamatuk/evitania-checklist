@@ -27,7 +27,7 @@
       "source": ["MTAct2"]
     },
     {
-      "req": "Crab and Helmet cards at 3 stars: both cut Hunter costs, and Helmet gives half as much again per star. 3 stars takes 60 Crab cards (about 600K kills of Crabs at 1 in 10,000) and 100 Helmet cards (about 2.5M Helmet kills at 1 in 25,000) before Drop Quantity and card-chance bonuses.",
+      "req": "Crab and Helmet cards at 3 stars: Helmet gives +75% Hunter cost reduction per star, Crab +50%. 3 stars takes 60 Crab cards (about 600K kills of Crabs at 1 in 10,000) and 100 Helmet cards (about 2.5M Helmet kills at 1 in 25,000) before Drop Quantity and card-chance bonuses.",
       "basis": "Estimate",
       "source": ["Sakori", "Wiki"]
     },
