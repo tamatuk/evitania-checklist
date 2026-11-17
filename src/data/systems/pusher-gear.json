@@ -19,7 +19,7 @@
     {
       "req": "Mammoth Ring equipped, or Ice Mammoth chests farmed with all daily keys. It drops from Ice Mammoth chests (about 1 in 10).",
       "basis": "Game data",
-      "source": ["Wiki", "JotunnG", "ZZTabs"]
+      "source": ["Wiki", "ZZTabs"]
     },
     {
       "req": "Thorium weapon in use: crafted and enhanced to within 1 step of your steel weapon (IX against a steel X), a common threshold that raises weapon attack for every class. For materials and drop rates, see What each set costs.",
@@ -327,7 +327,7 @@
           "Crimson drops",
           "Crimson Geode and Crimson Sap drop at 1 in 200K from mining and woodcutting.",
           "Game data",
-          ["AllPets"]
+          ["Wiki"]
         ],
         ["Trinkets", "Since 0.321.0 there is a trinket slot as well; see the Trinkets page.", "Game data", ["Patch"]]
       ]

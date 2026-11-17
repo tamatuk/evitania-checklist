@@ -29,7 +29,7 @@
     {
       "req": "Active curios at level 30.",
       "basis": "Estimate",
-      "source": ["JTGather"]
+      "source": ["JTCurio"]
     },
     {
       "req": "Active curios at level 50 with their ascension tiers maxed.",
@@ -58,15 +58,15 @@
         ["Ascension", "One duplicate raises a curio's tier by one, adding passives.", "Game data", ["JTCurio"]],
         [
           "Wish",
-          "Since 0.323.0 you can wish for one Legendary curio: if a Legendary drop misses it, the next Legendary is the wished one. Spare Legendaries trade back for rolls, and chests can auto-open until a chosen rarity drops.",
+          "Since the Harvest Event update (12 November 2026) you can wish for one Legendary curio: if a Legendary drop misses it, the next Legendary is the wished one. Spare Legendaries trade back for rolls, and chests can auto-open until a chosen rarity drops.",
           "Game data",
-          ["Patch"]
+          ["SteamHarvest"]
         ],
         [
           "Presets",
           "Curio and rune layouts can be saved as presets (six pages each) that switch with your activity. Pages are account-wide, but which page an activity uses is set per character; presets replace the old snapshotting trick. Unlocks at combat level 70.",
           "Game data",
-          ["Patch", "Presets"]
+          ["SteamHalloween", "Presets"]
         ],
         [
           "Active set",
