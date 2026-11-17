@@ -72,7 +72,12 @@
       "title": "Rings, amulets and belts",
       "cols": ["Item", "Slot", "From", "Fixed bonuses"],
       "rows": [
-        ["Iron Belt", "Belt", "Crafted at the Act 1 smith", "Shorter monster respawn, +1 HP regen, +10 Drop Quantity"],
+        [
+          "Iron Belt",
+          "Belt",
+          "Crafted at the Act 1 smith",
+          "Shorter monster respawn time, +1 HP regen, +10 Drop Quantity"
+        ],
         ["Belt of Love", "Belt", "Killing Yrsainir", "+10% crit damage, +10 woodcutting power, +10 Drop Quantity"],
         ["Boss Amulet", "Amulet", "Bringer of Death chests", "+30% crit damage, +10 physical defence, +10 MEN"],
         [
@@ -203,8 +208,8 @@
       "cols": ["Topic", "Rule", "Basis", "Source"],
       "rows": [
         [
-          "When a new tier pays off",
-          "Enhancing adds the same flat amount per step on every tier, so a fresh item of the next tier is weaker than a well-enhanced old one. For thorium weapons, use within 1 step of steel as the common attack threshold: the base attack gains are 39 for longswords, 40 for bows and 57 for staves (75 for a thorium sword against a steel longsword), against 27.5 per enhancement step. Thorium armor equals iron about 5 steps higher, and sunstone armor equals thorium 8 steps higher. That is why the tiers say in use, not crafted.",
+          "When a new material pays off",
+          "Enhancing adds the same flat amount per step on every material, so a fresh item of the next material is weaker than a well-enhanced old one. For thorium weapons, use within 1 step of steel as the common attack threshold: the base attack gains are 39 for longswords, 40 for bows and 57 for staves (75 for a thorium sword against a steel longsword), against 27.5 per enhancement step. Thorium armor equals iron about 5 steps higher, and sunstone armor equals thorium 8 steps higher. That is why the tiers say in use, not crafted.",
           "Game data",
           ["Wiki"]
         ],
@@ -216,7 +221,7 @@
         ],
         [
           "Enhancement steps",
-          "Weapons and armor enhance up to XV. Each step adds 27.5 attack to a weapon and 5 defence to an armor piece. 'Within N steps of X' means at least X's enhancement level minus N.",
+          "Weapons and armor use enhancement levels I to XV (VII = +7). Each step adds 27.5 attack to a weapon and 5 defence to an armor piece. 'Within N steps of X' means at least X's enhancement level minus N.",
           "Game data",
           ["Wiki"]
         ],
@@ -246,7 +251,7 @@
         ],
         [
           "Event belts",
-          "Event belts are the main source of shorter monster respawn, which raises the kill cap.",
+          "Event belts are the main source of shorter monster respawn time, which raises the kill cap.",
           "Game data",
           ["Wiki"]
         ],

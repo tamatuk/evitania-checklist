@@ -22,7 +22,7 @@
       "source": ["JTGather"]
     },
     {
-      "req": "Woodcutting power 70,000 and mining power 80,000 (Hard Mode goals), with sunstone tools.",
+      "req": "Woodcutting power 70,000 and mining power 80,000 (Hard goals), with sunstone tools.",
       "basis": "Guide",
       "source": ["JTGather"]
     },
@@ -45,7 +45,7 @@
         ],
         [
           "Act 1 talents",
-          "First 7 levels into power, then the first EXP node on the bottom row, then top-row power.",
+          "First 7 levels into power, then the first XP node on the bottom row, then top-row power.",
           "Guide",
           ["JTGather"]
         ],
@@ -73,17 +73,17 @@
     },
     {
       "title": "Power goals",
-      "cols": ["Stage", "Best tool tier", "Woodcutting", "Mining"],
+      "cols": ["Stage", "Best tool material", "Woodcutting", "Mining"],
       "rows": [
         ["Act 1", "Iron, then Steel", 450, 500],
         ["Act 2", "Thorium", 3500, 4000],
         ["Act 3", "Sunstone", 18000, 20000],
-        ["Hard Mode", "Sunstone", 70000, 80000],
+        ["Hard", "Sunstone", 70000, 80000],
         ["Nightmare Act 2", "Sunstone", "350K", "400K"]
       ]
     },
     {
-      "title": "Minimum tool tier",
+      "title": "Minimum tool material",
       "cols": ["Tool needed", "Resource"],
       "rows": [
         ["None", "Copper ore, Ash wood"],

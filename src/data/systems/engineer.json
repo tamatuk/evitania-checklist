@@ -107,7 +107,7 @@
         ],
         [
           "More Materials",
-          "Adds combat multiloot, which raises the ordinary drop every monster gives, including Hunter and sacrifice materials. It is in three tiers (10 levels each), so it is the Engineer's main help for material farming.",
+          "Adds combat multiloot, which raises the ordinary drop every monster gives, including Hunter and sacrifice materials. It is in three versions (10 levels each), so it is the Engineer's main help for material farming.",
           "Game data",
           ["JTEng", "Jivchik", "Wiki"]
         ],
@@ -119,7 +119,7 @@
         ],
         [
           "Keys",
-          "Each Daily Activity Enhancer adds 1 key for finishing the daily quests, and each keyring level raises the key cap by 1 (5 levels in each of three tiers).",
+          "Each Daily Activity Enhancer adds 1 key for finishing the daily quests, and each keyring level raises the key cap by 1 (5 levels in each of three versions).",
           "Game data",
           ["JTEng", "Wiki"]
         ],

@@ -32,7 +32,7 @@
       "source": ["DBHG", "Patch"]
     },
     {
-      "req": "Upgrade tier 11 reached (needs the Golden Claw generator).",
+      "req": "Upgrade row 11 reached (needs the Golden Claw generator).",
       "basis": "Game data",
       "source": ["PiwuHG", "Patch"]
     },
@@ -71,14 +71,14 @@
           ["PiwuHG", "DBHG", "HGTal"]
         ],
         [
-          "Golden Claw tier",
-          "Golden Claw is the 15th original generator and the level 7 ones start at the 16th, so upgrade tier 11 may come before the level 7 tier; unverified until checked in game.",
+          "Golden Claw upgrade row",
+          "Golden Claw is the 15th original generator and the level 7 ones start at the 16th, so upgrade row 11 may come before the level 7 generator row; unverified until checked in game.",
           "Estimate",
           ["PiwuHG", "Patch"]
         ],
         [
           "Upgrades",
-          "Early on, max a tier's upgrades before moving on. After 0.320.0 you are mostly forced to buy the sand-generator side upgrades, and old upgrades costing e50 become affordable; Piwu holds the timeline reset to take upgrades 11 and 12 together. A timeline reset also resets upgrades. Timeline engine gains matter most.",
+          "Early on, max an upgrade row's upgrades before moving on. After 0.320.0 you are mostly forced to buy the sand-generator side upgrades, and old upgrades costing e50 become affordable; Piwu holds the timeline reset to take upgrades 11 and 12 together. A timeline reset also resets upgrades. Timeline engine gains matter most.",
           "Guide",
           ["PiwuHG"]
         ],
@@ -133,7 +133,7 @@
         ],
         [
           "Level 7",
-          "Rebirth is the 9th Hourglass slot, which the FAQ calls the white dragon though it is no dragon of the Dragons row. It rolls one Timeline Output or Sand item every 2 hours per EvitaniaOnlineDB, or one token an hour per the FAQ, with tokens building up offline; both unverified until checked in game. 3 items merge into 1 of the next tier (5 into 2 with the upgrade). A sand tile gives about +1.02% sand and a timeline engine output tile about +1.01%. Its 5x5 grid starts with 3x3 open; the rest unlocks with cells in the Eternity tree. Secret Knowledge has up to 6 pages of up to 6 slots, and only the active page counts.",
+          "Rebirth is the 9th Hourglass slot, which the FAQ calls the white dragon though it is no dragon of the Dragons row. It rolls one Timeline Output or Sand item every 2 hours per EvitaniaOnlineDB, or one token an hour per the FAQ, with tokens building up offline; both unverified until checked in game. 3 items merge into 1 of the next level (5 into 2 with the upgrade). A sand tile gives about +1.02% sand and a timeline engine output tile about +1.01%. Its 5x5 grid starts with 3x3 open; the rest unlocks with cells in the Eternity tree. Secret Knowledge has up to 6 pages of up to 6 slots, and only the active page counts.",
           "Game data",
           ["DBHG", "FAQ"]
         ],

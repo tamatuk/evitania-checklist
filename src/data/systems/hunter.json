@@ -2,7 +2,7 @@
   "name": "Hunter",
   "tiers": [
     {
-      "req": "Hunter unlocked (Stumps, map 4) and every combat and Act 1 training at 5 or more.",
+      "req": "Hunter unlocked (Stumps, Act 1 zone 4) and every combat and Act 1 training at 5 or more.",
       "basis": "Estimate",
       "source": ["Sakori"]
     },
@@ -12,7 +12,7 @@
       "source": ["DBHunter", "Sakori"]
     },
     {
-      "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at 15 or more.",
+      "req": "Core damage trainings at 15 or more.",
       "basis": "Guide",
       "source": ["MTAct2", "HyZerg"]
     },
@@ -22,7 +22,7 @@
       "source": ["DBHunter", "DBTips"]
     },
     {
-      "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at 20 or more, with Defence Training at 20 or more.",
+      "req": "Core damage trainings at 20 or more, with Defence Training at 20 or more.",
       "basis": "Guide",
       "source": ["MTAct2"]
     },
@@ -37,17 +37,17 @@
       "source": ["DBHunter", "DBTips"]
     },
     {
-      "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at 30, the base cap, along with Speed Training (attack), which ends there.",
+      "req": "Core damage trainings at 30, the base cap, along with Speed Training (attack), which ends there.",
       "basis": "Estimate",
       "source": ["Sakori", "Wiki"]
     },
     {
-      "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at 36 or more. Needs the cap raised by Engineer More Hunting or the Act 1 Hard card.",
+      "req": "Core damage trainings at 36 or more. Needs the cap raised by Engineer More Hunting or the Act 1 Hard card.",
       "basis": "Guide",
       "source": ["HyZerg", "Wiki"]
     },
     {
-      "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at 57 (max): all three More Hunting upgrades at 5 (max) and the Act 1 Hard card at 4 stars (max).",
+      "req": "Core damage trainings at the cap of 57: all three More Hunting upgrades at 5 (max) and the Act 1 Hard card at 4 stars (max).",
       "basis": "Game data",
       "source": ["Wiki", "DBHG"]
     }
@@ -57,6 +57,12 @@
       "title": "Hunter rules",
       "cols": ["Topic", "Rule", "Basis", "Source"],
       "rows": [
+        [
+          "Core damage trainings",
+          "Power Training, your class stat training (Strength, Dexterity or Intelligence), More Damage Training, Dice Training and Damage Abuse Training.",
+          "Game data",
+          ["DBHunter"]
+        ],
         [
           "Order",
           "Raise one of each damage upgrade at a time. A balanced path beats maxing one line, and class or gear barely change the order. On 2026-09-09 the author wrote that its math predates the Hourglass and 4-star cards: the Hourglass gives lots of crit and no ATK%, so crit lines (Dice, Damage Abuse, Wish for Luck, Pray for Luck) lose value against ATK% lines. Power Training stays the best Hunter upgrade, Fire Elementals next.",
@@ -140,9 +146,14 @@
         ["Gathering", "Mining Experience: +1% mining XP", "Beetleman Sting", "Beetleman (Act 3)"],
         ["Utility", "Knowledge Training: +1% combat XP", "Leaf", "Stump"],
         ["Utility", "Smeltery Speed Training: +5% smeltery speed", "Iron Bar", "Smeltery"],
-        ["Low", "Endurance Training: +1 CON (+5% max HP, +1% HP regen)", "Boar Meat", "Boar"],
-        ["Low", "Meditation Training: +1 MEN (+5% max mana, +1% mana regen, +5% magic defence)", "Honeycomb", "Wasp"],
-        ["Low", "Speed Training (movement): +0.33% move speed", "Gold", "Gold"]
+        ["Low priority", "Endurance Training: +1 CON (+5% max HP, +1% HP regen)", "Boar Meat", "Boar"],
+        [
+          "Low priority",
+          "Meditation Training: +1 MEN (+5% max MP, +1% MP regen, +5% magic defence)",
+          "Honeycomb",
+          "Wasp"
+        ],
+        ["Low priority", "Speed Training (movement): +0.33% movement speed", "Gold", "Gold"]
       ]
     }
   ]

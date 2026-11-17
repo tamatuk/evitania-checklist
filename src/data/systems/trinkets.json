@@ -29,13 +29,13 @@
       "rows": [
         [
           "What they are",
-          "Added in 0.321.0: an item for the one trinket slot, with a main stat and up to four sub-stats. Trinkets drop only while an event runs, from every tier of its dungeons, with a bonus for running solo. The event shop, monthly and login rewards have none, so they can be missed between events.",
+          "Added in 0.321.0: an item for the one trinket slot, with a main stat and up to four sub-stats. Trinkets drop only while an event runs, from every dungeon difficulty, with a bonus for running solo. The event shop, monthly and login rewards have none, so they can be missed between events.",
           "Game data",
           ["Patch", "Wiki"]
         ],
         [
           "Dungeon gates",
-          "Dungeon tiers are gated by attack; the top tier needs 10M since 0.323.1, and zone-bound bonuses such as the Bonfire's heated-zone attack no longer count.",
+          "Dungeon difficulties are gated by attack; the highest difficulty needs 10M since 0.323.1, and zone-bound bonuses such as the Bonfire's heated-zone attack no longer count.",
           "Game data",
           ["Patch"]
         ],
