@@ -56,7 +56,7 @@ rebuild (below) and push. An empty value hides the link.
 ```json
 {
   "v": 1,
-  "stage": "mammoth-dead",
+  "stage": "ice-mammoth-dead",
   "tiers": { "hunter": 3, "pusher-gear": 2 },
   "daily": ["quest", "vendor-1"],
   "chars": [["mage", "material-farmer", 63]]
