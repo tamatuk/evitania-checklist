@@ -97,7 +97,7 @@
           "Pusher",
           "ATK; HP instead for a boss that kills you, which matters little in solo event dungeons, where you revive",
           "Crit chance and crit damage",
-          "Bosses, the tower and dungeons. Presets do not switch trinkets, so swap it on by hand before the fight.",
+          "Bosses, the tower and dungeons; see Trinkets 'Swapping'.",
           "Player report",
           ["SteamTrinkets", "SteamTrinketsEnh", "LuminorStats", "Patch"]
         ],
@@ -130,7 +130,7 @@
           "Any character parked offline",
           "Its farming stat: All EXP, or a gatherer's power",
           "Offline Gains first",
-          "While parked. A pusher swaps its ATK trinket for the farming one before it logs off.",
+          "While parked; see Trinkets 'Swapping'.",
           "Player report",
           ["SteamTrinkets", "SteamTrinketsEnh"]
         ],

@@ -77,25 +77,19 @@
         ],
         [
           "Discount math",
-          "Two separate modifiers: Hunter Cost Reduction (the training, the Crab Miner and Helmet cards, the ash node) adds into one divisor, and the Cost Cruncher removes a percentage of what is left (up to 99%).",
+          "Two separate modifiers: Hunter Cost Reduction (the training, the Crab Miner and Helmet cards, the ash node) adds into one divisor, and the Cost Cruncher removes a percentage of what is left (up to 99%). For example, 450% in total divides costs by 5.5.",
           "Game data",
           ["Wiki", "Sakori"]
         ],
         [
           "Refunds",
-          "Engineer Hunter Tax Returns adds 5% per level (\"Hunter Upgrade Refund 5%\" in the wiki data), 10 levels across Idea and Blueprint.",
+          "See Engineer 'Hunter Tax Returns' for the refund chance and average savings.",
           "Game data",
           ["Wiki"]
         ],
         [
-          "Refund size",
-          "The Engineer guide says a refund returns half the level's materials, about a quarter off on average at 50%. The wiki data does not give the size, so this is unverified until checked in game.",
-          "Guide",
-          ["JTEng"]
-        ],
-        [
           "Crab Miner card",
-          "Farm crab miners until the card drops: a permanent Hunter discount. Card and ash discounts add into one cost divisor (450% in total divides costs by 5.5).",
+          "Farm crab miners until the card drops: a permanent Hunter discount. For how it stacks with ash discounts, see Hunter 'Discount math'.",
           "Guide",
           ["DBTips", "Sakori"]
         ],
@@ -107,7 +101,7 @@
         ],
         [
           "Farming spots",
-          "Plants for Power, Fire Elementals for More Damage, Slime Cubes for Dice, Weird Books for Damage Abuse, Pebbles for Defence if you are dying. Boars (HP) are the lowest priority.",
+          "For each material's location, see Hunter 'Hunter trainings', Farm column. Prioritise Defence if you are dying; Boars (HP) are the lowest priority.",
           "Guide",
           ["MTFarm"]
         ],

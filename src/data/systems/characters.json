@@ -44,13 +44,13 @@
       "rows": [
         [
           "Warrior talents",
-          "Improved Cleave, then Last Stand, then the middle path for Blade Strike and Dragon Soul, then the second Improved Cleave.",
+          "See the Roster tab's 'Pick order' and Warrior talent tree for the class-skill order.",
           "Guide",
           ["PiwuWar"]
         ],
         [
           "First character",
-          "Make the first character a Warrior and take its class skills (green nodes) first.",
+          "Make the first character a Warrior; for talent priorities, see the Roster tab's 'Pick order'.",
           "Guide",
           ["DBTips", "PiwuWar", "FAQ"]
         ],
@@ -69,16 +69,11 @@
         ["Roster mix", "Have at least one Warrior and one Rogue in the roster.", "Guide", ["DBTips", "FAQ"]],
         [
           "Crit first",
-          "Take crit rate and crit damage over Magic Find and EXP until about level 70; more kills an hour beats those nodes.",
+          "See the Roster tab's 'Pick order' and 'Pusher' for damage and utility talent priorities.",
           "Guide",
           ["PiwuWar"]
         ],
-        [
-          "Skip",
-          "Skip the Warrior's +5 HP / +1% damage node at the end; HP is of little use. Take crit damage.",
-          "Guide",
-          ["PiwuWar"]
-        ],
+        ["Skip", "See the Roster tab's 'Warrior' for the late nodes to skip.", "Guide", ["PiwuWar"]],
         [
           "Boss readiness check",
           "Before each Act 2 boss, check kills per hour on your main in the boss's zone. Aim for: Yeti zone about 500 (Ice Mammoth), Troll zone about 1,000 (Jotunn), Draugr zone over 1,000 and about 1,300 physical defence (Maevath). If you are short, raise Hunter trainings and sacrifices first.",

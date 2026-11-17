@@ -32,7 +32,7 @@
       "source": ["Wiki", "MTAct2"]
     },
     {
-      "req": "Thorium set enhanced further, weapon first and then armor, to about 1,300 physical defence, the Act 2 guide's target for Maevath.",
+      "req": "Thorium set enhanced further, weapon first and then armor, for Maevath; see Characters 'Boss readiness check'.",
       "basis": "Guide",
       "source": ["MTAct2"]
     },
@@ -258,7 +258,7 @@
         ],
         [
           "Enhance stones",
-          "They come from boss drops, each act's vendor, quests and login bonuses. Buy out the vendors daily.",
+          "They come from boss drops, each act's vendor, quests and login bonuses. For vendor purchases, see the Daily tab's Act 1, Act 2 and Act 3 vendor tasks.",
           "Guide",
           ["MTEnh", "MTAct2"]
         ],
@@ -329,7 +329,12 @@
           "Game data",
           ["Wiki"]
         ],
-        ["Trinkets", "Since 0.321.0 there is a trinket slot as well; see the Trinkets page.", "Game data", ["Patch"]]
+        [
+          "Trinkets",
+          "Since 0.321.0 there is a trinket slot as well; see Trinkets 'Trinket by role' and 'Swapping'.",
+          "Game data",
+          ["Patch"]
+        ]
       ]
     }
   ]
