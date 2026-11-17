@@ -32,7 +32,7 @@
       "source": ["Presets", "Patch", "Jivchik"]
     },
     {
-      "req": "Nightmare respec done: EXP and Drop Quantity talents swapped for attack speed, crit rate and crit damage.",
+      "req": "Nightmare respec done for roles other than Rare-drop farmer: EXP and Drop Quantity talents swapped for attack speed, crit rate and crit damage. Rare-drop farmers keep Magicfind for boss chests and cards.",
       "basis": "Guide",
       "source": ["PiwuWar"]
     }
