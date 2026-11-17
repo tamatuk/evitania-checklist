@@ -77,7 +77,7 @@
         ],
         [
           "Discount math",
-          "Two separate modifiers: Hunter Cost Reduction (the training, the Crab Miner and Helmet cards, the ash node) adds into one divisor, and the Cost Cruncher removes a percentage of what is left (up to 99%). For example, 450% in total divides costs by 5.5.",
+          "Two separate modifiers: Hunter Cost Reduction (the training, the Crab and Helmet cards, the ash node) adds into one divisor, and the Cost Cruncher removes a percentage of what is left (up to 99%). For example, 450% in total divides costs by 5.5.",
           "Game data",
           ["Wiki", "Sakori"]
         ],
@@ -88,8 +88,8 @@
           ["Wiki"]
         ],
         [
-          "Crab Miner card",
-          "Farm crab miners until the card drops: a permanent Hunter discount. For how it stacks with ash discounts, see Hunter 'Discount math'.",
+          "Crab card",
+          "Farm Crabs (Act 1 zone 9) until the card drops: a permanent Hunter discount. For how it stacks with ash discounts, see Hunter 'Discount math'.",
           "Guide",
           ["DBTips", "Sakori"]
         ],

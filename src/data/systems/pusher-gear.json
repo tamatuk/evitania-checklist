@@ -37,7 +37,7 @@
       "source": ["MTAct2"]
     },
     {
-      "req": "Nordic Amulet equipped, or Jotunn chests farmed with all daily keys. It drops from Jotunn chests (about 1 in 20).",
+      "req": "Nordic Amulet equipped, or Jötunn chests farmed with all daily keys. It drops from Jötunn chests (about 1 in 20).",
       "basis": "Game data",
       "source": ["Wiki", "ZZTabs"]
     },
@@ -78,7 +78,7 @@
         [
           "Nordic Amulet",
           "Amulet",
-          "Jotunn chests, about 1 in 20",
+          "Jötunn chests, about 1 in 20",
           "+7% crit chance, +5% movement speed, +70 magic defence"
         ],
         [
@@ -234,7 +234,7 @@
         ],
         [
           "Thorium order",
-          "The thorium axe needs 10 Mammoth Bitusks and the thorium pickaxe 10 Jotunn Eyes, so tools come as each boss dies. For combat gear, enhance the weapon before the armor.",
+          "The thorium axe needs 10 Mammoth Bitusks and the thorium pickaxe 10 Jötunn Eye, so tools come as each boss dies. For combat gear, enhance the weapon before the armor.",
           "Game data",
           ["Wiki", "MTAct2"]
         ],
@@ -301,7 +301,7 @@
         ],
         [
           "Ladder",
-          "Copper, bronze, iron, steel (Act 1), thorium (Act 2), sunstone (Act 3), then Infinite 1 and Infinite 2 on the Hard tab. Steel has a full armor set and a belt as well as weapons. There is no Infinite 3 in the game data.",
+          "Copper, bronze, iron, steel (Act 1), thorium (Act 2), sunstone (Act 3), then Infinite 1 and Infinite 2 on the Hard tab. Steel has a full armor set and the Iron Belt (crafted from steel) as well as weapons. There is no Infinite 3 in the game data.",
           "Game data",
           ["Wiki"]
         ],

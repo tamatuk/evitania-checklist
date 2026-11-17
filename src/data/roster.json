@@ -6,6 +6,12 @@
     "source": ["PiwuWar", "PiwuRogue", "PiwuMage"]
   },
   {
+    "topic": "Terms",
+    "rule": "Magicfind is the talent node that gives Drop Quantity (+1 per rank).",
+    "basis": "Game data",
+    "source": ["DBClass"]
+  },
+  {
     "topic": "Pusher",
     "rule": "Your main. The guide order as written: damage first, Magicfind and most Bonus XP late. Around level 70 the guide starts adding Drop Quantity and EXP.",
     "basis": "Guide",
