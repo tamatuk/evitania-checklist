@@ -2,7 +2,7 @@
   "name": "Sacrifice",
   "tiers": [
     {
-      "req": "Mammoth's soul sacrificed in the Sacrifice tab: the first five lines are open.",
+      "req": "Mammoth Bitusk sacrificed in the Sacrifice tab: the first five lines are open.",
       "basis": "Guide",
       "source": ["MTAct2", "DBBonfire"]
     },
@@ -17,7 +17,7 @@
       "source": ["MTAct2"]
     },
     {
-      "req": "Jotunn's Eye sacrificed (five more lines open), and Wish for Hardness high enough to reach about 1,300 physical defence with thorium gear, the Act 2 guide's target for Maevath.",
+      "req": "Jötunn Eye sacrificed (five more lines open), and Wish for Hardness high enough to reach about 1,300 physical defence with thorium gear, the Act 2 guide's target for Maevath.",
       "basis": "Guide",
       "source": ["MTAct2"]
     },
@@ -84,9 +84,9 @@
         ],
         [
           "Boss items",
-          "Each Act 2 boss drops its Soul and its sacrifice item on every kill. Mammoth's soul opens the first five lines, Jotunn's Eye five more and Maevath's Horn the last five.",
-          "Game data",
-          ["ZZTabs", "DBBonfire"]
+          "Each Act 2 boss drops its sacrifice item on every kill: Mammoth Bitusk, Jötunn Eye or Maevath's Horn. EvitaniaOnlineDB lists these as the items that open five lines each. It also says a one-time sacrifice of each boss's heart permanently raises the Bonfire by two levels. The wiki lists Mammoth Soul and Jötunn Soul, but no Maevath soul. Which item the Sacrifice tab asks for, and what Maevath gives the Bonfire, are unverified in game; check the tab before spending items.",
+          "Guide",
+          ["Wiki", "ZZTabs", "DBBonfire"]
         ],
         [
           "Caps",
@@ -105,12 +105,6 @@
           "Level L costs 500 x 1.3^(L-1) of the material plus 250 + 50 x (L-1) ash. Wish for Gold is cheaper in material: 50 x 1.11^(L-1). Engineer Humble Sacrifices adds a 5% chance per level to refund half.",
           "Game data",
           ["Wiki"]
-        ],
-        [
-          "Boss souls",
-          "Sacrifice each boss soul in the Sacrifice tab, not as fuel, to open its five lines. Extra boss sacrifices raise heat and Bonfire tier.",
-          "Game data",
-          ["ZZ", "DBBonfire"]
         ],
         [
           "Farming spots",

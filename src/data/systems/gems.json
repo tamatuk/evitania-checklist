@@ -96,7 +96,7 @@
         ["Income", "The daily quest gives 60 gems and many achievements pay 30.", "Game data", ["DBTips"]],
         [
           "Other sinks",
-          "A pet stat reroll (Tier 5-6 pets only) costs gems; the price rises with pet tier (EvitaniaOnlineDB's calculator uses 200 gems at Tier V). Unverified until checked in game. A Class Reset Brew (talent reset) costs 30 and a gathering Mining Reset Potion 100. Prefer account boosts.",
+          "A pet stat reroll (Tier 5-6 pets only) costs gems; the price rises with pet tier (EvitaniaOnlineDB's calculator uses 200 gems at Tier V). Unverified until checked in game. A Class Reset Brew (talent reset) costs 30 gems: cheap, but account upgrades come first. A gathering Mining Reset Potion costs 100 gems.",
           "Guide",
           ["JTPets", "DBPets", "GFTal", "GFGather"]
         ],
