@@ -17,7 +17,7 @@
       "source": ["ZZ"]
     },
     {
-      "req": "Heat 1,100: Advanced heat. Removes Chilled from zones 5-8.",
+      "req": "Heat 1,100: Advanced heat. Removes Chilled from Act 2 zones 5-8.",
       "basis": "Game data",
       "source": ["ZZ"]
     },
@@ -27,7 +27,7 @@
       "source": ["Wiki"]
     },
     {
-      "req": "Heat 2,100: Expert heat. Removes Chilled from zones 9-12.",
+      "req": "Heat 2,100: Expert heat. Removes Chilled from Act 2 zones 9-12.",
       "basis": "Game data",
       "source": ["ZZ"]
     },
@@ -77,12 +77,8 @@
           "Game data",
           ["ZZ"]
         ],
-        [
-          "Hourglasses",
-          "Hourglasses do not speed up passive ash. Ash per kill does work offline.",
-          "Game data",
-          ["FAQ"]
-        ],
+        ["Chilled", "Chilled is the Act 2 zone debuff that heat removes.", "Game data", ["ZZ"]],
+        ["Hourglasses", "Hourglasses do not add passive (fuel) ash; they do add ash per kill.", "Game data", ["FAQ"]],
         [
           "Sacrifices and heat",
           "Sacrifice bonuses work on every map. Heat bonuses work only in Act 2.",
@@ -112,11 +108,11 @@
         [300, "Basic heat", "Zones", "Removes Chilled from Act 2 zones 1-4"],
         [700, "Overheat", "Survival", "+1 base HP regen in heated zones"],
         [900, "Woodcutting Efficiency", "Gathering", "+100% woodcutting power"],
-        [1100, "Advanced heat", "Zones", "Removes Chilled from zones 5-8"],
+        [1100, "Advanced heat", "Zones", "Removes Chilled from Act 2 zones 5-8"],
         [1300, "Mining Efficiency", "Gathering", "+100% mining power"],
         [1700, "Hot Stuff", "Ash", "3% chance of 1 ash per kill"],
         [1800, "Monster Bait", "Farming", "Monster respawn time -20% in heated zones"],
-        [2100, "Expert heat", "Zones", "Removes Chilled from zones 9-12"],
+        [2100, "Expert heat", "Zones", "Removes Chilled from Act 2 zones 9-12"],
         [2500, "Owl Wizdom", "XP", "+50% XP multiplier in heated zones"],
         [3100, "Fiery Weapon", "Damage", "x1.5 ATK multiplier in heated zones"]
       ]
