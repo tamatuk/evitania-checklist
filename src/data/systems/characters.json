@@ -60,6 +60,12 @@
           "Guide",
           ["DBTips"]
         ],
+        [
+          "Second slot",
+          "When the second slot opens is unverified: EvitaniaOnlineDB's beginner guide says you start with 2 slots, its classes page says it opens after the first boss; check in game.",
+          "Guide",
+          ["DBTips", "DBClass"]
+        ],
         ["Roster mix", "Have at least one Warrior and one Rogue in the roster.", "Guide", ["DBTips", "FAQ"]],
         [
           "Crit first",
@@ -202,7 +208,7 @@
       "rows": [
         [
           "Warrior",
-          "The usual first character and the easiest talent tree. Class resources unlock in the order Warrior, Archer, Mage.",
+          "The usual first character and the easiest talent tree. Class resources unlock in the order Warrior, Archer, Mage. The talent tree here has Defence as 7 nodes with 35 ranks; the wiki data has 35 ranks over 6 nodes (unverified until checked in game).",
           "First character, main pusher",
           "Flat single-platform maps"
         ],
@@ -214,7 +220,7 @@
         ],
         [
           "Mage",
-          "Area attacks; unlock class skills first, including the 100% crit skill.",
+          "Area attacks; unlock class skills first, including the 100% crit skill. The talent tree here gives Bonus XP 15 ranks; the wiki data gives 25 over \"Nodes 1-2\" (unverified until checked in game).",
           "Later character",
           "Maps with 3 or more spawn platforms, such as Crabs"
         ]

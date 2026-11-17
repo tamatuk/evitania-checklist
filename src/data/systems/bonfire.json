@@ -67,7 +67,7 @@
         ],
         [
           "Capacity",
-          "Base fuel capacity is 150,000; each Maximum Fuel rank in the ash tree adds 10,000.",
+          "Base fuel capacity is 150,000; each Maximum Fuel rank in the ash tree adds 10,000, and the gem-shop Bonfire Capacity adds 100,000 per level (4 levels).",
           "Game data",
           ["Wiki"]
         ],
@@ -81,9 +81,9 @@
         ["Hourglasses", "Hourglasses do not add passive (fuel) ash; they do add ash per kill.", "Game data", ["FAQ"]],
         [
           "Sacrifices and heat",
-          "Sacrifice bonuses work on every map. Heat bonuses work only in Act 2.",
+          "Sacrifice bonuses work on every map. Heat bonuses work only in Act 2; for Woodcutting and Mining Efficiency this is unverified, since the wiki data gives them no bonfire condition. Check in game.",
           "Game data",
-          ["HeatG"]
+          ["HeatG", "Wiki"]
         ],
         [
           "Maximum heat",
@@ -113,7 +113,7 @@
         [1700, "Hot Stuff", "Ash", "3% chance of 1 ash per kill"],
         [1800, "Monster Bait", "Farming", "Monster respawn time -20% in heated zones"],
         [2100, "Expert heat", "Zones", "Removes Chilled from Act 2 zones 9-12"],
-        [2500, "Owl Wizdom", "XP", "+50% XP multiplier in heated zones"],
+        [2500, "Owl Wizdom", "XP", "+50% combat XP in heated zones"],
         [3100, "Fiery Weapon", "Damage", "x1.5 ATK multiplier in heated zones"]
       ]
     }

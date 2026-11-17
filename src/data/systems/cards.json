@@ -106,6 +106,12 @@
           "A monster card drops on 0.01% of kills in Act 1, 0.004% in Act 2 and 0.002% in Act 3. A boss chest gives the boss card half the time.",
           "Game data",
           ["DBCards"]
+        ],
+        [
+          "Crimson drops",
+          "Crimson Geode (Act 1 veins) and Crimson Sap (Act 1 trees) drop at 1 in 200,000, in Nightmare mode only.",
+          "Game data",
+          ["AllPets"]
         ]
       ]
     },
@@ -138,7 +144,12 @@
         ["Act 2 Hard card", "Raises the sacrifice cap (+4 to +12)", "Unlock", "Hard Act 2"],
         ["Watch", "Physical defence multiplier", "Defence", "Act 2"],
         ["Troll", "HP multiplier", "Low", "Act 2"],
-        ["Act 1 Hard card", "Raises the Hunter cap (+4 to +12)", "Unlock", "Needed at 3 stars for Act 2 Hard"],
+        [
+          "Act 1 Hard card",
+          "Raises the Hunter cap (+4 to +12)",
+          "Unlock",
+          "Needed at 3 stars for Act 2 Hard (unverified: EvitaniaOnlineDB says \"max the Hard Mode Act I card\", written before 4-star cards; at 1 in 30,000 a drop, 3 stars is about 3M kills before bonuses; check in game)"
+        ],
         ["Bandiff", "Sand generation x2 (0 stars) to x6 (4 stars)", "Hourglass", "Act 3"],
         ["Beetleman", "Timeline engine x1.2 (0 stars) to x2.0 (4 stars)", "Hourglass", "Act 3"]
       ]
