@@ -22,7 +22,7 @@
       "source": ["PiwuGems"]
     },
     {
-      "req": "Curio inventory at 21-22 slots.",
+      "req": "Curio inventory at 21–22 slots.",
       "basis": "Estimate",
       "source": ["PiwuGems"]
     },
@@ -96,7 +96,7 @@
         ["Income", "The daily quest gives 60 gems and many achievements pay 30.", "Game data", ["DBTips"]],
         [
           "Other sinks",
-          "A pet stat reroll (Tier 5-6 pets only) costs gems; the price rises with pet tier (EvitaniaOnlineDB's calculator uses 200 gems at Tier V). Unverified until checked in game. A Class Reset Brew (talent reset) costs 30 gems: cheap, but account upgrades come first. A gathering Mining Reset Potion costs 100 gems.",
+          "A pet stat reroll (Tier 5–6 pets only) costs gems; the price rises with pet tier (EvitaniaOnlineDB's calculator uses 200 gems at Tier V). Unverified until checked in game. A Class Reset Brew (talent reset) costs 30 gems: cheap, but account upgrades come first. A gathering Mining Reset Potion costs 100 gems.",
           "Guide",
           ["JTPets", "DBPets", "GFTal", "GFGather"]
         ],
@@ -124,7 +124,7 @@
           2550,
           "300, 350, 400, 450, 500, 550 (6 of the 12 ranks); the total assumes a 10-slot base and is unverified until checked in game"
         ],
-        [6, "Remaining rune sockets", 4500, "450, 550, 650, 800, 950, 1100"],
+        [6, "Remaining rune sockets", 4500, "450, 550, 650, 800, 950, 1,100"],
         [7, "Hunter Cost Cruncher", 2000, "300, 350, 400, 450, 500"],
         [8, "Smeltery Speed", 950, "150, 200, 250, 350"],
         [9, "Smeltery Capacity", 750, "300, 450"],

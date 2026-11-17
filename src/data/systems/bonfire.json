@@ -7,7 +7,7 @@
       "source": ["MTAct2", "DBBonfire"]
     },
     {
-      "req": "Heat 300: Basic heat. Removes Chilled from Act 2 zones 1-4.",
+      "req": "Heat 300: Basic heat. Removes Chilled from Act 2 zones 1–4.",
       "basis": "Game data",
       "source": ["ZZ"]
     },
@@ -17,7 +17,7 @@
       "source": ["ZZ"]
     },
     {
-      "req": "Heat 1,100: Advanced heat. Removes Chilled from Act 2 zones 5-8.",
+      "req": "Heat 1,100: Advanced heat. Removes Chilled from Act 2 zones 5–8.",
       "basis": "Game data",
       "source": ["ZZ"]
     },
@@ -27,7 +27,7 @@
       "source": ["Wiki"]
     },
     {
-      "req": "Heat 2,100: Expert heat. Removes Chilled from Act 2 zones 9-12.",
+      "req": "Heat 2,100: Expert heat. Removes Chilled from Act 2 zones 9–12.",
       "basis": "Game data",
       "source": ["ZZ"]
     },
@@ -61,13 +61,13 @@
         ],
         [
           "Burn rate",
-          "Higher burn gives more heat but a worse fuel-to-ash ratio. Use 25-50% if you refuel once or twice a day; 100% only if you refuel often. Keep enough fuel to last until your next visit.",
+          "Higher burn gives more heat but a worse fuel-to-ash ratio. Use 25–50% if you refuel once or twice a day; 100% only if you refuel often. Keep enough fuel to last until your next visit.",
           "Guide",
           ["DBBonfire"]
         ],
         [
           "Capacity",
-          "Base fuel capacity is 150,000; each Maximum Fuel rank in the ash tree adds 10,000, and the gem-shop Bonfire Capacity adds 100,000 per level (4 levels).",
+          "Base fuel capacity is 150K; each Maximum Fuel rank in the ash tree adds 10,000, and the gem-shop Bonfire Capacity adds 100K per level (4 levels).",
           "Game data",
           ["Wiki"]
         ],
@@ -105,14 +105,14 @@
       "cols": ["Heat", "Bonus", "Kind", "Effect"],
       "rows": [
         [100, "Ash Creation", "Ash", "The Bonfire has a chance to produce ash every second"],
-        [300, "Basic heat", "Zones", "Removes Chilled from Act 2 zones 1-4"],
+        [300, "Basic heat", "Zones", "Removes Chilled from Act 2 zones 1–4"],
         [700, "Overheat", "Survival", "+1 base HP regen in heated zones"],
         [900, "Woodcutting Efficiency", "Gathering", "+100% woodcutting power"],
-        [1100, "Advanced heat", "Zones", "Removes Chilled from Act 2 zones 5-8"],
+        [1100, "Advanced heat", "Zones", "Removes Chilled from Act 2 zones 5–8"],
         [1300, "Mining Efficiency", "Gathering", "+100% mining power"],
         [1700, "Hot Stuff", "Ash", "3% chance of 1 ash per kill"],
         [1800, "Monster Bait", "Farming", "Monster respawn time -20% in heated zones"],
-        [2100, "Expert heat", "Zones", "Removes Chilled from Act 2 zones 9-12"],
+        [2100, "Expert heat", "Zones", "Removes Chilled from Act 2 zones 9–12"],
         [2500, "Owl Wizdom", "XP", "+50% combat XP in heated zones"],
         [3100, "Fiery Weapon", "Damage", "x1.5 ATK multiplier in heated zones"]
       ]

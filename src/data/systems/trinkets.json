@@ -53,13 +53,13 @@
         ],
         [
           "Sub-stats",
-          "There are 12: Offline Gains %, Drop Quantity, crit chance, crit damage, MEN, CON, STR, DEX, INT, HP %, mining power % and woodcutting power %. Only some roll active (white): 0-1 / 1-2 / 2-3 / 3-4 on a Black Candle / Candlestick / Candelabra / Luminor and their Harvest sizes; the rest are greyed. A sub-stat starts at its base, on a Luminor +1% Offline Gains or +2 Drop Quantity, and every third trinket level one random sub-stat, possibly a greyed one, gains a step; reaching a Luminor's maximum can take all five of its steps on one sub-stat (see Luminor maxima). Which ones to want depends on the role: see Trinket by role.",
+          "There are 12: Offline Gains %, Drop Quantity, crit chance, crit damage, MEN, CON, STR, DEX, INT, HP %, mining power % and woodcutting power %. Only some roll active (white): 0–1 / 1–2 / 2–3 / 3–4 on a Black Candle / Candlestick / Candelabra / Luminor and their Harvest sizes; the rest are greyed. A sub-stat starts at its base, on a Luminor +1% Offline Gains or +2 Drop Quantity, and every third trinket level one random sub-stat, possibly a greyed one, gains a step; reaching a Luminor's maximum can take all five of its steps on one sub-stat (see Luminor maxima). Which ones to want depends on the role: see Trinket by role.",
           "Game data",
           ["Wiki", "LuminorStats", "TrinketSub"]
         ],
         [
           "Luminor maxima",
-          "Community tables disagree: Drop Quantity 10-12 at max, crit damage 35% to 40%, STR, DEX or INT 20 to 25 (AlexG: 10, 40%, 25; Stratasys: 12, 35%, 20). Neither is game data.",
+          "Community tables disagree: Drop Quantity 10–12 at max, crit damage 35–40%, STR, DEX or INT 20–25 (AlexG: 10, 40%, 25; Stratasys: 12, 35%, 20). Neither is game data.",
           "Player report",
           ["LuminorStats", "TrinketSub"]
         ],
@@ -160,43 +160,34 @@
         [
           "Black Candle / Bountiful Tusk",
           6,
-          "1, 0-1 active",
-          "16 to 20.8",
-          "12 to 16.8",
-          "12 to 16.8",
-          "40 to 64",
-          "40 to 56 / 20 to 28"
+          "1, 0–1 active",
+          "16–20.8",
+          "12–16.8",
+          "12–16.8",
+          "40–64",
+          "40–56 / 20–28"
         ],
         [
           "Candlestick / Generous Cornucopia",
           9,
-          "2, 1-2 active",
-          "24 to 34.8",
-          "18 to 28.8",
-          "18 to 28.8",
-          "60 to 114",
-          "60 to 96 / 30 to 48"
+          "2, 1–2 active",
+          "24–34.8",
+          "18–28.8",
+          "18–28.8",
+          "60–114",
+          "60–96 / 30–48"
         ],
         [
           "Candelabra / Plentiful Bihorn",
           12,
-          "3, 2-3 active",
-          "32 to 51.2",
-          "24 to 43.2",
-          "24 to 43.2",
-          "80 to 176",
-          "80 to 144 / 40 to 72"
+          "3, 2–3 active",
+          "32–51.2",
+          "24–43.2",
+          "24–43.2",
+          "80–176",
+          "80–144 / 40–72"
         ],
-        [
-          "Luminor / Abundant Overgrowth",
-          15,
-          "4, 3-4 active",
-          "40 to 70",
-          "30 to 60",
-          "30 to 60",
-          "100 to 250",
-          "100 to 200 / 50 to 100"
-        ]
+        ["Luminor / Abundant Overgrowth", 15, "4, 3–4 active", "40–70", "30–60", "30–60", "100–250", "100–200 / 50–100"]
       ]
     }
   ]

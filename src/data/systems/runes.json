@@ -58,7 +58,7 @@
         ["Sockets", "Buy more sockets as you become able to make runewords.", "Guide", ["PiwuGems"]],
         [
           "Starter word",
-          "GOR + MU + HAS gives +200 HP, +1 portal kill and +10% all EXP. It is the cheapest runeword (all tier-1 runes): the Go to Act 2 Town quest gives all three runes, and spare GOR drops in Act 3 zones 1 to 4.",
+          "GOR + MU + HAS gives +200 HP, +1 portal kill and +10% all EXP. It is the cheapest runeword (all tier-1 runes): the Go to Act 2 Town quest gives all three runes, and spare GOR drops in Act 3 zones 1–4.",
           "Game data",
           ["Wiki"]
         ],
@@ -74,7 +74,7 @@
           "Game data",
           ["Wiki"]
         ],
-        ["Order", "The order of tiers 3 to 7 is by where the runes drop, not from a guide.", "Estimate", ["Miothan"]],
+        ["Order", "The order of tiers 3–7 is by where the runes drop, not from a guide.", "Estimate", ["Miothan"]],
         [
           "Portal kills",
           "Each +1 portal kill makes a kill count once more toward opening a zone portal.",
@@ -85,7 +85,7 @@
     },
     {
       "title": "Rune families",
-      "cols": ["Tier 1 to 4", "Where the first rune drops", "Stat", "Value per tier"],
+      "cols": ["Tier 1–4", "Where the first rune drops", "Stat", "Value per tier"],
       "rows": [
         ["NIL, DOT, WIR, GRO", "Act 2: Iceboar to Yeti", "Woodcutting power", "10, 18, 24, 30"],
         ["FUS, YIT, SKO, MIN", "Act 2: Ratatoskr to Troll", "Mining power", "10, 18, 24, 30"],
@@ -97,7 +97,7 @@
         ],
         [
           "HAS, OLU, SUR, TYR",
-          "Act 2 bosses; Act 3 zones 5 to 8 (Fez to Beetleman); the Go to Act 2 Town quest",
+          "Act 2 bosses; Act 3 zones 5–8 (Fez to Beetleman); the Go to Act 2 Town quest",
           "All EXP",
           "1%, 2%, 4%, 5%"
         ],

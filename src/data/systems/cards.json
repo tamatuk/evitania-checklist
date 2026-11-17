@@ -27,7 +27,7 @@
       "source": ["MTAct2"]
     },
     {
-      "req": "Crab Miner and Helmet cards at 3 stars: both cut Hunter costs, and Helmet gives half as much again per star. 3 stars takes 60 Crab Miner cards (about 600,000 Crab Miner kills at 1 in 10,000) and 100 Helmet cards (about 2.5 million Helmet kills at 1 in 25,000) before Drop Quantity and card-chance bonuses.",
+      "req": "Crab Miner and Helmet cards at 3 stars: both cut Hunter costs, and Helmet gives half as much again per star. 3 stars takes 60 Crab Miner cards (about 600K Crab Miner kills at 1 in 10,000) and 100 Helmet cards (about 2.5M Helmet kills at 1 in 25,000) before Drop Quantity and card-chance bonuses.",
       "basis": "Estimate",
       "source": ["Sakori", "Wiki"]
     },
@@ -42,7 +42,7 @@
       "source": ["PiwuHG"]
     },
     {
-      "req": "Act 1 Hard, Act 2 Hard and Snowman cards at 4 stars.",
+      "req": "Act 1 Hard, Act 2 Hard and Snowman cards at 4 stars (max).",
       "basis": "Estimate",
       "source": ["Wiki"]
     }
@@ -73,7 +73,7 @@
         ],
         [
           "Stars",
-          "Cards needed for 0 to 4 stars: 1, 8, 24, 60, 360 in Act 1; 1, 12, 48, 100, 600 in Act 2 and for Hard cards; 1, 18, 72, 150, 900 in Act 3. The fourth star needs the Engineer Sun Scroll upgrade 4 Star Cards.",
+          "Cards needed for 0–4 stars: 1, 8, 24, 60, 360 in Act 1; 1, 12, 48, 100, 600 in Act 2 and for Hard cards; 1, 18, 72, 150, 900 in Act 3. The fourth star needs the Engineer Sun Scroll upgrade 4 Star Cards.",
           "Game data",
           ["Wiki"]
         ],
@@ -141,12 +141,12 @@
         ["Djinn", "Rune drop chance +4%", "Farming", "Act 3"],
         ["Horus", "Card drop chance +4%", "Farming", "Act 3"],
         ["Plant, Iceboar, Kangaroo", "Smeltery speed +15%, +35%, +50%", "Utility", "One per act"],
-        ["Act 2 Hard card", "Raises the sacrifice cap (+4 to +12)", "Unlock", "Hard Act 2"],
+        ["Act 2 Hard card", "Raises the sacrifice cap (+4–12)", "Unlock", "Hard Act 2"],
         ["Watch", "Physical defence multiplier", "Defence", "Act 2"],
         ["Troll", "HP multiplier", "Low", "Act 2"],
         [
           "Act 1 Hard card",
-          "Raises the Hunter cap (+4 to +12)",
+          "Raises the Hunter cap (+4–12)",
           "Unlock",
           "Needed at 3 stars for Act 2 Hard (unverified: EvitaniaOnlineDB says \"max the Hard Mode Act I card\", written before 4-star cards; at 1 in 30,000 a drop, 3 stars is about 3M kills before bonuses; check in game)"
         ],

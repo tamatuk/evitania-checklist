@@ -100,7 +100,7 @@
   {
     "id": "guild-donations",
     "when": "Level 60+, in a guild",
-    "task": "Log in and make the two daily donations (500k and 10m gold)",
+    "task": "Log in and make the two daily donations (500K and 10M gold)",
     "why": "Activity, seals and guild funds. The weekly guild kill task needs playing, not only a login",
     "source": ["Guilds", "SteamNews"]
   },

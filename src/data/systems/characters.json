@@ -160,7 +160,7 @@
         ],
         [
           "Bringer of Death fight",
-          "Step back 3-4 steps from the frontal leap. In the poison gas, leave the marked zone and kill the flower shooters in the corners.",
+          "Step back 3–4 steps from the frontal leap. In the poison gas, leave the marked zone and kill the flower shooters in the corners.",
           "Guide",
           ["DBBoss"]
         ],
@@ -172,7 +172,7 @@
         ],
         [
           "Yrsainir fight",
-          "Wait until he lands, then stand inside him under the chin: hits drop from 200-400 to about 99 and the sweep and breath miss. When he flies, go to the stairs and climb once the flames are out. Iron gear is enough.",
+          "Wait until he lands, then stand inside him under the chin: hits drop from 200–400 to about 99 and the sweep and breath miss. When he flies, go to the stairs and climb once the flames are out. Iron gear is enough.",
           "Guide",
           ["BossG", "DBBoss"]
         ],
@@ -216,11 +216,11 @@
           "Rogue",
           "Good late game. No bonus EXP nodes, so slower to level, but more Drop Quantity than a Warrior.",
           "Farmer, woodcutter",
-          "Tight maps with 1-2 platforms"
+          "Tight maps with 1–2 platforms"
         ],
         [
           "Mage",
-          "Area attacks; unlock class skills first, including the 100% crit skill. The talent tree here gives Bonus XP 15 ranks; the wiki data gives 25 over \"Nodes 1-2\" (unverified until checked in game).",
+          "Area attacks; unlock class skills first, including the 100% crit skill. The talent tree here gives Bonus XP 15 ranks; the wiki data gives 25 over \"Nodes 1–2\" (unverified until checked in game).",
           "Later character",
           "Maps with 3 or more spawn platforms, such as Crabs"
         ]
@@ -230,8 +230,8 @@
       "title": "Bosses",
       "cols": ["Boss", "Where", "HP", "Attack"],
       "rows": [
-        ["Bringer of Death", "Act 1, Plant zone", "3K", "26"],
-        ["The Crab", "Act 1, Crab zone", "80K", "175"],
+        ["Bringer of Death", "Act 1, Plant zone", "3,000", "26"],
+        ["The Crab", "Act 1, Crab zone", "80,000", "175"],
         [
           "Yrsainir",
           "Act 1 final boss, Fire Elemental zone",
@@ -243,8 +243,8 @@
         ["Maevath", "Act 2 final boss, Draugr zone", "50M", "1,900"],
         ["Zhai Halud's Gate", "Act 3", "400M", "5,000"],
         ["Choissiadyr", "Act 3, second boss", "3.15B", "5,000"],
-        ["Hard Act 1 bosses", "Monsters there have 3M HP and 1.4K attack", "100M", "2,000"],
-        ["Hard Act 2 bosses", "Monsters there have 25M HP and 3K attack", "1.25B", "4,500"],
+        ["Hard Act 1 bosses", "Monsters there have 3M HP and 1,400 attack", "100M", "2,000"],
+        ["Hard Act 2 bosses", "Monsters there have 25M HP and 3,000 attack", "1.25B", "4,500"],
         [
           "Nightmare",
           "Monsters only so far",
@@ -273,16 +273,16 @@
         ["Act 1, 14", "Fire Elemental", "20,000", 115],
         ["Act 2, 1", "Iceboar", "40,000", 200],
         ["Act 2, 2", "Helmet", "80,000", 200],
-        ["Act 2, 3", "Ghost", "140,000", 200],
-        ["Act 2, 4", "Yeti", "240,000", 262],
-        ["Act 2, 5", "Ratatoskr", "320,000", 277],
-        ["Act 2, 6", "Watch", "382,000", 327],
-        ["Act 2, 7", "Snowman", "456,000", 365],
-        ["Act 2, 8", "Troll", "567,000", 438],
-        ["Act 2, 9", "Penguin", "624,000", 600],
-        ["Act 2, 10", "Glass", "686,000", 800],
-        ["Act 2, 11", "Matryoshka", "755,000", "1,000"],
-        ["Act 2, 12", "Draugr", "831,000", "1,200"],
+        ["Act 2, 3", "Ghost", "140K", 200],
+        ["Act 2, 4", "Yeti", "240K", 262],
+        ["Act 2, 5", "Ratatoskr", "320K", 277],
+        ["Act 2, 6", "Watch", "382K", 327],
+        ["Act 2, 7", "Snowman", "456K", 365],
+        ["Act 2, 8", "Troll", "567K", 438],
+        ["Act 2, 9", "Penguin", "624K", 600],
+        ["Act 2, 10", "Glass", "686K", 800],
+        ["Act 2, 11", "Matryoshka", "755K", "1,000"],
+        ["Act 2, 12", "Draugr", "831K", "1,200"],
         ["Act 3, 1", "Sun Boy", "1.5M", "1,500"],
         ["Act 3, 2", "Dung Beetle", "2.5M", "1,700"],
         ["Act 3, 3", "Cactus Mommy", "4.5M", "1,900"],
