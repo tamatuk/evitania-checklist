@@ -64,9 +64,9 @@
         ],
         [
           "Presets",
-          "Curio and rune layouts can be saved as presets (six pages each) that switch with your activity. Unlocks at combat level 70.",
+          "Curio and rune layouts can be saved as presets (six pages each) that switch with your activity. Pages are account-wide, but which page an activity uses is set per character; presets replace the old snapshotting trick. Unlocks at combat level 70.",
           "Game data",
-          ["Patch"]
+          ["Patch", "Presets"]
         ],
         [
           "Active set",
