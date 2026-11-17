@@ -55,7 +55,13 @@
           "Estimate",
           ["DBBonfire"]
         ],
-        ["Gems", "Do not spend gems on ash generation; the tree gets maxed in time.", "Guide", ["PiwuGems"]]
+        ["Gems", "Do not spend gems on ash generation; the tree gets maxed in time.", "Guide", ["PiwuGems"]],
+        [
+          "Ash tree nodes",
+          "The node values below match the wiki data. EvitaniaOnlineDB gives older values (More Ash +15%, Fuel Efficiency −5%, Smeltery Speed +10% / +7%). The tree-level column comes only from EvitaniaOnlineDB.",
+          "Game data",
+          ["Wiki", "DBBonfire"]
+        ]
       ]
     },
     {

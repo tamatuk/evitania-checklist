@@ -71,6 +71,12 @@
           ["PiwuHG", "DBHG", "HGTal"]
         ],
         [
+          "Golden Claw tier",
+          "Golden Claw is the 15th original generator and the level 7 ones start at the 16th, so upgrade tier 11 may come before the level 7 tier; unverified until checked in game.",
+          "Estimate",
+          ["PiwuHG", "Patch"]
+        ],
+        [
           "Upgrades",
           "Early on, max a tier's upgrades before moving on. After 0.320.0 you are mostly forced to buy the sand-generator side upgrades, and old upgrades costing e50 become affordable; Piwu holds the timeline reset to take upgrades 11 and 12 together. A timeline reset also resets upgrades. Timeline engine gains matter most.",
           "Guide",
