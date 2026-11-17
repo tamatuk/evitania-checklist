@@ -94,7 +94,7 @@
         ],
         [
           "Reroll pool",
-          "The rerolled secondary stat comes from: All EXP, Offline Gains, Mob Spawn Time, Woodcutting Power, Crit Damage.",
+          "The rerolled secondary stat comes from: All EXP, Offline Gains, \"Mob Spawn Time\", Woodcutting Power, Crit Damage.",
           "Game data",
           ["DBPetG"]
         ],
@@ -111,17 +111,17 @@
       "title": "Pet stats by activity",
       "cols": ["Mode", "Activity", "Stat 1", "Stat 2"],
       "rows": [
-        ["Online", "Hunting, casual", "Mob spawn", "Drop Quantity or EXP"],
-        ["Online", "Low zone for materials, cards or runes", "Mob spawn", "Drop Quantity"],
-        ["Online", "Hunting during a mob-spawn event", "EXP", "Drop Quantity"],
-        ["Online", "Gold farming", "Mob spawn", "Gold multiplier"],
-        ["Offline", "Hunting", "Mob spawn", "Offline gains"],
-        ["Online", "Gathering, cannot one-shot", "Mining or woodcutting power", "EXP"],
-        ["Online", "Gathering, one-shot", "EXP", "Drop Quantity"],
+        ["Online", "Hunting, casual", "Monster respawn time", "Drop Quantity or XP"],
+        ["Online", "Low zone for materials, cards or runes", "Monster respawn time", "Drop Quantity"],
+        ["Online", "Hunting during a monster respawn event", "XP", "Drop Quantity"],
+        ["Online", "Gold farming", "Monster respawn time", "Gold multiplier"],
+        ["Offline", "Hunting", "Monster respawn time", "Offline gains"],
+        ["Online", "Gathering, cannot one-shot", "Mining or woodcutting power", "XP"],
+        ["Online", "Gathering, one-shot", "XP", "Drop Quantity"],
         ["Offline", "Gathering, cannot one-shot", "Mining or woodcutting power", "Offline gains"],
-        ["Offline", "Gathering, one-shot", "Offline gains", "Drop Quantity or EXP"],
+        ["Offline", "Gathering, one-shot", "Offline gains", "Drop Quantity or XP"],
         ["Tower", "Crit chance 100% or more", "Attack speed", "Crit damage"],
-        ["Tower", "Crit chance under 100%", "Crit rate", "Crit damage or attack speed"],
+        ["Tower", "Crit chance under 100%", "Crit chance", "Crit damage or attack speed"],
         ["Dungeons", "Event dungeons and raids", "Crit chance", "Crit damage"],
         ["Bosses", "Map bosses with keys", "Drop Quantity", "Anything"]
       ]
@@ -131,8 +131,8 @@
       "cols": ["Pet", "How to get it", "Odds", "Stats"],
       "rows": [
         ["Basic Bat", "Quest: Collect Bat Dust (Act 1)", "Sure", "Attack, defence, HP, crit chance"],
-        ["Pebble", "Mining", "1 in 10M", "EXP bonus, mining power"],
-        ["Leaf Spirit", "Woodcutting", "1 in 10M", "EXP bonus, woodcutting power"],
+        ["Pebble", "Mining", "1 in 10M", "XP bonus, mining power"],
+        ["Leaf Spirit", "Woodcutting", "1 in 10M", "XP bonus, woodcutting power"],
         [
           "Golden Piggy",
           "Achievement \"Update When?\", which since 0.316.2 targets Horus (Act 3)",
@@ -144,13 +144,13 @@
         ["Beeb", "Any Act 1 monster", "1 in 5M", ""],
         ["Snowflake", "Act 2 monsters", "Drop", ""],
         ["Snek", "Act 3 monsters", "Drop", "Crit chance, crit damage"],
-        ["Monkeycopter", "Guild shop top reward, since the Guilds update", "Shop", "Mob spawn time, all EXP"],
-        ["Spiney", "Party-dungeon, Halloween and Harvest reward", "Reward", "Mob spawn time, Drop Quantity"],
+        ["Monkeycopter", "Guild shop top reward, since the Guilds update", "Shop", "Monster respawn time, All EXP"],
+        ["Spiney", "Party-dungeon, Halloween and Harvest reward", "Reward", "Monster respawn time, Drop Quantity"],
         [
           "Mony",
           "Steam Event 2026: reach level 30 on a Steam Early Access account",
           "Sure",
-          "HP, all EXP; cannot be fed"
+          "HP, All EXP; cannot be fed"
         ]
       ]
     }

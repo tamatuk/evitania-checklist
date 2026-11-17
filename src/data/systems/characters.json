@@ -32,7 +32,7 @@
       "source": ["Presets", "Patch", "Jivchik"]
     },
     {
-      "req": "Nightmare respec done for roles other than Rare-drop farmer: EXP and Drop Quantity talents swapped for attack speed, crit rate and crit damage. Rare-drop farmers keep Magicfind for boss chests and cards.",
+      "req": "Nightmare respec done for roles other than Rare-drop farmer: XP and Drop Quantity talents swapped for attack speed, crit chance and crit damage. Rare-drop farmers keep Magicfind for boss chests and cards.",
       "basis": "Guide",
       "source": ["PiwuWar"]
     }
@@ -118,7 +118,7 @@
         ],
         [
           "Lone Wolf",
-          "Unlocked by killing the Act 1 last boss. Since 0.321.0 it gives +50 Drop Quantity and +50% EXP and gold for giving up the other slots.",
+          "Unlocked by killing Yrsainir. Since 0.321.0 it gives +50 Drop Quantity and +50% XP and gold for giving up the other slots.",
           "Game data",
           ["FAQ", "Patch"]
         ],
@@ -161,7 +161,7 @@
         ],
         [
           "The Crab fight",
-          "Back away from the chomp, then return. Keep walking to break the root. Below 30% HP its armour and shield counterattacks are gone.",
+          "Back away from the chomp, then return. Keep walking to break the root. Below 30% HP its armor and shield counterattacks are gone.",
           "Guide",
           ["DBBoss"]
         ],
@@ -190,7 +190,7 @@
           ["BossG", "DBBoss"]
         ],
         [
-          "Hard mode",
+          "Hard",
           "The Obelisk's Hard difficulty multiplies base material drops by 16. Act 1 Hard has no listed requirement beyond reaching the Act 3 Obelisk.",
           "Game data",
           ["DBObelisk"]
@@ -209,7 +209,7 @@
         ],
         [
           "Rogue",
-          "Good late game. No bonus EXP nodes, so slower to level, but more Drop Quantity than a Warrior.",
+          "Good late game. No Bonus XP nodes, so slower to level, but more Drop Quantity than a Warrior.",
           "Farmer, woodcutter",
           "Tight maps with 1–2 platforms"
         ],
@@ -238,8 +238,8 @@
         ["Maevath", "Act 2 final boss, Draugr zone", "50M", "1,900"],
         ["Zhai Halud's Gate", "Act 3", "400M", "5,000"],
         ["Choissiadyr", "Act 3, second boss", "3.15B", "5,000"],
-        ["Hard Act 1 bosses", "Monsters there have 3M HP and 1,400 attack", "100M", "2,000"],
-        ["Hard Act 2 bosses", "Monsters there have 25M HP and 3,000 attack", "1.25B", "4,500"],
+        ["Act 1 Hard bosses", "Monsters there have 3M HP and 1,400 attack", "100M", "2,000"],
+        ["Act 2 Hard bosses", "Monsters there have 25M HP and 3,000 attack", "1.25B", "4,500"],
         [
           "Nightmare",
           "Monsters only so far",

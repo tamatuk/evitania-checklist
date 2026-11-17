@@ -16,7 +16,7 @@
   {
     "id": "boss-keys",
     "when": "Any",
-    "task": "Spend boss keys (30 cap, +5 for each Engineer Keyring tier, up to 45)",
+    "task": "Spend boss keys (30 cap, +5 for each Engineer Keyring version, up to 45)",
     "why": "Boss cards, pets and Enhance stones",
     "source": ["Treyex", "DBTips", "Wiki"]
   },
@@ -94,7 +94,7 @@
     "id": "event-dungeons",
     "when": "Level 50+",
     "task": "Run the event dungeons while an event is on",
-    "why": "Trinkets and event rewards. Tiers are gated by attack (top tier 10M). Dungeon keys stack to 20, so a missed day is not lost",
+    "why": "Trinkets and event rewards. Dungeon difficulties are gated by attack (highest difficulty 10M). Dungeon keys stack to 20, so a missed day is not lost",
     "source": ["Patch", "SteamNews"]
   },
   {

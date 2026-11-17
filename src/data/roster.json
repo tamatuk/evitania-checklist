@@ -13,7 +13,7 @@
   },
   {
     "topic": "Pusher",
-    "rule": "Your main. The guide order as written: damage first, Magicfind and most Bonus XP late. Around level 70 the guide starts adding Drop Quantity and EXP.",
+    "rule": "Your main. The guide order as written: damage first, Magicfind and most Bonus XP late. Around level 70 the guide starts adding Drop Quantity and XP.",
     "basis": "Guide",
     "source": ["PiwuWar"]
   },
@@ -49,13 +49,13 @@
   },
   {
     "topic": "Kill cap",
-    "rule": "Offline, a character can only count so many kills an hour (the kill cap). Faster monster respawn raises it; past it, more damage does nothing offline.",
+    "rule": "Offline, a character can only count so many kills an hour (the kill cap). Shorter monster respawn time raises it; past it, more damage does nothing offline.",
     "basis": "Guide",
     "source": ["OfflineG"]
   },
   {
     "topic": "Offline income",
-    "rule": "Raise offline gains %, then damage until you reach the kill cap, then raise the cap with mob spawn time reduction, then damage again.",
+    "rule": "Raise offline gains %, then damage until you reach the kill cap, then raise the cap with monster respawn time reduction, then damage again.",
     "basis": "Guide",
     "source": ["OfflineG"]
   },
@@ -73,7 +73,7 @@
   },
   {
     "topic": "Online or offline",
-    "rule": "Offline income ignores class skills and penalises the Warrior for move speed, so Rogue and Mage make the better parked farmers. Online play wants movement speed and the skills; the Mage's Improved Lightning Orb makes every hit a crit for 20 seconds.",
+    "rule": "Offline income ignores class skills and penalises the Warrior for movement speed, so Rogue and Mage make the better parked farmers. Online play wants movement speed and the skills; the Mage's Improved Lightning Orb makes every hit a crit for 20 seconds.",
     "basis": "Guide",
     "source": ["PiwuMage", "Jivchik", "DBClass"]
   },

@@ -32,7 +32,7 @@
       "source": ["JTCurio"]
     },
     {
-      "req": "Active curios at level 50 with their ascension tiers maxed.",
+      "req": "Active curios at level 50 with their ascension levels maxed.",
       "basis": "Estimate",
       "source": ["JTCurio"]
     }
@@ -55,7 +55,12 @@
           "Game data",
           ["JTCurio"]
         ],
-        ["Ascension", "One duplicate raises a curio's tier by one, adding passives.", "Game data", ["JTCurio"]],
+        [
+          "Ascension",
+          "One duplicate raises a curio's ascension level by one, adding passives.",
+          "Game data",
+          ["JTCurio"]
+        ],
         [
           "Wish",
           "Since the Harvest Event update (12 November 2026) you can wish for one Legendary curio: if a Legendary drop misses it, the next Legendary is the wished one. Spare Legendaries trade back for rolls, and chests can auto-open until a chosen rarity drops.",
@@ -97,20 +102,20 @@
     },
     {
       "title": "Curio rarities",
-      "cols": ["Rarity", "Coins to max (level 50)", "Drop rate", "Coins per hour and max tier"],
+      "cols": ["Rarity", "Coins to max (level 50)", "Drop rate", "Coins per hour and max ascension level"],
       "rows": [
-        ["White", 49200, "45%", "2–5 an hour; tier 3"],
-        ["Green", 53440, "34%", "7–10 an hour; tier 3"],
-        ["Blue", 57680, "19%", "13–19 an hour; tier 6"],
-        ["Purple", 68420, "1.6%", "20–29 an hour; tier 9"],
-        ["Gold", 77400, "0.4%", "30–39 an hour; tier 9"]
+        ["White", 49200, "45%", "2–5 an hour; ascension level 3"],
+        ["Green", 53440, "34%", "7–10 an hour; ascension level 3"],
+        ["Blue", 57680, "19%", "13–19 an hour; ascension level 6"],
+        ["Purple", 68420, "1.6%", "20–29 an hour; ascension level 9"],
+        ["Gold (Legendary)", 77400, "0.4%", "30–39 an hour; ascension level 9"]
       ]
     },
     {
       "title": "Curio types",
-      "cols": ["Type", "Curios, lowest to highest rarity", "Best for", "Tier bonuses (1–3, 4–6, 7–9)"],
+      "cols": ["Type", "Curios, lowest to highest rarity", "Best for", "Ascension bonuses (1–3, 4–6, 7–9)"],
       "rows": [
-        ["EXP", "Ever Eclipsed Sun (gold only)", "Everything", "Mining EXP, woodcutting EXP, combat EXP"],
+        ["XP", "Ever Eclipsed Sun (gold only)", "Everything", "Mining XP, woodcutting XP, combat XP"],
         [
           "Crit",
           "Pandemonium Egg, Shattered Vow",
@@ -121,7 +126,7 @@
           "Gold",
           "Century Tome, Crystal Cranium, Necromancer's Hand",
           "Online item grinding",
-          "Drop Quantity, mob spawn time, move speed"
+          "Drop Quantity, monster respawn time, movement speed"
         ],
         [
           "Defence",
@@ -145,25 +150,25 @@
     },
     {
       "title": "Curio stats by rarity",
-      "cols": ["Rarity", "Attack, level 1–50", "Second stat, level 1–50", "Coins per hour at tier 0"],
+      "cols": ["Rarity", "Attack, level 1–50", "Second stat, level 1–50", "Coins per hour at ascension level 0"],
       "rows": [
         ["White", "x1.06–1.12", "Mining or woodcutting power x1.2–1.8", 2],
         ["Green", "x1.075–1.15", "Power x1.24–1.96; physical defence x1.15–1.45", 7],
         ["Blue", "x1.1–1.2", "Power x1.3–2.2; defence x1.19–1.57; gold 19–57%", 13],
         ["Purple", "x1.125–1.25", "Power x1.4–2.6; defence x1.24–1.72; gold or crit damage 24–72%", 20],
-        ["Gold", "x1.15–1.3", "Power x1.5–3.0; defence x1.3–1.9; gold or crit damage 30–90%; all EXP 50–200%", 30]
+        ["Gold", "x1.15–1.3", "Power x1.5–3.0; defence x1.3–1.9; gold or crit damage 30–90%; All EXP 50–200%", 30]
       ]
     },
     {
       "title": "Curio ascension bonuses",
-      "cols": ["Type", "Tiers 1–3, each", "Tiers 4–6, each", "Tiers 7–9, each"],
+      "cols": ["Type", "Ascension levels 1–3, each", "Ascension levels 4–6, each", "Ascension levels 7–9, each"],
       "rows": [
         ["Crit", "+1 portal kill", "+2% attack speed", "+3% crit chance"],
-        ["Gold", "+5 Drop Quantity", "-1% mob spawn time", "+3% move speed"],
+        ["Gold", "+5 Drop Quantity", "-1% monster respawn time", "+3% movement speed"],
         ["Defence", "+1% offline gains", "+1% combat offline gains", "x0.03 magic defence"],
         ["Mining, woodcutting", "+1% offline gains for that skill", "+5 multiloot", "+3% speed"],
-        ["EXP", "+10% mining EXP", "+10% woodcutting EXP", "+10% combat EXP"],
-        ["Every curio", "+1 coin an hour per tier", "", ""]
+        ["XP", "+10% mining XP", "+10% woodcutting XP", "+10% combat XP"],
+        ["Every curio", "+1 coin an hour per ascension level", "", ""]
       ]
     }
   ]
