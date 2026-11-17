@@ -49,7 +49,7 @@
     {
       "req": "Power Training, Strength Training, Dexterity Training or Intelligence Training (whichever is your class's), More Damage Training, Dice Training and Damage Abuse Training at 57 (max): all three More Hunting upgrades at 5 (max) and the Act 1 Hard card at 4 stars (max).",
       "basis": "Game data",
-      "source": ["Wiki", "PiwuGems"]
+      "source": ["Wiki", "DBHG"]
     }
   ],
   "tables": [
@@ -73,7 +73,7 @@
           "Cap",
           "Every training: 30 (base) + up to 15 from Engineer More Hunting (5 each in Blueprint, Runic Blueprint and Sun Scroll) + 4–12 from the Act 1 Hard card (0–4 stars) = 57 max. Speed Training (attack) stays at 30.",
           "Game data",
-          ["Wiki", "PiwuGems"]
+          ["Wiki", "DBHG"]
         ],
         [
           "Discount math",

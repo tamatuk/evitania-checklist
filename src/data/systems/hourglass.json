@@ -24,7 +24,7 @@
     {
       "req": "Hourglass level 5: Rifts open.",
       "basis": "Guide",
-      "source": ["PiwuGems"]
+      "source": ["DBHG"]
     },
     {
       "req": "Hourglass level 7: Echo, Dragons, Rebirth and Secret Knowledge open, and with them Restoration of Eternity (three more tabs, 15 new generators, new rifts and gem-shop items; added in 0.320.0).",
@@ -88,7 +88,7 @@
           "Guide",
           ["ImeniaHG", "PiwuHG"]
         ],
-        ["Rifts", "Once open, Rifts outpace engine gains.", "Guide", ["PiwuGems"]],
+        ["Rifts", "Once open, Rifts outpace engine gains.", "Guide", ["DBHG"]],
         [
           "Gems",
           "Generator Speed first; until Hourglass level 3 it is the only gem upgrade that does anything. Then Awakening Amplifier, Timeline Engine Speed, Extra Rift Worker, following the Gems tiers.",

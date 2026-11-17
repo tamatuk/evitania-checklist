@@ -1,207 +1,209 @@
 {
   "HyZerg": {
-    "name": "Hunter and Sacrifice min/max optimizations (HyZerg)",
+    "name": "Hunter and Sacrifice min/max optimizations (HyZerg) (2026-07-04, follow-up 2026-09-09)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1522871447511367820",
-    "asof": "2026-07-04, follow-up 2026-09-09"
+    "date": "2026-09-09"
   },
   "Sakori": {
-    "name": "The Hunter (Sakori)",
+    "name": "The Hunter (Sakori) (2025-04-20, cost-divisor note 2025-09-25)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1363612363240243260",
-    "asof": "2025-04-20, cost-divisor note 2025-09-25"
+    "date": "2025-09-25"
   },
   "PiwuGems": {
     "name": "Gem Guide (Piwu)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1534937283369631805",
-    "asof": "2026-08-07"
+    "date": "2026-08-07"
   },
   "PiwuPets": {
     "name": "Which pet stats to use? (Piwu)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1534940601563480144",
-    "asof": "2026-08-06"
+    "date": "2026-08-06"
   },
   "JTPets": {
-    "name": "Pet system (Johnny Treeman)",
+    "name": "Pet system (Johnny Treeman) (2026-05-28, posts to 2026-08-12)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1398277796748591124",
-    "asof": "2026-05-28, posts to 2026-08-12 read 2026-11-16"
+    "read": "2026-11-16",
+    "date": "2026-08-12"
   },
   "JTGather": {
     "name": "Woodcutting/Mining Guide (Johnny Treeman)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1498719262767054989",
-    "asof": "2026-06-03"
+    "date": "2026-06-03"
   },
   "JTEng": {
     "name": "Engineer (Johnny Treeman)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1502056397217726566",
-    "asof": "2026-08-14"
+    "date": "2026-08-14"
   },
   "JTCurio": {
     "name": "Curio System (Johnny Treeman)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1498416634388418750",
-    "asof": "2026-04-27"
+    "date": "2026-04-27"
   },
   "PiwuHG": {
-    "name": "Hourglass of Eternity Progressive Guide (Piwu)",
+    "name": "Hourglass of Eternity Progressive Guide (Piwu) (2026-07-19, Part 2 2026-10-10)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1527644449973207190",
-    "asof": "2026-07-19, Part 2 2026-10-10"
+    "date": "2026-10-10"
   },
   "ImeniaHG": {
-    "name": "Infinite Hourglass Guide, quick and dirty (Imenia)",
+    "name": "Infinite Hourglass Guide, quick and dirty (Imenia) (2026-07-16, posts to 2026-07-26)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1527050519380496557",
-    "asof": "2026-07-16, posts to 2026-07-26 read 2026-11-16"
+    "read": "2026-11-16",
+    "date": "2026-07-26"
   },
   "PiwuWar": {
     "name": "Warrior Talent Guide (Piwu)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1534941354059370777",
-    "asof": "2026-08-06"
+    "date": "2026-08-06"
   },
   "PiwuRogue": {
     "name": "Rogue Talent Guide (Piwu)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1534942788976906582",
-    "asof": "2026-08-06"
+    "date": "2026-08-06"
   },
   "PiwuMage": {
     "name": "Mage Talent Guide (Piwu)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1534945481988243507",
-    "asof": "2026-08-06"
+    "date": "2026-08-06"
   },
   "PiwuWeapons": {
     "name": "Warrior Weapons (Piwu)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1534944843963437087",
-    "asof": "2026-08-06"
+    "date": "2026-08-06"
   },
   "Miothan": {
     "name": "Runewords and their drop locations (Miothan)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1499428484605280339",
-    "asof": "2026-08-06"
+    "date": "2026-08-06"
   },
   "MTEnh": {
     "name": "Guide to enhancing (MountTai)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1491909266984931469",
-    "asof": "2026-04-13"
+    "date": "2026-04-13"
   },
   "MTFarm": {
-    "name": "event farming locations (MountTai)",
+    "name": "Event farming locations (MountTai)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1491288219654819991",
-    "asof": "2026-04-08"
+    "date": "2026-04-08"
   },
   "Dawnk": {
     "name": "Where's That Effect? A Guide! (Dawnk)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1496219471755481319",
-    "asof": "2026-05-08"
+    "date": "2026-05-08"
   },
   "FAQ": {
-    "name": "Frequently Asked Questions (Johnny Treeman)",
+    "name": "Frequently Asked Questions (Johnny Treeman) (2026-10-22, reply 2026-11-08)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1501263618346455101",
-    "asof": "2026-10-22, reply 2026-11-08"
+    "date": "2026-11-08"
   },
   "DevFAQ": {
     "name": "#faq channel (neype, developer)",
     "where": "Discord #faq",
     "link": "https://discord.com/channels/1219291890940383334/1254585211119734947",
-    "asof": "2026-04-09"
+    "date": "2026-04-09"
   },
   "Guilds": {
     "name": "Guilds (Piwu)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1546158799444775082",
-    "asof": "2026-10-25"
+    "date": "2026-10-25"
   },
   "Presets": {
     "name": "Presets Quick Guide (Tidds)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1563808285042417737",
-    "asof": "2026-10"
+    "date": "2026-10"
   },
   "BlueMoon": {
     "name": "Currently my best setting in NIGHTMARE: act2 (BlueMoon)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1507364406185693184",
-    "asof": "2026-05"
+    "date": "2026-05"
   },
   "Boushoku": {
     "name": "Rune & Card Drop Chance Guide (Boushoku)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1529217710611894393",
-    "asof": "2026-07"
+    "date": "2026-07"
   },
   "Chat": {
-    "name": "General chat message (maeqlin)",
-    "where": "Discord chat",
+    "name": "General chat message by maeqlin, 2026-05-15",
+    "where": "Discord #general",
     "link": "https://discord.com/channels/1219291890940383334",
-    "asof": "2026-05-15"
+    "date": "2026-05-15"
   },
   "MTAct2": {
     "name": "Act 2 progression (MountTai)",
     "where": "Steam guide",
     "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=3706449652",
-    "asof": "2026-04-16"
+    "date": "2026-04-16"
   },
   "ZZ": {
-    "name": "Evitania Online: Idle RPG spreadsheet, Upgrades tab (Zerozapper)",
+    "name": "Evitania Online: Idle RPG spreadsheet, Upgrades, Bonfire, Runes, Curio and Cards tabs (Zerozapper)",
     "where": "Google Sheets",
     "link": "https://docs.google.com/spreadsheets/d/1wOkU-QaqLy96HwtCWKiZt251_KRdu2qbVIYfEZjS4Q4/edit",
-    "asof": "read 2026-11-14"
+    "read": "2026-11-14"
   },
   "DBHunter": {
     "name": "Hunter (EvitaniaOnlineDB)",
     "where": "Fan wiki",
     "link": "https://evitaniaonlinedb.com/database/hunter",
-    "asof": "read 2026-11-14"
+    "read": "2026-11-14"
   },
   "DBBonfire": {
     "name": "Bonfire (EvitaniaOnlineDB)",
     "where": "Fan wiki",
     "link": "https://evitaniaonlinedb.com/database/bonfire",
-    "asof": "read 2026-11-14"
+    "read": "2026-11-14"
   },
   "DBTips": {
     "name": "Guides & Tips (EvitaniaOnlineDB)",
     "where": "Fan wiki",
     "link": "https://evitaniaonlinedb.com/database/beginner-guide",
-    "asof": "read 2026-11-14"
+    "read": "2026-11-14"
   },
   "DBPets": {
     "name": "Pets database and Pet Guide (EvitaniaOnlineDB)",
     "where": "Fan wiki",
     "link": "https://evitaniaonlinedb.com/database/pets",
-    "asof": "read 2026-11-13"
+    "read": "2026-11-13"
   },
   "DBHG": {
     "name": "Hourglasses Guide (EvitaniaOnlineDB)",
     "where": "Fan wiki",
     "link": "https://evitaniaonlinedb.com/guide/hourglasses-guide",
-    "asof": "read 2026-11-15"
+    "read": "2026-11-15"
   },
   "GFEng": {
     "name": "Act 1 Engineer Priority Guide (Games Finder)",
     "where": "Web guide",
     "link": "https://gameslikefinder.com/article/evitania-online-engineer-guide/",
-    "asof": "2026-10"
+    "date": "2026-10"
   },
   "GFGather": {
     "name": "Woodcutting & Mining Talents Guide (Games Finder)",
     "where": "Web guide",
     "link": "https://gameslikefinder.com/article/evitania-online-resource-guide/",
-    "asof": "2026-10"
+    "date": "2026-10"
   },
   "Wiki": {
     "name": "Evitania Online wiki data files (evitania-online.com, github.com/badbotexe/evi)",
@@ -214,234 +216,228 @@
     "name": "Evitania Online news and update notes (Steam store)",
     "where": "Steam news",
     "link": "https://store.steampowered.com/news/app/4119420",
-    "asof": "read 2026-11-16"
+    "read": "2026-11-16"
   },
   "Patch": {
     "name": "#patch-notes 0.319.4 to 0.323.2 (neype, developer)",
     "where": "Discord #patch-notes",
     "link": "https://discord.com/channels/1219291890940383334/1255565563284160556",
-    "asof": "2026-11-16"
+    "date": "2026-11-16"
   },
   "Jivchik": {
-    "name": "Гайды, Russian guide collection (Jivchik)",
+    "name": "Gaidy (Guides), Russian guide collection (Jivchik)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1551162929209020517",
-    "asof": "2026-11-02"
+    "date": "2026-11-02"
   },
   "BestLuminor": {
     "name": "The BEST Luminors You Can Get! (Soso)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1562953981779517490",
-    "asof": "2026-10-23"
+    "date": "2026-10-23"
   },
   "LuminorStats": {
-    "name": "Luminor Base/Max stats (Stratasys)",
+    "name": "Luminor Base/Max stats (Stratasys) (2026-10-22 to 2026-11-14)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1562620833313198081",
-    "asof": "2026-10-22 to 2026-11-14"
+    "date": "2026-11-14"
   },
   "TrinketSub": {
     "name": "Trinkets sub stats (AlexG)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1566904359198134282",
-    "asof": "2026-11-03"
+    "date": "2026-11-03"
   },
   "ZZTabs": {
     "name": "Evitania Online: Idle RPG spreadsheet, Bosses, Gear and Fresh Acc tabs (Zerozapper)",
     "where": "Google Sheets",
     "link": "https://docs.google.com/spreadsheets/d/1wOkU-QaqLy96HwtCWKiZt251_KRdu2qbVIYfEZjS4Q4/edit",
-    "asof": "read 2026-11-14"
+    "read": "2026-11-14"
   },
   "Dawnk3": {
     "name": "The Three Musketeers Method (Dawnk)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1495213867649732669",
-    "asof": "2026-04-19"
+    "date": "2026-04-19"
   },
   "MTRogue": {
     "name": "Rogue skill tree (MountTai)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1492261334254092308",
-    "asof": "2026-04-10"
+    "date": "2026-04-10"
   },
   "PetLvl": {
     "name": "Pet Leveling (Imenia)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1365508926807998555",
-    "asof": "2026-02-02"
+    "date": "2026-02-02"
   },
   "JotunnG": {
     "name": "How to kill Jotunn (DiskEntrega)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1442165195974905876",
-    "asof": "2025-11-23"
+    "date": "2025-11-23"
   },
   "EngCalc": {
     "name": "Engineering Everything in one place: cost tables and efficiency calculator (Toxic)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1500315625287848007",
-    "asof": "2026-05-03"
+    "date": "2026-05-03"
   },
   "SteamDQ": {
     "name": "'Drop Quantity' stat and intention (Steam discussion, with developer neype and MountTai)",
     "where": "Steam discussion",
     "link": "https://steamcommunity.com/app/4119420/discussions/0/800092562772768743/",
-    "asof": "read 2026-11-15"
+    "read": "2026-11-15"
   },
   "GFTal": {
     "name": "Character Talent Builds (Games Finder)",
     "where": "Web guide",
     "link": "https://gameslikefinder.com/article/evitania-online-talent-builds/",
-    "asof": "2026-10-20"
+    "date": "2026-10-20"
   },
   "DBClass": {
     "name": "Classes & talents (EvitaniaOnlineDB)",
     "where": "Fan wiki",
     "link": "https://evitaniaonlinedb.com/database/classes-talents",
-    "asof": "read 2026-11-15"
+    "read": "2026-11-15"
   },
   "OfflineG": {
     "name": "OFFLINE GAINS thread (reply by Johnny Treeman)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1502938805668151376",
-    "asof": "2026-05-10"
+    "date": "2026-05-10"
   },
   "Treyex": {
     "name": "Beginner Guide (Treyex Gaming)",
     "where": "Web guide",
     "link": "https://www.treyexgaming.com/evitania-online-beginner-guide/",
-    "asof": "2026-04-11"
+    "date": "2026-04-11"
   },
   "BossG": {
     "name": "Boss threads: Maevath, Zhai Halud's Gate, Yrsainir",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334",
-    "asof": "read 2026-11-15"
+    "read": "2026-11-15"
   },
   "HeatG": {
     "name": "Nice Heat, Fire Elementals and Bonfire tutorial threads",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334",
-    "asof": "read 2026-11-15"
+    "read": "2026-11-15"
   },
   "CurioG": {
     "name": "Curio list, coin cap and Fate Spiral threads",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334",
-    "asof": "read 2026-11-15"
+    "read": "2026-11-15"
   },
   "RuneG": {
     "name": "Rune merging and runeword effect threads",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334",
-    "asof": "read 2026-11-15"
+    "read": "2026-11-15"
   },
   "HGTal": {
     "name": "Hourglass Talents Guide (Rhalf - Getchmen)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1528787091226493059",
-    "asof": "2026-11-16"
+    "date": "2026-11-16"
   },
   "Dragons": {
-    "name": "Hourglass Dragons Planer (plsd0ntcry [AKATS] -Wulf-)",
+    "name": "Hourglass Dragons Planer (plsd0ntcry [AKATS] -Wulf-) (2026-10-26 to 2026-11-03)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1563997709222940883",
-    "asof": "2026-10-26 to 2026-11-03"
+    "date": "2026-11-03"
   },
   "TotalDQ": {
     "name": "Total Obtainable Drop Quantity (reply by t3hj00)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1494598244817305810",
-    "asof": "2026-10-14"
+    "date": "2026-10-14"
   },
   "HGCalc": {
     "name": "Hourglass Calculators/Time Echo Costs (zoofy, data by Leanea)",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334/1565804884685492425",
-    "asof": "2026-11-05"
+    "date": "2026-11-05"
   },
   "AllPets": {
     "name": "All Pets thread",
     "where": "Discord #guides",
     "link": "https://discord.com/channels/1219291890940383334",
-    "asof": "read 2026-11-15"
+    "read": "2026-11-15"
   },
   "DBBoss": {
     "name": "Boss Mechanics & Strategy Guide (EvitaniaOnlineDB)",
     "where": "Fan wiki",
     "link": "https://evitaniaonlinedb.com/guide/boss-mechanics-guide",
-    "asof": "read 2026-11-15"
-  },
-  "DBMon": {
-    "name": "Monsters database (EvitaniaOnlineDB)",
-    "where": "Fan wiki",
-    "link": "https://evitaniaonlinedb.com/database/monsters",
-    "asof": "read 2026-11-15"
+    "read": "2026-11-15"
   },
   "DBObelisk": {
     "name": "Obelisk (EvitaniaOnlineDB)",
     "where": "Fan wiki",
     "link": "https://evitaniaonlinedb.com/database/obelisk",
-    "asof": "read 2026-11-15"
+    "read": "2026-11-15"
   },
   "DBCards": {
     "name": "Cards database (EvitaniaOnlineDB)",
     "where": "Fan wiki",
     "link": "https://evitaniaonlinedb.com/database/cards",
-    "asof": "read 2026-11-15"
+    "read": "2026-11-15"
   },
   "DBPetG": {
     "name": "Pet Guide (EvitaniaOnlineDB)",
     "where": "Fan wiki",
     "link": "https://evitaniaonlinedb.com/guide/pet-guide",
-    "asof": "read 2026-11-15"
-  },
-  "DBSmelt": {
-    "name": "Smeltery (EvitaniaOnlineDB)",
-    "where": "Fan wiki",
-    "link": "https://evitaniaonlinedb.com/database/smeltery",
-    "asof": "read 2026-11-15"
-  },
-  "TreyexPets": {
-    "name": "Pets Guide (Treyex Gaming)",
-    "where": "Web guide",
-    "link": "https://www.treyexgaming.com/evitania-online-pets-guide/",
-    "asof": "2026-04-11"
+    "read": "2026-11-15"
   },
   "SteamTrinkets": {
     "name": "Best trinket upgrades (Steam discussion)",
     "where": "Steam discussion",
     "link": "https://steamcommunity.com/app/4119420/discussions/0/564798191049084546/",
-    "asof": "read 2026-11-16"
+    "read": "2026-11-16"
   },
   "SteamTrinketsEnh": {
     "name": "Can someone explain Trinket Enhancing? (Steam discussion)",
     "where": "Steam discussion",
     "link": "https://steamcommunity.com/app/4119420/discussions/0/574930637987796482/",
-    "asof": "read 2026-11-16"
+    "read": "2026-11-16"
   },
   "SteamJotunBeam": {
     "name": "jotun (Steam discussion)",
     "where": "Steam discussion",
     "link": "https://steamcommunity.com/app/4119420/discussions/0/564784556120778104/",
-    "asof": "read 2026-11-16"
+    "read": "2026-11-16"
   },
   "SteamJotunRNG": {
     "name": "Boss fights - pure RNG (Jotun...) (Steam discussion)",
     "where": "Steam discussion",
     "link": "https://steamcommunity.com/app/4119420/discussions/0/809100396253524956/",
-    "asof": "read 2026-11-16"
+    "read": "2026-11-16"
   },
   "DBGear": {
     "name": "Gear database (EvitaniaOnlineDB)",
     "where": "Fan wiki",
     "link": "https://evitaniaonlinedb.com/database/gear",
-    "asof": "read 2026-11-16"
+    "read": "2026-11-16"
   },
   "SteamJotunnDev": {
     "name": "Jotunn (Steam discussion, with developer neype)",
     "where": "Steam discussion",
     "link": "https://steamcommunity.com/app/4119420/discussions/0/800094052013884327/",
-    "asof": "read 2026-11-16"
+    "read": "2026-11-16"
+  },
+  "SteamHarvest": {
+    "name": "Harvest Event",
+    "where": "Steam announcement",
+    "link": "https://steamcommunity.com/games/4119420/announcements/detail/707788525180813426",
+    "date": "2026-11-12"
+  },
+  "SteamHalloween": {
+    "name": "Halloween Update",
+    "where": "Steam announcement",
+    "link": "https://steamcommunity.com/games/4119420/announcements/detail/697653428543818773",
+    "date": "2026-10-21"
   }
 }

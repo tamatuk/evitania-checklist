@@ -86,7 +86,7 @@
   {
     "topic": "Talent points",
     "rule": "A character has (level − 10) class talent points.",
-    "basis": "Player report",
+    "basis": "Estimate",
     "source": []
   },
   {

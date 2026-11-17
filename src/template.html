@@ -212,7 +212,7 @@ function saveSort(){try{localStorage.setItem('evi-sort',sortBy)}catch(e){}}
 function route(){const h=(location.hash||'').replace('#','');const s=D.systems.find(s=>slug(s.name)===h);if(s){open.add(s.name);return 'checklist'}return VIEWS.some(v=>v[0]===h)?h:'checklist'}
 function pill(s){return '<span class="pill diff p-'+s.k+'" title="'+esc(s.l)+'" aria-label="'+esc(s.l)+'">'+esc(s.t)+'</span>'}
 function sourceTitle(s){
-  throw new Error('NotImplementedError: name — where, dated date[, read read]; preserve month precision') }
+  return s.name+' — '+s.where+', dated '+(s.date||'unknown')+(s.read?', read '+s.read:'') }
 function srcLinks(str){return String(str).split('; ').map(n=>{const s=D.sources.find(x=>x.name===n);return s?'<a href="'+esc(s.link)+'" title="'+esc(sourceTitle(s))+'">'+esc(n)+'</a>':esc(n)}).join('; ')}
 
 function vChecklist(){
@@ -356,7 +356,7 @@ function vIcons(){
 function vSources(){
   let h=tableHTML({title:'About this checklist',cols:['Topic','Note'],rows:D.about});
   h+='<div class="sect"><h3>Sources</h3><div class="tbl"><table><thead><tr><th>Source</th><th>Where</th><th>Dated</th><th>Read</th></tr></thead><tbody>';
-  for(const s of D.sources)h+='<tr><td><a href="'+esc(s.link)+'">'+esc(s.name)+'</a></td><td>'+esc(s.where)+'</td><td>'+esc(s.date)+'</td><td>'+esc(s.read||'')+'</td></tr>';
+  for(const s of D.sources)h+='<tr><td><a href="'+esc(s.link)+'">'+esc(s.name)+'</a></td><td>'+esc(s.where)+'</td><td>'+esc(s.date||'unknown')+'</td><td>'+esc(s.read||'')+'</td></tr>';
   return h+'</tbody></table></div></div>' }
 
 function render(){const r=route();

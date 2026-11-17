@@ -3,6 +3,8 @@
 Run: python3 src/build.py   (needs Pillow)
 """
 import sys, json, io, os
+import datetime
+import re
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
 
@@ -63,14 +65,29 @@ def check_stages(st):
         if new not in st["stages"]: fail("stages.json: alias %r maps to %r, which is not a stage" % (old, new))
 
 def check_sources(sources):
-    """Fail naming the source key for a missing/invalid date (YYYY-MM-DD or YYYY-MM),
-    invalid optional read (YYYY-MM-DD), or a legacy asof field; dates must be real calendar dates."""
-    raise NotImplementedError("validate sources.json date/read fields")
+    """Validate calendar dates, naming the source key on failure; undated sources need a read date."""
+    for key, source in sources.items():
+        if "asof" in source or not ("date" in source or "read" in source):
+            fail("sources.json: %s needs date or read, without legacy date fields" % key)
+        for field in ("date", "read"):
+            if field not in source: continue
+            value = source[field]
+            pattern = r"[0-9]{4}-[0-9]{2}(?:-[0-9]{2})?" if field == "date" else r"[0-9]{4}-[0-9]{2}-[0-9]{2}"
+            try:
+                if not isinstance(value, str) or not re.fullmatch(pattern, value): raise ValueError
+                datetime.date.fromisoformat(value + "-01" if len(value) == 7 else value)
+            except ValueError:
+                fail("sources.json: %s has invalid %s %r" % (key, field, value))
 
 def source_freshness(sources):
     """Text for {sources}: earliest to latest source date and latest optional read date.
     Preserve month precision; use only source metadata, never the build clock."""
-    raise NotImplementedError("derive source date range and latest read")
+    dates = sorted(s["date"] for s in sources.values() if "date" in s)
+    reads = sorted(s["read"] for s in sources.values() if "read" in s)
+    text = "Sources dated %s to %s" % (dates[0], dates[-1]) if dates else "Source publication dates unknown"
+    if reads: text += ", read up to " + reads[-1]
+    if any("date" not in s for s in sources.values()): text += "; undated sources excluded from the date range"
+    return text
 
 SRC = load("sources.json")
 check_sources(SRC)

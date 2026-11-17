@@ -132,6 +132,15 @@ Things to know when editing `src/data/`:
 - Every tier and rule carries a basis (`Guide`, `Game data`, `Estimate`,
   `Player report`) and its sources: a list of `sources.json` keys, which may be
   empty. A table's `Source` column holds the same kind of list.
+- **Source dates** use `date` (YYYY-MM-DD or YYYY-MM) for the source's latest
+  publication or update, and optional `read` (YYYY-MM-DD) only when an access
+  date was recorded. Earlier dates and sub-notes belong in `name`. When only
+  an access date is known, omit `date`; About shows “unknown” rather than
+  inventing a publication date. At least one date field is required.
+  Freshness uses the publication-date range and latest recorded access date,
+  excluding undated sources. Rebuilding unchanged data gives the same page.
+  The build rejects malformed dates, impossible calendar dates and legacy
+  source-date fields, naming the source key.
 - **The build checks the data** and stops naming the file and what is wrong: a
   source key missing from `sources.json`, a `reached` text missing for a stage,
   an alias that is still a stage name or names no stage, an `expect` row without
