@@ -76,37 +76,37 @@
         ["Skip", "See the Roster tab's 'Warrior' for the late nodes to skip.", "Guide", ["PiwuWar"]],
         [
           "Boss readiness check",
-          "Before each Act 2 boss, check kills per hour on your main in the boss's zone. Aim for: Yeti zone about 500 (Ice Mammoth), Troll zone about 1,000 (Jotunn), Draugr zone over 1,000 and about 1,300 physical defence (Maevath). If you are short, raise Hunter trainings and sacrifices first.",
+          "Before each Act 2 boss, check kills per hour on your main in the boss's zone. Aim for: Yeti zone about 500 (Ice Mammoth), Troll zone about 1,000 (Jötunn), Draugr zone over 1,000 and about 1,300 physical defence (Maevath). If you are short, raise Hunter trainings and sacrifices first.",
           "Guide",
           ["MTAct2"]
         ],
         [
-          "Jotunn: adds",
+          "Jötunn: adds",
           "Troll map, the red portal. After the first hand falls he summons monsters that explode for over 3,000 damage, possibly an instant kill. Kill each one before anything else.",
           "Guide",
           ["DBBoss", "SteamJotunBeam", "MTAct2", "FAQ"]
         ],
         [
-          "Jotunn: eye beam",
+          "Jötunn: eye beam",
           "When the eyes glow, run from under the hand to the far side of the map, starting near the screen edge. You should take at most one tick; most characters survive 4–5 full beams.",
           "Guide",
           ["DBBoss", "SteamJotunBeam"]
         ],
         [
-          "Jotunn: hands",
+          "Jötunn: hands",
           "Stand under a hand to bait a punch, step out as it lands and hit the hand. Go behind the hand for the side slap and leave the middle for the ice breath. Once both hands are gone his HP drains by itself.",
           "Guide",
           ["JotunnG", "SteamJotunnDev"]
         ],
         [
-          "Jotunn: length",
+          "Jötunn: length",
           "Hand drops are random, so the fight is long and mostly waiting: about 10 minutes, with 12 beams and over 20 slaps. A Mage's lightning can hit the body instead of the hand.",
           "Guide",
           ["SteamJotunRNG", "SteamJotunnDev"]
         ],
         [
           "Mammoth Ring",
-          "Disputed. One player in the Discord guide reports the Mammoth Ring (+100 magic defence) cut Jotunn's eye beam from over 600 a hit to about 100, but a Steam player thinks the beam scales with physical defence, and EvitaniaOnlineDB lists the ring's magic defence as +10. The ring's attack speed and crit damage hold either way.",
+          "Disputed. One player in the Discord guide reports the Mammoth Ring (+100 magic defence) cut Jötunn's eye beam from over 600 a hit to about 100, but a Steam player thinks the beam scales with physical defence, and EvitaniaOnlineDB lists the ring's magic defence as +10. The ring's attack speed and crit damage hold either way.",
           "Player report",
           ["JotunnG", "SteamJotunBeam", "DBGear"]
         ],
@@ -203,7 +203,7 @@
       "rows": [
         [
           "Warrior",
-          "The usual first character and the easiest talent tree. Class resources unlock in the order Warrior, Archer, Mage. The talent tree here has Defence as 7 nodes with 35 ranks; the wiki data has 35 ranks over 6 nodes (unverified until checked in game).",
+          "The usual first character and the easiest talent tree. Class skills unlock in the order Warrior, Rogue, Mage. The talent tree here has Defence as 7 nodes with 35 ranks; the wiki data has 35 ranks over 6 nodes (unverified until checked in game).",
           "First character, main pusher",
           "Flat single-platform maps"
         ],
@@ -234,7 +234,7 @@
           "350"
         ],
         ["Ice Mammoth", "Act 2, Yeti zone", "840K in the spreadsheet, 2.4M on EvitaniaOnlineDB", "700"],
-        ["Jotunn", "Act 2, Troll zone", "4.8M", "900"],
+        ["Jötunn", "Act 2, Troll zone", "4.8M", "900"],
         ["Maevath", "Act 2 final boss, Draugr zone", "50M", "1,900"],
         ["Zhai Halud's Gate", "Act 3", "400M", "5,000"],
         ["Choissiadyr", "Act 3, second boss", "3.15B", "5,000"],
@@ -260,7 +260,7 @@
         ["Act 1, 6", "Wolf", "480", 25],
         ["Act 1, 7", "Gnoll", "1,000", 35],
         ["Act 1, 8", "Animated Armor", "2,000", 100],
-        ["Act 1, 9", "Crab", "4,000", 140],
+        ["Act 1, 9", "Crabs", "4,000", 140],
         ["Act 1, 10", "Bat", "7,000", 85],
         ["Act 1, 11", "Kobold", "9,000", 95],
         ["Act 1, 12", "Weird Book", "12,000", 95],
@@ -271,7 +271,7 @@
         ["Act 2, 3", "Ghost", "140K", 200],
         ["Act 2, 4", "Yeti", "240K", 262],
         ["Act 2, 5", "Ratatoskr", "320K", 277],
-        ["Act 2, 6", "Watch", "382K", 327],
+        ["Act 2, 6", "Watches", "382K", 327],
         ["Act 2, 7", "Snowman", "456K", 365],
         ["Act 2, 8", "Troll", "567K", 438],
         ["Act 2, 9", "Penguin", "624K", 600],

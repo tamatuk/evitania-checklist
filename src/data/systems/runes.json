@@ -105,7 +105,7 @@
         ["WOM, SIRC, APEX, BEB", "Act 2 Thorium ore; Act 3 Sunstone ore", "Crit damage", "5%, 9%, 12%, 15%"],
         ["KI, WER, ANG, YUR", "Act 1 Hard Mode monsters", "Physical defence", "4, 8, 16, 20"],
         ["GOR, BOL, TES, WAR", "Act 3: Sun Boy to Kangaroo; the Go to Act 2 Town quest", "HP", "22, 44, 88, 110"],
-        ["PRE", "Gem shop", "Magic Find, offline, attack", "+2, +2%, +30 each"]
+        ["PRE", "Gem shop", "Drop Quantity, offline, attack", "+2, +2%, +30 each"]
       ]
     }
   ]

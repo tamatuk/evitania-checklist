@@ -17,7 +17,7 @@
       "source": ["Wiki", "MTAct2"]
     },
     {
-      "req": "Thorium pickaxe crafted: 10 Jotunn Eyes, 40 Crystallized Yellow Substance, 30 Thorium Bars and 5 Norse Essence. It is the minimum for Sunstone ore.",
+      "req": "Thorium pickaxe crafted: 10 Jötunn Eye, 40 Crystallized Yellow Substance, 30 Thorium Bars and 5 Norse Essence. It is the minimum for Sunstone ore.",
       "basis": "Game data",
       "source": ["Wiki", "MTAct2", "JTGather"]
     },
@@ -59,7 +59,7 @@
         [
           "Thorium",
           "90 / 80",
-          "40 Crystallized Yellow Substance, 30 Thorium Bars, 5 Norse Essence, plus 10 Mammoth Bitusks (axe) or 10 Jotunn Eyes (pickaxe)",
+          "40 Crystallized Yellow Substance, 30 Thorium Bars, 5 Norse Essence, plus 10 Mammoth Bitusks (axe) or 10 Jötunn Eye (pickaxe)",
           "Act 2 smith. +5 CON (axe), +5 attack (pickaxe)"
         ],
         [

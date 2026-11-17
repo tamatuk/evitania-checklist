@@ -15,11 +15,12 @@
     "act2_hard": "Act 2 Hard card",
     "act1_nightmare": "Act 1 Nightmare card",
     "act2_nightmare": "Act 2 Nightmare card",
-    "crab": "Crab Miner",
-    "watches": "Watch",
+    "crab": "Crab",
+    "watches": "Watches",
     "ciphered_billding": "Ciphered Billding",
     "fifth_stab": "Fifth Slab",
-    "entombed_mask": "Entombed Mask"
+    "entombed_mask": "Entombed Mask",
+    "jotunn": "Jötunn"
   },
   "groups": [
     {
@@ -118,16 +119,13 @@
     "Stumps": "Stump",
     "Plants": "Plant",
     "Wolves": "Wolf",
-    "Crabs": "Crab Miner",
-    "crab miners": "Crab Miner",
+    "Crabs": "Crab",
     "Weird Books": "Weird Book",
     "Slime Cubes": "Slime Cube",
     "Fire Elementals": "Fire Elemental",
-    "Watches": "Watch",
     "Snowmen": "Snowman",
     "Helmets": "Helmet",
     "Mammoth": "Ice Mammoth",
-    "Jötunn": "Jotunn",
     "Red Dragon": "Yrsainir",
     "Wish for Wisdom": "Wish for Wizdom",
     "Owl Wisdom": "Owl Wizdom",
@@ -147,11 +145,15 @@
     "Palm Face": "Palm Face",
     "Enhance stones": "Enhance Stone 1",
     "Smelter Patterns": "Smelting Patterns",
-    "Jotunn's Eye": "Jotunn Eye",
     "Fate Spiral": "Daily Fate Spiral",
     "Premium Runes": "Premium Rune",
     "Engineer Slot Upgrades": "Engineer Slot Upgrade",
-    "Cost Cruncher": "Hunter Cost Cruncher"
+    "Cost Cruncher": "Hunter Cost Cruncher",
+    "Crab card": "Crab",
+    "Watches card": "Watches",
+    "Iron Belt": "Steel Belt",
+    "Jötunn Eye": "Jotunn Eye",
+    "Jötunn Soul": "Jotunn Soul"
   },
   "systemIcon": {
     "Hunter": "Power Training",
