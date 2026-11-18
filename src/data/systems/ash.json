@@ -60,16 +60,11 @@
           "Estimate",
           ["DBBonfire"]
         ],
-        [
-          "Sacrifices",
-          "Ash Discount does not lower sacrifice ash costs; its 10% applies only to tree nodes.",
-          "Player report",
-          ["DiscordAshSacrifice"]
-        ],
+        ["Sacrifices", "Ash Discount does not lower sacrifice ash costs.", "Player report", ["DiscordAshSacrifice"]],
         ["Gems", "The tree gets maxed in time; for gem spending advice, see Gems 'Skip'.", "Guide", ["PiwuGems"]],
         [
           "Ash tree nodes",
-          "The node values below match the wiki data. EvitaniaOnlineDB gives older values (More Ash +15%, Fuel Efficiency −5%, Smeltery Speed +10% / +7%). Column and Row are the node's place in the tree, as the wiki's save keys give it; they give none for Rune Overload and Auto Runes.",
+          "The node values below match the wiki data. EvitaniaOnlineDB gives older values (More Ash +15%, Fuel Efficiency −5%, Smeltery Speed +10% / +7%). Column and Row are the node's place in the tree, counted from 0 as the wiki's save keys give it; they give none for Rune Overload and Auto Runes.",
           "Game data",
           ["Wiki", "DBBonfire"]
         ]
