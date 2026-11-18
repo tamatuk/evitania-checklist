@@ -7,6 +7,11 @@
       "source": ["DBBonfire"]
     },
     {
+      "req": "Fiery Defence at IV (max) for Jötunn.",
+      "basis": "Player report",
+      "source": ["Issue47"]
+    },
+    {
       "req": "First More Ash node at 3 (max).",
       "basis": "Guide",
       "source": ["DBBonfire"]

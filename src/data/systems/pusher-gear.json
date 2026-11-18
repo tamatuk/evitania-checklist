@@ -22,12 +22,17 @@
       "source": ["Wiki", "ZZTabs"]
     },
     {
+      "req": "Steel armor set enhanced to VII or higher for Jötunn.",
+      "basis": "Player report",
+      "source": ["Issue47"]
+    },
+    {
       "req": "Thorium weapon in use: crafted and enhanced to within 1 step of your steel weapon (IX against a steel X), a common threshold that raises weapon attack for every class. For materials and drop rates, see What each set costs.",
       "basis": "Game data",
       "source": ["Wiki", "MTAct2"]
     },
     {
-      "req": "Thorium armor in use: all four pieces crafted and enhanced to III or more, which is where they overtake iron at VII. For materials and drop rates, see What each set costs.",
+      "req": "Thorium armor in use: all four pieces crafted and enhanced to IV or more, which is where they overtake steel at VII. For materials and drop rates, see What each set costs.",
       "basis": "Game data",
       "source": ["Wiki", "MTAct2"]
     },
@@ -209,7 +214,7 @@
       "rows": [
         [
           "When a new material pays off",
-          "Enhancing adds the same flat amount per step on every material, so a fresh item of the next material is weaker than a well-enhanced old one. For thorium weapons, use within 1 step of steel as the common attack threshold: the base attack gains are 39 for longswords, 40 for bows and 57 for staves (75 for a thorium sword against a steel longsword), against 27.5 per enhancement step. Thorium armor equals iron about 5 steps higher, and sunstone armor equals thorium 8 steps higher. That is why the tiers say in use, not crafted.",
+          "Enhancing adds the same flat amount per step on every material, so a fresh item of the next material is weaker than a well-enhanced old one. For thorium weapons, use within 1 step of steel as the common attack threshold: the base attack gains are 39 for longswords, 40 for bows and 57 for staves (75 for a thorium sword against a steel longsword), against 27.5 per enhancement step. Thorium armor equals steel about 3.4 steps higher, and sunstone armor equals thorium 8 steps higher. That is why the tiers say in use, not crafted.",
           "Game data",
           ["Wiki"]
         ],
@@ -233,9 +238,9 @@
         ],
         [
           "Steel armor",
-          "The steel armor set gives 43 defence a piece against iron's 36, +10% combat XP each, and set bonuses since the May 14 update; the set bonus value is not in the wiki data (unverified until checked in game). The guides skip it and go from enhanced iron straight to thorium; craft it if you want the XP or the set bonus.",
+          "The steel armor set gives 43 defence a piece against iron's 36, +10% combat XP each, and set bonuses since the May 14 update; the set bonus value is not in the wiki data (unverified until checked in game). A player reports using steel armor at VII for Jötunn; the guides instead go from enhanced iron straight to thorium.",
           "Estimate",
-          ["Wiki", "MTAct2", "SteamNews"]
+          ["Wiki", "MTAct2", "SteamNews", "Issue47"]
         ],
         [
           "Thorium order",
