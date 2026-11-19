@@ -445,5 +445,23 @@
     "where": "Steam announcement",
     "link": "https://steamcommunity.com/games/4119420/announcements/detail/697653428543818773",
     "date": "2026-10-21"
+  },
+  "Issue49": {
+    "name": "Ash tier order player report",
+    "where": "GitHub issue",
+    "link": "https://github.com/tamatuk/evitania-checklist/issues/49",
+    "read": "2026-11-18"
+  },
+  "DiscordAshDiscount": {
+    "name": "Ash Discount costs about 15,000 ash (player reports)",
+    "where": "Discord #questions",
+    "link": "https://discord.com/channels/1219291890940383334/1265926875847458866/1507611692903829674",
+    "date": "2026-05-23"
+  },
+  "DiscordAshSacrifice": {
+    "name": "Ash Discount does not lower sacrifice costs (player report)",
+    "where": "Discord #general-chat",
+    "link": "https://discord.com/channels/1219291890940383334/1266072505748295713",
+    "date": "2026-04-25"
   }
 }
