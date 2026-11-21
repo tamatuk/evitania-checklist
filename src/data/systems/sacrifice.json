@@ -85,13 +85,13 @@
         ],
         [
           "Hardness after Attack",
-          "Past the Wish for Hardness 14 needed for Draugrs, take Attack Wish to 20 before raising Wish for Hardness to 20.",
+          "Past the Wish for Hardness target for Draugrs, take Attack Wish to 20 before raising Wish for Hardness to 20.",
           "Guide",
-          ["DBBonfire", "DiscordHardness"]
+          ["DBBonfire"]
         ],
         [
           "Hardness reports",
-          "Player reports put the Wish for Hardness Draugrs need between 11 and 14. At 11 with half the Thorium armor set, one player was alive about 20% of the time against Draugrs; at 14, another pushed Draugrs untouched; at 17, a Mage stayed alive the whole time against Matryoshkas. Gear differs between the reports.",
+          "Players report that Wish for Hardness 11 is not enough for Draugrs and 14 is. At 11 with half the Thorium armor set, one player was alive about 20% of the time against Draugrs; at 14, another pushed Draugrs untouched; at 17, a Mage stayed alive the whole time against Matryoshkas. Gear differs between the reports.",
           "Player report",
           ["DiscordHardness"]
         ],
