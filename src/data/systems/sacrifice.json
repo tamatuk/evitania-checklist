@@ -87,11 +87,11 @@
           "Hardness after Attack",
           "Past the Wish for Hardness 14 needed for Draugrs, take Attack Wish to 20 before raising Wish for Hardness to 20.",
           "Guide",
-          ["DBBonfire"]
+          ["DBBonfire", "DiscordHardness"]
         ],
         [
           "Hardness reports",
-          "Players report that Wish for Hardness 11 is not enough for Draugrs and 14 is. At 11 with Thorium armor 2/4, one player was alive about 20% of the time on the last Act 2 map; at 14, nothing in Act 2 touched another pushing Draugrs; at 17, a Mage stayed alive the whole time against Matryoshkas.",
+          "Player reports put the Wish for Hardness Draugrs need between 11 and 14. At 11 with half the Thorium armor set, one player was alive about 20% of the time against Draugrs; at 14, another pushed Draugrs untouched; at 17, a Mage stayed alive the whole time against Matryoshkas. Gear differs between the reports.",
           "Player report",
           ["DiscordHardness"]
         ],
@@ -145,7 +145,7 @@
         ],
         [
           "Food Donation",
-          "One player's list of bonfire upgrades to check names Food Donation (HP) beside the combat lines, and says higher levels cost too many monster materials, so spread upgrades across the lines. No guide gives Food Donation a target, so it stays Low priority.",
+          "One player's list of Bonfire upgrades to check names Food Donation (HP) beside the Damage and Defence lines, and says higher levels cost too many monster materials. No guide gives Food Donation a target, so it stays Low priority.",
           "Player report",
           ["DiscordSacrificeLines"]
         ]
@@ -180,13 +180,7 @@
         ["Maevath", "Pray for Luck: crit damage, +3%", "Damage", "Slightly Damaged Glass", "Act 2, 10 (Glass)"],
         ["Maevath", "Wish for Riches: Drop Quantity, +1", "Utility", "Spearhead", "Act 2, 12 (Draugr)"],
         ["Maevath", "Wish for Wizdom: combat XP, +1%", "Utility", "Matryoska Doll", "Act 2, 11 (Matryoshka)"],
-        [
-          "Maevath",
-          "Wish for Gold: gold multiplier, +1%",
-          "Utility",
-          "Crystallized Yellow Substance",
-          "Act 2 town shop"
-        ],
+        ["Maevath", "Wish for Gold: gold multiplier, +1%", "Utility", "Crystallized Yellow Substance", "Act 2 vendor"],
         ["Maevath", "Wish for Bars: smeltery speed, +10%", "Utility", "Monocle", "Act 2, 9 (Penguin)"]
       ]
     }
