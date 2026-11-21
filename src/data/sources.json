@@ -463,5 +463,17 @@
     "where": "Discord #general-chat",
     "link": "https://discord.com/channels/1219291890940383334/1266072505748295713",
     "date": "2026-04-25"
+  },
+  "DiscordHardness": {
+    "name": "Wish for Hardness levels against Act 2 monsters (player reports: ToastedToast 2025-05-22, cian 2026-04-20, Serpentibus 2026-04-24, Tezi 2026-06-19)",
+    "where": "Discord",
+    "link": "https://discord.com/channels/1219291890940383334",
+    "date": "2026-06-19"
+  },
+  "DiscordSacrificeLines": {
+    "name": "Bonfire upgrades to check and sacrifice order (player reports by Ninho - xDzin, 2026-05-23 and 2026-06-04)",
+    "where": "Discord",
+    "link": "https://discord.com/channels/1219291890940383334",
+    "date": "2026-06-04"
   }
 }

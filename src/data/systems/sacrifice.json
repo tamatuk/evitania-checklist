@@ -12,14 +12,24 @@
       "source": ["DBBonfire", "MTAct2"]
     },
     {
+      "req": "Wish for Luck at 10 or more.",
+      "basis": "Estimate",
+      "source": ["HyZerg"]
+    },
+    {
       "req": "Attack Wish at 15 or more.",
       "basis": "Guide",
       "source": ["MTAct2"]
     },
     {
-      "req": "Jötunn Eye sacrificed (five more lines open), and Wish for Hardness raised for Maevath; see Characters 'Boss readiness check'.",
+      "req": "Jötunn Eye sacrificed: five more lines open.",
       "basis": "Guide",
       "source": ["MTAct2"]
+    },
+    {
+      "req": "Wish for Hardness at 14 or more before pushing Draugrs; for Maevath see Characters 'Boss readiness check'.",
+      "basis": "Player report",
+      "source": ["DiscordHardness"]
     },
     {
       "req": "Maevath's Horn sacrificed: the last five lines are open.",
@@ -27,12 +37,22 @@
       "source": ["DBBonfire"]
     },
     {
+      "req": "Pray for Luck at 10 or more.",
+      "basis": "Estimate",
+      "source": ["HyZerg"]
+    },
+    {
       "req": "Attack Wish at 20 and Wish for Hardness at 20.",
       "basis": "Guide",
       "source": ["DBBonfire"]
     },
     {
-      "req": "Attack Wish, Wish for Luck, Pray for Luck and Wish for Speed all at 20, the base cap (Wish for Speed ends there).",
+      "req": "Wish for Speed at 20 (max); its cap never rises.",
+      "basis": "Game data",
+      "source": ["Wiki", "DBBonfire"]
+    },
+    {
+      "req": "Attack Wish, Wish for Luck and Pray for Luck at 20, the base cap.",
       "basis": "Guide",
       "source": ["HyZerg", "Wiki"]
     },
@@ -63,7 +83,18 @@
           "Guide",
           ["HyZerg"]
         ],
-        ["Hardness after Attack", "Take Attack Wish to 20 before Wish for Hardness.", "Guide", ["DBBonfire"]],
+        [
+          "Hardness after Attack",
+          "Past the Wish for Hardness 14 needed for Draugrs, take Attack Wish to 20 before raising Wish for Hardness to 20.",
+          "Guide",
+          ["DBBonfire"]
+        ],
+        [
+          "Hardness reports",
+          "Players report that Wish for Hardness 11 is not enough for Draugrs and 14 is. At 11 with Thorium armor 2/4, one player was alive about 20% of the time on the last Act 2 map; at 14, nothing in Act 2 touched another pushing Draugrs; at 17, a Mage stayed alive the whole time against Matryoshkas.",
+          "Player report",
+          ["DiscordHardness"]
+        ],
         [
           "First targets",
           "Early on, push Attack Wish (Helmet Helmet) and Cutting Edge Technology (Icy Needles) toward 10 before going further.",
@@ -108,31 +139,55 @@
         ],
         [
           "Farming spots",
-          "Farm Helmets (best with a Rogue or Mage) for Attack Wish; farm Snowmen for Carrots (Wish for Hardness) and the Snowman card.",
+          "Farm Helmets (best with a Rogue or Mage) for Attack Wish; farm Snowmen for Carrots (Wish for Hardness) and the Snowman card. Where every other material drops is in the 'Drops in' column of Sacrifice lines.",
           "Guide",
           ["MTFarm"]
+        ],
+        [
+          "Food Donation",
+          "One player's list of bonfire upgrades to check names Food Donation (HP) beside the combat lines, and says higher levels cost too many monster materials, so spread upgrades across the lines. No guide gives Food Donation a target, so it stays Low priority.",
+          "Player report",
+          ["DiscordSacrificeLines"]
         ]
       ]
     },
     {
       "title": "Sacrifice lines",
-      "cols": ["Unlocked by", "Line and effect per level", "Group", "Material"],
+      "cols": ["Unlocked by", "Line and effect per level", "Group", "Material", "Drops in"],
       "rows": [
-        ["Ice Mammoth", "Attack Wish: attack multiplier, x0.05", "Damage", "Helmet Helmet"],
-        ["Ice Mammoth", "Cutting Edge Technology: woodcutting power, x0.1", "Gathering", "Icy Needles"],
-        ["Ice Mammoth", "Wish for Luck: crit chance, +1%", "Damage", "Iceghost Doll"],
-        ["Ice Mammoth", "Wish for Fuel: woodcutting multiloot, +1", "Gathering", "Ironwood Log"],
-        ["Ice Mammoth", "Food Donation: HP, x0.03", "Low priority", "Distinguished Glasses"],
-        ["Jötunn", "Wish for Hardness: physical defence, x0.05", "Defence", "Carrot"],
-        ["Jötunn", "Wish for Speed: attack speed, +0.5% (cap 20, so 10%)", "Damage", "Troll Idol"],
-        ["Jötunn", "Mining Edge Technology: mining power, x0.1", "Gathering", "Nut"],
-        ["Jötunn", "Wish for Stones: mining multiloot, +1", "Gathering", "Thorium Ore"],
-        ["Jötunn", "Wish for Knowledge: MP, x0.03", "Low priority", "Pocketwatch"],
-        ["Maevath", "Pray for Luck: crit damage, +3%", "Damage", "Slightly Damaged Glass"],
-        ["Maevath", "Wish for Riches: Drop Quantity, +1", "Utility", "Spearhead"],
-        ["Maevath", "Wish for Wizdom: combat XP, +1%", "Utility", "Matryoska Doll"],
-        ["Maevath", "Wish for Gold: gold multiplier, +1%", "Utility", "Crystallized Yellow Substance"],
-        ["Maevath", "Wish for Bars: smeltery speed, +10%", "Utility", "Monocle"]
+        ["Ice Mammoth", "Attack Wish: attack multiplier, x0.05", "Damage", "Helmet Helmet", "Act 2, 2 (Helmet)"],
+        [
+          "Ice Mammoth",
+          "Cutting Edge Technology: woodcutting power, x0.1",
+          "Gathering",
+          "Icy Needles",
+          "Act 2, 1 (Iceboar)"
+        ],
+        ["Ice Mammoth", "Wish for Luck: crit chance, +1%", "Damage", "Iceghost Doll", "Act 2, 3 (Ghost)"],
+        [
+          "Ice Mammoth",
+          "Wish for Fuel: woodcutting multiloot, +1",
+          "Gathering",
+          "Ironwood Log",
+          "Act 2, 1 (Ironwood tree)"
+        ],
+        ["Ice Mammoth", "Food Donation: HP, x0.03", "Low priority", "Distinguished Glasses", "Act 2, 4 (Yeti)"],
+        ["Jötunn", "Wish for Hardness: physical defence, x0.05", "Defence", "Carrot", "Act 2, 7 (Snowman)"],
+        ["Jötunn", "Wish for Speed: attack speed, +0.5% (cap 20, so 10%)", "Damage", "Troll Idol", "Act 2, 8 (Troll)"],
+        ["Jötunn", "Mining Edge Technology: mining power, x0.1", "Gathering", "Nut", "Act 2, 5 (Ratatoskr)"],
+        ["Jötunn", "Wish for Stones: mining multiloot, +1", "Gathering", "Thorium Ore", "Act 2, 5 (Thorium vein)"],
+        ["Jötunn", "Wish for Knowledge: MP, x0.03", "Low priority", "Pocketwatch", "Act 2, 6 (Watches)"],
+        ["Maevath", "Pray for Luck: crit damage, +3%", "Damage", "Slightly Damaged Glass", "Act 2, 10 (Glass)"],
+        ["Maevath", "Wish for Riches: Drop Quantity, +1", "Utility", "Spearhead", "Act 2, 12 (Draugr)"],
+        ["Maevath", "Wish for Wizdom: combat XP, +1%", "Utility", "Matryoska Doll", "Act 2, 11 (Matryoshka)"],
+        [
+          "Maevath",
+          "Wish for Gold: gold multiplier, +1%",
+          "Utility",
+          "Crystallized Yellow Substance",
+          "Act 2 town shop"
+        ],
+        ["Maevath", "Wish for Bars: smeltery speed, +10%", "Utility", "Monocle", "Act 2, 9 (Penguin)"]
       ]
     }
   ]
